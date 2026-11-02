@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-11-02T08:56:29Z",
+ "generated_at_utc": "2026-11-02T09:03:14Z",
  "type": "simulated recovery (fresh environment from GitHub into an empty root; not an actual container reclaim)",
  "repo": "ishaandixit22/arthscan-fingerprinting",
  "branch": "monitor-state",
@@ -247,5 +247,96 @@
   "Coverage gaps: checks run 08:13-23:13 IST only. A late-night filing still gets its exact T0 from the feed timestamp (feed holds ~5 h of items), but T0, T+30m and T+2h snapshots would be taken late.",
   "Arth MCP quota (free plan, 50 calls/day): checkpoint captures use about 2 calls per checkpoint; not load-tested.",
   "main branch: you merged PR #1, so main holds a stale copy of state up to commit 1c92fb4. The monitor never reads or writes main."
- ]
+ ],
+ "test_categories": {
+  "unit_tests": {
+   "status": "none exist",
+   "note": "No isolated unit tests were written; every test drives the real scripts end to end."
+  },
+  "sandbox_integration_tests": {
+   "status": "10/10 + 3/3 passed",
+   "where": "throwaway directories and local git remotes; NSE feed and collector replaced by test doubles (except the real-collector test, which stubs the network)",
+   "tests": {
+    "5a_concurrent_runs": true,
+    "5b_crash_then_rerun": true,
+    "5c_checkpoints_idempotent": true,
+    "7a_failed_requests": true,
+    "7b_real_collector_failures": true,
+    "4b_overwrite_protection_code_path": true,
+    "8a_feed_429": true,
+    "8b_snapshot_429": true,
+    "8c_no_false_stop_on_429_in_snapshot_id": true,
+    "9_audit_log_every_run": true,
+    "10a_push_failure_retry": true,
+    "10b_recovery_push": true,
+    "10c_concurrent_persist": true
+   }
+  },
+  "actual_github_tests": {
+   "status": "passed",
+   "tests": {
+    "recovery_from_github_11_steps": "11/11",
+    "github_copy_sha256_81_files": true,
+    "secrets_scan_of_github_history": true,
+    "pushes_to_monitor_state": "observed: commits 96ec424 .. a76d35f",
+    "live_snapshot_sha256_80_files": true
+   }
+  },
+  "unattended_scheduler_execution": {
+   "status": "PENDING",
+   "note": "Requires a real scheduled run while the user's app/terminal is closed. Prepared at 2026-11-02T09:02:13.875899+00:00; next scheduled run 2026-11-02T09:43:00Z."
+  }
+ },
+ "acceptance_test": {
+  "status": "PENDING",
+  "pre_test_record": {
+   "recorded_at_utc": "2026-11-02T09:02:13.875899+00:00",
+   "execution_identity": {
+    "os_user": "root",
+    "uid": 0,
+    "hostname": "vm",
+    "python": "3.13.18",
+    "git_user": "Claude",
+    "git_email": "noreply@anthropic.com"
+   },
+   "working_directory_used_by_task": "/home/user/three_way (per scheduled-task step C)",
+   "environment": {
+    "HOME": "/root",
+    "SHELL": "/bin/bash",
+    "PATH_first": [
+     "/nix/var/nix/profiles/default/bin",
+     "/root/.local/bin",
+     "/root/.cargo/bin",
+     "/usr/local/go/bin"
+    ],
+    "https_proxy_configured": true,
+    "secret_env_var_names_present": [
+     "AWS_ACCESS_KEY_ID",
+     "AWS_SECRET_ACCESS_KEY",
+     "BUN_TLS_EXTRA_DISTRUSTED_KEYS",
+     "CCR_AUTO_MODE_USER_ENV_KEYS_FACT",
+     "CLAUDE_CODE_MESSAGING_TOKEN",
+     "CLAUDE_SESSION_INGRESS_TOKEN_FILE",
+     "CLOUDSDK_AUTH_ACCESS_TOKEN",
+     "GH_TOKEN",
+     "GITHUB_TOKEN",
+     "GIT_CONFIG_KEY_0",
+     "GIT_CONFIG_KEY_1",
+     "GIT_CONFIG_KEY_2",
+     "MAX_THINKING_TOKENS"
+    ]
+   },
+   "github": {
+    "monitor_state_head": "612e442eb194db09c1fb064cd38de8cd92a136da",
+    "main_head": "70c175c0293ba4ad172b0d4c0d4d938448528da9"
+   },
+   "local_ticks_lines": 5,
+   "local_events_present": false,
+   "snapshot_dirs": [
+    "20261102T062632Z_baseline"
+   ]
+  },
+  "pre_test_snapshot_sha256_count": 81,
+  "setup": "live /home/user/three_way and the repo clone moved to /home/user/.acceptance_backup/ so the scheduled run must re-clone and restore from GitHub"
+ }
 }

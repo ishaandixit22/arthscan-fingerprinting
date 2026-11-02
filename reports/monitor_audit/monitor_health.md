@@ -2,6 +2,15 @@
 
 Audit run 2026-11-02T08:56:29Z. Scope: the Tapetide fingerprinting release monitor (`three_way/`), its scheduled task and its persistence branch. `main` and ARTHSCAN production were not modified.
 
+## Test categories
+
+| Category | Status |
+|---|---|
+| Unit tests | **None exist.** Every test drives the real scripts end to end. |
+| Sandbox integration tests | **Passed:** 10/10 + 3/3 passed (monitor suite + push suite) |
+| Actual GitHub tests | **Passed:** 11-step recovery from GitHub, 81-file SHA-256 match with GitHub, secrets scan of GitHub history, real pushes to `monitor-state` |
+| Unattended scheduler execution | **PENDING.** Not yet observed with the app/terminal closed. Prepared 2026-11-02T09:02:13Z; next scheduled run 09:43 UTC. |
+
 ## Verdict
 
 **Ready for the 4-5 Nov release window, with three open limitations** (manual 429 resume, root-writable snapshot files, MCP checkpoint captures not yet exercised). All ten requirements pass or are observed; five defects found during the audit were fixed first and are covered by the tests.
