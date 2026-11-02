@@ -1,0 +1,67 @@
+{
+ "started_utc": "2026-11-02T08:55:09.600094+00:00",
+ "steps": [
+  {
+   "step": "fresh shallow clone from GitHub",
+   "pass": true,
+   "seconds": 0.9,
+   "branch": "main"
+  },
+  {
+   "step": "negative control: plain fetch leaves origin/monitor-state missing",
+   "pass": true,
+   "rev_parse_exit": 1
+  },
+  {
+   "step": "explicit refspec fetch creates origin/monitor-state",
+   "pass": true,
+   "commit": "88fb5ac"
+  },
+  {
+   "step": "restore.sh rebuilds an empty root",
+   "pass": true,
+   "seconds": 0.9,
+   "output": [
+    "RESTORE: ok (1 snapshots, events: none)"
+   ]
+  },
+  {
+   "step": "restored snapshots byte-identical (SHA-256)",
+   "pass": true,
+   "files": 81
+  },
+  {
+   "step": "restored code identical to live (includes audit fixes)",
+   "pass": true
+  },
+  {
+   "step": "restored monitor state present (ticks.jsonl, scheduler.json)",
+   "pass": true,
+   "restored_tick_lines": 5
+  },
+  {
+   "step": "restored analysis dependencies (Phase 1 engine + mismatch file)",
+   "pass": true
+  },
+  {
+   "step": "restored monitor executes a real tick",
+   "pass": true,
+   "seconds": 5.6,
+   "output": [
+    "TICK 2026-11-02T08:55:12.927825+00:00 feeds=[200, 200] waiting_for_T0=['MOTHERSON', 'PIIND'] pending=[]"
+   ]
+  },
+  {
+   "step": "restored tick wrote a UTC audit line",
+   "pass": true,
+   "outcome": "ok"
+  },
+  {
+   "step": "second restore is a no-op for snapshots",
+   "pass": true
+  }
+ ],
+ "finished_utc": "2026-11-02T08:55:18.911624+00:00",
+ "passed": 11,
+ "total": 11
+}

@@ -8,7 +8,7 @@ mkdir -p "$D/three_way/snapshots" "$D/three_way/state/monitor" "$D/three_way/sta
 cp -a --update=none "$HERE/snapshots/." "$D/three_way/snapshots/"
 cp -a "$HERE/monitor/." "$D/three_way/state/monitor/"; rm -f "$D/three_way/state/monitor/.lock" "$D/three_way/state/monitor/.persist.lock"
 cp -a "$HERE/evidence/." "$D/three_way/state/evidence/"
-cp -a "$HERE"/*.py "$HERE"/*.sh "$D/three_way/code/"
+cp -a "$HERE"/*.py "$HERE"/*.sh "$D/three_way/code/"; mkdir -p "$D/three_way/code/audit"; cp -a "$HERE/audit/." "$D/three_way/code/audit/"
 cp -a "$U/fingerprint/compare_engine.py" "$D/deps/"
 cp -a "$U/reports/." "$D/reports/"
 exec 9>"$HERE/monitor/.persist.lock"; flock -w 120 9 || { echo "persist: lock timeout"; exit 3; }   # one persist at a time

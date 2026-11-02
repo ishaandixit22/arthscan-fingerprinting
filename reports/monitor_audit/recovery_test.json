@@ -1,0 +1,251 @@
+{
+ "generated_at_utc": "2026-11-02T08:56:29Z",
+ "type": "simulated recovery (fresh environment from GitHub into an empty root; not an actual container reclaim)",
+ "repo": "ishaandixit22/arthscan-fingerprinting",
+ "branch": "monitor-state",
+ "restored_commit": "88fb5ac",
+ "started_utc": "2026-11-02T08:55:09.600094+00:00",
+ "finished_utc": "2026-11-02T08:55:18.911624+00:00",
+ "result": "11/11 passed",
+ "steps": [
+  {
+   "step": "fresh shallow clone from GitHub",
+   "pass": true,
+   "seconds": 0.9,
+   "branch": "main"
+  },
+  {
+   "step": "negative control: plain fetch leaves origin/monitor-state missing",
+   "pass": true,
+   "rev_parse_exit": 1
+  },
+  {
+   "step": "explicit refspec fetch creates origin/monitor-state",
+   "pass": true,
+   "commit": "88fb5ac"
+  },
+  {
+   "step": "restore.sh rebuilds an empty root",
+   "pass": true,
+   "seconds": 0.9,
+   "output": [
+    "RESTORE: ok (1 snapshots, events: none)"
+   ]
+  },
+  {
+   "step": "restored snapshots byte-identical (SHA-256)",
+   "pass": true,
+   "files": 81
+  },
+  {
+   "step": "restored code identical to live (includes audit fixes)",
+   "pass": true
+  },
+  {
+   "step": "restored monitor state present (ticks.jsonl, scheduler.json)",
+   "pass": true,
+   "restored_tick_lines": 5
+  },
+  {
+   "step": "restored analysis dependencies (Phase 1 engine + mismatch file)",
+   "pass": true
+  },
+  {
+   "step": "restored monitor executes a real tick",
+   "pass": true,
+   "seconds": 5.6,
+   "output": [
+    "TICK 2026-11-02T08:55:12.927825+00:00 feeds=[200, 200] waiting_for_T0=['MOTHERSON', 'PIIND'] pending=[]"
+   ]
+  },
+  {
+   "step": "restored tick wrote a UTC audit line",
+   "pass": true,
+   "outcome": "ok"
+  },
+  {
+   "step": "second restore is a no-op for snapshots",
+   "pass": true
+  }
+ ],
+ "related_tests": {
+  "duplicate_prevention": {
+   "5a_concurrent_runs": {
+    "runs": 6,
+    "busy_exits": 3,
+    "new_t0_prints": 1,
+    "t0_events": 1,
+    "t0_snapshots_created": 1,
+    "pass": true,
+    "after_3_more_sequential_runs_t0_snapshots": 1
+   },
+   "5b_crash_then_rerun": {
+    "first_run": "crashed",
+    "state_after_crash_has_T0": false,
+    "t0_snapshots_created": 1,
+    "rerun_adopted_existing": true,
+    "pass": true
+   },
+   "5c_checkpoints_idempotent": {
+    "runs": 4,
+    "snapshots_per_checkpoint": {
+     "T0_MOTHERSON": 1,
+     "T+30m_MOTHERSON": 1,
+     "T+2h_MOTHERSON": 1,
+     "T+24h_MOTHERSON": 1,
+     "T+48h_MOTHERSON": 1,
+     "T0_PIIND": 1,
+     "T+30m_PIIND": 1,
+     "T+2h_PIIND": 1,
+     "T+24h_PIIND": 1,
+     "T+48h_PIIND": 1
+    },
+    "all_done_printed": true,
+    "pass": true
+   }
+  },
+  "failure_handling": {
+   "7a_failed_requests": {
+    "failed_attempt_output": [
+     "CHECKPOINT_INCOMPLETE MOTHERSON T+48h snapshot 20261102T085253676620_T+48h_MOTHERSON: will retry next tick"
+    ],
+    "checkpoint_marked_taken_after_failure": false,
+    "existing_snapshot_files_unchanged": true,
+    "retry_succeeded_next_run": true,
+    "attempts_recorded": 3,
+    "pass": true
+   },
+   "7b_real_collector_failures": {
+    "data_files_written": [],
+    "statuses": {
+     "tapetide:PIIND.md": "error: simulated DNS failure",
+     "screener:": "skipped: host returned 429 earlier",
+     "indianapi:statements?stats=quarter_results": 500,
+     "indianapi:statements?stats=yoy_results": 500,
+     "indianapi:statements?stats=balancesheet": 500,
+     "indianapi:statements?stats=cashflow": 500,
+     "indianapi:statements?stats=ratios": 500
+    },
+    "hosts_blocked_429": [
+     "www.screener.in"
+    ],
+    "pass": true
+   },
+   "4b_overwrite_protection_code_path": {
+    "snapshot_dir_reuse": "refused",
+    "existing_file_open_with_x": "refused",
+    "pass": true
+   }
+  },
+  "rate_limit": {
+   "8a_feed_429": {
+    "first": "HTTP 429 from NSE feed: stopping monitor",
+    "second": "STOPPED: an earlier HTTP 429; not polling",
+    "t0_recorded_after_stop": false,
+    "snapshots_after_stop": 0,
+    "pass": true
+   },
+   "8b_snapshot_429": {
+    "output": "HTTP 429 during snapshot: stopping",
+    "stopped": true,
+    "checkpoint_marked_taken": false,
+    "pass": true
+   },
+   "8c_no_false_stop_on_429_in_snapshot_id": {
+    "snapshot_id": [
+     "20261104T142901Z_T0_PIIND"
+    ],
+    "stopped": false,
+    "pass": true
+   }
+  },
+  "audit_log": {
+   "runs": 5,
+   "log_lines": 5,
+   "outcomes": [
+    "ok",
+    "busy (lock held by another run)",
+    "error: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+    "http_429_feed",
+    "stopped (earlier HTTP 429)"
+   ],
+   "all_have_utc_timestamps": true,
+   "pass": true
+  },
+  "push": {
+   "10a_push_failure_retry": {
+    "exit_code": 1,
+    "seconds": 30.2,
+    "expected_backoff_s": 30,
+    "local_commits": 1,
+    "pass": true
+   },
+   "10b_recovery_push": {
+    "exit_code": 0,
+    "remote_commits_on_monitor_state": 2,
+    "pass": true
+   },
+   "10c_concurrent_persist": {
+    "exit_codes": [
+     0,
+     0
+    ],
+    "index_lock_errors": 0,
+    "pass": true
+   }
+  },
+  "integrity": {
+   "4a_live_sha256": {
+    "files_checked": 80,
+    "mismatches": [],
+    "permissions_seen": [
+     [
+      "dir",
+      "0o555"
+     ],
+     [
+      "file",
+      "0o444"
+     ],
+     [
+      "manifest",
+      "0o444"
+     ]
+    ],
+    "pass": true
+   },
+   "4c_github_copy_sha256": {
+    "files_compared": 81,
+    "mismatches": 0,
+    "pass": true
+   },
+   "4d_os_permission_vs_root": {
+    "running_as_uid": 0,
+    "root_can_append_to_0444_copy": true,
+    "note": "chmod 0444 is not a barrier for root; immutability rests on code paths (exist_ok=False, mode 'x', cp --update=none), the manifest SHA-256s and git history"
+   },
+   "6_secrets_scan": {
+    "commits_scanned": "4",
+    "history_bytes": 11217747,
+    "pattern_hits": {
+     "github_token": 0,
+     "aws_access_key": 0,
+     "bearer_header": 0,
+     "private_key": 0,
+     "generic_secret_assignment": 0
+    },
+    "env_secret_variables_checked": 11,
+    "env_secret_values_found_in_history": [],
+    "remote_url_has_embedded_credential": false,
+    "pass": true
+   }
+  }
+ },
+ "not_covered": [
+  "Scheduled-task steps F and G (Tapetide and ARTHSCAN-cached MCP captures at checkpoints, final write-up): not exercised yet, as no T0 has occurred. The trigger stores no connector list (mcp_connections: []); it fires into this session, which has both connectors, but that path is unproven until the first checkpoint.",
+  "Behaviour across a real container reclaim: simulated only. A background --loop process dies with the container; missed T+30m/T+2h would then be taken late at the next hourly run (lateness is recorded).",
+  "Coverage gaps: checks run 08:13-23:13 IST only. A late-night filing still gets its exact T0 from the feed timestamp (feed holds ~5 h of items), but T0, T+30m and T+2h snapshots would be taken late.",
+  "Arth MCP quota (free plan, 50 calls/day): checkpoint captures use about 2 calls per checkpoint; not load-tested.",
+  "main branch: you merged PR #1, so main holds a stale copy of state up to commit 1c92fb4. The monitor never reads or writes main."
+ ]
+}

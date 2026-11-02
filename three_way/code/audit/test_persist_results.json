@@ -1,0 +1,28 @@
+{
+ "10a_push_failure_retry": {
+  "exit_code": 1,
+  "seconds": 30.2,
+  "expected_backoff_s": 30,
+  "local_commits": 1,
+  "pass": true
+ },
+ "10b_recovery_push": {
+  "exit_code": 0,
+  "remote_commits_on_monitor_state": 2,
+  "pass": true
+ },
+ "10c_concurrent_persist": {
+  "exit_codes": [
+   0,
+   0
+  ],
+  "index_lock_errors": 0,
+  "pass": true
+ },
+ "10d_main_untouched": {
+  "remote_branches": [
+   "monitor-state"
+  ],
+  "pass": true
+ }
+}
