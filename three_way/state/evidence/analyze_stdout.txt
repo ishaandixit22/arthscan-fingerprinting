@@ -1,0 +1,372 @@
+{
+ "i_basis": {
+  "RELIANCE": "consolidated",
+  "PIIND": "consolidated",
+  "ABCAPITAL": "consolidated",
+  "WELSPUNLIV": "consolidated",
+  "ZEEL": "consolidated",
+  "JSL": "consolidated",
+  "QUICKHEAL": "consolidated",
+  "MOTHERSON": "consolidated",
+  "TRENT": "consolidated",
+  "CYIENT": "consolidated"
+ },
+ "pairs": {
+  "T-S": {
+   "cells": 5641,
+   "exact": 5438,
+   "mismatch": 62,
+   "partial": 15,
+   "rounded": 2,
+   "missing_a": 69,
+   "missing_b": 55,
+   "match_pct": 96.437
+  },
+  "I-S": {
+   "cells": 5652,
+   "exact": 5397,
+   "missing_a": 126,
+   "missing_b": 66,
+   "mismatch": 60,
+   "partial": 3,
+   "match_pct": 95.488
+  },
+  "T-I": {
+   "cells": 5606,
+   "missing_a": 34,
+   "exact": 5441,
+   "missing_b": 80,
+   "mismatch": 33,
+   "partial": 16,
+   "rounded": 2,
+   "match_pct": 97.092
+  }
+ },
+ "focus": {
+  "T-S": {
+   "cells": 1590,
+   "exact": 1492,
+   "mismatch": 40,
+   "partial": 14,
+   "rounded": 2,
+   "missing_a": 12,
+   "missing_b": 30,
+   "match_pct": 93.962
+  },
+  "I-S": {
+   "cells": 1596,
+   "exact": 1484,
+   "missing_a": 36,
+   "missing_b": 36,
+   "mismatch": 38,
+   "partial": 2,
+   "match_pct": 92.982
+  },
+  "T-I": {
+   "cells": 1591,
+   "missing_a": 13,
+   "exact": 1507,
+   "missing_b": 31,
+   "mismatch": 24,
+   "partial": 14,
+   "rounded": 2,
+   "match_pct": 94.846
+  }
+ },
+ "triad": {
+  "T=S, I differs": 18,
+  "all_three_agree": 5354,
+  "I=S, T differs": 31,
+  "T=I, S differs": 45
+ },
+ "fp_I": {
+  "label_EPS_in_Rs": 20,
+  "label_CFO_EBITDA": 9,
+  "label_CFO_OP": 0,
+  "ttm_column": 10,
+  "half_year_bs_column_when_screener_has_it": [
+   2,
+   8
+  ],
+  "extra_old_quarter_like_tapetide": [
+   "RELIANCE",
+   "ABCAPITAL",
+   "WELSPUNLIV",
+   "ZEEL",
+   "QUICKHEAL",
+   "TRENT"
+  ],
+  "ttm_equals_screener": 4,
+  "ttm_checked": 10,
+  "derived_rows": {
+   "Operating Profit": "234/234",
+   "OPM %": "234/234",
+   "Other Liabilities": "110/110",
+   "Other Assets": "122/122"
+  }
+ },
+ "fp_T": {
+  "label_CFO_OP": 4,
+  "extra_old_quarter": [
+   "ABCAPITAL",
+   "WELSPUNLIV",
+   "ZEEL",
+   "JSL",
+   "QUICKHEAL"
+  ]
+ },
+ "abcap_row_order": {
+  "I": [
+   "Revenue",
+   "Interest",
+   "Expenses",
+   "Financing Profit",
+   "Financing Margin %",
+   "Other Income",
+   "Depreciation",
+   "Profit before tax",
+   "Tax %",
+   "Net Profit",
+   "EPS in Rs"
+  ],
+  "S": [
+   "Revenue",
+   "Interest",
+   "Expenses",
+   "Financing Profit",
+   "Financing Margin %",
+   "Other Income",
+   "Depreciation",
+   "Profit before tax",
+   "Tax %",
+   "Net Profit",
+   "EPS in Rs",
+   "Gross NPA %",
+   "Net NPA %"
+  ],
+  "T": [
+   "Revenue",
+   "Expenses",
+   "Financing Profit",
+   "Financing Margin %",
+   "Other Income",
+   "Interest",
+   "Depreciation",
+   "Profit before tax",
+   "Tax %",
+   "Net Profit",
+   "EPS in Rs"
+  ]
+ },
+ "stale": {
+  "RELIANCE": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "PIIND": {
+   "tapetide": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "ABCAPITAL": {
+   "tapetide": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "WELSPUNLIV": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "ZEEL": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "JSL": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   }
+  },
+  "QUICKHEAL": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "MOTHERSON": {
+   "tapetide": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "TRENT": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "CYIENT": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   }
+  }
+ }
+}
+
+UNEXPLAINED:
+  TRENT quarterly Profit before tax Mar 2025 T 417 S 416 I 416 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  TRENT quarterly Profit before tax Sep 2025 T 478 S 477 I 477 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  TRENT annual_pl Dividend Payout % Mar 2021 T n/m S -15% I -15 | not flagged | missing cell: Tapetide shows 'n/m' (not meaningful); Indian Stock API has the value
+  JSL quarterly Other Income Mar 2024 T 54.98 S 53 I 53 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  JSL quarterly EPS in Rs Sep 2026 T — S 10.85 I 10.85 | not flagged | missing cell: still missing on Tapetide; Indian Stock API has the value
+  ABCAPITAL quarterly Other Income Sep 2025 T 92 S 170 I 92 | not flagged | Tapetide = Indian Stock API, Screener differs
+  ABCAPITAL quarterly Depreciation Mar 2024 T 53.5 S 52 I 52 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  ABCAPITAL quarterly Depreciation Jun 2024 T 55.44 S 54 I 54 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  ABCAPITAL quarterly Profit before tax Sep 2025 T 1,212 S 1,290 I 1212 | not flagged | Tapetide = Indian Stock API, Screener differs
+  ABCAPITAL quarterly Tax % Sep 2025 T 27% S 26% I 27 | not flagged | Tapetide = Indian Stock API, Screener differs
+  ABCAPITAL quarterly Net Profit Sep 2025 T 882 S 961 I 882 | not flagged | Tapetide = Indian Stock API, Screener differs
+  ABCAPITAL quarterly EPS in Rs Sep 2025 T 3.27 S 3.57 I 3.27 | not flagged | Tapetide = Indian Stock API, Screener differs
+  PIIND quarterly Other Income Mar 2025 T 73.4 S 75 I 75 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  PIIND quarterly Other Income Sep 2025 T 82.5 S 85 I 85 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  PIIND quarterly Other Income Mar 2026 T 75.6 S 74 I 74 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  PIIND quarterly Other Income Jun 2026 T 64.1 S 66 I 66 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  PIIND quarterly Profit before tax Mar 2025 T 431 S 432 I 432 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  PIIND quarterly Profit before tax Sep 2025 T 523 S 525 I 525 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  PIIND quarterly Profit before tax Jun 2026 T 320 S 322 I 322 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  PIIND annual_pl Other Income Mar 2025 T 344 S 345 I 345 | not flagged | Indian Stock API = Screener, Tapetide differs (not flagged as filing)
+  PIIND annual_pl EPS in Rs Mar 2024 T 111 S 110.83 I 110.83 | not flagged | agree within rounding (Tapetide shows fewer decimals)
+  PIIND annual_pl EPS in Rs Mar 2025 T 109 S 109.43 I 109.43 | not flagged | agree within rounding (Tapetide shows fewer decimals)
+  QUICKHEAL quarterly EPS in Rs Sep 2026 T — S 1.07 I None | not flagged | missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet
+  CYIENT quarterly Profit before tax Mar 2026 T 96.7 S 95 I 95 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  ZEEL quarterly Sales Jun 2024 T 2,131 S 2,130 I 2130 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  ZEEL quarterly Interest Sep 2026 T 3 S 2 I None | not flagged | all three differ / insufficient data
+  ZEEL quarterly Profit before tax Mar 2024 T 114 S 115 I 115 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  ZEEL quarterly Net Profit Dec 2023 T 58.54 S 58 I 58 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  ZEEL quarterly EPS in Rs Sep 2026 T — S 0.47 I None | not flagged | missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet
+  ZEEL annual_pl Profit before tax Mar 2026 T 273 S 274 I 274 | not flagged | Indian Stock API = Screener, Tapetide differs (not flagged as filing)
+  WELSPUNLIV quarterly Operating Profit Sep 2026 T — S 338 I None | not flagged | missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet
+  WELSPUNLIV quarterly OPM % Sep 2026 T — S 12% I None | not flagged | missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet
+  WELSPUNLIV quarterly Other Income Mar 2024 T 41.48 S 42 I 42 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  WELSPUNLIV quarterly Other Income Jun 2026 T 32.71 S 34 I 34 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  WELSPUNLIV quarterly Other Income Sep 2026 T — S 25 I None | not flagged | missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet
+  WELSPUNLIV quarterly Profit before tax Jun 2026 T 219 S 220 I 220 | filing | Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+  WELSPUNLIV quarterly EPS in Rs Sep 2026 T — S 1.79 I None | not flagged | missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet

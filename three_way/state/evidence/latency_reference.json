@@ -1,0 +1,62 @@
+{
+ "_note": "Cross-sectional timing references from MCP calls in this session (2 Nov 2026). Exchange times from NSE via arth get_filings; Indian Stock API fetch times from arth get_statements (source field 'Indian Stock API (indianapi.in)'). Tapetide filed_on/available_from from Tapetide MCP.",
+ "QUICKHEAL": {
+  "new_quarter": "Sep 2026",
+  "exchange_filing": {
+   "time_utc": null,
+   "date": "2026-10-27",
+   "source": "Tapetide MCP provisional_periods.filed_on (NSE time not retrieved)"
+  },
+  "tapetide": {
+   "observed_at": "2026-11-02T05:00Z (Phase 1 MCP call)",
+   "has_new_quarter": true,
+   "note": "Sep 2026 marked provisional, EPS withheld"
+  },
+  "screener": {
+   "observed_at": "2026-11-02T05:08Z (Phase 1 fetch)",
+   "has_new_quarter": true
+  },
+  "indianapi_arthscan_cache": {
+   "fetched_at": "2026-11-01T18:30:14Z",
+   "latest_quarter": "Jun 2026",
+   "has_new_quarter": false
+  }
+ },
+ "TRENT": {
+  "new_quarter": "Sep 2026",
+  "exchange_filing": {
+   "time_utc": "2026-10-29T10:51:00Z",
+   "raw": "2026-10-29 16:21 IST",
+   "source": "NSE via arth get_filings (press release on results)"
+  },
+  "tapetide": {
+   "observed_at": "2026-11-02T05:00Z (Phase 1 fetch)",
+   "has_new_quarter": true
+  },
+  "screener": {
+   "observed_at": "2026-11-02T05:00Z (Phase 1 fetch)",
+   "has_new_quarter": true
+  },
+  "indianapi_arthscan_cache": {
+   "fetched_at": "2026-10-29T23:10:18Z",
+   "latest_quarter": "Jun 2026",
+   "has_new_quarter": false
+  }
+ },
+ "PIIND": {
+  "indianapi_arthscan_cache": {
+   "fetched_at": "2026-10-30T20:20:13Z",
+   "latest_quarter": "Jun 2026"
+  }
+ },
+ "ABCAPITAL": {
+  "tapetide": {
+   "quarterly_updated_at": "2026-10-17T03:06:42Z",
+   "latest_quarter": "Jun 2026"
+  },
+  "indianapi_arthscan_cache": {
+   "fetched_at": "2026-10-29T23:50:23Z",
+   "latest_quarter": "Jun 2026"
+  }
+ }
+}

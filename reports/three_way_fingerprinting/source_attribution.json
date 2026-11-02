@@ -1,0 +1,917 @@
+{
+ "generated_at": "2026-11-02T08:46:02Z",
+ "question": "Does Tapetide obtain financial statements directly from Screener.in or from a shared upstream provider such as Indian Stock API?",
+ "sources": {
+  "T": "Tapetide public .md pages + Tapetide MCP",
+  "S": "Screener.in public company pages",
+  "I": "Indian Stock API (indianapi.in), ARTHSCAN-cached data (not a direct provider observation), as served by ARTHSCAN (/stock/{SYM}/statements, same data as /v1/ext/statements; source field confirmed via arth MCP get_statements)"
+ },
+ "important_caveat": "Indian Stock API was observed through ARTHSCAN's cached copy (arth MCP fetched_at between 29 Oct and 1 Nov). Its latency here is the latency of that copy, which is an upper bound on Indian Stock API's own latency.",
+ "snapshots": [
+  "20261102T062632Z_baseline"
+ ],
+ "answers": {
+  "A_tapetide_matches_screener_first": {
+   "answer": "Tapetide's compiled values equal Screener's, but its newest quarters are often provisional figures from filings, which match Screener without being copied; release-time test pending",
+   "evidence": {
+    "new_quarter_coverage_at_baseline": {
+     "screener": "8/8",
+     "tapetide": "7/8",
+     "indianapi_arthscan_cache": "2/8"
+    },
+    "tapetide_new_quarter_cells_equal_screener": [
+     [
+      "RELIANCE",
+      "11/11",
+      "11/11"
+     ],
+     [
+      "WELSPUNLIV",
+      "7/11",
+      "7/11"
+     ],
+     [
+      "ZEEL",
+      "9/11",
+      "10/11"
+     ],
+     [
+      "JSL",
+      "10/11",
+      "10/11"
+     ],
+     [
+      "QUICKHEAL",
+      "10/11",
+      "10/11"
+     ],
+     [
+      "TRENT",
+      "11/11",
+      "11/11"
+     ],
+     [
+      "CYIENT",
+      "11/11",
+      "11/11"
+     ]
+    ],
+    "quickheal": "Indian Stock API lacked Sep 2026 at 2026-11-01T18:30Z (5 days after filing); Tapetide had it with values equal to Screener",
+    "release_monitoring_first_seen_minutes_after_t0": {}
+   }
+  },
+  "B_tapetide_matches_indianapi_first": {
+   "answer": "No: Tapetide carried new quarters that Indian Stock API (via ARTHSCAN) did not have",
+   "evidence": {
+    "stocks_tapetide_has_new_quarter_indianapi_lacks": [
+     "QUICKHEAL",
+     "RELIANCE",
+     "TRENT",
+     "WELSPUNLIV",
+     "ZEEL"
+    ],
+    "stocks_indianapi_has_tapetide_lacks": []
+   }
+  },
+  "C_indianapi_reproduces_screener_derived_rows": {
+   "answer": "Yes",
+   "evidence": {
+    "derived_rows_recompute": {
+     "Operating Profit": "234/234",
+     "OPM %": "234/234",
+     "Other Liabilities": "110/110",
+     "Other Assets": "122/122"
+    },
+    "EPS_in_Rs_label_tables": 20,
+    "CFO_EBITDA_label": 9,
+    "CFO_OP_label (Tapetide's rename)": 0,
+    "TTM_column": "10/10",
+    "finance_company_row_order": {
+     "I": [
+      "Revenue",
+      "Interest",
+      "Expenses",
+      "Financing Profit",
+      "Financing Margin %",
+      "Other Income",
+      "Depreciation",
+      "Profit before tax",
+      "Tax %",
+      "Net Profit",
+      "EPS in Rs"
+     ],
+     "S": [
+      "Revenue",
+      "Interest",
+      "Expenses",
+      "Financing Profit",
+      "Financing Margin %",
+      "Other Income",
+      "Depreciation",
+      "Profit before tax",
+      "Tax %",
+      "Net Profit",
+      "EPS in Rs",
+      "Gross NPA %",
+      "Net NPA %"
+     ],
+     "T": [
+      "Revenue",
+      "Expenses",
+      "Financing Profit",
+      "Financing Margin %",
+      "Other Income",
+      "Interest",
+      "Depreciation",
+      "Profit before tax",
+      "Tax %",
+      "Net Profit",
+      "EPS in Rs"
+     ]
+    },
+    "half_year_balance_sheet_column": "2/8 (others lag)",
+    "pairwise_match_I_vs_S": {
+     "cells": 5652,
+     "exact": 5397,
+     "missing_a": 126,
+     "missing_b": 66,
+     "mismatch": 60,
+     "partial": 3,
+     "match_pct": 95.488
+    }
+   }
+  },
+  "D_first_to_publish_new_quarters": {
+   "answer": "Screener, then Tapetide, then Indian Stock API (baseline ordering); minutes-level latency pending release monitoring",
+   "evidence": {
+    "coverage": {
+     "screener": [
+      "ABCAPITAL",
+      "CYIENT",
+      "JSL",
+      "QUICKHEAL",
+      "RELIANCE",
+      "TRENT",
+      "WELSPUNLIV",
+      "ZEEL"
+     ],
+     "tapetide": [
+      "CYIENT",
+      "JSL",
+      "QUICKHEAL",
+      "RELIANCE",
+      "TRENT",
+      "WELSPUNLIV",
+      "ZEEL"
+     ],
+     "indianapi_arthscan_cache": [
+      "CYIENT",
+      "JSL"
+     ]
+    },
+    "tapetide_new_quarter_complete": [
+     "CYIENT",
+     "RELIANCE",
+     "TRENT"
+    ],
+    "release_monitoring": {},
+    "first_seen": {}
+   }
+  },
+  "E_unexplained_historical_values_identical": {
+   "answer": "Mostly no: most Tapetide-only differences are Tapetide's own filing overrides, and Indian Stock API equals Screener on them. ABCAPITAL Sep 2025 is the exception: Tapetide = Indian Stock API, Screener differs.",
+   "evidence": {
+    "verdict_counts": {
+     "Tapetide filing override; Screener = Indian Stock API": 19,
+     "missing / n/m on Tapetide (historical)": 1,
+     "missing on Tapetide (newest-quarter gaps)": 7,
+     "Tapetide = Indian Stock API, Screener differs": 5,
+     "Indian Stock API = Screener, Tapetide differs": 2,
+     "agree within rounding": 2,
+     "all three differ / insufficient data": 1
+    },
+    "rows": [
+     {
+      "symbol": "TRENT",
+      "statement": "quarterly",
+      "row": "Profit before tax",
+      "period": "Mar 2025",
+      "phase1_category": "partial",
+      "phase1_tapetide": "417",
+      "phase1_screener": "416",
+      "now_tapetide": "417",
+      "now_screener": "416",
+      "now_indianapi": "416",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "TRENT",
+      "statement": "quarterly",
+      "row": "Profit before tax",
+      "period": "Sep 2025",
+      "phase1_category": "partial",
+      "phase1_tapetide": "478",
+      "phase1_screener": "477",
+      "now_tapetide": "478",
+      "now_screener": "477",
+      "now_indianapi": "477",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "TRENT",
+      "statement": "annual_pl",
+      "row": "Dividend Payout %",
+      "period": "Mar 2021",
+      "phase1_category": "missing_tapetide",
+      "phase1_tapetide": "n/m",
+      "phase1_screener": "-15%",
+      "now_tapetide": "n/m",
+      "now_screener": "-15%",
+      "now_indianapi": "-15",
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "missing cell: Tapetide shows 'n/m' (not meaningful); Indian Stock API has the value"
+     },
+     {
+      "symbol": "JSL",
+      "statement": "quarterly",
+      "row": "Other Income",
+      "period": "Mar 2024",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "54.98",
+      "phase1_screener": "53",
+      "now_tapetide": "54.98",
+      "now_screener": "53",
+      "now_indianapi": "53",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "JSL",
+      "statement": "quarterly",
+      "row": "EPS in Rs",
+      "period": "Sep 2026",
+      "phase1_category": "missing_tapetide",
+      "phase1_tapetide": "\u2014",
+      "phase1_screener": "10.85",
+      "now_tapetide": "\u2014",
+      "now_screener": "10.85",
+      "now_indianapi": "10.85",
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "missing cell: still missing on Tapetide; Indian Stock API has the value"
+     },
+     {
+      "symbol": "ABCAPITAL",
+      "statement": "quarterly",
+      "row": "Other Income",
+      "period": "Sep 2025",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "92",
+      "phase1_screener": "170",
+      "now_tapetide": "92",
+      "now_screener": "170",
+      "now_indianapi": "92",
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": false,
+      "indianapi_equals_tapetide": true,
+      "verdict": "Tapetide = Indian Stock API, Screener differs"
+     },
+     {
+      "symbol": "ABCAPITAL",
+      "statement": "quarterly",
+      "row": "Depreciation",
+      "period": "Mar 2024",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "53.5",
+      "phase1_screener": "52",
+      "now_tapetide": "53.5",
+      "now_screener": "52",
+      "now_indianapi": "52",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "ABCAPITAL",
+      "statement": "quarterly",
+      "row": "Depreciation",
+      "period": "Jun 2024",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "55.44",
+      "phase1_screener": "54",
+      "now_tapetide": "55.44",
+      "now_screener": "54",
+      "now_indianapi": "54",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "ABCAPITAL",
+      "statement": "quarterly",
+      "row": "Profit before tax",
+      "period": "Sep 2025",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "1,212",
+      "phase1_screener": "1,290",
+      "now_tapetide": "1,212",
+      "now_screener": "1,290",
+      "now_indianapi": "1212",
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": false,
+      "indianapi_equals_tapetide": true,
+      "verdict": "Tapetide = Indian Stock API, Screener differs"
+     },
+     {
+      "symbol": "ABCAPITAL",
+      "statement": "quarterly",
+      "row": "Tax %",
+      "period": "Sep 2025",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "27%",
+      "phase1_screener": "26%",
+      "now_tapetide": "27%",
+      "now_screener": "26%",
+      "now_indianapi": "27",
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": false,
+      "indianapi_equals_tapetide": true,
+      "verdict": "Tapetide = Indian Stock API, Screener differs"
+     },
+     {
+      "symbol": "ABCAPITAL",
+      "statement": "quarterly",
+      "row": "Net Profit",
+      "period": "Sep 2025",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "882",
+      "phase1_screener": "961",
+      "now_tapetide": "882",
+      "now_screener": "961",
+      "now_indianapi": "882",
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": false,
+      "indianapi_equals_tapetide": true,
+      "verdict": "Tapetide = Indian Stock API, Screener differs"
+     },
+     {
+      "symbol": "ABCAPITAL",
+      "statement": "quarterly",
+      "row": "EPS in Rs",
+      "period": "Sep 2025",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "3.27",
+      "phase1_screener": "3.57",
+      "now_tapetide": "3.27",
+      "now_screener": "3.57",
+      "now_indianapi": "3.27",
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": false,
+      "indianapi_equals_tapetide": true,
+      "verdict": "Tapetide = Indian Stock API, Screener differs"
+     },
+     {
+      "symbol": "PIIND",
+      "statement": "quarterly",
+      "row": "Other Income",
+      "period": "Mar 2025",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "73.4",
+      "phase1_screener": "75",
+      "now_tapetide": "73.4",
+      "now_screener": "75",
+      "now_indianapi": "75",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "PIIND",
+      "statement": "quarterly",
+      "row": "Other Income",
+      "period": "Sep 2025",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "82.5",
+      "phase1_screener": "85",
+      "now_tapetide": "82.5",
+      "now_screener": "85",
+      "now_indianapi": "85",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "PIIND",
+      "statement": "quarterly",
+      "row": "Other Income",
+      "period": "Mar 2026",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "75.6",
+      "phase1_screener": "74",
+      "now_tapetide": "75.6",
+      "now_screener": "74",
+      "now_indianapi": "74",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "PIIND",
+      "statement": "quarterly",
+      "row": "Other Income",
+      "period": "Jun 2026",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "64.1",
+      "phase1_screener": "66",
+      "now_tapetide": "64.1",
+      "now_screener": "66",
+      "now_indianapi": "66",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "PIIND",
+      "statement": "quarterly",
+      "row": "Profit before tax",
+      "period": "Mar 2025",
+      "phase1_category": "partial",
+      "phase1_tapetide": "431",
+      "phase1_screener": "432",
+      "now_tapetide": "431",
+      "now_screener": "432",
+      "now_indianapi": "432",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "PIIND",
+      "statement": "quarterly",
+      "row": "Profit before tax",
+      "period": "Sep 2025",
+      "phase1_category": "partial",
+      "phase1_tapetide": "523",
+      "phase1_screener": "525",
+      "now_tapetide": "523",
+      "now_screener": "525",
+      "now_indianapi": "525",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "PIIND",
+      "statement": "quarterly",
+      "row": "Profit before tax",
+      "period": "Jun 2026",
+      "phase1_category": "partial",
+      "phase1_tapetide": "320",
+      "phase1_screener": "322",
+      "now_tapetide": "320",
+      "now_screener": "322",
+      "now_indianapi": "322",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "PIIND",
+      "statement": "annual_pl",
+      "row": "Other Income",
+      "period": "Mar 2025",
+      "phase1_category": "partial",
+      "phase1_tapetide": "344",
+      "phase1_screener": "345",
+      "now_tapetide": "344",
+      "now_screener": "345",
+      "now_indianapi": "345",
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Indian Stock API = Screener, Tapetide differs (not flagged as filing)"
+     },
+     {
+      "symbol": "PIIND",
+      "statement": "annual_pl",
+      "row": "EPS in Rs",
+      "period": "Mar 2024",
+      "phase1_category": "rounded",
+      "phase1_tapetide": "111",
+      "phase1_screener": "110.83",
+      "now_tapetide": "111",
+      "now_screener": "110.83",
+      "now_indianapi": "110.83",
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": true,
+      "verdict": "agree within rounding (Tapetide shows fewer decimals)"
+     },
+     {
+      "symbol": "PIIND",
+      "statement": "annual_pl",
+      "row": "EPS in Rs",
+      "period": "Mar 2025",
+      "phase1_category": "rounded",
+      "phase1_tapetide": "109",
+      "phase1_screener": "109.43",
+      "now_tapetide": "109",
+      "now_screener": "109.43",
+      "now_indianapi": "109.43",
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": true,
+      "verdict": "agree within rounding (Tapetide shows fewer decimals)"
+     },
+     {
+      "symbol": "QUICKHEAL",
+      "statement": "quarterly",
+      "row": "EPS in Rs",
+      "period": "Sep 2026",
+      "phase1_category": "missing_tapetide",
+      "phase1_tapetide": "\u2014",
+      "phase1_screener": "1.07",
+      "now_tapetide": "\u2014",
+      "now_screener": "1.07",
+      "now_indianapi": null,
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": false,
+      "indianapi_equals_tapetide": false,
+      "verdict": "missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet"
+     },
+     {
+      "symbol": "CYIENT",
+      "statement": "quarterly",
+      "row": "Profit before tax",
+      "period": "Mar 2026",
+      "phase1_category": "partial",
+      "phase1_tapetide": "96.7",
+      "phase1_screener": "95",
+      "now_tapetide": "96.7",
+      "now_screener": "95",
+      "now_indianapi": "95",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "ZEEL",
+      "statement": "quarterly",
+      "row": "Sales",
+      "period": "Jun 2024",
+      "phase1_category": "partial",
+      "phase1_tapetide": "2,131",
+      "phase1_screener": "2,130",
+      "now_tapetide": "2,131",
+      "now_screener": "2,130",
+      "now_indianapi": "2130",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "ZEEL",
+      "statement": "quarterly",
+      "row": "Interest",
+      "period": "Sep 2026",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "3",
+      "phase1_screener": "2",
+      "now_tapetide": "3",
+      "now_screener": "2",
+      "now_indianapi": null,
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": false,
+      "indianapi_equals_tapetide": false,
+      "verdict": "all three differ / insufficient data"
+     },
+     {
+      "symbol": "ZEEL",
+      "statement": "quarterly",
+      "row": "Profit before tax",
+      "period": "Mar 2024",
+      "phase1_category": "partial",
+      "phase1_tapetide": "114",
+      "phase1_screener": "115",
+      "now_tapetide": "114",
+      "now_screener": "115",
+      "now_indianapi": "115",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "ZEEL",
+      "statement": "quarterly",
+      "row": "Net Profit",
+      "period": "Dec 2023",
+      "phase1_category": "partial",
+      "phase1_tapetide": "58.54",
+      "phase1_screener": "58",
+      "now_tapetide": "58.54",
+      "now_screener": "58",
+      "now_indianapi": "58",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "ZEEL",
+      "statement": "quarterly",
+      "row": "EPS in Rs",
+      "period": "Sep 2026",
+      "phase1_category": "missing_tapetide",
+      "phase1_tapetide": "\u2014",
+      "phase1_screener": "0.47",
+      "now_tapetide": "\u2014",
+      "now_screener": "0.47",
+      "now_indianapi": null,
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": false,
+      "indianapi_equals_tapetide": false,
+      "verdict": "missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet"
+     },
+     {
+      "symbol": "ZEEL",
+      "statement": "annual_pl",
+      "row": "Profit before tax",
+      "period": "Mar 2026",
+      "phase1_category": "partial",
+      "phase1_tapetide": "273",
+      "phase1_screener": "274",
+      "now_tapetide": "273",
+      "now_screener": "274",
+      "now_indianapi": "274",
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Indian Stock API = Screener, Tapetide differs (not flagged as filing)"
+     },
+     {
+      "symbol": "WELSPUNLIV",
+      "statement": "quarterly",
+      "row": "Operating Profit",
+      "period": "Sep 2026",
+      "phase1_category": "missing_tapetide",
+      "phase1_tapetide": "\u2014",
+      "phase1_screener": "338",
+      "now_tapetide": "\u2014",
+      "now_screener": "338",
+      "now_indianapi": null,
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": false,
+      "indianapi_equals_tapetide": false,
+      "verdict": "missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet"
+     },
+     {
+      "symbol": "WELSPUNLIV",
+      "statement": "quarterly",
+      "row": "OPM %",
+      "period": "Sep 2026",
+      "phase1_category": "missing_tapetide",
+      "phase1_tapetide": "\u2014",
+      "phase1_screener": "12%",
+      "now_tapetide": "\u2014",
+      "now_screener": "12%",
+      "now_indianapi": null,
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": false,
+      "indianapi_equals_tapetide": false,
+      "verdict": "missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet"
+     },
+     {
+      "symbol": "WELSPUNLIV",
+      "statement": "quarterly",
+      "row": "Other Income",
+      "period": "Mar 2024",
+      "phase1_category": "partial",
+      "phase1_tapetide": "41.48",
+      "phase1_screener": "42",
+      "now_tapetide": "41.48",
+      "now_screener": "42",
+      "now_indianapi": "42",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "WELSPUNLIV",
+      "statement": "quarterly",
+      "row": "Other Income",
+      "period": "Jun 2026",
+      "phase1_category": "mismatch",
+      "phase1_tapetide": "32.71",
+      "phase1_screener": "34",
+      "now_tapetide": "32.71",
+      "now_screener": "34",
+      "now_indianapi": "34",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "WELSPUNLIV",
+      "statement": "quarterly",
+      "row": "Other Income",
+      "period": "Sep 2026",
+      "phase1_category": "missing_tapetide",
+      "phase1_tapetide": "\u2014",
+      "phase1_screener": "25",
+      "now_tapetide": "\u2014",
+      "now_screener": "25",
+      "now_indianapi": null,
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": false,
+      "indianapi_equals_tapetide": false,
+      "verdict": "missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet"
+     },
+     {
+      "symbol": "WELSPUNLIV",
+      "statement": "quarterly",
+      "row": "Profit before tax",
+      "period": "Jun 2026",
+      "phase1_category": "partial",
+      "phase1_tapetide": "219",
+      "phase1_screener": "220",
+      "now_tapetide": "219",
+      "now_screener": "220",
+      "now_indianapi": "220",
+      "tapetide_cell_source": "filing",
+      "indianapi_equals_screener": true,
+      "indianapi_equals_tapetide": false,
+      "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+     },
+     {
+      "symbol": "WELSPUNLIV",
+      "statement": "quarterly",
+      "row": "EPS in Rs",
+      "period": "Sep 2026",
+      "phase1_category": "missing_tapetide",
+      "phase1_tapetide": "\u2014",
+      "phase1_screener": "1.79",
+      "now_tapetide": "\u2014",
+      "now_screener": "1.79",
+      "now_indianapi": null,
+      "tapetide_cell_source": "not flagged",
+      "indianapi_equals_screener": false,
+      "indianapi_equals_tapetide": false,
+      "verdict": "missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet"
+     }
+    ]
+   }
+  },
+  "F_shared_upstream_evidence": {
+   "answer": "Indian Stock API and Tapetide both carry Screener-format data, but Tapetide shows no Indian Stock API-specific dependence and is ahead of it on new quarters. A common origin for Screener-format data is consistent with the evidence but unidentified.",
+   "evidence": {
+    "triad_cells": {
+     "T=S, I differs": 18,
+     "all_three_agree": 5354,
+     "I=S, T differs": 31,
+     "T=I, S differs": 45
+    },
+    "pairwise": {
+     "T-S": {
+      "cells": 5641,
+      "exact": 5438,
+      "mismatch": 62,
+      "partial": 15,
+      "rounded": 2,
+      "missing_a": 69,
+      "missing_b": 55,
+      "match_pct": 96.437
+     },
+     "I-S": {
+      "cells": 5652,
+      "exact": 5397,
+      "missing_a": 126,
+      "missing_b": 66,
+      "mismatch": 60,
+      "partial": 3,
+      "match_pct": 95.488
+     },
+     "T-I": {
+      "cells": 5606,
+      "missing_a": 34,
+      "exact": 5441,
+      "missing_b": 80,
+      "mismatch": 33,
+      "partial": 16,
+      "rounded": 2,
+      "match_pct": 97.092
+     }
+    },
+    "tapetide_specific_transforms_absent_from_indianapi": [
+     "CFO/OP rename",
+     "finance-company row reorder",
+     "cell_source=filing overrides",
+     "newest-quarter EPS withheld"
+    ],
+    "abcapital_sep_2025": "Tapetide and Indian Stock API both hold the older Sep 2025 figures and both lack Sep 2026; Screener has Sep 2026 and different Sep 2025 figures (consistent with a restatement after the Sep 2026 results, not verified against the filing)."
+   }
+  }
+ },
+ "verdicts": {
+  "direct_screener_sourcing": "inconclusive, leaning supported (release-timing test pending)",
+  "shared_upstream_provider": "not supported for Indian Stock API as Tapetide's feed; inconclusive for any other Screener-format reseller",
+  "independent_compilation": "partly supported: Tapetide's provisional new quarters and filing overrides are its own; its compiled historical base is not independent"
+ },
+ "tapetide_disclosed_filing_layer": {
+  "note_verbatim": "Cells listed in a section's `cell_source` as \"filing\" are the figure the company stated in its own results filing for that period. One is served in place of the compiled value only when the period's column still adds up with it, within rounding: from sales (or revenue) to operating (or financing) profit, from there to profit before tax, and on to net profit at the stated tax rate. Rows derived from other rows (expenses, operating profit, margins, tax rate) and EPS are never replaced.",
+  "flags": {
+   "PIIND": {
+    "Other Income": {
+     "Jun 2026": "filing",
+     "Mar 2025": "filing",
+     "Mar 2026": "filing",
+     "Sep 2025": "filing"
+    },
+    "Profit before tax": {
+     "Jun 2026": "filing",
+     "Mar 2025": "filing",
+     "Sep 2025": "filing"
+    }
+   },
+   "ABCAPITAL": {
+    "Depreciation": {
+     "Jun 2024": "filing",
+     "Mar 2024": "filing"
+    }
+   },
+   "WELSPUNLIV": {
+    "Other Income": {
+     "Jun 2026": "filing",
+     "Mar 2024": "filing"
+    },
+    "Profit before tax": {
+     "Jun 2026": "filing"
+    }
+   },
+   "JSL": {
+    "Other Income": {
+     "Mar 2024": "filing"
+    }
+   },
+   "ZEEL": {
+    "Net Profit": {
+     "Dec 2023": "filing"
+    },
+    "Profit before tax": {
+     "Mar 2024": "filing"
+    },
+    "Sales": {
+     "Jun 2024": "filing"
+    }
+   },
+   "CYIENT": {
+    "Profit before tax": {
+     "Mar 2026": "filing"
+    }
+   },
+   "TRENT": {
+    "Profit before tax": {
+     "Mar 2025": "filing",
+     "Sep 2025": "filing"
+    }
+   },
+   "QUICKHEAL": {},
+   "RELIANCE": {}
+  }
+ },
+ "monitoring": {
+  "events": {},
+  "complete": false,
+  "checkpoint_mcp_captures": []
+ },
+ "limits": [
+  "Ten stocks, one baseline snapshot plus release checkpoints.",
+  "Numerical similarity does not establish a commercial relationship.",
+  "Screener.in's own upstream is out of scope.",
+  "Indian Stock API observed only through ARTHSCAN."
+ ]
+}

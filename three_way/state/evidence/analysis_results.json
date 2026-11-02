@@ -1,0 +1,1908 @@
+{
+ "base": "20261102T062632Z_baseline",
+ "latency_reference": {
+  "_note": "Cross-sectional timing references from MCP calls in this session (2 Nov 2026). Exchange times from NSE via arth get_filings; Indian Stock API fetch times from arth get_statements (source field 'Indian Stock API (indianapi.in)'). Tapetide filed_on/available_from from Tapetide MCP.",
+  "QUICKHEAL": {
+   "new_quarter": "Sep 2026",
+   "exchange_filing": {
+    "time_utc": null,
+    "date": "2026-10-27",
+    "source": "Tapetide MCP provisional_periods.filed_on (NSE time not retrieved)"
+   },
+   "tapetide": {
+    "observed_at": "2026-11-02T05:00Z (Phase 1 MCP call)",
+    "has_new_quarter": true,
+    "note": "Sep 2026 marked provisional, EPS withheld"
+   },
+   "screener": {
+    "observed_at": "2026-11-02T05:08Z (Phase 1 fetch)",
+    "has_new_quarter": true
+   },
+   "indianapi_arthscan_cache": {
+    "fetched_at": "2026-11-01T18:30:14Z",
+    "latest_quarter": "Jun 2026",
+    "has_new_quarter": false
+   }
+  },
+  "TRENT": {
+   "new_quarter": "Sep 2026",
+   "exchange_filing": {
+    "time_utc": "2026-10-29T10:51:00Z",
+    "raw": "2026-10-29 16:21 IST",
+    "source": "NSE via arth get_filings (press release on results)"
+   },
+   "tapetide": {
+    "observed_at": "2026-11-02T05:00Z (Phase 1 fetch)",
+    "has_new_quarter": true
+   },
+   "screener": {
+    "observed_at": "2026-11-02T05:00Z (Phase 1 fetch)",
+    "has_new_quarter": true
+   },
+   "indianapi_arthscan_cache": {
+    "fetched_at": "2026-10-29T23:10:18Z",
+    "latest_quarter": "Jun 2026",
+    "has_new_quarter": false
+   }
+  },
+  "PIIND": {
+   "indianapi_arthscan_cache": {
+    "fetched_at": "2026-10-30T20:20:13Z",
+    "latest_quarter": "Jun 2026"
+   }
+  },
+  "ABCAPITAL": {
+   "tapetide": {
+    "quarterly_updated_at": "2026-10-17T03:06:42Z",
+    "latest_quarter": "Jun 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "fetched_at": "2026-10-29T23:50:23Z",
+    "latest_quarter": "Jun 2026"
+   }
+  }
+ },
+ "snapshots": [
+  "20261102T062632Z_baseline"
+ ],
+ "i_basis": {
+  "RELIANCE": "consolidated",
+  "PIIND": "consolidated",
+  "ABCAPITAL": "consolidated",
+  "WELSPUNLIV": "consolidated",
+  "ZEEL": "consolidated",
+  "JSL": "consolidated",
+  "QUICKHEAL": "consolidated",
+  "MOTHERSON": "consolidated",
+  "TRENT": "consolidated",
+  "CYIENT": "consolidated"
+ },
+ "pair_summary": {
+  "T-S": {
+   "all": {
+    "cells": 5641,
+    "exact": 5438,
+    "mismatch": 62,
+    "partial": 15,
+    "rounded": 2,
+    "missing_a": 69,
+    "missing_b": 55,
+    "match_pct": 96.437
+   },
+   "quarterly": {
+    "cells": 1485,
+    "exact": 1387,
+    "mismatch": 14,
+    "partial": 11,
+    "missing_a": 18,
+    "missing_b": 55,
+    "match_pct": 93.401
+   },
+   "annual_pl": {
+    "cells": 1540,
+    "exact": 1485,
+    "partial": 4,
+    "rounded": 2,
+    "mismatch": 48,
+    "missing_a": 1,
+    "match_pct": 96.558
+   },
+   "balance_sheet": {
+    "cells": 1280,
+    "exact": 1230,
+    "missing_a": 50,
+    "match_pct": 96.094
+   },
+   "cash_flow": {
+    "cells": 708,
+    "exact": 708,
+    "match_pct": 100.0
+   },
+   "ratios": {
+    "cells": 628,
+    "exact": 628,
+    "match_pct": 100.0
+   },
+   "focus_rows": {
+    "cells": 1590,
+    "exact": 1492,
+    "mismatch": 40,
+    "partial": 14,
+    "rounded": 2,
+    "missing_a": 12,
+    "missing_b": 30,
+    "match_pct": 93.962
+   }
+  },
+  "I-S": {
+   "all": {
+    "cells": 5652,
+    "exact": 5397,
+    "missing_a": 126,
+    "missing_b": 66,
+    "mismatch": 60,
+    "partial": 3,
+    "match_pct": 95.488
+   },
+   "quarterly": {
+    "cells": 1496,
+    "exact": 1359,
+    "missing_a": 66,
+    "missing_b": 66,
+    "mismatch": 5,
+    "match_pct": 90.842
+   },
+   "annual_pl": {
+    "cells": 1540,
+    "exact": 1482,
+    "mismatch": 55,
+    "partial": 3,
+    "match_pct": 96.234
+   },
+   "balance_sheet": {
+    "cells": 1280,
+    "exact": 1220,
+    "missing_a": 60,
+    "match_pct": 95.312
+   },
+   "cash_flow": {
+    "cells": 708,
+    "exact": 708,
+    "match_pct": 100.0
+   },
+   "ratios": {
+    "cells": 628,
+    "exact": 628,
+    "match_pct": 100.0
+   },
+   "focus_rows": {
+    "cells": 1596,
+    "exact": 1484,
+    "missing_a": 36,
+    "missing_b": 36,
+    "mismatch": 38,
+    "partial": 2,
+    "match_pct": 92.982
+   }
+  },
+  "T-I": {
+   "all": {
+    "cells": 5606,
+    "missing_a": 34,
+    "exact": 5441,
+    "missing_b": 80,
+    "mismatch": 33,
+    "partial": 16,
+    "rounded": 2,
+    "match_pct": 97.092
+   },
+   "quarterly": {
+    "cells": 1490,
+    "missing_a": 23,
+    "exact": 1388,
+    "missing_b": 60,
+    "mismatch": 8,
+    "partial": 11,
+    "match_pct": 93.154
+   },
+   "annual_pl": {
+    "cells": 1540,
+    "exact": 1507,
+    "mismatch": 25,
+    "partial": 5,
+    "rounded": 2,
+    "missing_a": 1,
+    "match_pct": 97.987
+   },
+   "balance_sheet": {
+    "cells": 1240,
+    "exact": 1210,
+    "missing_b": 20,
+    "missing_a": 10,
+    "match_pct": 97.581
+   },
+   "cash_flow": {
+    "cells": 708,
+    "exact": 708,
+    "match_pct": 100.0
+   },
+   "ratios": {
+    "cells": 628,
+    "exact": 628,
+    "match_pct": 100.0
+   },
+   "focus_rows": {
+    "cells": 1591,
+    "missing_a": 13,
+    "exact": 1507,
+    "missing_b": 31,
+    "mismatch": 24,
+    "partial": 14,
+    "rounded": 2,
+    "match_pct": 94.846
+   }
+  }
+ },
+ "triad": {
+  "T=S, I differs": 18,
+  "all_three_agree": 5354,
+  "I=S, T differs": 31,
+  "T=I, S differs": 45
+ },
+ "triad_examples": {
+  "T=S, I differs": [
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "Expenses",
+    "period": "TTM",
+    "T": "10,04,741",
+    "S": "1,004,741",
+    "I": "939494"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "1,94,292",
+    "S": "194,292",
+    "I": "183561"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "Other Income",
+    "period": "TTM",
+    "T": "21,704",
+    "S": "21,704",
+    "I": "20393"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "TTM",
+    "T": "1,26,135",
+    "S": "126,135",
+    "I": "116646"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "Depreciation",
+    "period": "TTM",
+    "T": "59,845",
+    "S": "59,845",
+    "I": "58946"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "Sales",
+    "period": "TTM",
+    "T": "11,99,033",
+    "S": "1,199,033",
+    "I": "1123055"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "Net Profit",
+    "period": "TTM",
+    "T": "95,625",
+    "S": "95,625",
+    "I": "88167"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "30,016",
+    "S": "30,016",
+    "I": "28362"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "EPS in Rs",
+    "period": "TTM",
+    "T": "60.68",
+    "S": "60.68",
+    "I": "55.22"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "Expenses",
+    "period": "TTM",
+    "T": "17,832",
+    "S": "17,832",
+    "I": "17018"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "4,169",
+    "S": "4,169",
+    "I": "3928"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "Other Income",
+    "period": "TTM",
+    "T": "88",
+    "S": "88",
+    "I": "90"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "TTM",
+    "T": "2,506",
+    "S": "2,506",
+    "I": "2364"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "Depreciation",
+    "period": "TTM",
+    "T": "1,573",
+    "S": "1,573",
+    "I": "1478"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "Sales",
+    "period": "TTM",
+    "T": "22,001",
+    "S": "22,001",
+    "I": "20945"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "Net Profit",
+    "period": "TTM",
+    "T": "1,909",
+    "S": "1,909",
+    "I": "1815"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "178",
+    "S": "178",
+    "I": "175"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "EPS in Rs",
+    "period": "TTM",
+    "T": "35.56",
+    "S": "35.56",
+    "I": "33.93"
+   }
+  ],
+  "I=S, T differs": [
+   {
+    "symbol": "PIIND",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Mar 2025",
+    "T": "431",
+    "S": "432",
+    "I": "432"
+   },
+   {
+    "symbol": "PIIND",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Mar 2026",
+    "T": "75.6",
+    "S": "74",
+    "I": "74"
+   },
+   {
+    "symbol": "PIIND",
+    "statement": "annual_pl",
+    "row": "Other Income",
+    "period": "Mar 2025",
+    "T": "344",
+    "S": "345",
+    "I": "345"
+   },
+   {
+    "symbol": "PIIND",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Jun 2026",
+    "T": "64.1",
+    "S": "66",
+    "I": "66"
+   },
+   {
+    "symbol": "PIIND",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Sep 2025",
+    "T": "82.5",
+    "S": "85",
+    "I": "85"
+   },
+   {
+    "symbol": "PIIND",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Jun 2026",
+    "T": "320",
+    "S": "322",
+    "I": "322"
+   },
+   {
+    "symbol": "PIIND",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Sep 2025",
+    "T": "523",
+    "S": "525",
+    "I": "525"
+   },
+   {
+    "symbol": "PIIND",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Mar 2025",
+    "T": "73.4",
+    "S": "75",
+    "I": "75"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "quarterly",
+    "row": "Depreciation",
+    "period": "Jun 2024",
+    "T": "55.44",
+    "S": "54",
+    "I": "54"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "quarterly",
+    "row": "Depreciation",
+    "period": "Mar 2024",
+    "T": "53.5",
+    "S": "52",
+    "I": "52"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Mar 2024",
+    "T": "41.48",
+    "S": "42",
+    "I": "42"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Jun 2026",
+    "T": "32.71",
+    "S": "34",
+    "I": "34"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Jun 2026",
+    "T": "219",
+    "S": "220",
+    "I": "220"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "Mar 2026",
+    "T": "273",
+    "S": "274",
+    "I": "274"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "quarterly",
+    "row": "Net Profit",
+    "period": "Dec 2023",
+    "T": "58.54",
+    "S": "58",
+    "I": "58"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "quarterly",
+    "row": "Sales",
+    "period": "Jun 2024",
+    "T": "2,131",
+    "S": "2,130",
+    "I": "2130"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Mar 2024",
+    "T": "114",
+    "S": "115",
+    "I": "115"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "Expenses",
+    "period": "TTM",
+    "T": "38,460",
+    "S": "40,400",
+    "I": "40400"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "5,566",
+    "S": "5,607",
+    "I": "5607"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "Other Income",
+    "period": "TTM",
+    "T": "421",
+    "S": "564",
+    "I": "564"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "TTM",
+    "T": "4,307",
+    "S": "4,429",
+    "I": "4429"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "Depreciation",
+    "period": "TTM",
+    "T": "1,111",
+    "S": "1,148",
+    "I": "1148"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "Sales",
+    "period": "TTM",
+    "T": "44,026",
+    "S": "46,007",
+    "I": "46007"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "OPM %",
+    "period": "TTM",
+    "T": "13%",
+    "S": "12%",
+    "I": "12"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Mar 2024",
+    "T": "54.98",
+    "S": "53",
+    "I": "53"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "Net Profit",
+    "period": "TTM",
+    "T": "3,239",
+    "S": "3,328",
+    "I": "3328"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "570",
+    "S": "594",
+    "I": "594"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "EPS in Rs",
+    "period": "TTM",
+    "T": "39.4",
+    "S": "40.46",
+    "I": "40.46"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Mar 2025",
+    "T": "417",
+    "S": "416",
+    "I": "416"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Sep 2025",
+    "T": "478",
+    "S": "477",
+    "I": "477"
+   },
+   {
+    "symbol": "CYIENT",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Mar 2026",
+    "T": "96.7",
+    "S": "95",
+    "I": "95"
+   }
+  ],
+  "T=I, S differs": [
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Expenses",
+    "period": "TTM",
+    "T": "30,383",
+    "S": "32,473",
+    "I": "30383"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Other Income",
+    "period": "TTM",
+    "T": "405",
+    "S": "470",
+    "I": "405"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "quarterly",
+    "row": "Net Profit",
+    "period": "Sep 2025",
+    "T": "882",
+    "S": "961",
+    "I": "882"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "TTM",
+    "T": "5,616",
+    "S": "6,239",
+    "I": "5616"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Depreciation",
+    "period": "TTM",
+    "T": "317",
+    "S": "328",
+    "I": "317"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "quarterly",
+    "row": "EPS in Rs",
+    "period": "Sep 2025",
+    "T": "3.27",
+    "S": "3.57",
+    "I": "3.27"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Sep 2025",
+    "T": "92",
+    "S": "170",
+    "I": "92"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Net Profit",
+    "period": "TTM",
+    "T": "4,119",
+    "S": "4,590",
+    "I": "4119"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Financing Profit",
+    "period": "TTM",
+    "T": "5,527",
+    "S": "6,097",
+    "I": "5527"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Financing Margin %",
+    "period": "TTM",
+    "T": "11%",
+    "S": "12%",
+    "I": "11"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Sep 2025",
+    "T": "1,212",
+    "S": "1,290",
+    "I": "1212"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "quarterly",
+    "row": "Tax %",
+    "period": "Sep 2025",
+    "T": "27%",
+    "S": "26%",
+    "I": "27"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "12,276",
+    "S": "13,024",
+    "I": "12276"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Revenue",
+    "period": "TTM",
+    "T": "48,186",
+    "S": "51,594",
+    "I": "48186"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "EPS in Rs",
+    "period": "TTM",
+    "T": "15.04",
+    "S": "16.47",
+    "I": "15.04"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "Expenses",
+    "period": "TTM",
+    "T": "9,050",
+    "S": "9,263",
+    "I": "9050"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "884",
+    "S": "1,068",
+    "I": "884"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "Other Income",
+    "period": "TTM",
+    "T": "60",
+    "S": "70",
+    "I": "60"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "TTM",
+    "T": "384",
+    "S": "586",
+    "I": "384"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "Depreciation",
+    "period": "TTM",
+    "T": "407",
+    "S": "408",
+    "I": "407"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "Sales",
+    "period": "TTM",
+    "T": "9,934",
+    "S": "10,331",
+    "I": "9934"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "OPM %",
+    "period": "TTM",
+    "T": "9%",
+    "S": "10%",
+    "I": "9"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "Net Profit",
+    "period": "TTM",
+    "T": "286",
+    "S": "441",
+    "I": "286"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "153",
+    "S": "144",
+    "I": "153"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "EPS in Rs",
+    "period": "TTM",
+    "T": "2.92",
+    "S": "4.57",
+    "I": "2.92"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Expenses",
+    "period": "TTM",
+    "T": "7,922",
+    "S": "8,251",
+    "I": "7922"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "259",
+    "S": "186",
+    "I": "259"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Other Income",
+    "period": "TTM",
+    "T": "143",
+    "S": "139",
+    "I": "143"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "TTM",
+    "T": "150",
+    "S": "98",
+    "I": "150"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Depreciation",
+    "period": "TTM",
+    "T": "202",
+    "S": "187",
+    "I": "202"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Sales",
+    "period": "TTM",
+    "T": "8,181",
+    "S": "8,437",
+    "I": "8181"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "OPM %",
+    "period": "TTM",
+    "T": "3.2%",
+    "S": "2.2%",
+    "I": "3.2"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Net Profit",
+    "period": "TTM",
+    "T": "202",
+    "S": "171",
+    "I": "202"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "50",
+    "S": "40",
+    "I": "50"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "EPS in Rs",
+    "period": "TTM",
+    "T": "2.11",
+    "S": "1.78",
+    "I": "2.11"
+   },
+   {
+    "symbol": "QUICKHEAL",
+    "statement": "annual_pl",
+    "row": "Expenses",
+    "period": "TTM",
+    "T": "286",
+    "S": "274",
+    "I": "286"
+   },
+   {
+    "symbol": "QUICKHEAL",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "-37",
+    "S": "-44",
+    "I": "-37"
+   },
+   {
+    "symbol": "QUICKHEAL",
+    "statement": "annual_pl",
+    "row": "Other Income",
+    "period": "TTM",
+    "T": "31",
+    "S": "35",
+    "I": "31"
+   },
+   {
+    "symbol": "QUICKHEAL",
+    "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "TTM",
+    "T": "-21",
+    "S": "-27",
+    "I": "-21"
+   },
+   {
+    "symbol": "QUICKHEAL",
+    "statement": "annual_pl",
+    "row": "Depreciation",
+    "period": "TTM",
+    "T": "15",
+    "S": "17",
+    "I": "15"
+   }
+  ]
+ },
+ "fingerprints_indianapi": {
+  "label_EPS_in_Rs": 20,
+  "label_CFO_EBITDA": 9,
+  "label_CFO_OP": 0,
+  "ttm_column": 10,
+  "half_year_bs_column_when_screener_has_it": [
+   2,
+   8
+  ],
+  "finance_row_order_matches": {
+   "I": [
+    "Revenue",
+    "Interest",
+    "Expenses",
+    "Financing Profit",
+    "Financing Margin %",
+    "Other Income",
+    "Depreciation",
+    "Profit before tax",
+    "Tax %",
+    "Net Profit",
+    "EPS in Rs"
+   ],
+   "S": [
+    "Revenue",
+    "Interest",
+    "Expenses",
+    "Financing Profit",
+    "Financing Margin %",
+    "Other Income",
+    "Depreciation",
+    "Profit before tax",
+    "Tax %",
+    "Net Profit",
+    "EPS in Rs",
+    "Gross NPA %",
+    "Net NPA %"
+   ],
+   "T": [
+    "Revenue",
+    "Expenses",
+    "Financing Profit",
+    "Financing Margin %",
+    "Other Income",
+    "Interest",
+    "Depreciation",
+    "Profit before tax",
+    "Tax %",
+    "Net Profit",
+    "EPS in Rs"
+   ]
+  },
+  "extra_old_quarter_like_tapetide": [
+   "RELIANCE",
+   "ABCAPITAL",
+   "WELSPUNLIV",
+   "ZEEL",
+   "QUICKHEAL",
+   "TRENT"
+  ],
+  "ttm_equals_screener": 4,
+  "ttm_checked": 10,
+  "derived_rows": {
+   "Operating Profit": "234/234",
+   "OPM %": "234/234",
+   "Other Liabilities": "110/110",
+   "Other Assets": "122/122"
+  }
+ },
+ "fingerprints_tapetide": {
+  "label_CFO_OP": 4,
+  "extra_old_quarter": [
+   "ABCAPITAL",
+   "WELSPUNLIV",
+   "ZEEL",
+   "JSL",
+   "QUICKHEAL"
+  ]
+ },
+ "unexplained": [
+  {
+   "symbol": "TRENT",
+   "statement": "quarterly",
+   "row": "Profit before tax",
+   "period": "Mar 2025",
+   "phase1_category": "partial",
+   "phase1_tapetide": "417",
+   "phase1_screener": "416",
+   "now_tapetide": "417",
+   "now_screener": "416",
+   "now_indianapi": "416",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "TRENT",
+   "statement": "quarterly",
+   "row": "Profit before tax",
+   "period": "Sep 2025",
+   "phase1_category": "partial",
+   "phase1_tapetide": "478",
+   "phase1_screener": "477",
+   "now_tapetide": "478",
+   "now_screener": "477",
+   "now_indianapi": "477",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "TRENT",
+   "statement": "annual_pl",
+   "row": "Dividend Payout %",
+   "period": "Mar 2021",
+   "phase1_category": "missing_tapetide",
+   "phase1_tapetide": "n/m",
+   "phase1_screener": "-15%",
+   "now_tapetide": "n/m",
+   "now_screener": "-15%",
+   "now_indianapi": "-15",
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "missing cell: Tapetide shows 'n/m' (not meaningful); Indian Stock API has the value"
+  },
+  {
+   "symbol": "JSL",
+   "statement": "quarterly",
+   "row": "Other Income",
+   "period": "Mar 2024",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "54.98",
+   "phase1_screener": "53",
+   "now_tapetide": "54.98",
+   "now_screener": "53",
+   "now_indianapi": "53",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "JSL",
+   "statement": "quarterly",
+   "row": "EPS in Rs",
+   "period": "Sep 2026",
+   "phase1_category": "missing_tapetide",
+   "phase1_tapetide": "\u2014",
+   "phase1_screener": "10.85",
+   "now_tapetide": "\u2014",
+   "now_screener": "10.85",
+   "now_indianapi": "10.85",
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "missing cell: still missing on Tapetide; Indian Stock API has the value"
+  },
+  {
+   "symbol": "ABCAPITAL",
+   "statement": "quarterly",
+   "row": "Other Income",
+   "period": "Sep 2025",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "92",
+   "phase1_screener": "170",
+   "now_tapetide": "92",
+   "now_screener": "170",
+   "now_indianapi": "92",
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": false,
+   "indianapi_equals_tapetide": true,
+   "verdict": "Tapetide = Indian Stock API, Screener differs"
+  },
+  {
+   "symbol": "ABCAPITAL",
+   "statement": "quarterly",
+   "row": "Depreciation",
+   "period": "Mar 2024",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "53.5",
+   "phase1_screener": "52",
+   "now_tapetide": "53.5",
+   "now_screener": "52",
+   "now_indianapi": "52",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "ABCAPITAL",
+   "statement": "quarterly",
+   "row": "Depreciation",
+   "period": "Jun 2024",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "55.44",
+   "phase1_screener": "54",
+   "now_tapetide": "55.44",
+   "now_screener": "54",
+   "now_indianapi": "54",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "ABCAPITAL",
+   "statement": "quarterly",
+   "row": "Profit before tax",
+   "period": "Sep 2025",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "1,212",
+   "phase1_screener": "1,290",
+   "now_tapetide": "1,212",
+   "now_screener": "1,290",
+   "now_indianapi": "1212",
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": false,
+   "indianapi_equals_tapetide": true,
+   "verdict": "Tapetide = Indian Stock API, Screener differs"
+  },
+  {
+   "symbol": "ABCAPITAL",
+   "statement": "quarterly",
+   "row": "Tax %",
+   "period": "Sep 2025",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "27%",
+   "phase1_screener": "26%",
+   "now_tapetide": "27%",
+   "now_screener": "26%",
+   "now_indianapi": "27",
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": false,
+   "indianapi_equals_tapetide": true,
+   "verdict": "Tapetide = Indian Stock API, Screener differs"
+  },
+  {
+   "symbol": "ABCAPITAL",
+   "statement": "quarterly",
+   "row": "Net Profit",
+   "period": "Sep 2025",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "882",
+   "phase1_screener": "961",
+   "now_tapetide": "882",
+   "now_screener": "961",
+   "now_indianapi": "882",
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": false,
+   "indianapi_equals_tapetide": true,
+   "verdict": "Tapetide = Indian Stock API, Screener differs"
+  },
+  {
+   "symbol": "ABCAPITAL",
+   "statement": "quarterly",
+   "row": "EPS in Rs",
+   "period": "Sep 2025",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "3.27",
+   "phase1_screener": "3.57",
+   "now_tapetide": "3.27",
+   "now_screener": "3.57",
+   "now_indianapi": "3.27",
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": false,
+   "indianapi_equals_tapetide": true,
+   "verdict": "Tapetide = Indian Stock API, Screener differs"
+  },
+  {
+   "symbol": "PIIND",
+   "statement": "quarterly",
+   "row": "Other Income",
+   "period": "Mar 2025",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "73.4",
+   "phase1_screener": "75",
+   "now_tapetide": "73.4",
+   "now_screener": "75",
+   "now_indianapi": "75",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "PIIND",
+   "statement": "quarterly",
+   "row": "Other Income",
+   "period": "Sep 2025",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "82.5",
+   "phase1_screener": "85",
+   "now_tapetide": "82.5",
+   "now_screener": "85",
+   "now_indianapi": "85",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "PIIND",
+   "statement": "quarterly",
+   "row": "Other Income",
+   "period": "Mar 2026",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "75.6",
+   "phase1_screener": "74",
+   "now_tapetide": "75.6",
+   "now_screener": "74",
+   "now_indianapi": "74",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "PIIND",
+   "statement": "quarterly",
+   "row": "Other Income",
+   "period": "Jun 2026",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "64.1",
+   "phase1_screener": "66",
+   "now_tapetide": "64.1",
+   "now_screener": "66",
+   "now_indianapi": "66",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "PIIND",
+   "statement": "quarterly",
+   "row": "Profit before tax",
+   "period": "Mar 2025",
+   "phase1_category": "partial",
+   "phase1_tapetide": "431",
+   "phase1_screener": "432",
+   "now_tapetide": "431",
+   "now_screener": "432",
+   "now_indianapi": "432",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "PIIND",
+   "statement": "quarterly",
+   "row": "Profit before tax",
+   "period": "Sep 2025",
+   "phase1_category": "partial",
+   "phase1_tapetide": "523",
+   "phase1_screener": "525",
+   "now_tapetide": "523",
+   "now_screener": "525",
+   "now_indianapi": "525",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "PIIND",
+   "statement": "quarterly",
+   "row": "Profit before tax",
+   "period": "Jun 2026",
+   "phase1_category": "partial",
+   "phase1_tapetide": "320",
+   "phase1_screener": "322",
+   "now_tapetide": "320",
+   "now_screener": "322",
+   "now_indianapi": "322",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "PIIND",
+   "statement": "annual_pl",
+   "row": "Other Income",
+   "period": "Mar 2025",
+   "phase1_category": "partial",
+   "phase1_tapetide": "344",
+   "phase1_screener": "345",
+   "now_tapetide": "344",
+   "now_screener": "345",
+   "now_indianapi": "345",
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Indian Stock API = Screener, Tapetide differs (not flagged as filing)"
+  },
+  {
+   "symbol": "PIIND",
+   "statement": "annual_pl",
+   "row": "EPS in Rs",
+   "period": "Mar 2024",
+   "phase1_category": "rounded",
+   "phase1_tapetide": "111",
+   "phase1_screener": "110.83",
+   "now_tapetide": "111",
+   "now_screener": "110.83",
+   "now_indianapi": "110.83",
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": true,
+   "verdict": "agree within rounding (Tapetide shows fewer decimals)"
+  },
+  {
+   "symbol": "PIIND",
+   "statement": "annual_pl",
+   "row": "EPS in Rs",
+   "period": "Mar 2025",
+   "phase1_category": "rounded",
+   "phase1_tapetide": "109",
+   "phase1_screener": "109.43",
+   "now_tapetide": "109",
+   "now_screener": "109.43",
+   "now_indianapi": "109.43",
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": true,
+   "verdict": "agree within rounding (Tapetide shows fewer decimals)"
+  },
+  {
+   "symbol": "QUICKHEAL",
+   "statement": "quarterly",
+   "row": "EPS in Rs",
+   "period": "Sep 2026",
+   "phase1_category": "missing_tapetide",
+   "phase1_tapetide": "\u2014",
+   "phase1_screener": "1.07",
+   "now_tapetide": "\u2014",
+   "now_screener": "1.07",
+   "now_indianapi": null,
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": false,
+   "indianapi_equals_tapetide": false,
+   "verdict": "missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet"
+  },
+  {
+   "symbol": "CYIENT",
+   "statement": "quarterly",
+   "row": "Profit before tax",
+   "period": "Mar 2026",
+   "phase1_category": "partial",
+   "phase1_tapetide": "96.7",
+   "phase1_screener": "95",
+   "now_tapetide": "96.7",
+   "now_screener": "95",
+   "now_indianapi": "95",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "ZEEL",
+   "statement": "quarterly",
+   "row": "Sales",
+   "period": "Jun 2024",
+   "phase1_category": "partial",
+   "phase1_tapetide": "2,131",
+   "phase1_screener": "2,130",
+   "now_tapetide": "2,131",
+   "now_screener": "2,130",
+   "now_indianapi": "2130",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "ZEEL",
+   "statement": "quarterly",
+   "row": "Interest",
+   "period": "Sep 2026",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "3",
+   "phase1_screener": "2",
+   "now_tapetide": "3",
+   "now_screener": "2",
+   "now_indianapi": null,
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": false,
+   "indianapi_equals_tapetide": false,
+   "verdict": "all three differ / insufficient data"
+  },
+  {
+   "symbol": "ZEEL",
+   "statement": "quarterly",
+   "row": "Profit before tax",
+   "period": "Mar 2024",
+   "phase1_category": "partial",
+   "phase1_tapetide": "114",
+   "phase1_screener": "115",
+   "now_tapetide": "114",
+   "now_screener": "115",
+   "now_indianapi": "115",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "ZEEL",
+   "statement": "quarterly",
+   "row": "Net Profit",
+   "period": "Dec 2023",
+   "phase1_category": "partial",
+   "phase1_tapetide": "58.54",
+   "phase1_screener": "58",
+   "now_tapetide": "58.54",
+   "now_screener": "58",
+   "now_indianapi": "58",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "ZEEL",
+   "statement": "quarterly",
+   "row": "EPS in Rs",
+   "period": "Sep 2026",
+   "phase1_category": "missing_tapetide",
+   "phase1_tapetide": "\u2014",
+   "phase1_screener": "0.47",
+   "now_tapetide": "\u2014",
+   "now_screener": "0.47",
+   "now_indianapi": null,
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": false,
+   "indianapi_equals_tapetide": false,
+   "verdict": "missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet"
+  },
+  {
+   "symbol": "ZEEL",
+   "statement": "annual_pl",
+   "row": "Profit before tax",
+   "period": "Mar 2026",
+   "phase1_category": "partial",
+   "phase1_tapetide": "273",
+   "phase1_screener": "274",
+   "now_tapetide": "273",
+   "now_screener": "274",
+   "now_indianapi": "274",
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Indian Stock API = Screener, Tapetide differs (not flagged as filing)"
+  },
+  {
+   "symbol": "WELSPUNLIV",
+   "statement": "quarterly",
+   "row": "Operating Profit",
+   "period": "Sep 2026",
+   "phase1_category": "missing_tapetide",
+   "phase1_tapetide": "\u2014",
+   "phase1_screener": "338",
+   "now_tapetide": "\u2014",
+   "now_screener": "338",
+   "now_indianapi": null,
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": false,
+   "indianapi_equals_tapetide": false,
+   "verdict": "missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet"
+  },
+  {
+   "symbol": "WELSPUNLIV",
+   "statement": "quarterly",
+   "row": "OPM %",
+   "period": "Sep 2026",
+   "phase1_category": "missing_tapetide",
+   "phase1_tapetide": "\u2014",
+   "phase1_screener": "12%",
+   "now_tapetide": "\u2014",
+   "now_screener": "12%",
+   "now_indianapi": null,
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": false,
+   "indianapi_equals_tapetide": false,
+   "verdict": "missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet"
+  },
+  {
+   "symbol": "WELSPUNLIV",
+   "statement": "quarterly",
+   "row": "Other Income",
+   "period": "Mar 2024",
+   "phase1_category": "partial",
+   "phase1_tapetide": "41.48",
+   "phase1_screener": "42",
+   "now_tapetide": "41.48",
+   "now_screener": "42",
+   "now_indianapi": "42",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "WELSPUNLIV",
+   "statement": "quarterly",
+   "row": "Other Income",
+   "period": "Jun 2026",
+   "phase1_category": "mismatch",
+   "phase1_tapetide": "32.71",
+   "phase1_screener": "34",
+   "now_tapetide": "32.71",
+   "now_screener": "34",
+   "now_indianapi": "34",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "WELSPUNLIV",
+   "statement": "quarterly",
+   "row": "Other Income",
+   "period": "Sep 2026",
+   "phase1_category": "missing_tapetide",
+   "phase1_tapetide": "\u2014",
+   "phase1_screener": "25",
+   "now_tapetide": "\u2014",
+   "now_screener": "25",
+   "now_indianapi": null,
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": false,
+   "indianapi_equals_tapetide": false,
+   "verdict": "missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet"
+  },
+  {
+   "symbol": "WELSPUNLIV",
+   "statement": "quarterly",
+   "row": "Profit before tax",
+   "period": "Jun 2026",
+   "phase1_category": "partial",
+   "phase1_tapetide": "219",
+   "phase1_screener": "220",
+   "now_tapetide": "219",
+   "now_screener": "220",
+   "now_indianapi": "220",
+   "tapetide_cell_source": "filing",
+   "indianapi_equals_screener": true,
+   "indianapi_equals_tapetide": false,
+   "verdict": "Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API"
+  },
+  {
+   "symbol": "WELSPUNLIV",
+   "statement": "quarterly",
+   "row": "EPS in Rs",
+   "period": "Sep 2026",
+   "phase1_category": "missing_tapetide",
+   "phase1_tapetide": "\u2014",
+   "phase1_screener": "1.79",
+   "now_tapetide": "\u2014",
+   "now_screener": "1.79",
+   "now_indianapi": null,
+   "tapetide_cell_source": "not flagged",
+   "indianapi_equals_screener": false,
+   "indianapi_equals_tapetide": false,
+   "verdict": "missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet"
+  }
+ ],
+ "staleness_at_baseline": {
+  "RELIANCE": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "PIIND": {
+   "tapetide": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "ABCAPITAL": {
+   "tapetide": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "WELSPUNLIV": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "ZEEL": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "JSL": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   }
+  },
+  "QUICKHEAL": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "MOTHERSON": {
+   "tapetide": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "screener": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "TRENT": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Jun 2026",
+    "latest_balance_sheet": "Mar 2026",
+    "ttm_ends_on": "Jun 2026"
+   }
+  },
+  "CYIENT": {
+   "tapetide": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "screener": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   },
+   "indianapi_arthscan_cache": {
+    "latest_quarter": "Sep 2026",
+    "latest_balance_sheet": "Sep 2026",
+    "ttm_ends_on": "Sep 2026"
+   }
+  }
+ },
+ "events": {},
+ "first_seen_minutes_after_t0": {}
+}

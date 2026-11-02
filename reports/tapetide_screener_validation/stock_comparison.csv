@@ -1,0 +1,121 @@
+symbol,tier,industry,basis,screener_page,statement,cells_compared,exact,rounded,partial,mismatch,missing_tapetide,missing_screener,match_pct,exact_pct,row_names_identical,row_order_identical,periods_identical,periods_tapetide,periods_screener,first_period_t,last_period_t,first_period_s,last_period_s,explained_by_timing_or_basis,timing_adjusted_match_pct
+RELIANCE,large,Oil Gas & Consumable Fuels,consolidated,consolidated,quarterly,143,143,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Sep 2023,Sep 2026,Sep 2023,Sep 2026,0,100.0
+RELIANCE,large,Oil Gas & Consumable Fuels,consolidated,consolidated,annual_pl,154,154,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,0,100.0
+RELIANCE,large,Oil Gas & Consumable Fuels,consolidated,consolidated,balance_sheet,130,130,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Mar 2015,Sep 2026,Mar 2015,Sep 2026,0,100.0
+RELIANCE,large,Oil Gas & Consumable Fuels,consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+RELIANCE,large,Oil Gas & Consumable Fuels,consolidated,consolidated,ratios,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+MOTHERSON,large,Automobile and Auto Components,consolidated,consolidated,quarterly,143,143,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Jun 2023,Jun 2026,Jun 2023,Jun 2026,0,100.0
+MOTHERSON,large,Automobile and Auto Components,consolidated,consolidated,annual_pl,154,154,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,0,100.0
+MOTHERSON,large,Automobile and Auto Components,consolidated,consolidated,balance_sheet,120,120,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+MOTHERSON,large,Automobile and Auto Components,consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+MOTHERSON,large,Automobile and Auto Components,consolidated,consolidated,ratios,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+MAXHEALTH,large,Healthcare,consolidated,consolidated,quarterly,154,141,0,1,0,1,11,91.56,91.56,True,True,False,14,13,Jun 2023,Sep 2026,Sep 2023,Sep 2026,11,98.601
+MAXHEALTH,large,Healthcare,consolidated,consolidated,annual_pl,130,121,0,0,9,0,0,93.08,93.08,True,True,True,11,11,Mar 2017,TTM,Mar 2017,TTM,9,100.0
+MAXHEALTH,large,Healthcare,consolidated,consolidated,balance_sheet,110,100,0,0,0,10,0,90.91,90.91,True,True,False,10,11,Mar 2017,Mar 2026,Mar 2017,Sep 2026,10,100.0
+MAXHEALTH,large,Healthcare,consolidated,consolidated,cash_flow,60,60,0,0,0,0,0,100.0,100.0,True,True,True,10,10,Mar 2017,Mar 2026,Mar 2017,Mar 2026,0,100.0
+MAXHEALTH,large,Healthcare,consolidated,consolidated,ratios,59,59,0,0,0,0,0,100.0,100.0,True,True,True,10,10,Mar 2017,Mar 2026,Mar 2017,Mar 2026,0,100.0
+TRENT,large,Consumer Services,consolidated,consolidated,quarterly,143,141,0,2,0,0,0,98.6,98.6,True,True,True,13,13,Sep 2023,Sep 2026,Sep 2023,Sep 2026,0,98.601
+TRENT,large,Consumer Services,consolidated,consolidated,annual_pl,154,153,0,0,0,1,0,99.35,99.35,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,0,99.351
+TRENT,large,Consumer Services,consolidated,consolidated,balance_sheet,130,130,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Mar 2015,Sep 2026,Mar 2015,Sep 2026,0,100.0
+TRENT,large,Consumer Services,consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+TRENT,large,Consumer Services,consolidated,consolidated,ratios,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+ADANIENSOL,large,Power,consolidated,consolidated,quarterly,143,143,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Sep 2023,Sep 2026,Sep 2023,Sep 2026,0,100.0
+ADANIENSOL,large,Power,consolidated,consolidated,annual_pl,154,154,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,0,100.0
+ADANIENSOL,large,Power,consolidated,consolidated,balance_sheet,130,130,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Mar 2015,Sep 2026,Mar 2015,Sep 2026,0,100.0
+ADANIENSOL,large,Power,consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+ADANIENSOL,large,Power,consolidated,consolidated,ratios,48,47,0,0,0,1,0,97.92,97.92,False,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,97.917
+ENRIN,large,Capital Goods,standalone,standalone,quarterly,93,93,0,0,0,0,0,100.0,100.0,True,True,True,9,9,Mar 2024,Jun 2026,Mar 2024,Jun 2026,0,100.0
+ENRIN,large,Capital Goods,standalone,standalone,annual_pl,43,43,0,0,0,0,0,100.0,100.0,True,True,True,4,4,Sep 2024 8m,TTM,Sep 2024 8m,TTM,0,100.0
+ENRIN,large,Capital Goods,standalone,standalone,balance_sheet,40,40,0,0,0,0,0,100.0,100.0,True,True,True,4,4,Sep 2024,Mar 2026,Sep 2024,Mar 2026,0,100.0
+ENRIN,large,Capital Goods,standalone,standalone,cash_flow,18,18,0,0,0,0,0,100.0,100.0,True,True,True,3,3,Sep 2024,Sep 2025,Sep 2024,Sep 2025,0,100.0
+ENRIN,large,Capital Goods,standalone,standalone,ratios,7,7,0,0,0,0,0,100.0,100.0,False,True,True,3,3,Sep 2024,Sep 2025,Sep 2024,Sep 2025,0,100.0
+JSL,mid,Metals & Mining,consolidated,consolidated,quarterly,154,141,0,0,1,1,11,91.56,91.56,True,True,False,14,13,Jun 2023,Sep 2026,Sep 2023,Sep 2026,11,98.601
+JSL,mid,Metals & Mining,consolidated,consolidated,annual_pl,154,144,0,1,9,0,0,93.51,93.51,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,10,100.0
+JSL,mid,Metals & Mining,consolidated,consolidated,balance_sheet,130,120,0,0,0,10,0,92.31,92.31,True,True,False,12,13,Mar 2015,Mar 2026,Mar 2015,Sep 2026,10,100.0
+JSL,mid,Metals & Mining,consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+JSL,mid,Metals & Mining,consolidated,consolidated,ratios,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+ABCAPITAL,mid,Financial Services,consolidated,consolidated,quarterly,154,125,0,0,7,11,11,81.17,81.17,False,False,False,13,13,Jun 2023,Jun 2026,Sep 2023,Sep 2026,22,94.697
+ABCAPITAL,mid,Financial Services,consolidated,consolidated,annual_pl,154,144,0,0,10,0,0,93.51,93.51,True,False,True,13,13,Mar 2015,TTM,Mar 2015,TTM,10,100.0
+ABCAPITAL,mid,Financial Services,consolidated,consolidated,balance_sheet,130,120,0,0,0,10,0,92.31,92.31,True,True,False,12,13,Mar 2015,Mar 2026,Mar 2015,Sep 2026,10,100.0
+ABCAPITAL,mid,Financial Services,consolidated,consolidated,cash_flow,60,60,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+ABCAPITAL,mid,Financial Services,consolidated,consolidated,ratios,12,12,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+GODFRYPHLP,mid,Fast Moving Consumer Goods,consolidated,consolidated,quarterly,143,143,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Jun 2023,Jun 2026,Jun 2023,Jun 2026,0,100.0
+GODFRYPHLP,mid,Fast Moving Consumer Goods,consolidated,consolidated,annual_pl,154,154,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,0,100.0
+GODFRYPHLP,mid,Fast Moving Consumer Goods,consolidated,consolidated,balance_sheet,120,120,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+GODFRYPHLP,mid,Fast Moving Consumer Goods,consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+GODFRYPHLP,mid,Fast Moving Consumer Goods,consolidated,consolidated,ratios,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+GODREJPROP,mid,Realty,consolidated,consolidated,quarterly,154,142,0,0,0,1,11,92.21,92.21,True,True,False,14,13,Jun 2023,Sep 2026,Sep 2023,Sep 2026,11,99.301
+GODREJPROP,mid,Realty,consolidated,consolidated,annual_pl,154,144,0,0,10,0,0,93.51,93.51,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,10,100.0
+GODREJPROP,mid,Realty,consolidated,consolidated,balance_sheet,130,120,0,0,0,10,0,92.31,92.31,True,True,False,12,13,Mar 2015,Mar 2026,Mar 2015,Sep 2026,10,100.0
+GODREJPROP,mid,Realty,consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+GODREJPROP,mid,Realty,consolidated,consolidated,ratios,52,52,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+BHARTIHEXA,mid,Telecommunication,standalone,standalone,quarterly,143,141,0,0,2,0,0,98.6,98.6,True,True,True,13,13,Jun 2023,Jun 2026,Jun 2023,Jun 2026,2,100.0
+BHARTIHEXA,mid,Telecommunication,standalone,standalone,annual_pl,106,101,0,0,5,0,0,95.28,95.28,True,True,True,9,9,Mar 2019,TTM,Mar 2019,TTM,5,100.0
+BHARTIHEXA,mid,Telecommunication,standalone,standalone,balance_sheet,80,80,0,0,0,0,0,100.0,100.0,True,True,True,8,8,Mar 2019,Mar 2026,Mar 2019,Mar 2026,0,100.0
+BHARTIHEXA,mid,Telecommunication,standalone,standalone,cash_flow,48,48,0,0,0,0,0,100.0,100.0,True,True,True,8,8,Mar 2019,Mar 2026,Mar 2019,Mar 2026,0,100.0
+BHARTIHEXA,mid,Telecommunication,standalone,standalone,ratios,31,31,0,0,0,0,0,100.0,100.0,False,True,True,8,8,Mar 2019,Mar 2026,Mar 2019,Mar 2026,0,100.0
+JSWINFRA,mid,Services,consolidated,consolidated,quarterly,154,142,0,0,0,1,11,92.21,92.21,True,True,False,14,13,Jun 2023,Sep 2026,Sep 2023,Sep 2026,11,99.301
+JSWINFRA,mid,Services,consolidated,consolidated,annual_pl,130,115,0,1,14,0,0,88.46,88.46,True,True,True,11,11,Mar 2017,TTM,Mar 2017,TTM,15,100.0
+JSWINFRA,mid,Services,consolidated,consolidated,balance_sheet,110,100,0,0,0,10,0,90.91,90.91,True,True,False,10,11,Mar 2017,Mar 2026,Mar 2017,Sep 2026,10,100.0
+JSWINFRA,mid,Services,consolidated,consolidated,cash_flow,60,60,0,0,0,0,0,100.0,100.0,True,True,True,10,10,Mar 2017,Mar 2026,Mar 2017,Mar 2026,0,100.0
+JSWINFRA,mid,Services,consolidated,consolidated,ratios,39,39,0,0,0,0,0,100.0,100.0,False,True,True,10,10,Mar 2017,Mar 2026,Mar 2017,Mar 2026,0,100.0
+PIIND,mid,Chemicals,consolidated,consolidated,quarterly,143,136,0,3,4,0,0,95.1,95.1,True,True,True,13,13,Jun 2023,Jun 2026,Jun 2023,Jun 2026,0,95.105
+PIIND,mid,Chemicals,consolidated,consolidated,annual_pl,154,151,2,1,0,0,0,99.35,98.05,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,0,99.351
+PIIND,mid,Chemicals,consolidated,consolidated,balance_sheet,120,120,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+PIIND,mid,Chemicals,consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+PIIND,mid,Chemicals,consolidated,consolidated,ratios,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+QUICKHEAL,small,"Information Technology (reference, not in index list)",consolidated,consolidated,quarterly,154,142,0,0,0,1,11,92.21,92.21,True,True,False,14,13,Jun 2023,Sep 2026,Sep 2023,Sep 2026,11,99.301
+QUICKHEAL,small,"Information Technology (reference, not in index list)",consolidated,consolidated,annual_pl,154,144,0,0,10,0,0,93.51,93.51,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,10,100.0
+QUICKHEAL,small,"Information Technology (reference, not in index list)",consolidated,consolidated,balance_sheet,130,120,0,0,0,10,0,92.31,92.31,True,True,False,12,13,Mar 2015,Mar 2026,Mar 2015,Sep 2026,10,100.0
+QUICKHEAL,small,"Information Technology (reference, not in index list)",consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+QUICKHEAL,small,"Information Technology (reference, not in index list)",consolidated,consolidated,ratios,52,52,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+NBCC,small,Construction,consolidated,consolidated,quarterly,143,142,0,0,1,0,0,99.3,99.3,True,True,True,13,13,Jun 2023,Jun 2026,Jun 2023,Jun 2026,0,99.301
+NBCC,small,Construction,consolidated,consolidated,annual_pl,154,154,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,0,100.0
+NBCC,small,Construction,consolidated,consolidated,balance_sheet,120,120,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+NBCC,small,Construction,consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+NBCC,small,Construction,consolidated,consolidated,ratios,48,48,0,0,0,0,0,100.0,100.0,False,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+CYIENT,small,Information Technology,consolidated,consolidated,quarterly,143,142,0,1,0,0,0,99.3,99.3,True,True,True,13,13,Sep 2023,Sep 2026,Sep 2023,Sep 2026,0,99.301
+CYIENT,small,Information Technology,consolidated,consolidated,annual_pl,154,154,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,0,100.0
+CYIENT,small,Information Technology,consolidated,consolidated,balance_sheet,130,130,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Mar 2015,Sep 2026,Mar 2015,Sep 2026,0,100.0
+CYIENT,small,Information Technology,consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+CYIENT,small,Information Technology,consolidated,consolidated,ratios,70,70,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+ZEEL,small,Media Entertainment & Publication,consolidated,consolidated,quarterly,154,138,0,3,1,1,11,89.61,89.61,True,True,False,14,13,Jun 2023,Sep 2026,Sep 2023,Sep 2026,11,96.503
+ZEEL,small,Media Entertainment & Publication,consolidated,consolidated,annual_pl,154,143,0,1,10,0,0,92.86,92.86,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,10,99.306
+ZEEL,small,Media Entertainment & Publication,consolidated,consolidated,balance_sheet,130,120,0,0,0,10,0,92.31,92.31,True,True,False,12,13,Mar 2015,Mar 2026,Mar 2015,Sep 2026,10,100.0
+ZEEL,small,Media Entertainment & Publication,consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+ZEEL,small,Media Entertainment & Publication,consolidated,consolidated,ratios,62,62,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+RAMCOCEM,small,Construction Materials,consolidated,consolidated,quarterly,143,143,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Jun 2023,Jun 2026,Jun 2023,Jun 2026,0,100.0
+RAMCOCEM,small,Construction Materials,consolidated,consolidated,annual_pl,154,153,0,1,0,0,0,99.35,99.35,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,0,99.351
+RAMCOCEM,small,Construction Materials,consolidated,consolidated,balance_sheet,120,120,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+RAMCOCEM,small,Construction Materials,consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+RAMCOCEM,small,Construction Materials,consolidated,consolidated,ratios,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+WELSPUNLIV,small,Textiles,consolidated,consolidated,quarterly,154,136,0,2,1,4,11,88.31,88.31,True,True,False,14,13,Jun 2023,Sep 2026,Sep 2023,Sep 2026,11,95.105
+WELSPUNLIV,small,Textiles,consolidated,consolidated,annual_pl,154,144,0,1,9,0,0,93.51,93.51,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,10,100.0
+WELSPUNLIV,small,Textiles,consolidated,consolidated,balance_sheet,130,120,0,0,0,10,0,92.31,92.31,True,True,False,12,13,Mar 2015,Mar 2026,Mar 2015,Sep 2026,10,100.0
+WELSPUNLIV,small,Textiles,consolidated,consolidated,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+WELSPUNLIV,small,Textiles,consolidated,consolidated,ratios,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+CROMPTON,small,Consumer Durables,standalone,standalone,quarterly,143,143,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Sep 2023,Sep 2026,Sep 2023,Sep 2026,0,100.0
+CROMPTON,small,Consumer Durables,standalone,standalone,annual_pl,153,151,0,1,0,1,0,98.69,98.69,True,True,True,13,13,Mar 2015,TTM,Mar 2015,TTM,0,98.693
+CROMPTON,small,Consumer Durables,standalone,standalone,balance_sheet,130,130,0,0,0,0,0,100.0,100.0,True,True,True,13,13,Mar 2015,Sep 2026,Mar 2015,Sep 2026,0,100.0
+CROMPTON,small,Consumer Durables,standalone,standalone,cash_flow,72,72,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+CROMPTON,small,Consumer Durables,standalone,standalone,ratios,66,66,0,0,0,0,0,100.0,100.0,True,True,True,12,12,Mar 2015,Mar 2026,Mar 2015,Mar 2026,0,100.0
+RELIANCE,large,Oil Gas & Consumable Fuels,consolidated,consolidated,ALL,571,571,0,0,0,0,0,100.0,100.0,True,True,True,,,,,,,0,100.0
+MOTHERSON,large,Automobile and Auto Components,consolidated,consolidated,ALL,561,561,0,0,0,0,0,100.0,100.0,True,True,True,,,,,,,0,100.0
+MAXHEALTH,large,Healthcare,consolidated,consolidated,ALL,513,481,0,1,9,11,11,93.762,93.762,True,True,False,,,,,,,30,99.586
+TRENT,large,Consumer Services,consolidated,consolidated,ALL,571,568,0,2,0,1,0,99.475,99.475,True,True,True,,,,,,,0,99.475
+ADANIENSOL,large,Power,consolidated,consolidated,ALL,547,546,0,0,0,1,0,99.817,99.817,False,True,True,,,,,,,0,99.817
+ENRIN,large,Capital Goods,standalone,standalone,ALL,201,201,0,0,0,0,0,100.0,100.0,False,True,True,,,,,,,0,100.0
+JSL,mid,Metals & Mining,consolidated,consolidated,ALL,582,549,0,1,10,11,11,94.33,94.33,True,True,False,,,,,,,31,99.637
+ABCAPITAL,mid,Financial Services,consolidated,consolidated,ALL,510,461,0,0,17,21,11,90.392,90.392,False,False,False,,,,,,,42,98.504
+GODFRYPHLP,mid,Fast Moving Consumer Goods,consolidated,consolidated,ALL,561,561,0,0,0,0,0,100.0,100.0,True,True,True,,,,,,,0,100.0
+GODREJPROP,mid,Realty,consolidated,consolidated,ALL,562,530,0,0,10,11,11,94.306,94.306,True,True,False,,,,,,,31,99.812
+BHARTIHEXA,mid,Telecommunication,standalone,standalone,ALL,408,401,0,0,7,0,0,98.284,98.284,False,True,True,,,,,,,7,100.0
+JSWINFRA,mid,Services,consolidated,consolidated,ALL,493,456,0,1,14,11,11,92.495,92.495,False,True,False,,,,,,,36,99.781
+PIIND,mid,Chemicals,consolidated,consolidated,ALL,561,551,2,4,4,0,0,98.574,98.217,True,True,True,,,,,,,0,98.574
+QUICKHEAL,small,"Information Technology (reference, not in index list)",consolidated,consolidated,ALL,562,530,0,0,10,11,11,94.306,94.306,True,True,False,,,,,,,31,99.812
+NBCC,small,Construction,consolidated,consolidated,ALL,537,536,0,0,1,0,0,99.814,99.814,False,True,True,,,,,,,0,99.814
+CYIENT,small,Information Technology,consolidated,consolidated,ALL,569,568,0,1,0,0,0,99.824,99.824,True,True,True,,,,,,,0,99.824
+ZEEL,small,Media Entertainment & Publication,consolidated,consolidated,ALL,572,535,0,4,11,11,11,93.531,93.531,True,True,False,,,,,,,31,98.891
+RAMCOCEM,small,Construction Materials,consolidated,consolidated,ALL,561,560,0,1,0,0,0,99.822,99.822,True,True,True,,,,,,,0,99.822
+WELSPUNLIV,small,Textiles,consolidated,consolidated,ALL,582,544,0,3,10,14,11,93.471,93.471,True,True,False,,,,,,,31,98.73
+CROMPTON,small,Consumer Durables,standalone,standalone,ALL,564,562,0,1,0,1,0,99.645,99.645,True,True,True,,,,,,,0,99.645
