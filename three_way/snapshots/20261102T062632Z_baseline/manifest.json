@@ -1,0 +1,931 @@
+{
+ "snapshot_id": "20261102T062632Z_baseline",
+ "label": "baseline",
+ "started_at_utc": "2026-11-02T06:26:32.117745+00:00",
+ "symbols": [
+  "RELIANCE",
+  "PIIND",
+  "ABCAPITAL",
+  "WELSPUNLIV",
+  "ZEEL",
+  "JSL",
+  "QUICKHEAL",
+  "MOTHERSON",
+  "TRENT",
+  "CYIENT"
+ ],
+ "requests": [
+  {
+   "source": "tapetide",
+   "symbol": "RELIANCE",
+   "url": "https://tapetide.com/stocks/RELIANCE.md",
+   "file": "tapetide_RELIANCE.md",
+   "fetched_at_utc": "2026-11-02T06:26:32.118862+00:00",
+   "http_status": 200,
+   "bytes": 39659,
+   "sha256": "98ea6fee6bf6a1e37b21fee6957e7bed41d1e8b0cb4fc995904ad8f67250e2ea",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T06:26:32.630Z",
+    "prices_as_of": "2 Nov 2026, 11:56 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "RELIANCE",
+   "url": "https://www.screener.in/company/RELIANCE/consolidated/",
+   "file": "screener_RELIANCE_consolidated.html",
+   "fetched_at_utc": "2026-11-02T06:26:33.312441+00:00",
+   "http_status": 200,
+   "bytes": 237256,
+   "sha256": "92a85306657835520eecf9c51c5e40be7e85ce0ae3af8848807a616cf7a42a00",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "RELIANCE",
+   "url": "https://arthscan.me/stock/RELIANCE/statements?stats=quarter_results",
+   "file": "indianapi_RELIANCE_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T06:26:34.338920+00:00",
+   "http_status": 200,
+   "bytes": 3195,
+   "sha256": "33b1fbb4b4f5bcd72bf5f01aa5dec345a9e79e77018a6ea333b0203ec8f91d17",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "RELIANCE",
+   "url": "https://arthscan.me/stock/RELIANCE/statements?stats=yoy_results",
+   "file": "indianapi_RELIANCE_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T06:26:39.613646+00:00",
+   "http_status": 200,
+   "bytes": 3384,
+   "sha256": "0fae921a072abc1f5a04c77007a021c82315dfd6993c0b47565d9eeb1403d13b",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "RELIANCE",
+   "url": "https://www.screener.in/company/RELIANCE/",
+   "file": "screener_RELIANCE_standalone.html",
+   "fetched_at_utc": "2026-11-02T06:26:39.960176+00:00",
+   "http_status": 200,
+   "bytes": 237142,
+   "sha256": "cb5136527e7fbd679ba03791f87f1e9a153d36223d8731a093f07099d0fedd4a",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "RELIANCE",
+   "url": "https://arthscan.me/stock/RELIANCE/statements?stats=balancesheet",
+   "file": "indianapi_RELIANCE_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T06:26:45.570761+00:00",
+   "http_status": 200,
+   "bytes": 2940,
+   "sha256": "bd2dd34d6c02364c77436ee719c194b537e8ae402c17012f97ccefc6997b20db",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "RELIANCE",
+   "url": "https://arthscan.me/stock/RELIANCE/statements?stats=cashflow",
+   "file": "indianapi_RELIANCE_cashflow.json",
+   "fetched_at_utc": "2026-11-02T06:26:51.271601+00:00",
+   "http_status": 200,
+   "bytes": 1910,
+   "sha256": "c4ac4e3dade07576e1238407784fdb9af05244f72a719c3ab73597a229aafe78",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "RELIANCE",
+   "url": "https://arthscan.me/stock/RELIANCE/statements?stats=ratios",
+   "file": "indianapi_RELIANCE_ratios.json",
+   "fetched_at_utc": "2026-11-02T06:26:55.976561+00:00",
+   "http_status": 200,
+   "bytes": 1610,
+   "sha256": "22cfced70d4072a6e74422ed2a8f17d3217b7f53ff482a7d91765b6dabbb3c49",
+   "source_reported_ts": null
+  },
+  {
+   "source": "tapetide",
+   "symbol": "PIIND",
+   "url": "https://tapetide.com/stocks/PIIND.md",
+   "file": "tapetide_PIIND.md",
+   "fetched_at_utc": "2026-11-02T06:26:56.682076+00:00",
+   "http_status": 200,
+   "bytes": 35532,
+   "sha256": "95a13d5b66ef7553df838f34bf3f7ce39a76ab38aa826c4991426850b38caef6",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T06:26:56.994Z",
+    "prices_as_of": "2 Nov 2026, 11:56 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "PIIND",
+   "url": "https://www.screener.in/company/PIIND/consolidated/",
+   "file": "screener_PIIND_consolidated.html",
+   "fetched_at_utc": "2026-11-02T06:26:57.580964+00:00",
+   "http_status": 200,
+   "bytes": 238837,
+   "sha256": "75bb6c9570d136f63554d4fbaea92997114de9b235b91ce18a3221a9e7dbd517",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=quarter_results",
+   "file": "indianapi_PIIND_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T06:27:02.606053+00:00",
+   "http_status": 200,
+   "bytes": 2963,
+   "sha256": "d83ed4214626a4666d8ce92ecf515d9df7b791af3f1a0268759ae8b162113f18",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=yoy_results",
+   "file": "indianapi_PIIND_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T06:27:09.271646+00:00",
+   "http_status": 200,
+   "bytes": 3167,
+   "sha256": "1986704d3bc1b8f718eeca8322b132c01e2c3d8a5dd4adf611a1e3e305c43647",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "PIIND",
+   "url": "https://www.screener.in/company/PIIND/",
+   "file": "screener_PIIND_standalone.html",
+   "fetched_at_utc": "2026-11-02T06:27:09.660565+00:00",
+   "http_status": 200,
+   "bytes": 239138,
+   "sha256": "6af71121c844626165c8d48d8b1aebac6f412801df625c490cc3d1b0d65e7b9d",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=balancesheet",
+   "file": "indianapi_PIIND_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T06:27:14.256922+00:00",
+   "http_status": 200,
+   "bytes": 2642,
+   "sha256": "acaa9f202f8d5666060dc45853ee8d946d6a14e77f52bbb571e1c9c4f727e3d5",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=cashflow",
+   "file": "indianapi_PIIND_cashflow.json",
+   "fetched_at_utc": "2026-11-02T06:27:20.248134+00:00",
+   "http_status": 200,
+   "bytes": 1779,
+   "sha256": "a1211ff52795915c81c0357c19360bdd5af81cf9b491f1637c3049a179577d59",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=ratios",
+   "file": "indianapi_PIIND_ratios.json",
+   "fetched_at_utc": "2026-11-02T06:27:26.375456+00:00",
+   "http_status": 200,
+   "bytes": 1613,
+   "sha256": "ba20607798bc28b1a2596a3a49d120180aa77ad7bfc440e09ddb86b02933330f",
+   "source_reported_ts": null
+  },
+  {
+   "source": "tapetide",
+   "symbol": "ABCAPITAL",
+   "url": "https://tapetide.com/stocks/ABCAPITAL.md",
+   "file": "tapetide_ABCAPITAL.md",
+   "fetched_at_utc": "2026-11-02T06:27:26.825782+00:00",
+   "http_status": 200,
+   "bytes": 34400,
+   "sha256": "e7ef19d043b129910bcc527df38c610d851d96685197658a4c011aced5863a39",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T06:27:27.103Z",
+    "prices_as_of": "2 Nov 2026, 11:57 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "ABCAPITAL",
+   "url": "https://www.screener.in/company/ABCAPITAL/consolidated/",
+   "file": "screener_ABCAPITAL_consolidated.html",
+   "fetched_at_utc": "2026-11-02T06:27:27.651086+00:00",
+   "http_status": 200,
+   "bytes": 221025,
+   "sha256": "331ec7d5c21a8386f2400803d708bf6f36ed503bf4322924793013468917085f",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ABCAPITAL",
+   "url": "https://arthscan.me/stock/ABCAPITAL/statements?stats=quarter_results",
+   "file": "indianapi_ABCAPITAL_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T06:27:32.526900+00:00",
+   "http_status": 200,
+   "bytes": 3039,
+   "sha256": "6c24aee29e3275bb15fe0d74988335f599598298e18cb8fe0b5481090e5ddb8e",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ABCAPITAL",
+   "url": "https://arthscan.me/stock/ABCAPITAL/statements?stats=yoy_results",
+   "file": "indianapi_ABCAPITAL_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T06:27:39.088854+00:00",
+   "http_status": 200,
+   "bytes": 3220,
+   "sha256": "21c3cce7335d10aea8f04205c410b3f06de6f07930ead45fa10ff4750b5fdf67",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "ABCAPITAL",
+   "url": "https://www.screener.in/company/ABCAPITAL/",
+   "file": "screener_ABCAPITAL_standalone.html",
+   "fetched_at_utc": "2026-11-02T06:27:39.490275+00:00",
+   "http_status": 200,
+   "bytes": 220815,
+   "sha256": "bf6270bf43a7abf1c01e418a32861abff74ab2c83a8646a079c07b20cb70cda0",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ABCAPITAL",
+   "url": "https://arthscan.me/stock/ABCAPITAL/statements?stats=balancesheet",
+   "file": "indianapi_ABCAPITAL_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T06:27:44.384214+00:00",
+   "http_status": 200,
+   "bytes": 2780,
+   "sha256": "24a0c71681e207487d5c6f9f658a92b8e3619c532f70eaacbd8e847aa5adbbc9",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ABCAPITAL",
+   "url": "https://arthscan.me/stock/ABCAPITAL/statements?stats=cashflow",
+   "file": "indianapi_ABCAPITAL_cashflow.json",
+   "fetched_at_utc": "2026-11-02T06:27:50.562586+00:00",
+   "http_status": 200,
+   "bytes": 1523,
+   "sha256": "27dabcbd6bb2b49dac3ae643de1515f7ee988ed89514e69f481090bc1ab4cdeb",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ABCAPITAL",
+   "url": "https://arthscan.me/stock/ABCAPITAL/statements?stats=ratios",
+   "file": "indianapi_ABCAPITAL_ratios.json",
+   "fetched_at_utc": "2026-11-02T06:27:55.772975+00:00",
+   "http_status": 200,
+   "bytes": 413,
+   "sha256": "1f233c46dc65b484e66af59fb5ce94c7ddc6b7e87aef30e69a77359db49b599f",
+   "source_reported_ts": null
+  },
+  {
+   "source": "tapetide",
+   "symbol": "WELSPUNLIV",
+   "url": "https://tapetide.com/stocks/WELSPUNLIV.md",
+   "file": "tapetide_WELSPUNLIV.md",
+   "fetched_at_utc": "2026-11-02T06:27:56.103680+00:00",
+   "http_status": 200,
+   "bytes": 31909,
+   "sha256": "7a5364893b17059ad3b1489e591dd9e05d6153620dc6fde6d28cbfa5217ec81d",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T06:27:56.431Z",
+    "prices_as_of": "2 Nov 2026, 11:57 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "WELSPUNLIV",
+   "url": "https://www.screener.in/company/WELSPUNLIV/consolidated/",
+   "file": "screener_WELSPUNLIV_consolidated.html",
+   "fetched_at_utc": "2026-11-02T06:27:56.975282+00:00",
+   "http_status": 200,
+   "bytes": 241252,
+   "sha256": "c63542171b32082812d42357cc7a67e2f44aa84119e3407df5b7cb387cc33361",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "WELSPUNLIV",
+   "url": "https://arthscan.me/stock/WELSPUNLIV/statements?stats=quarter_results",
+   "file": "indianapi_WELSPUNLIV_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T06:28:02.374869+00:00",
+   "http_status": 200,
+   "bytes": 2951,
+   "sha256": "c347b0131922f4c307a0f731f082c7d48c046368c6147562de4e33407ea52046",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "WELSPUNLIV",
+   "url": "https://arthscan.me/stock/WELSPUNLIV/statements?stats=yoy_results",
+   "file": "indianapi_WELSPUNLIV_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T06:28:06.962719+00:00",
+   "http_status": 200,
+   "bytes": 3163,
+   "sha256": "9ad535f116b177ae275b2fb19a55d5dbab5d0758ede6b13eea721b1717658b9a",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "WELSPUNLIV",
+   "url": "https://www.screener.in/company/WELSPUNLIV/",
+   "file": "screener_WELSPUNLIV_standalone.html",
+   "fetched_at_utc": "2026-11-02T06:28:07.317555+00:00",
+   "http_status": 200,
+   "bytes": 241105,
+   "sha256": "cf8d569136047e968d2f5052fc60bd2c43c90345852770096bfe7b210be34a89",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "WELSPUNLIV",
+   "url": "https://arthscan.me/stock/WELSPUNLIV/statements?stats=balancesheet",
+   "file": "indianapi_WELSPUNLIV_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T06:28:12.127201+00:00",
+   "http_status": 200,
+   "bytes": 2668,
+   "sha256": "95dab20c08a234c7ff5394eaa8f3295ec71e82cd5fb299f17c43a1480fff47c4",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "WELSPUNLIV",
+   "url": "https://arthscan.me/stock/WELSPUNLIV/statements?stats=cashflow",
+   "file": "indianapi_WELSPUNLIV_cashflow.json",
+   "fetched_at_utc": "2026-11-02T06:28:17.442070+00:00",
+   "http_status": 200,
+   "bytes": 1765,
+   "sha256": "ca18b4ade41b712a4b833abda222f0c48bc4aa483d2104b95e19a1a9ded34ae4",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "WELSPUNLIV",
+   "url": "https://arthscan.me/stock/WELSPUNLIV/statements?stats=ratios",
+   "file": "indianapi_WELSPUNLIV_ratios.json",
+   "fetched_at_utc": "2026-11-02T06:28:23.385131+00:00",
+   "http_status": 200,
+   "bytes": 1609,
+   "sha256": "0eabf8a8d81206d8207365562c1b419d6312e74810c7fc6330ff391e45ebf84e",
+   "source_reported_ts": null
+  },
+  {
+   "source": "tapetide",
+   "symbol": "ZEEL",
+   "url": "https://tapetide.com/stocks/ZEEL.md",
+   "file": "tapetide_ZEEL.md",
+   "fetched_at_utc": "2026-11-02T06:28:23.823358+00:00",
+   "http_status": 200,
+   "bytes": 36886,
+   "sha256": "909a68dc3567a366a7e8b2444167e99cb17e800eaaf444fe9fca230a77edcdf5",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T06:28:24.293Z",
+    "prices_as_of": "2 Nov 2026, 11:58 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "ZEEL",
+   "url": "https://www.screener.in/company/ZEEL/consolidated/",
+   "file": "screener_ZEEL_consolidated.html",
+   "fetched_at_utc": "2026-11-02T06:28:25.003193+00:00",
+   "http_status": 200,
+   "bytes": 229896,
+   "sha256": "87bb112ecac08a5818360c49c6361e46c63fb937de0ce3dc180933056c64374a",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ZEEL",
+   "url": "https://arthscan.me/stock/ZEEL/statements?stats=quarter_results",
+   "file": "indianapi_ZEEL_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T06:28:30.245140+00:00",
+   "http_status": 200,
+   "bytes": 2955,
+   "sha256": "0e6e1d4cede83ede4d051c582d477d9fa09122926a6c5605aa370fca592a3b56",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ZEEL",
+   "url": "https://arthscan.me/stock/ZEEL/statements?stats=yoy_results",
+   "file": "indianapi_ZEEL_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T06:28:36.318919+00:00",
+   "http_status": 200,
+   "bytes": 3179,
+   "sha256": "17f0a276dc112ebc6c05fb1eed2420449228aa52c3db92ba0b34408af2b867f0",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "ZEEL",
+   "url": "https://www.screener.in/company/ZEEL/",
+   "file": "screener_ZEEL_standalone.html",
+   "fetched_at_utc": "2026-11-02T06:28:36.713410+00:00",
+   "http_status": 200,
+   "bytes": 229113,
+   "sha256": "f9c9370d24b23e38da3b68a1b3296e1dabe38a1e0bcf128486441a3a5cff344a",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ZEEL",
+   "url": "https://arthscan.me/stock/ZEEL/statements?stats=balancesheet",
+   "file": "indianapi_ZEEL_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T06:28:40.878468+00:00",
+   "http_status": 200,
+   "bytes": 2677,
+   "sha256": "15d7eb503603d6274d959e166dfe90241a03a8a3e3067c358b9e85630967447e",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ZEEL",
+   "url": "https://arthscan.me/stock/ZEEL/statements?stats=cashflow",
+   "file": "indianapi_ZEEL_cashflow.json",
+   "fetched_at_utc": "2026-11-02T06:28:47.157040+00:00",
+   "http_status": 200,
+   "bytes": 1786,
+   "sha256": "e01d02e66df750f4dbe6a8a4f7f7dece1d6d2a1e16d10fea3ecbcce82e077a62",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ZEEL",
+   "url": "https://arthscan.me/stock/ZEEL/statements?stats=ratios",
+   "file": "indianapi_ZEEL_ratios.json",
+   "fetched_at_utc": "2026-11-02T06:28:53.599796+00:00",
+   "http_status": 200,
+   "bytes": 1474,
+   "sha256": "96b042ae00c2c1bf253f94f1e3bf10138c2eb5dd33062bf2b37ffffd10193b24",
+   "source_reported_ts": null
+  },
+  {
+   "source": "tapetide",
+   "symbol": "JSL",
+   "url": "https://tapetide.com/stocks/JSL.md",
+   "file": "tapetide_JSL.md",
+   "fetched_at_utc": "2026-11-02T06:28:53.990146+00:00",
+   "http_status": 200,
+   "bytes": 38039,
+   "sha256": "75be47935f3b827c0c0424d4c7f822426485f446c0c935aadcf02d8cdf9d41cc",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T06:28:54.295Z",
+    "prices_as_of": "2 Nov 2026, 11:58 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "JSL",
+   "url": "https://www.screener.in/company/JSL/consolidated/",
+   "file": "screener_JSL_consolidated.html",
+   "fetched_at_utc": "2026-11-02T06:28:54.845209+00:00",
+   "http_status": 200,
+   "bytes": 233407,
+   "sha256": "782fbf69196f4c478e5932cfe2484206e2696e0eb03ee530ec8c17c335755db4",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "JSL",
+   "url": "https://arthscan.me/stock/JSL/statements?stats=quarter_results",
+   "file": "indianapi_JSL_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T06:28:58.187099+00:00",
+   "http_status": 200,
+   "bytes": 3019,
+   "sha256": "9c2f8a19fc4c06cfbcc6af83636b6bd805022af4f50a59f6ce65b5df8d9cc292",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "JSL",
+   "url": "https://arthscan.me/stock/JSL/statements?stats=yoy_results",
+   "file": "indianapi_JSL_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T06:29:02.634298+00:00",
+   "http_status": 200,
+   "bytes": 3203,
+   "sha256": "648d9d3bdd537954a8c5249c1ffd6b084c759050e8eca83d9ddf133b744f30e9",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "JSL",
+   "url": "https://www.screener.in/company/JSL/",
+   "file": "screener_JSL_standalone.html",
+   "fetched_at_utc": "2026-11-02T06:29:02.984548+00:00",
+   "http_status": 200,
+   "bytes": 233882,
+   "sha256": "f2607e77f03b947fcc1cd79c5d4f9ee341447c11fa0ba657c6d6d002eb0bd19f",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "JSL",
+   "url": "https://arthscan.me/stock/JSL/statements?stats=balancesheet",
+   "file": "indianapi_JSL_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T06:29:08.697487+00:00",
+   "http_status": 200,
+   "bytes": 2886,
+   "sha256": "61be3345958c63307f10ffaec0aa00b95e13192795712297373d2e71519f5e2d",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "JSL",
+   "url": "https://arthscan.me/stock/JSL/statements?stats=cashflow",
+   "file": "indianapi_JSL_cashflow.json",
+   "fetched_at_utc": "2026-11-02T06:29:13.749890+00:00",
+   "http_status": 200,
+   "bytes": 1805,
+   "sha256": "4842d652e6d17f3841f24ca24b27c9fa73d6ca3345fcdb24a4d0d2aa02ade813",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "JSL",
+   "url": "https://arthscan.me/stock/JSL/statements?stats=ratios",
+   "file": "indianapi_JSL_ratios.json",
+   "fetched_at_utc": "2026-11-02T06:29:18.953935+00:00",
+   "http_status": 200,
+   "bytes": 1606,
+   "sha256": "bac4179ff02d18b660e8f12a72d9d1b3499fc25df6823745028f59cb5b79105f",
+   "source_reported_ts": null
+  },
+  {
+   "source": "tapetide",
+   "symbol": "QUICKHEAL",
+   "url": "https://tapetide.com/stocks/QUICKHEAL.md",
+   "file": "tapetide_QUICKHEAL.md",
+   "fetched_at_utc": "2026-11-02T06:29:19.320554+00:00",
+   "http_status": 200,
+   "bytes": 27942,
+   "sha256": "0ce50ff83b7350f1e1bca22da7408e5f3ab4c47beee19af38dcedd01db8aa5bd",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T06:29:19.591Z",
+    "prices_as_of": "2 Nov 2026, 11:59 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "QUICKHEAL",
+   "url": "https://www.screener.in/company/QUICKHEAL/consolidated/",
+   "file": "screener_QUICKHEAL_consolidated.html",
+   "fetched_at_utc": "2026-11-02T06:29:20.193953+00:00",
+   "http_status": 200,
+   "bytes": 216279,
+   "sha256": "d209637a8ac60a8b2e9f8b2a8625b2dfd4013ab7eea15d52522eef2d94cb3562",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "QUICKHEAL",
+   "url": "https://arthscan.me/stock/QUICKHEAL/statements?stats=quarter_results",
+   "file": "indianapi_QUICKHEAL_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T06:29:24.343355+00:00",
+   "http_status": 200,
+   "bytes": 3200,
+   "sha256": "6395d3b03d068b999140972af4c4342f55e131586824636c56e9cb85a168601a",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "QUICKHEAL",
+   "url": "https://arthscan.me/stock/QUICKHEAL/statements?stats=yoy_results",
+   "file": "indianapi_QUICKHEAL_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T06:29:29.003350+00:00",
+   "http_status": 200,
+   "bytes": 3071,
+   "sha256": "467022490a5d79da39b63e37667f72fe350b9ff3fa7dbd88d52e3ff4f5a52a71",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "QUICKHEAL",
+   "url": "https://www.screener.in/company/QUICKHEAL/",
+   "file": "screener_QUICKHEAL_standalone.html",
+   "fetched_at_utc": "2026-11-02T06:29:29.360003+00:00",
+   "http_status": 200,
+   "bytes": 215463,
+   "sha256": "22dbde645dc9f27372cdd7dd4683fd3b038ce2768de6cc02000d35cbb1c6d8fc",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "QUICKHEAL",
+   "url": "https://arthscan.me/stock/QUICKHEAL/statements?stats=balancesheet",
+   "file": "indianapi_QUICKHEAL_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T06:29:35.344141+00:00",
+   "http_status": 200,
+   "bytes": 2525,
+   "sha256": "247ece31b017d027ac449df87a7aa9a43f604267ee58c2933dea6dc763423527",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "QUICKHEAL",
+   "url": "https://arthscan.me/stock/QUICKHEAL/statements?stats=cashflow",
+   "file": "indianapi_QUICKHEAL_cashflow.json",
+   "fetched_at_utc": "2026-11-02T06:29:42.003236+00:00",
+   "http_status": 200,
+   "bytes": 1722,
+   "sha256": "afb4e73f7374571fb68c550700a9a825defd2008aedc6d81f84083def0cd4ad2",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "QUICKHEAL",
+   "url": "https://arthscan.me/stock/QUICKHEAL/statements?stats=ratios",
+   "file": "indianapi_QUICKHEAL_ratios.json",
+   "fetched_at_utc": "2026-11-02T06:29:46.795574+00:00",
+   "http_status": 200,
+   "bytes": 1335,
+   "sha256": "9fef5e0b97cd8fc68ab299482f31d97ae935b1151890cafc41e4a9175e5f27a4",
+   "source_reported_ts": null
+  },
+  {
+   "source": "tapetide",
+   "symbol": "MOTHERSON",
+   "url": "https://tapetide.com/stocks/MOTHERSON.md",
+   "file": "tapetide_MOTHERSON.md",
+   "fetched_at_utc": "2026-11-02T06:29:47.156754+00:00",
+   "http_status": 200,
+   "bytes": 37145,
+   "sha256": "5378db29bfa60943a87765cbd2f8136ed3445421f53d48c0dcb71a23fa176b14",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T06:29:47.443Z",
+    "prices_as_of": "2 Nov 2026, 11:59 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "MOTHERSON",
+   "url": "https://www.screener.in/company/MOTHERSON/consolidated/",
+   "file": "screener_MOTHERSON_consolidated.html",
+   "fetched_at_utc": "2026-11-02T06:29:48.052093+00:00",
+   "http_status": 200,
+   "bytes": 234197,
+   "sha256": "1e14e9eef676d28737c38c92d3285165160ea402cbb3801a91b57cd7c5e7e9ad",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MOTHERSON",
+   "url": "https://arthscan.me/stock/MOTHERSON/statements?stats=quarter_results",
+   "file": "indianapi_MOTHERSON_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T06:29:51.734804+00:00",
+   "http_status": 200,
+   "bytes": 3049,
+   "sha256": "25c1f52a3117659f655134f364649a9a98e21764eae28a94347c9ff2adf70593",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MOTHERSON",
+   "url": "https://arthscan.me/stock/MOTHERSON/statements?stats=yoy_results",
+   "file": "indianapi_MOTHERSON_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T06:29:58.071822+00:00",
+   "http_status": 200,
+   "bytes": 3245,
+   "sha256": "e45bd9dcebe32dbb4c8641c9e0f239b5012253b13d9d8b70af8689e1bfc8279f",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "MOTHERSON",
+   "url": "https://www.screener.in/company/MOTHERSON/",
+   "file": "screener_MOTHERSON_standalone.html",
+   "fetched_at_utc": "2026-11-02T06:29:58.524884+00:00",
+   "http_status": 200,
+   "bytes": 234356,
+   "sha256": "82c0a1c807c787c463b78d3616e7b77d3f124a9f949d415f2b17171e72d73b71",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MOTHERSON",
+   "url": "https://arthscan.me/stock/MOTHERSON/statements?stats=balancesheet",
+   "file": "indianapi_MOTHERSON_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T06:30:04.019168+00:00",
+   "http_status": 200,
+   "bytes": 2764,
+   "sha256": "553b26b747e12252b43ddef14c07f3916de2a390e2e3795dc70e8536cef25afa",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MOTHERSON",
+   "url": "https://arthscan.me/stock/MOTHERSON/statements?stats=cashflow",
+   "file": "indianapi_MOTHERSON_cashflow.json",
+   "fetched_at_utc": "2026-11-02T06:30:10.105694+00:00",
+   "http_status": 200,
+   "bytes": 1834,
+   "sha256": "b77501d5280fd0f345368a0540e4a41361c1c40a3372981e48ff16f707fb4f27",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MOTHERSON",
+   "url": "https://arthscan.me/stock/MOTHERSON/statements?stats=ratios",
+   "file": "indianapi_MOTHERSON_ratios.json",
+   "fetched_at_utc": "2026-11-02T06:30:16.837705+00:00",
+   "http_status": 200,
+   "bytes": 1609,
+   "sha256": "2aa01ec2221f5b749786262126464830045e387a5f57f5a0f0d92cbdb17c9170",
+   "source_reported_ts": null
+  },
+  {
+   "source": "tapetide",
+   "symbol": "TRENT",
+   "url": "https://tapetide.com/stocks/TRENT.md",
+   "file": "tapetide_TRENT.md",
+   "fetched_at_utc": "2026-11-02T06:30:17.193205+00:00",
+   "http_status": 200,
+   "bytes": 33441,
+   "sha256": "76bf33fb18b7c91d96dd17918e3b929edad05be8451e53594e8c234dbf9788bf",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T06:30:17.516Z",
+    "prices_as_of": "2 Nov 2026, 12:00 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "TRENT",
+   "url": "https://www.screener.in/company/TRENT/consolidated/",
+   "file": "screener_TRENT_consolidated.html",
+   "fetched_at_utc": "2026-11-02T06:30:18.158317+00:00",
+   "http_status": 200,
+   "bytes": 202778,
+   "sha256": "38fe99a61381d1d425dd596dd8d88c4b0da5ec6fce3b324399f743e3f2efa455",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "TRENT",
+   "url": "https://arthscan.me/stock/TRENT/statements?stats=quarter_results",
+   "file": "indianapi_TRENT_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T06:30:21.610136+00:00",
+   "http_status": 200,
+   "bytes": 2979,
+   "sha256": "9c6c2cd85859a4e80bd4dbd35754c467b2a4b8dfa20bb3f65a653e2ba2f7b43a",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "TRENT",
+   "url": "https://arthscan.me/stock/TRENT/statements?stats=yoy_results",
+   "file": "indianapi_TRENT_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T06:30:26.888772+00:00",
+   "http_status": 200,
+   "bytes": 3167,
+   "sha256": "ea139b6aee74414284e330ff52207fde0bf9b455e8ac469ec83c8452c0436309",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "TRENT",
+   "url": "https://www.screener.in/company/TRENT/",
+   "file": "screener_TRENT_standalone.html",
+   "fetched_at_utc": "2026-11-02T06:30:27.406646+00:00",
+   "http_status": 200,
+   "bytes": 202927,
+   "sha256": "a4f5efe5b95feaf76ad0a6a9f4d4136486fc24de19b45f01912744d1dad120b6",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "TRENT",
+   "url": "https://arthscan.me/stock/TRENT/statements?stats=balancesheet",
+   "file": "indianapi_TRENT_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T06:30:33.877894+00:00",
+   "http_status": 200,
+   "bytes": 2645,
+   "sha256": "3e6d664fdc420074c7fc9594136e74fa7f8a559fd0005b50cc595e40b65d5951",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "TRENT",
+   "url": "https://arthscan.me/stock/TRENT/statements?stats=cashflow",
+   "file": "indianapi_TRENT_cashflow.json",
+   "fetched_at_utc": "2026-11-02T06:30:40.806751+00:00",
+   "http_status": 200,
+   "bytes": 1753,
+   "sha256": "001e96d6e980ef942e85f2924a860a45b05d61c549f06dea289e7cff71fd2d48",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "TRENT",
+   "url": "https://arthscan.me/stock/TRENT/statements?stats=ratios",
+   "file": "indianapi_TRENT_ratios.json",
+   "fetched_at_utc": "2026-11-02T06:30:47.232746+00:00",
+   "http_status": 200,
+   "bytes": 1579,
+   "sha256": "c3e8dd034f061f29ade894056a337895f157e6c926214ecce37729888d59294d",
+   "source_reported_ts": null
+  },
+  {
+   "source": "tapetide",
+   "symbol": "CYIENT",
+   "url": "https://tapetide.com/stocks/CYIENT.md",
+   "file": "tapetide_CYIENT.md",
+   "fetched_at_utc": "2026-11-02T06:30:47.580626+00:00",
+   "http_status": 200,
+   "bytes": 37158,
+   "sha256": "4a59b6b0985ffdff1d330016f903359be7ae6c607fb6e636da8a35ca380e6e58",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T06:30:47.887Z",
+    "prices_as_of": "2 Nov 2026, 12:00 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "CYIENT",
+   "url": "https://www.screener.in/company/CYIENT/consolidated/",
+   "file": "screener_CYIENT_consolidated.html",
+   "fetched_at_utc": "2026-11-02T06:30:48.588678+00:00",
+   "http_status": 200,
+   "bytes": 226692,
+   "sha256": "ecabb5f73a41d187293d4ee45d6ba32f0dc38640f5d1323737870c2c0fb627d3",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "CYIENT",
+   "url": "https://arthscan.me/stock/CYIENT/statements?stats=quarter_results",
+   "file": "indianapi_CYIENT_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T06:30:53.069251+00:00",
+   "http_status": 200,
+   "bytes": 2968,
+   "sha256": "ab030c278f4954597f4be2b2bda06b9cdd714d7f567b0557bd73456d54aa07d9",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "CYIENT",
+   "url": "https://arthscan.me/stock/CYIENT/statements?stats=yoy_results",
+   "file": "indianapi_CYIENT_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T06:30:59.219829+00:00",
+   "http_status": 200,
+   "bytes": 3159,
+   "sha256": "7899eb9b610613d0d6e50d2a45282c124272a4a6ee90f8c06bc1fff574b37cda",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "CYIENT",
+   "url": "https://www.screener.in/company/CYIENT/",
+   "file": "screener_CYIENT_standalone.html",
+   "fetched_at_utc": "2026-11-02T06:30:59.555324+00:00",
+   "http_status": 200,
+   "bytes": 226435,
+   "sha256": "424e9db9886d2534f1123e5c4613d2d62f9b7c8219e056b9de696deea3b8a0c8",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "CYIENT",
+   "url": "https://arthscan.me/stock/CYIENT/statements?stats=balancesheet",
+   "file": "indianapi_CYIENT_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T06:31:05.186966+00:00",
+   "http_status": 200,
+   "bytes": 2794,
+   "sha256": "745648d17b4280c0bb2cd086ba12a33bf9f0a4a26055b876ec6a6158f925bd14",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "CYIENT",
+   "url": "https://arthscan.me/stock/CYIENT/statements?stats=cashflow",
+   "file": "indianapi_CYIENT_cashflow.json",
+   "fetched_at_utc": "2026-11-02T06:31:11.370960+00:00",
+   "http_status": 200,
+   "bytes": 1780,
+   "sha256": "2d78ea0ab3448b286705bbea10995c66d1d1e39385fd976bfd8883b6ce6f7162",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "CYIENT",
+   "url": "https://arthscan.me/stock/CYIENT/statements?stats=ratios",
+   "file": "indianapi_CYIENT_ratios.json",
+   "fetched_at_utc": "2026-11-02T06:31:17.580652+00:00",
+   "http_status": 200,
+   "bytes": 1593,
+   "sha256": "a83725560917c24925c60a4e1f59f3ff6294e9f67907527305fcf2324f268c83",
+   "source_reported_ts": null
+  }
+ ],
+ "finished_at_utc": "2026-11-02T06:31:17.975017+00:00",
+ "hosts_blocked_429": []
+}

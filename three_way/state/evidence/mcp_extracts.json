@@ -1,0 +1,267 @@
+{
+ "_note": "Verbatim values from MCP responses in this session, 2 Nov 2026 ~06:25-06:30 UTC. Only rows relevant to the targeted investigation are copied. Tapetide entries for WELSPUNLIV, JSL, ZEEL, CYIENT, TRENT from get_financials(periods=1) at ~06:45 UTC; QUICKHEAL and RELIANCE from Phase 1 calls.",
+ "indianapi_via_arth_get_statements": {
+  "PIIND": {
+   "source": "Indian Stock API (indianapi.in)",
+   "fetched_at": "2026-10-30T20:20:13.000Z",
+   "stats": "quarter_results",
+   "Other Income": {
+    "Dec 2024": 76,
+    "Mar 2025": 75,
+    "Jun 2025": 89,
+    "Sep 2025": 85,
+    "Dec 2025": 172,
+    "Mar 2026": 74,
+    "Jun 2026": 66
+   },
+   "Profit before tax": {
+    "Dec 2024": 481,
+    "Mar 2025": 432,
+    "Jun 2025": 507,
+    "Sep 2025": 525,
+    "Dec 2025": 363,
+    "Mar 2026": 300,
+    "Jun 2026": 322
+   },
+   "Net Profit": {
+    "Mar 2025": 330,
+    "Sep 2025": 409,
+    "Jun 2026": 244
+   },
+   "EPS in Rs": {
+    "Mar 2025": 21.78,
+    "Sep 2025": 26.98,
+    "Jun 2026": 16.1
+   },
+   "latest_period": "Jun 2026"
+  },
+  "ABCAPITAL": {
+   "source": "Indian Stock API (indianapi.in)",
+   "fetched_at": "2026-10-29T23:50:23.000Z",
+   "stats": "quarter_results",
+   "row_order": [
+    "Revenue",
+    "Interest",
+    "Expenses",
+    "Financing Profit",
+    "Financing Margin %",
+    "Other Income",
+    "Depreciation",
+    "Profit before tax",
+    "Tax %",
+    "Net Profit",
+    "EPS in Rs"
+   ],
+   "Other Income": {
+    "Sep 2025": 92
+   },
+   "Depreciation": {
+    "Mar 2024": 52,
+    "Jun 2024": 54,
+    "Sep 2025": 77
+   },
+   "Profit before tax": {
+    "Sep 2025": 1212
+   },
+   "Tax %": {
+    "Sep 2025": 27
+   },
+   "Net Profit": {
+    "Sep 2025": 882
+   },
+   "EPS in Rs": {
+    "Sep 2025": 3.27
+   },
+   "latest_period": "Jun 2026"
+  }
+ },
+ "tapetide_mcp_get_financials": {
+  "PIIND": {
+   "section": "quarterly",
+   "updated_at": "2026-10-21T06:29:42.208Z",
+   "Other Income": {
+    "Mar 2025": 73.4,
+    "Sep 2025": 82.5,
+    "Mar 2026": 75.6,
+    "Jun 2026": 64.1
+   },
+   "Profit before tax": {
+    "Mar 2025": 430.9,
+    "Sep 2025": 523.2,
+    "Jun 2026": 319.9
+   },
+   "cell_source": {
+    "Other Income": {
+     "Jun 2026": "filing",
+     "Mar 2025": "filing",
+     "Mar 2026": "filing",
+     "Sep 2025": "filing"
+    },
+    "Profit before tax": {
+     "Jun 2026": "filing",
+     "Mar 2025": "filing",
+     "Sep 2025": "filing"
+    }
+   },
+   "availability_sep_2025": "2025-11-12",
+   "meta_quarterly": {
+    "latest_period": "Jun 2026",
+    "next_period": "Sep 2026",
+    "due_by": "2026-11-14"
+   }
+  },
+  "ABCAPITAL": {
+   "section": "quarterly",
+   "updated_at": "2026-10-17T03:06:42.522Z",
+   "row_order": [
+    "Revenue",
+    "Expenses",
+    "Financing Profit",
+    "Financing Margin %",
+    "Other Income",
+    "Interest",
+    "Depreciation",
+    "Profit before tax",
+    "Tax %",
+    "Net Profit",
+    "EPS in Rs"
+   ],
+   "Other Income": {
+    "Sep 2025": 92
+   },
+   "Profit before tax": {
+    "Sep 2025": 1212
+   },
+   "Net Profit": {
+    "Sep 2025": 882
+   },
+   "EPS in Rs": {
+    "Sep 2025": 3.27
+   },
+   "cell_source": {
+    "Depreciation": {
+     "Jun 2024": "filing",
+     "Mar 2024": "filing"
+    }
+   },
+   "meta_quarterly": {
+    "latest_period": "Jun 2026",
+    "next_period": "Sep 2026",
+    "due_by": "2026-11-14"
+   }
+  },
+  "cell_source_note_verbatim": "Cells listed in a section's `cell_source` as \"filing\" are the figure the company stated in its own results filing for that period. One is served in place of the compiled value only when the period's column still adds up with it, within rounding: from sales (or revenue) to operating (or financing) profit, from there to profit before tax, and on to net profit at the stated tax rate. Rows derived from other rows (expenses, operating profit, margins, tax rate) and EPS are never replaced.",
+  "WELSPUNLIV": {
+   "section": "quarterly",
+   "cell_source": {
+    "Other Income": {
+     "Jun 2026": "filing",
+     "Mar 2024": "filing"
+    },
+    "Profit before tax": {
+     "Jun 2026": "filing"
+    }
+   },
+   "provisional_periods": [
+    {
+     "period": "Sep 2026",
+     "filed_on": "2026-10-30"
+    }
+   ],
+   "updated_at": "2026-10-12T19:40:22.665Z",
+   "sep_2026_rows_blank": [
+    "Operating Profit",
+    "OPM %",
+    "Other Income",
+    "EPS in Rs"
+   ]
+  },
+  "JSL": {
+   "section": "quarterly",
+   "cell_source": {
+    "Other Income": {
+     "Mar 2024": "filing"
+    }
+   },
+   "provisional_periods": [
+    {
+     "period": "Sep 2026",
+     "filed_on": "2026-10-22"
+    }
+   ],
+   "updated_at": "2026-10-12T17:59:32.443Z",
+   "sep_2026_rows_blank": [
+    "EPS in Rs"
+   ]
+  },
+  "ZEEL": {
+   "section": "quarterly",
+   "cell_source": {
+    "Net Profit": {
+     "Dec 2023": "filing"
+    },
+    "Profit before tax": {
+     "Mar 2024": "filing"
+    },
+    "Sales": {
+     "Jun 2024": "filing"
+    }
+   },
+   "provisional_periods": [
+    {
+     "period": "Sep 2026",
+     "filed_on": "2026-10-30"
+    }
+   ],
+   "updated_at": "2026-10-12T19:48:18.736Z",
+   "sep_2026_rows_blank": [
+    "EPS in Rs"
+   ]
+  },
+  "CYIENT": {
+   "section": "quarterly",
+   "cell_source": {
+    "Profit before tax": {
+     "Mar 2026": "filing"
+    }
+   },
+   "provisional_periods": [],
+   "updated_at": "2026-10-23T02:11:50.979Z",
+   "sep_2026_available_from": "2026-10-23"
+  },
+  "TRENT": {
+   "section": "quarterly",
+   "cell_source": {
+    "Profit before tax": {
+     "Mar 2025": "filing",
+     "Sep 2025": "filing"
+    }
+   },
+   "provisional_periods": [],
+   "updated_at": "2026-11-01T22:31:25.130Z",
+   "sep_2026_available_from": "2026-10-30"
+  },
+  "QUICKHEAL": {
+   "section": "quarterly",
+   "cell_source": {},
+   "provisional_periods": [
+    {
+     "period": "Sep 2026",
+     "filed_on": "2026-10-27"
+    }
+   ],
+   "updated_at": "2026-10-21T06:50:15.720Z",
+   "source": "Phase 1 MCP call",
+   "sep_2026_rows_blank": [
+    "EPS in Rs"
+   ]
+  },
+  "RELIANCE": {
+   "section": "quarterly",
+   "cell_source": {},
+   "provisional_periods": [],
+   "updated_at": "2026-10-30T22:31:13.456Z",
+   "source": "Phase 1 MCP call"
+  }
+ }
+}

@@ -1,0 +1,1674 @@
+{
+ "generated_at": "2026-11-02T05:32:59Z",
+ "hypothesis": "Tapetide's financial statements are systematically sourced from Screener.in, or from a provider that ships Screener-format data.",
+ "method": {
+  "sample": {
+   "seed": 42,
+   "rule": "6 Nifty 100, 7 Nifty Midcap 150, 7 Nifty Smallcap 250; RELIANCE and QUICKHEAL fixed; others random.Random(42) shuffle with distinct industries",
+   "index_lists": "nsearchives.nseindia.com/content/indices/*.csv, downloaded 2 Nov 2026",
+   "stocks": [
+    {
+     "symbol": "RELIANCE",
+     "tier": "large",
+     "industry": "Oil Gas & Consumable Fuels",
+     "reference": true,
+     "in_index": true
+    },
+    {
+     "symbol": "MOTHERSON",
+     "tier": "large",
+     "industry": "Automobile and Auto Components",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "MAXHEALTH",
+     "tier": "large",
+     "industry": "Healthcare",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "TRENT",
+     "tier": "large",
+     "industry": "Consumer Services",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "ADANIENSOL",
+     "tier": "large",
+     "industry": "Power",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "ENRIN",
+     "tier": "large",
+     "industry": "Capital Goods",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "JSL",
+     "tier": "mid",
+     "industry": "Metals & Mining",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "ABCAPITAL",
+     "tier": "mid",
+     "industry": "Financial Services",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "GODFRYPHLP",
+     "tier": "mid",
+     "industry": "Fast Moving Consumer Goods",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "GODREJPROP",
+     "tier": "mid",
+     "industry": "Realty",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "BHARTIHEXA",
+     "tier": "mid",
+     "industry": "Telecommunication",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "JSWINFRA",
+     "tier": "mid",
+     "industry": "Services",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "PIIND",
+     "tier": "mid",
+     "industry": "Chemicals",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "QUICKHEAL",
+     "tier": "small",
+     "industry": "Information Technology (reference, not in index list)",
+     "reference": true,
+     "in_index": false
+    },
+    {
+     "symbol": "NBCC",
+     "tier": "small",
+     "industry": "Construction",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "CYIENT",
+     "tier": "small",
+     "industry": "Information Technology",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "ZEEL",
+     "tier": "small",
+     "industry": "Media Entertainment & Publication",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "RAMCOCEM",
+     "tier": "small",
+     "industry": "Construction Materials",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "WELSPUNLIV",
+     "tier": "small",
+     "industry": "Textiles",
+     "reference": false,
+     "in_index": true
+    },
+    {
+     "symbol": "CROMPTON",
+     "tier": "small",
+     "industry": "Consumer Durables",
+     "reference": false,
+     "in_index": true
+    }
+   ]
+  },
+  "tapetide_interface": "Public https://tapetide.com/stocks/{SYM}.md (robots.txt Allow: /; /api/ disallowed and not used). Cross-checked against the official Tapetide MCP get_financials.",
+  "screener_interface": "Public https://www.screener.in/company/{SYM}/consolidated/ and /company/{SYM}/ (robots.txt allows /company/). No login, no API.",
+  "rate_limit": "Single pass, 4.0-6.5 s between requests per host, on-disk cache, stop on HTTP 429. 60 requests total.",
+  "basis_rule": "Tapetide publishes one basis per company ('EPS basis: ...'). Compared only with the Screener page whose own label shows the same basis. Consolidated never compared with standalone.",
+  "categories": {
+   "exact": "numerically equal as displayed",
+   "rounded": "|diff| <= 0.5 * 10^-min(decimals)",
+   "partial": "relative difference <= 2%",
+   "mismatch": "anything else",
+   "missing_tapetide / missing_screener": "cell on one side only"
+  },
+  "explanations": "Non-matching cells are tagged coverage_window, refresh_lag, eps_share_basis_factor or unexplained. Timing-adjusted figures exclude tagged cells; raw figures are always reported too.",
+  "fetch_log": {
+   "https://tapetide.com/stocks/RELIANCE.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:21:45Z"
+   },
+   "https://www.screener.in/company/RELIANCE/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:21:46Z"
+   },
+   "https://www.screener.in/company/RELIANCE/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:21:52Z"
+   },
+   "https://tapetide.com/stocks/MOTHERSON.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:21:53Z"
+   },
+   "https://www.screener.in/company/MOTHERSON/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:21:58Z"
+   },
+   "https://www.screener.in/company/MOTHERSON/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:03Z"
+   },
+   "https://tapetide.com/stocks/MAXHEALTH.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:04Z"
+   },
+   "https://www.screener.in/company/MAXHEALTH/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:08Z"
+   },
+   "https://www.screener.in/company/MAXHEALTH/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:14Z"
+   },
+   "https://tapetide.com/stocks/TRENT.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:14Z"
+   },
+   "https://www.screener.in/company/TRENT/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:20Z"
+   },
+   "https://www.screener.in/company/TRENT/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:26Z"
+   },
+   "https://tapetide.com/stocks/ADANIENSOL.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:27Z"
+   },
+   "https://www.screener.in/company/ADANIENSOL/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:33Z"
+   },
+   "https://www.screener.in/company/ADANIENSOL/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:39Z"
+   },
+   "https://tapetide.com/stocks/ENRIN.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:40Z"
+   },
+   "https://www.screener.in/company/ENRIN/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:46Z"
+   },
+   "https://www.screener.in/company/ENRIN/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:50Z"
+   },
+   "https://tapetide.com/stocks/JSL.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:51Z"
+   },
+   "https://www.screener.in/company/JSL/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:22:57Z"
+   },
+   "https://www.screener.in/company/JSL/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:02Z"
+   },
+   "https://tapetide.com/stocks/ABCAPITAL.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:03Z"
+   },
+   "https://www.screener.in/company/ABCAPITAL/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:07Z"
+   },
+   "https://www.screener.in/company/ABCAPITAL/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:12Z"
+   },
+   "https://tapetide.com/stocks/GODFRYPHLP.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:13Z"
+   },
+   "https://www.screener.in/company/GODFRYPHLP/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:18Z"
+   },
+   "https://www.screener.in/company/GODFRYPHLP/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:24Z"
+   },
+   "https://tapetide.com/stocks/GODREJPROP.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:26Z"
+   },
+   "https://www.screener.in/company/GODREJPROP/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:29Z"
+   },
+   "https://www.screener.in/company/GODREJPROP/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:34Z"
+   },
+   "https://tapetide.com/stocks/BHARTIHEXA.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:35Z"
+   },
+   "https://www.screener.in/company/BHARTIHEXA/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:41Z"
+   },
+   "https://www.screener.in/company/BHARTIHEXA/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:47Z"
+   },
+   "https://tapetide.com/stocks/JSWINFRA.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:48Z"
+   },
+   "https://www.screener.in/company/JSWINFRA/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:52Z"
+   },
+   "https://www.screener.in/company/JSWINFRA/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:58Z"
+   },
+   "https://tapetide.com/stocks/PIIND.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:23:59Z"
+   },
+   "https://www.screener.in/company/PIIND/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:03Z"
+   },
+   "https://www.screener.in/company/PIIND/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:09Z"
+   },
+   "https://tapetide.com/stocks/QUICKHEAL.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:10Z"
+   },
+   "https://www.screener.in/company/QUICKHEAL/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:15Z"
+   },
+   "https://www.screener.in/company/QUICKHEAL/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:21Z"
+   },
+   "https://tapetide.com/stocks/NBCC.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:21Z"
+   },
+   "https://www.screener.in/company/NBCC/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:27Z"
+   },
+   "https://www.screener.in/company/NBCC/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:33Z"
+   },
+   "https://tapetide.com/stocks/CYIENT.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:34Z"
+   },
+   "https://www.screener.in/company/CYIENT/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:38Z"
+   },
+   "https://www.screener.in/company/CYIENT/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:44Z"
+   },
+   "https://tapetide.com/stocks/ZEEL.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:45Z"
+   },
+   "https://www.screener.in/company/ZEEL/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:49Z"
+   },
+   "https://www.screener.in/company/ZEEL/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:56Z"
+   },
+   "https://tapetide.com/stocks/RAMCOCEM.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:24:57Z"
+   },
+   "https://www.screener.in/company/RAMCOCEM/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:25:02Z"
+   },
+   "https://www.screener.in/company/RAMCOCEM/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:25:08Z"
+   },
+   "https://tapetide.com/stocks/WELSPUNLIV.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:25:09Z"
+   },
+   "https://www.screener.in/company/WELSPUNLIV/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:25:14Z"
+   },
+   "https://www.screener.in/company/WELSPUNLIV/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:25:21Z"
+   },
+   "https://tapetide.com/stocks/CROMPTON.md": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:25:22Z"
+   },
+   "https://www.screener.in/company/CROMPTON/consolidated/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:25:26Z"
+   },
+   "https://www.screener.in/company/CROMPTON/": {
+    "status": 200,
+    "fetched_at": "2026-11-02T05:25:32Z"
+   }
+  }
+ },
+ "interface_check_mcp_vs_public_md": {
+  "cells_identical": 215,
+  "cells_different_or_missing": 0,
+  "detail": {
+   "RELIANCE/quarterly": {
+    "identical": 88,
+    "different": 0,
+    "missing_in_md": 0,
+    "diffs": [],
+    "label_differences": []
+   },
+   "RELIANCE/balance_sheet": {
+    "identical": 60,
+    "different": 0,
+    "missing_in_md": 0,
+    "diffs": [],
+    "label_differences": []
+   },
+   "QUICKHEAL/quarterly": {
+    "identical": 43,
+    "different": 0,
+    "missing_in_md": 0,
+    "diffs": [],
+    "label_differences": []
+   },
+   "CROMPTON/cash_flow": {
+    "identical": 24,
+    "different": 0,
+    "missing_in_md": 0,
+    "diffs": [],
+    "label_differences": []
+   }
+  }
+ },
+ "results": {
+  "overall": {
+   "cells": 10588,
+   "exact": 10272,
+   "missing_screener": 88,
+   "partial": 19,
+   "missing_tapetide": 104,
+   "mismatch": 103,
+   "rounded": 2,
+   "match_pct": 97.034,
+   "exact_pct": 97.015
+  },
+  "timing_adjusted": {
+   "overall": {
+    "cells_after_excluding_explained": 10318,
+    "explained_excluded": 270,
+    "timing_adjusted_match_pct": 99.574
+   },
+   "by_statement": {
+    "quarterly": {
+     "cells_after_excluding_explained": 2797,
+     "explained_excluded": 101,
+     "timing_adjusted_match_pct": 98.677
+    },
+    "annual_pl": {
+     "cells_after_excluding_explained": 2783,
+     "explained_excluded": 89,
+     "timing_adjusted_match_pct": 99.784
+    },
+    "balance_sheet": {
+     "cells_after_excluding_explained": 2290,
+     "explained_excluded": 80,
+     "timing_adjusted_match_pct": 100.0
+    },
+    "cash_flow": {
+     "cells_after_excluding_explained": 1326,
+     "explained_excluded": 0,
+     "timing_adjusted_match_pct": 100.0
+    },
+    "ratios": {
+     "cells_after_excluding_explained": 1122,
+     "explained_excluded": 0,
+     "timing_adjusted_match_pct": 99.911
+    }
+   },
+   "by_basis": {
+    "consolidated": {
+     "cells_after_excluding_explained": 9152,
+     "explained_excluded": 263,
+     "timing_adjusted_match_pct": 99.541
+    },
+    "standalone": {
+     "cells_after_excluding_explained": 1166,
+     "explained_excluded": 7,
+     "timing_adjusted_match_pct": 99.828
+    }
+   },
+   "by_stock": {
+    "RELIANCE": {
+     "cells_after_excluding_explained": 571,
+     "explained_excluded": 0,
+     "timing_adjusted_match_pct": 100.0
+    },
+    "MOTHERSON": {
+     "cells_after_excluding_explained": 561,
+     "explained_excluded": 0,
+     "timing_adjusted_match_pct": 100.0
+    },
+    "MAXHEALTH": {
+     "cells_after_excluding_explained": 483,
+     "explained_excluded": 30,
+     "timing_adjusted_match_pct": 99.586
+    },
+    "TRENT": {
+     "cells_after_excluding_explained": 571,
+     "explained_excluded": 0,
+     "timing_adjusted_match_pct": 99.475
+    },
+    "ADANIENSOL": {
+     "cells_after_excluding_explained": 547,
+     "explained_excluded": 0,
+     "timing_adjusted_match_pct": 99.817
+    },
+    "ENRIN": {
+     "cells_after_excluding_explained": 201,
+     "explained_excluded": 0,
+     "timing_adjusted_match_pct": 100.0
+    },
+    "JSL": {
+     "cells_after_excluding_explained": 551,
+     "explained_excluded": 31,
+     "timing_adjusted_match_pct": 99.637
+    },
+    "ABCAPITAL": {
+     "cells_after_excluding_explained": 468,
+     "explained_excluded": 42,
+     "timing_adjusted_match_pct": 98.504
+    },
+    "GODFRYPHLP": {
+     "cells_after_excluding_explained": 561,
+     "explained_excluded": 0,
+     "timing_adjusted_match_pct": 100.0
+    },
+    "GODREJPROP": {
+     "cells_after_excluding_explained": 531,
+     "explained_excluded": 31,
+     "timing_adjusted_match_pct": 99.812
+    },
+    "BHARTIHEXA": {
+     "cells_after_excluding_explained": 401,
+     "explained_excluded": 7,
+     "timing_adjusted_match_pct": 100.0
+    },
+    "JSWINFRA": {
+     "cells_after_excluding_explained": 457,
+     "explained_excluded": 36,
+     "timing_adjusted_match_pct": 99.781
+    },
+    "PIIND": {
+     "cells_after_excluding_explained": 561,
+     "explained_excluded": 0,
+     "timing_adjusted_match_pct": 98.574
+    },
+    "QUICKHEAL": {
+     "cells_after_excluding_explained": 531,
+     "explained_excluded": 31,
+     "timing_adjusted_match_pct": 99.812
+    },
+    "NBCC": {
+     "cells_after_excluding_explained": 537,
+     "explained_excluded": 0,
+     "timing_adjusted_match_pct": 99.814
+    },
+    "CYIENT": {
+     "cells_after_excluding_explained": 569,
+     "explained_excluded": 0,
+     "timing_adjusted_match_pct": 99.824
+    },
+    "ZEEL": {
+     "cells_after_excluding_explained": 541,
+     "explained_excluded": 31,
+     "timing_adjusted_match_pct": 98.891
+    },
+    "RAMCOCEM": {
+     "cells_after_excluding_explained": 561,
+     "explained_excluded": 0,
+     "timing_adjusted_match_pct": 99.822
+    },
+    "WELSPUNLIV": {
+     "cells_after_excluding_explained": 551,
+     "explained_excluded": 31,
+     "timing_adjusted_match_pct": 98.73
+    },
+    "CROMPTON": {
+     "cells_after_excluding_explained": 564,
+     "explained_excluded": 0,
+     "timing_adjusted_match_pct": 99.645
+    }
+   }
+  },
+  "by_statement": {
+   "quarterly": {
+    "cells": 2898,
+    "exact": 2760,
+    "missing_screener": 88,
+    "partial": 12,
+    "missing_tapetide": 21,
+    "mismatch": 17,
+    "match_pct": 95.238,
+    "exact_pct": 95.238
+   },
+   "annual_pl": {
+    "cells": 2872,
+    "exact": 2775,
+    "mismatch": 86,
+    "missing_tapetide": 2,
+    "partial": 7,
+    "rounded": 2,
+    "match_pct": 96.692,
+    "exact_pct": 96.623
+   },
+   "balance_sheet": {
+    "cells": 2370,
+    "exact": 2290,
+    "missing_tapetide": 80,
+    "match_pct": 96.624,
+    "exact_pct": 96.624
+   },
+   "cash_flow": {
+    "cells": 1326,
+    "exact": 1326,
+    "match_pct": 100.0,
+    "exact_pct": 100.0
+   },
+   "ratios": {
+    "cells": 1122,
+    "exact": 1121,
+    "missing_tapetide": 1,
+    "match_pct": 99.911,
+    "exact_pct": 99.911
+   }
+  },
+  "by_basis": {
+   "consolidated": {
+    "cells": 9415,
+    "exact": 9108,
+    "missing_screener": 88,
+    "partial": 18,
+    "missing_tapetide": 103,
+    "mismatch": 96,
+    "rounded": 2,
+    "match_pct": 96.76,
+    "exact_pct": 96.739
+   },
+   "standalone": {
+    "cells": 1173,
+    "exact": 1164,
+    "mismatch": 7,
+    "partial": 1,
+    "missing_tapetide": 1,
+    "match_pct": 99.233,
+    "exact_pct": 99.233
+   }
+  },
+  "by_tier": {
+   "large": {
+    "cells": 2964,
+    "exact": 2928,
+    "missing_screener": 11,
+    "partial": 3,
+    "missing_tapetide": 13,
+    "mismatch": 9,
+    "match_pct": 98.785,
+    "exact_pct": 98.785
+   },
+   "mid": {
+    "cells": 3677,
+    "exact": 3509,
+    "missing_screener": 44,
+    "mismatch": 62,
+    "missing_tapetide": 54,
+    "partial": 6,
+    "rounded": 2,
+    "match_pct": 95.485,
+    "exact_pct": 95.431
+   },
+   "small": {
+    "cells": 3947,
+    "exact": 3835,
+    "missing_screener": 33,
+    "missing_tapetide": 37,
+    "mismatch": 32,
+    "partial": 10,
+    "match_pct": 97.162,
+    "exact_pct": 97.162
+   }
+  },
+  "by_stock": {
+   "RELIANCE": {
+    "cells": 571,
+    "exact": 571,
+    "match_pct": 100.0,
+    "exact_pct": 100.0
+   },
+   "MOTHERSON": {
+    "cells": 561,
+    "exact": 561,
+    "match_pct": 100.0,
+    "exact_pct": 100.0
+   },
+   "MAXHEALTH": {
+    "cells": 513,
+    "exact": 481,
+    "missing_screener": 11,
+    "partial": 1,
+    "missing_tapetide": 11,
+    "mismatch": 9,
+    "match_pct": 93.762,
+    "exact_pct": 93.762
+   },
+   "TRENT": {
+    "cells": 571,
+    "exact": 568,
+    "partial": 2,
+    "missing_tapetide": 1,
+    "match_pct": 99.475,
+    "exact_pct": 99.475
+   },
+   "ADANIENSOL": {
+    "cells": 547,
+    "exact": 546,
+    "missing_tapetide": 1,
+    "match_pct": 99.817,
+    "exact_pct": 99.817
+   },
+   "ENRIN": {
+    "cells": 201,
+    "exact": 201,
+    "match_pct": 100.0,
+    "exact_pct": 100.0
+   },
+   "JSL": {
+    "cells": 582,
+    "exact": 549,
+    "missing_screener": 11,
+    "mismatch": 10,
+    "missing_tapetide": 11,
+    "partial": 1,
+    "match_pct": 94.33,
+    "exact_pct": 94.33
+   },
+   "ABCAPITAL": {
+    "cells": 510,
+    "exact": 461,
+    "missing_tapetide": 21,
+    "missing_screener": 11,
+    "mismatch": 17,
+    "match_pct": 90.392,
+    "exact_pct": 90.392
+   },
+   "GODFRYPHLP": {
+    "cells": 561,
+    "exact": 561,
+    "match_pct": 100.0,
+    "exact_pct": 100.0
+   },
+   "GODREJPROP": {
+    "cells": 562,
+    "exact": 530,
+    "missing_screener": 11,
+    "missing_tapetide": 11,
+    "mismatch": 10,
+    "match_pct": 94.306,
+    "exact_pct": 94.306
+   },
+   "BHARTIHEXA": {
+    "cells": 408,
+    "exact": 401,
+    "mismatch": 7,
+    "match_pct": 98.284,
+    "exact_pct": 98.284
+   },
+   "JSWINFRA": {
+    "cells": 493,
+    "exact": 456,
+    "missing_screener": 11,
+    "missing_tapetide": 11,
+    "mismatch": 14,
+    "partial": 1,
+    "match_pct": 92.495,
+    "exact_pct": 92.495
+   },
+   "PIIND": {
+    "cells": 561,
+    "exact": 551,
+    "mismatch": 4,
+    "partial": 4,
+    "rounded": 2,
+    "match_pct": 98.574,
+    "exact_pct": 98.217
+   },
+   "QUICKHEAL": {
+    "cells": 562,
+    "exact": 530,
+    "missing_screener": 11,
+    "missing_tapetide": 11,
+    "mismatch": 10,
+    "match_pct": 94.306,
+    "exact_pct": 94.306
+   },
+   "NBCC": {
+    "cells": 537,
+    "exact": 536,
+    "mismatch": 1,
+    "match_pct": 99.814,
+    "exact_pct": 99.814
+   },
+   "CYIENT": {
+    "cells": 569,
+    "exact": 568,
+    "partial": 1,
+    "match_pct": 99.824,
+    "exact_pct": 99.824
+   },
+   "ZEEL": {
+    "cells": 572,
+    "exact": 535,
+    "partial": 4,
+    "missing_screener": 11,
+    "mismatch": 11,
+    "missing_tapetide": 11,
+    "match_pct": 93.531,
+    "exact_pct": 93.531
+   },
+   "RAMCOCEM": {
+    "cells": 561,
+    "exact": 560,
+    "partial": 1,
+    "match_pct": 99.822,
+    "exact_pct": 99.822
+   },
+   "WELSPUNLIV": {
+    "cells": 582,
+    "exact": 544,
+    "missing_screener": 11,
+    "missing_tapetide": 14,
+    "partial": 3,
+    "mismatch": 10,
+    "match_pct": 93.471,
+    "exact_pct": 93.471
+   },
+   "CROMPTON": {
+    "cells": 564,
+    "exact": 562,
+    "partial": 1,
+    "missing_tapetide": 1,
+    "match_pct": 99.645,
+    "exact_pct": 99.645
+   }
+  },
+  "row_level": {
+   "row_names_identical": 94,
+   "row_order_identical": 98,
+   "periods_identical": 84,
+   "statement_pairs": 100
+  },
+  "explanations": {
+   "coverage_window (period outside Screener's display window)": 88,
+   "unexplained": 46,
+   "refresh_lag (Tapetide TTM = Screener-style TTM one quarter earlier)": 68,
+   "coverage_window/refresh_lag (newest or oldest period not on Tapetide)": 91,
+   "refresh_lag (Tapetide's latest quarter is older than Screener's)": 10,
+   "eps_share_basis_factor (Tapetide/Screener = 2)": 7,
+   "eps_share_basis_factor (Tapetide/Screener = 30)": 6
+  }
+ },
+ "fingerprints": {
+  "basis_follows_screener_default_view": {
+   "stocks": 20,
+   "of": 20,
+   "tapetide_bases": {
+    "Consolidated": 17,
+    "Standalone": 3
+   },
+   "standalone_although_screener_has_consolidated": [
+    "CROMPTON"
+   ],
+   "screener_has_no_consolidated": [
+    "ENRIN",
+    "BHARTIHEXA"
+   ],
+   "note": "Tapetide's basis equals the basis of Screener's canonical URL for every stock, including CROMPTON where Screener has consolidated data but defaults to standalone."
+  },
+  "screener_derived_rows": {
+   "Operating Profit = Sales - Expenses": {
+    "pass": 479,
+    "total": 479
+   },
+   "OPM % = Operating Profit / Sales, rounded as displayed": {
+    "pass": 476,
+    "total": 476
+   },
+   "Other Liabilities = Total Liabilities - Equity - Reserves - Borrowings": {
+    "pass": 217,
+    "total": 217
+   },
+   "Other Assets = Total Assets - Fixed Assets - CWIP - Investments": {
+    "pass": 229,
+    "total": 229
+   }
+  },
+  "row_labels_and_layout": {
+   "'EPS in Rs' row label (quarterly)": 20,
+   "TTM column in annual P&L on both": 20,
+   "'EPS in Rs' row label (annual_pl)": 20,
+   "half-year column inside annual balance sheet (same label on both)": 5,
+   "Tapetide renames 'CFO/OP' -> Screener 'CFO/EBITDA' (cash_flow)": 11,
+   "finance-company layout row 'Financing Profit' (quarterly)": 1,
+   "finance-company layout row 'Financing Margin %' (quarterly)": 1,
+   "finance-company layout row 'Revenue' (quarterly)": 1,
+   "finance-company layout row 'Financing Profit' (annual_pl)": 1,
+   "finance-company layout row 'Financing Margin %' (annual_pl)": 1,
+   "finance-company layout row 'Revenue' (annual_pl)": 1
+  },
+  "row_renamed_by_tapetide": {
+   "cash_flow: CFO/OP -> CFO/EBITDA": 11
+  },
+  "empty_rows_dropped_by_tapetide": {
+   "ratios: Inventory Days": 5,
+   "ratios: Days Payable": 5,
+   "quarterly: Gross NPA %": 1,
+   "quarterly: Net NPA %": 1
+  },
+  "non_empty_rows_only_on_screener": {},
+  "half_year_column_in_annual_balance_sheet": {
+   "screener_shows": [
+    "RELIANCE",
+    "MAXHEALTH",
+    "TRENT",
+    "ADANIENSOL",
+    "JSL",
+    "ABCAPITAL",
+    "GODREJPROP",
+    "JSWINFRA",
+    "QUICKHEAL",
+    "CYIENT",
+    "ZEEL",
+    "WELSPUNLIV",
+    "CROMPTON"
+   ],
+   "tapetide_also_shows": [
+    "RELIANCE",
+    "TRENT",
+    "ADANIENSOL",
+    "CYIENT",
+    "CROMPTON"
+   ],
+   "note": "Tapetide labels this half-year column period_months: 12 in its MCP (RELIANCE Sep 2026)."
+  },
+  "ttm_one_quarter_behind_with_screener_rounding": {
+   "stocks": [
+    "MAXHEALTH",
+    "JSL",
+    "GODREJPROP",
+    "JSWINFRA",
+    "QUICKHEAL",
+    "ZEEL",
+    "WELSPUNLIV"
+   ],
+   "example": {
+    "JSL": {
+     "tapetide_ttm_sales": 44026.0,
+     "tapetide_prev4q_sum": 44027.0
+    }
+   },
+   "note": "Tapetide's TTM equals the TTM for the previous four quarters, off by 1 from the sum of displayed quarters, i.e. computed from unrounded figures upstream and not recomputed by Tapetide."
+  },
+  "quarter_retained_after_screener_window_rolled": [
+   "MAXHEALTH",
+   "JSL",
+   "ABCAPITAL",
+   "GODREJPROP",
+   "JSWINFRA",
+   "QUICKHEAL",
+   "ZEEL",
+   "WELSPUNLIV"
+  ],
+  "whole_record_one_quarter_behind": [
+   "ABCAPITAL"
+  ]
+ },
+ "tapetide_post_processing": {
+  "eps_restated_by_exact_factor": [
+   {
+    "symbol": "BHARTIHEXA",
+    "tapetide_over_screener": "2",
+    "cells": 7
+   },
+   {
+    "symbol": "JSWINFRA",
+    "tapetide_over_screener": "30",
+    "cells": 6
+   }
+  ],
+  "newest_quarter_eps_withheld": [
+   "GODREJPROP",
+   "JSL",
+   "JSWINFRA",
+   "MAXHEALTH",
+   "QUICKHEAL",
+   "WELSPUNLIV",
+   "ZEEL"
+  ],
+  "finance_layout_reordered_to_tapetide_template": [
+   "ABCAPITAL quarterly",
+   "ABCAPITAL annual_pl"
+  ],
+  "trailing_zero_formatting_only": 74,
+  "unexplained_value_differences": [
+   {
+    "symbol": "MAXHEALTH",
+    "tier": "large",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "EPS in Rs",
+    "period": "Jun 2026",
+    "tapetide_value": "3.32",
+    "screener_value": "3.31",
+    "category": "partial",
+    "abs_diff": "0.01",
+    "rel_diff_pct": "0.3021",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "TRENT",
+    "tier": "large",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Mar 2025",
+    "tapetide_value": "417",
+    "screener_value": "416",
+    "category": "partial",
+    "abs_diff": "1.0",
+    "rel_diff_pct": "0.2404",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "TRENT",
+    "tier": "large",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Sep 2025",
+    "tapetide_value": "478",
+    "screener_value": "477",
+    "category": "partial",
+    "abs_diff": "1.0",
+    "rel_diff_pct": "0.2096",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "JSL",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Mar 2024",
+    "tapetide_value": "54.98",
+    "screener_value": "53",
+    "category": "mismatch",
+    "abs_diff": "1.98",
+    "rel_diff_pct": "3.7358",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Sep 2025",
+    "tapetide_value": "92",
+    "screener_value": "170",
+    "category": "mismatch",
+    "abs_diff": "78.0",
+    "rel_diff_pct": "45.8824",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Depreciation",
+    "period": "Mar 2024",
+    "tapetide_value": "53.5",
+    "screener_value": "52",
+    "category": "mismatch",
+    "abs_diff": "1.5",
+    "rel_diff_pct": "2.8846",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Depreciation",
+    "period": "Jun 2024",
+    "tapetide_value": "55.44",
+    "screener_value": "54",
+    "category": "mismatch",
+    "abs_diff": "1.44",
+    "rel_diff_pct": "2.6667",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Sep 2025",
+    "tapetide_value": "1,212",
+    "screener_value": "1,290",
+    "category": "mismatch",
+    "abs_diff": "78.0",
+    "rel_diff_pct": "6.0465",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Tax %",
+    "period": "Sep 2025",
+    "tapetide_value": "27%",
+    "screener_value": "26%",
+    "category": "mismatch",
+    "abs_diff": "1.0",
+    "rel_diff_pct": "3.8462",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Net Profit",
+    "period": "Sep 2025",
+    "tapetide_value": "882",
+    "screener_value": "961",
+    "category": "mismatch",
+    "abs_diff": "79.0",
+    "rel_diff_pct": "8.2206",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "EPS in Rs",
+    "period": "Sep 2025",
+    "tapetide_value": "3.27",
+    "screener_value": "3.57",
+    "category": "mismatch",
+    "abs_diff": "0.3",
+    "rel_diff_pct": "8.4034",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "PIIND",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Mar 2025",
+    "tapetide_value": "73.4",
+    "screener_value": "75",
+    "category": "mismatch",
+    "abs_diff": "1.6",
+    "rel_diff_pct": "2.1333",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "PIIND",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Sep 2025",
+    "tapetide_value": "82.5",
+    "screener_value": "85",
+    "category": "mismatch",
+    "abs_diff": "2.5",
+    "rel_diff_pct": "2.9412",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "PIIND",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Mar 2026",
+    "tapetide_value": "75.6",
+    "screener_value": "74",
+    "category": "mismatch",
+    "abs_diff": "1.6",
+    "rel_diff_pct": "2.1622",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "PIIND",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Jun 2026",
+    "tapetide_value": "64.1",
+    "screener_value": "66",
+    "category": "mismatch",
+    "abs_diff": "1.9",
+    "rel_diff_pct": "2.8788",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "PIIND",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Mar 2025",
+    "tapetide_value": "431",
+    "screener_value": "432",
+    "category": "partial",
+    "abs_diff": "1.0",
+    "rel_diff_pct": "0.2315",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "PIIND",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Sep 2025",
+    "tapetide_value": "523",
+    "screener_value": "525",
+    "category": "partial",
+    "abs_diff": "2.0",
+    "rel_diff_pct": "0.381",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "PIIND",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Jun 2026",
+    "tapetide_value": "320",
+    "screener_value": "322",
+    "category": "partial",
+    "abs_diff": "2.0",
+    "rel_diff_pct": "0.6211",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "PIIND",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "annual_pl",
+    "row": "Other Income",
+    "period": "Mar 2025",
+    "tapetide_value": "344",
+    "screener_value": "345",
+    "category": "partial",
+    "abs_diff": "1.0",
+    "rel_diff_pct": "0.2899",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "PIIND",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "annual_pl",
+    "row": "EPS in Rs",
+    "period": "Mar 2024",
+    "tapetide_value": "111",
+    "screener_value": "110.83",
+    "category": "rounded",
+    "abs_diff": "0.17",
+    "rel_diff_pct": "0.1534",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "PIIND",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "annual_pl",
+    "row": "EPS in Rs",
+    "period": "Mar 2025",
+    "tapetide_value": "109",
+    "screener_value": "109.43",
+    "category": "rounded",
+    "abs_diff": "0.43",
+    "rel_diff_pct": "0.3929",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "NBCC",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Dec 2024",
+    "tapetide_value": "55.2",
+    "screener_value": "54",
+    "category": "mismatch",
+    "abs_diff": "1.2",
+    "rel_diff_pct": "2.2222",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "CYIENT",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Mar 2026",
+    "tapetide_value": "96.7",
+    "screener_value": "95",
+    "category": "partial",
+    "abs_diff": "1.7",
+    "rel_diff_pct": "1.7895",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ZEEL",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Sales",
+    "period": "Jun 2024",
+    "tapetide_value": "2,131",
+    "screener_value": "2,130",
+    "category": "partial",
+    "abs_diff": "1.0",
+    "rel_diff_pct": "0.0469",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ZEEL",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Interest",
+    "period": "Sep 2026",
+    "tapetide_value": "3",
+    "screener_value": "2",
+    "category": "mismatch",
+    "abs_diff": "1.0",
+    "rel_diff_pct": "50.0",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ZEEL",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Mar 2024",
+    "tapetide_value": "114",
+    "screener_value": "115",
+    "category": "partial",
+    "abs_diff": "1.0",
+    "rel_diff_pct": "0.8696",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ZEEL",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Net Profit",
+    "period": "Dec 2023",
+    "tapetide_value": "58.54",
+    "screener_value": "58",
+    "category": "partial",
+    "abs_diff": "0.54",
+    "rel_diff_pct": "0.931",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ZEEL",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "Mar 2026",
+    "tapetide_value": "273",
+    "screener_value": "274",
+    "category": "partial",
+    "abs_diff": "1.0",
+    "rel_diff_pct": "0.365",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "RAMCOCEM",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "Mar 2026",
+    "tapetide_value": "419",
+    "screener_value": "421",
+    "category": "partial",
+    "abs_diff": "2.0",
+    "rel_diff_pct": "0.4751",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Mar 2024",
+    "tapetide_value": "41.48",
+    "screener_value": "42",
+    "category": "partial",
+    "abs_diff": "0.52",
+    "rel_diff_pct": "1.2381",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Jun 2026",
+    "tapetide_value": "32.71",
+    "screener_value": "34",
+    "category": "mismatch",
+    "abs_diff": "1.29",
+    "rel_diff_pct": "3.7941",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Jun 2026",
+    "tapetide_value": "219",
+    "screener_value": "220",
+    "category": "partial",
+    "abs_diff": "1.0",
+    "rel_diff_pct": "0.4545",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "CROMPTON",
+    "tier": "small",
+    "basis": "standalone",
+    "statement": "annual_pl",
+    "row": "Other Income",
+    "period": "Mar 2025",
+    "tapetide_value": "63.2",
+    "screener_value": "64",
+    "category": "partial",
+    "abs_diff": "0.8",
+    "rel_diff_pct": "1.25",
+    "explanation": "unexplained"
+   }
+  ],
+  "unexplained_missing": [
+   {
+    "symbol": "MAXHEALTH",
+    "tier": "large",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "EPS in Rs",
+    "period": "Sep 2026",
+    "tapetide_value": "\u2014",
+    "screener_value": "4.26",
+    "category": "missing_tapetide",
+    "abs_diff": "",
+    "rel_diff_pct": "",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "TRENT",
+    "tier": "large",
+    "basis": "consolidated",
+    "statement": "annual_pl",
+    "row": "Dividend Payout %",
+    "period": "Mar 2021",
+    "tapetide_value": "n/m",
+    "screener_value": "-15%",
+    "category": "missing_tapetide",
+    "abs_diff": "",
+    "rel_diff_pct": "",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ADANIENSOL",
+    "tier": "large",
+    "basis": "consolidated",
+    "statement": "ratios",
+    "row": "Working Capital Days",
+    "period": "Mar 2015",
+    "tapetide_value": "n/m",
+    "screener_value": "-11,796",
+    "category": "missing_tapetide",
+    "abs_diff": "",
+    "rel_diff_pct": "",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "JSL",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "EPS in Rs",
+    "period": "Sep 2026",
+    "tapetide_value": "\u2014",
+    "screener_value": "10.85",
+    "category": "missing_tapetide",
+    "abs_diff": "",
+    "rel_diff_pct": "",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "GODREJPROP",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "EPS in Rs",
+    "period": "Sep 2026",
+    "tapetide_value": "\u2014",
+    "screener_value": "5.12",
+    "category": "missing_tapetide",
+    "abs_diff": "",
+    "rel_diff_pct": "",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "JSWINFRA",
+    "tier": "mid",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "EPS in Rs",
+    "period": "Sep 2026",
+    "tapetide_value": "\u2014",
+    "screener_value": "1.36",
+    "category": "missing_tapetide",
+    "abs_diff": "",
+    "rel_diff_pct": "",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "QUICKHEAL",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "EPS in Rs",
+    "period": "Sep 2026",
+    "tapetide_value": "\u2014",
+    "screener_value": "1.07",
+    "category": "missing_tapetide",
+    "abs_diff": "",
+    "rel_diff_pct": "",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "ZEEL",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "EPS in Rs",
+    "period": "Sep 2026",
+    "tapetide_value": "\u2014",
+    "screener_value": "0.47",
+    "category": "missing_tapetide",
+    "abs_diff": "",
+    "rel_diff_pct": "",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Operating Profit",
+    "period": "Sep 2026",
+    "tapetide_value": "\u2014",
+    "screener_value": "338",
+    "category": "missing_tapetide",
+    "abs_diff": "",
+    "rel_diff_pct": "",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "OPM %",
+    "period": "Sep 2026",
+    "tapetide_value": "\u2014",
+    "screener_value": "12%",
+    "category": "missing_tapetide",
+    "abs_diff": "",
+    "rel_diff_pct": "",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Sep 2026",
+    "tapetide_value": "\u2014",
+    "screener_value": "25",
+    "category": "missing_tapetide",
+    "abs_diff": "",
+    "rel_diff_pct": "",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "tier": "small",
+    "basis": "consolidated",
+    "statement": "quarterly",
+    "row": "EPS in Rs",
+    "period": "Sep 2026",
+    "tapetide_value": "\u2014",
+    "screener_value": "1.79",
+    "category": "missing_tapetide",
+    "abs_diff": "",
+    "rel_diff_pct": "",
+    "explanation": "unexplained"
+   },
+   {
+    "symbol": "CROMPTON",
+    "tier": "small",
+    "basis": "standalone",
+    "statement": "annual_pl",
+    "row": "Dividend Payout %",
+    "period": "Mar 2026",
+    "tapetide_value": "n/m",
+    "screener_value": "-79%",
+    "category": "missing_tapetide",
+    "abs_diff": "",
+    "rel_diff_pct": "",
+    "explanation": "unexplained"
+   }
+  ]
+ },
+ "assessment": {
+  "direct_screener_sourcing": "Consistent with all evidence. Presentation-layer artefacts (default-view basis, half-year column, TTM rounding, display windows, finance-company layout, CFO/EBITDA definition) are Screener website choices, not raw-filing facts.",
+  "shared_upstream_provider": "Not excluded. A reseller that ships Screener-format data would reproduce the same artefacts; indianapi.in (used by arthscan) matched Screener on 252/252 RELIANCE cells earlier in this investigation.",
+  "independent_compilation": "Not supported: an independent pipeline would not reproduce Screener's derived rows, default-view choice and TTM rounding across 20 stocks.",
+  "what_this_does_not_show": "Whether any commercial or licensing relationship exists. An exact match is a lead, not proof."
+ }
+}

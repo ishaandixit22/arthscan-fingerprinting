@@ -1,0 +1,38 @@
+symbol,statement,row,period,phase1_category,phase1_tapetide,phase1_screener,now_tapetide,now_screener,now_indianapi,tapetide_cell_source,indianapi_equals_screener,indianapi_equals_tapetide,verdict
+TRENT,quarterly,Profit before tax,Mar 2025,partial,417,416,417,416,416,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+TRENT,quarterly,Profit before tax,Sep 2025,partial,478,477,478,477,477,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+TRENT,annual_pl,Dividend Payout %,Mar 2021,missing_tapetide,n/m,-15%,n/m,-15%,-15,not flagged,True,False,missing cell: Tapetide shows 'n/m' (not meaningful); Indian Stock API has the value
+JSL,quarterly,Other Income,Mar 2024,mismatch,54.98,53,54.98,53,53,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+JSL,quarterly,EPS in Rs,Sep 2026,missing_tapetide,—,10.85,—,10.85,10.85,not flagged,True,False,missing cell: still missing on Tapetide; Indian Stock API has the value
+ABCAPITAL,quarterly,Other Income,Sep 2025,mismatch,92,170,92,170,92,not flagged,False,True,"Tapetide = Indian Stock API, Screener differs"
+ABCAPITAL,quarterly,Depreciation,Mar 2024,mismatch,53.5,52,53.5,52,52,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+ABCAPITAL,quarterly,Depreciation,Jun 2024,mismatch,55.44,54,55.44,54,54,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+ABCAPITAL,quarterly,Profit before tax,Sep 2025,mismatch,"1,212","1,290","1,212","1,290",1212,not flagged,False,True,"Tapetide = Indian Stock API, Screener differs"
+ABCAPITAL,quarterly,Tax %,Sep 2025,mismatch,27%,26%,27%,26%,27,not flagged,False,True,"Tapetide = Indian Stock API, Screener differs"
+ABCAPITAL,quarterly,Net Profit,Sep 2025,mismatch,882,961,882,961,882,not flagged,False,True,"Tapetide = Indian Stock API, Screener differs"
+ABCAPITAL,quarterly,EPS in Rs,Sep 2025,mismatch,3.27,3.57,3.27,3.57,3.27,not flagged,False,True,"Tapetide = Indian Stock API, Screener differs"
+PIIND,quarterly,Other Income,Mar 2025,mismatch,73.4,75,73.4,75,75,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+PIIND,quarterly,Other Income,Sep 2025,mismatch,82.5,85,82.5,85,85,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+PIIND,quarterly,Other Income,Mar 2026,mismatch,75.6,74,75.6,74,74,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+PIIND,quarterly,Other Income,Jun 2026,mismatch,64.1,66,64.1,66,66,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+PIIND,quarterly,Profit before tax,Mar 2025,partial,431,432,431,432,432,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+PIIND,quarterly,Profit before tax,Sep 2025,partial,523,525,523,525,525,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+PIIND,quarterly,Profit before tax,Jun 2026,partial,320,322,320,322,322,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+PIIND,annual_pl,Other Income,Mar 2025,partial,344,345,344,345,345,not flagged,True,False,"Indian Stock API = Screener, Tapetide differs (not flagged as filing)"
+PIIND,annual_pl,EPS in Rs,Mar 2024,rounded,111,110.83,111,110.83,110.83,not flagged,True,True,agree within rounding (Tapetide shows fewer decimals)
+PIIND,annual_pl,EPS in Rs,Mar 2025,rounded,109,109.43,109,109.43,109.43,not flagged,True,True,agree within rounding (Tapetide shows fewer decimals)
+QUICKHEAL,quarterly,EPS in Rs,Sep 2026,missing_tapetide,—,1.07,—,1.07,,not flagged,False,False,missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet
+CYIENT,quarterly,Profit before tax,Mar 2026,partial,96.7,95,96.7,95,95,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+ZEEL,quarterly,Sales,Jun 2024,partial,"2,131","2,130","2,131","2,130",2130,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+ZEEL,quarterly,Interest,Sep 2026,mismatch,3,2,3,2,,not flagged,False,False,all three differ / insufficient data
+ZEEL,quarterly,Profit before tax,Mar 2024,partial,114,115,114,115,115,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+ZEEL,quarterly,Net Profit,Dec 2023,partial,58.54,58,58.54,58,58,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+ZEEL,quarterly,EPS in Rs,Sep 2026,missing_tapetide,—,0.47,—,0.47,,not flagged,False,False,missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet
+ZEEL,annual_pl,Profit before tax,Mar 2026,partial,273,274,273,274,274,not flagged,True,False,"Indian Stock API = Screener, Tapetide differs (not flagged as filing)"
+WELSPUNLIV,quarterly,Operating Profit,Sep 2026,missing_tapetide,—,338,—,338,,not flagged,False,False,missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet
+WELSPUNLIV,quarterly,OPM %,Sep 2026,missing_tapetide,—,12%,—,12%,,not flagged,False,False,missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet
+WELSPUNLIV,quarterly,Other Income,Mar 2024,partial,41.48,42,41.48,42,42,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+WELSPUNLIV,quarterly,Other Income,Jun 2026,mismatch,32.71,34,32.71,34,34,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+WELSPUNLIV,quarterly,Other Income,Sep 2026,missing_tapetide,—,25,—,25,,not flagged,False,False,missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet
+WELSPUNLIV,quarterly,Profit before tax,Jun 2026,partial,219,220,219,220,220,filing,True,False,Tapetide filing override (flagged cell_source=filing); compiled value = Screener = Indian Stock API
+WELSPUNLIV,quarterly,EPS in Rs,Sep 2026,missing_tapetide,—,1.79,—,1.79,,not flagged,False,False,missing cell: still missing on Tapetide; Indian Stock API has no Sep 2026 yet

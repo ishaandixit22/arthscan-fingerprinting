@@ -1,0 +1,37 @@
+snapshot_id,label,symbol,source,fetched_at_utc,quarter_checked,rows_filled,rows_equal_screener,latest_quarter,latest_annual,latest_balance_sheet,ttm_ends_on_quarter,t0_exchange_utc,minutes_after_t0,has_new_quarter,source_reported_ts
+20261102T062632Z_baseline,baseline,RELIANCE,tapetide,2026-11-02T06:26:32.118862+00:00,Sep 2026,11/11,11/11,Sep 2026,TTM,Sep 2026,Sep 2026,,,,"{""page_generated_at"": ""2026-11-02T06:26:32.630Z"", ""prices_as_of"": ""2 Nov 2026, 11:56 IST""}"
+20261102T062632Z_baseline,baseline,RELIANCE,screener,2026-11-02T06:26:33.312441+00:00,Sep 2026,11/11,11/11,Sep 2026,TTM,Sep 2026,Sep 2026,,,,
+20261102T062632Z_baseline,baseline,RELIANCE,indianapi_arthscan_cache,2026-11-02T06:26:34.338920+00:00,Sep 2026,0/11,0/11,Jun 2026,TTM,Mar 2026,Jun 2026,,,,
+20261102T062632Z_baseline,baseline,PIIND,tapetide,2026-11-02T06:26:56.682076+00:00,Jun 2026,11/11,9/11,Jun 2026,TTM,Mar 2026,Jun 2026,,,,"{""page_generated_at"": ""2026-11-02T06:26:56.994Z"", ""prices_as_of"": ""2 Nov 2026, 11:56 IST""}"
+20261102T062632Z_baseline,baseline,PIIND,screener,2026-11-02T06:26:57.580964+00:00,Jun 2026,11/11,11/11,Jun 2026,TTM,Mar 2026,Jun 2026,,,,
+20261102T062632Z_baseline,baseline,PIIND,indianapi_arthscan_cache,2026-11-02T06:27:02.606053+00:00,Jun 2026,11/11,11/11,Jun 2026,TTM,Mar 2026,Jun 2026,,,,
+20261102T062632Z_baseline,baseline,ABCAPITAL,tapetide,2026-11-02T06:27:26.825782+00:00,Sep 2026,0/13,0/13,Jun 2026,TTM,Mar 2026,Jun 2026,,,,"{""page_generated_at"": ""2026-11-02T06:27:27.103Z"", ""prices_as_of"": ""2 Nov 2026, 11:57 IST""}"
+20261102T062632Z_baseline,baseline,ABCAPITAL,screener,2026-11-02T06:27:27.651086+00:00,Sep 2026,11/13,11/13,Sep 2026,TTM,Sep 2026,Sep 2026,,,,
+20261102T062632Z_baseline,baseline,ABCAPITAL,indianapi_arthscan_cache,2026-11-02T06:27:32.526900+00:00,Sep 2026,0/13,0/13,Jun 2026,TTM,Mar 2026,Jun 2026,,,,
+20261102T062632Z_baseline,baseline,WELSPUNLIV,tapetide,2026-11-02T06:27:56.103680+00:00,Sep 2026,7/11,7/11,Sep 2026,TTM,Mar 2026,Jun 2026,,,,"{""page_generated_at"": ""2026-11-02T06:27:56.431Z"", ""prices_as_of"": ""2 Nov 2026, 11:57 IST""}"
+20261102T062632Z_baseline,baseline,WELSPUNLIV,screener,2026-11-02T06:27:56.975282+00:00,Sep 2026,11/11,11/11,Sep 2026,TTM,Sep 2026,Sep 2026,,,,
+20261102T062632Z_baseline,baseline,WELSPUNLIV,indianapi_arthscan_cache,2026-11-02T06:28:02.374869+00:00,Sep 2026,0/11,0/11,Jun 2026,TTM,Mar 2026,Jun 2026,,,,
+20261102T062632Z_baseline,baseline,ZEEL,tapetide,2026-11-02T06:28:23.823358+00:00,Sep 2026,10/11,9/11,Sep 2026,TTM,Mar 2026,Jun 2026,,,,"{""page_generated_at"": ""2026-11-02T06:28:24.293Z"", ""prices_as_of"": ""2 Nov 2026, 11:58 IST""}"
+20261102T062632Z_baseline,baseline,ZEEL,screener,2026-11-02T06:28:25.003193+00:00,Sep 2026,11/11,11/11,Sep 2026,TTM,Sep 2026,Sep 2026,,,,
+20261102T062632Z_baseline,baseline,ZEEL,indianapi_arthscan_cache,2026-11-02T06:28:30.245140+00:00,Sep 2026,0/11,0/11,Jun 2026,TTM,Mar 2026,Jun 2026,,,,
+20261102T062632Z_baseline,baseline,JSL,tapetide,2026-11-02T06:28:53.990146+00:00,Sep 2026,10/11,10/11,Sep 2026,TTM,Mar 2026,Jun 2026,,,,"{""page_generated_at"": ""2026-11-02T06:28:54.295Z"", ""prices_as_of"": ""2 Nov 2026, 11:58 IST""}"
+20261102T062632Z_baseline,baseline,JSL,screener,2026-11-02T06:28:54.845209+00:00,Sep 2026,11/11,11/11,Sep 2026,TTM,Sep 2026,Sep 2026,,,,
+20261102T062632Z_baseline,baseline,JSL,indianapi_arthscan_cache,2026-11-02T06:28:58.187099+00:00,Sep 2026,11/11,11/11,Sep 2026,TTM,Sep 2026,Sep 2026,,,,
+20261102T062632Z_baseline,baseline,QUICKHEAL,tapetide,2026-11-02T06:29:19.320554+00:00,Sep 2026,10/11,10/11,Sep 2026,TTM,Mar 2026,Jun 2026,,,,"{""page_generated_at"": ""2026-11-02T06:29:19.591Z"", ""prices_as_of"": ""2 Nov 2026, 11:59 IST""}"
+20261102T062632Z_baseline,baseline,QUICKHEAL,screener,2026-11-02T06:29:20.193953+00:00,Sep 2026,11/11,11/11,Sep 2026,TTM,Sep 2026,Sep 2026,,,,
+20261102T062632Z_baseline,baseline,QUICKHEAL,indianapi_arthscan_cache,2026-11-02T06:29:24.343355+00:00,Sep 2026,0/11,0/11,Jun 2026,TTM,Mar 2026,Jun 2026,,,,
+20261102T062632Z_baseline,baseline,MOTHERSON,tapetide,2026-11-02T06:29:47.156754+00:00,Jun 2026,11/11,11/11,Jun 2026,TTM,Mar 2026,Jun 2026,,,,"{""page_generated_at"": ""2026-11-02T06:29:47.443Z"", ""prices_as_of"": ""2 Nov 2026, 11:59 IST""}"
+20261102T062632Z_baseline,baseline,MOTHERSON,screener,2026-11-02T06:29:48.052093+00:00,Jun 2026,11/11,11/11,Jun 2026,TTM,Mar 2026,Jun 2026,,,,
+20261102T062632Z_baseline,baseline,MOTHERSON,indianapi_arthscan_cache,2026-11-02T06:29:51.734804+00:00,Jun 2026,11/11,11/11,Jun 2026,TTM,Mar 2026,Jun 2026,,,,
+20261102T062632Z_baseline,baseline,TRENT,tapetide,2026-11-02T06:30:17.193205+00:00,Sep 2026,11/11,11/11,Sep 2026,TTM,Sep 2026,Sep 2026,,,,"{""page_generated_at"": ""2026-11-02T06:30:17.516Z"", ""prices_as_of"": ""2 Nov 2026, 12:00 IST""}"
+20261102T062632Z_baseline,baseline,TRENT,screener,2026-11-02T06:30:18.158317+00:00,Sep 2026,11/11,11/11,Sep 2026,TTM,Sep 2026,Sep 2026,,,,
+20261102T062632Z_baseline,baseline,TRENT,indianapi_arthscan_cache,2026-11-02T06:30:21.610136+00:00,Sep 2026,0/11,0/11,Jun 2026,TTM,Mar 2026,Jun 2026,,,,
+20261102T062632Z_baseline,baseline,CYIENT,tapetide,2026-11-02T06:30:47.580626+00:00,Sep 2026,11/11,11/11,Sep 2026,TTM,Sep 2026,Sep 2026,,,,"{""page_generated_at"": ""2026-11-02T06:30:47.887Z"", ""prices_as_of"": ""2 Nov 2026, 12:00 IST""}"
+20261102T062632Z_baseline,baseline,CYIENT,screener,2026-11-02T06:30:48.588678+00:00,Sep 2026,11/11,11/11,Sep 2026,TTM,Sep 2026,Sep 2026,,,,
+20261102T062632Z_baseline,baseline,CYIENT,indianapi_arthscan_cache,2026-11-02T06:30:53.069251+00:00,Sep 2026,11/11,11/11,Sep 2026,TTM,Sep 2026,Sep 2026,,,,
+reference (MCP / Phase 1),cross-sectional reference,QUICKHEAL,tapetide,2026-11-02T05:00Z (Phase 1 MCP call),Sep 2026,,,Sep 2026,,,,2026-10-27,,True,Tapetide MCP provisional_periods.filed_on (NSE time not retrieved)
+reference (MCP / Phase 1),cross-sectional reference,QUICKHEAL,screener,2026-11-02T05:08Z (Phase 1 fetch),Sep 2026,,,Sep 2026,,,,2026-10-27,,True,Tapetide MCP provisional_periods.filed_on (NSE time not retrieved)
+reference (MCP / Phase 1),cross-sectional reference,QUICKHEAL,indianapi_arthscan_cache,2026-11-01T18:30:14Z,Sep 2026,,,Jun 2026,,,,2026-10-27,,False,Tapetide MCP provisional_periods.filed_on (NSE time not retrieved)
+reference (MCP / Phase 1),cross-sectional reference,TRENT,tapetide,2026-11-02T05:00Z (Phase 1 fetch),Sep 2026,,,Sep 2026,,,,2026-10-29T10:51:00Z,5409.0,True,NSE via arth get_filings (press release on results)
+reference (MCP / Phase 1),cross-sectional reference,TRENT,screener,2026-11-02T05:00Z (Phase 1 fetch),Sep 2026,,,Sep 2026,,,,2026-10-29T10:51:00Z,5409.0,True,NSE via arth get_filings (press release on results)
+reference (MCP / Phase 1),cross-sectional reference,TRENT,indianapi_arthscan_cache,2026-10-29T23:10:18Z,Sep 2026,,,Jun 2026,,,,2026-10-29T10:51:00Z,739.3,False,NSE via arth get_filings (press release on results)

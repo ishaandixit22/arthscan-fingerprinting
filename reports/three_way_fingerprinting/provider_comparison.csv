@@ -1,0 +1,151 @@
+snapshot_id,symbol,basis,pair,statement,cells,exact,rounded,partial,mismatch,missing_first,missing_second,match_pct,row_names_identical,row_order_identical,periods_identical,latest_period_first,latest_period_second
+20261102T062632Z_baseline,RELIANCE,consolidated,T-S,quarterly,143,143,0,0,0,0,0,100.0,True,True,True,Sep 2026,Sep 2026
+20261102T062632Z_baseline,RELIANCE,consolidated,T-S,annual_pl,154,154,0,0,0,0,0,100.0,True,True,True,TTM,TTM
+20261102T062632Z_baseline,RELIANCE,consolidated,T-S,balance_sheet,130,130,0,0,0,0,0,100.0,True,True,True,Sep 2026,Sep 2026
+20261102T062632Z_baseline,RELIANCE,consolidated,T-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,RELIANCE,consolidated,T-S,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,RELIANCE,consolidated,I-S,quarterly,154,132,0,0,0,11,11,85.714,True,True,False,Jun 2026,Sep 2026
+20261102T062632Z_baseline,RELIANCE,consolidated,I-S,annual_pl,154,145,0,1,8,0,0,94.156,True,True,True,TTM,TTM
+20261102T062632Z_baseline,RELIANCE,consolidated,I-S,balance_sheet,130,120,0,0,0,10,0,92.308,True,True,False,Mar 2026,Sep 2026
+20261102T062632Z_baseline,RELIANCE,consolidated,I-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,RELIANCE,consolidated,I-S,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,RELIANCE,consolidated,T-I,quarterly,154,132,0,0,0,11,11,85.714,True,True,False,Sep 2026,Jun 2026
+20261102T062632Z_baseline,RELIANCE,consolidated,T-I,annual_pl,154,145,0,1,8,0,0,94.156,True,True,True,TTM,TTM
+20261102T062632Z_baseline,RELIANCE,consolidated,T-I,balance_sheet,130,120,0,0,0,0,10,92.308,True,True,False,Sep 2026,Mar 2026
+20261102T062632Z_baseline,RELIANCE,consolidated,T-I,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,RELIANCE,consolidated,T-I,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,PIIND,consolidated,T-S,quarterly,143,136,0,3,4,0,0,95.105,True,True,True,Jun 2026,Jun 2026
+20261102T062632Z_baseline,PIIND,consolidated,T-S,annual_pl,154,151,2,1,0,0,0,99.351,True,True,True,TTM,TTM
+20261102T062632Z_baseline,PIIND,consolidated,T-S,balance_sheet,120,120,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,PIIND,consolidated,T-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,PIIND,consolidated,T-S,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,PIIND,consolidated,I-S,quarterly,143,143,0,0,0,0,0,100.0,True,True,True,Jun 2026,Jun 2026
+20261102T062632Z_baseline,PIIND,consolidated,I-S,annual_pl,154,154,0,0,0,0,0,100.0,True,True,True,TTM,TTM
+20261102T062632Z_baseline,PIIND,consolidated,I-S,balance_sheet,120,120,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,PIIND,consolidated,I-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,PIIND,consolidated,I-S,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,PIIND,consolidated,T-I,quarterly,143,136,0,3,4,0,0,95.105,True,True,True,Jun 2026,Jun 2026
+20261102T062632Z_baseline,PIIND,consolidated,T-I,annual_pl,154,151,2,1,0,0,0,99.351,True,True,True,TTM,TTM
+20261102T062632Z_baseline,PIIND,consolidated,T-I,balance_sheet,120,120,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,PIIND,consolidated,T-I,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,PIIND,consolidated,T-I,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ABCAPITAL,consolidated,T-S,quarterly,154,125,0,0,7,11,11,81.169,False,False,False,Jun 2026,Sep 2026
+20261102T062632Z_baseline,ABCAPITAL,consolidated,T-S,annual_pl,154,144,0,0,10,0,0,93.506,True,False,True,TTM,TTM
+20261102T062632Z_baseline,ABCAPITAL,consolidated,T-S,balance_sheet,130,120,0,0,0,10,0,92.308,True,True,False,Mar 2026,Sep 2026
+20261102T062632Z_baseline,ABCAPITAL,consolidated,T-S,cash_flow,60,60,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ABCAPITAL,consolidated,T-S,ratios,12,12,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ABCAPITAL,consolidated,I-S,quarterly,154,127,0,0,5,11,11,82.468,False,True,False,Jun 2026,Sep 2026
+20261102T062632Z_baseline,ABCAPITAL,consolidated,I-S,annual_pl,154,144,0,0,10,0,0,93.506,True,True,True,TTM,TTM
+20261102T062632Z_baseline,ABCAPITAL,consolidated,I-S,balance_sheet,130,120,0,0,0,10,0,92.308,True,True,False,Mar 2026,Sep 2026
+20261102T062632Z_baseline,ABCAPITAL,consolidated,I-S,cash_flow,60,60,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ABCAPITAL,consolidated,I-S,ratios,12,12,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ABCAPITAL,consolidated,T-I,quarterly,143,141,0,0,2,0,0,98.601,True,False,True,Jun 2026,Jun 2026
+20261102T062632Z_baseline,ABCAPITAL,consolidated,T-I,annual_pl,154,154,0,0,0,0,0,100.0,True,False,True,TTM,TTM
+20261102T062632Z_baseline,ABCAPITAL,consolidated,T-I,balance_sheet,120,120,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ABCAPITAL,consolidated,T-I,cash_flow,60,60,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ABCAPITAL,consolidated,T-I,ratios,12,12,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,T-S,quarterly,154,136,0,2,1,4,11,88.312,True,True,False,Sep 2026,Sep 2026
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,T-S,annual_pl,154,144,0,1,9,0,0,93.506,True,True,True,TTM,TTM
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,T-S,balance_sheet,130,120,0,0,0,10,0,92.308,True,True,False,Mar 2026,Sep 2026
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,T-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,T-S,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,I-S,quarterly,154,132,0,0,0,11,11,85.714,True,True,False,Jun 2026,Sep 2026
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,I-S,annual_pl,154,144,0,1,9,0,0,93.506,True,True,True,TTM,TTM
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,I-S,balance_sheet,130,120,0,0,0,10,0,92.308,True,True,False,Mar 2026,Sep 2026
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,I-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,I-S,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,T-I,quarterly,150,140,0,2,1,0,7,93.333,True,True,False,Sep 2026,Jun 2026
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,T-I,annual_pl,154,154,0,0,0,0,0,100.0,True,True,True,TTM,TTM
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,T-I,balance_sheet,120,120,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,T-I,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,WELSPUNLIV,consolidated,T-I,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ZEEL,consolidated,T-S,quarterly,154,138,0,3,1,1,11,89.61,True,True,False,Sep 2026,Sep 2026
+20261102T062632Z_baseline,ZEEL,consolidated,T-S,annual_pl,154,143,0,1,10,0,0,92.857,True,True,True,TTM,TTM
+20261102T062632Z_baseline,ZEEL,consolidated,T-S,balance_sheet,130,120,0,0,0,10,0,92.308,True,True,False,Mar 2026,Sep 2026
+20261102T062632Z_baseline,ZEEL,consolidated,T-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ZEEL,consolidated,T-S,ratios,62,62,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ZEEL,consolidated,I-S,quarterly,154,132,0,0,0,11,11,85.714,True,True,False,Jun 2026,Sep 2026
+20261102T062632Z_baseline,ZEEL,consolidated,I-S,annual_pl,154,144,0,0,10,0,0,93.506,True,True,True,TTM,TTM
+20261102T062632Z_baseline,ZEEL,consolidated,I-S,balance_sheet,130,120,0,0,0,10,0,92.308,True,True,False,Mar 2026,Sep 2026
+20261102T062632Z_baseline,ZEEL,consolidated,I-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ZEEL,consolidated,I-S,ratios,62,62,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ZEEL,consolidated,T-I,quarterly,153,140,0,3,0,0,10,91.503,True,True,False,Sep 2026,Jun 2026
+20261102T062632Z_baseline,ZEEL,consolidated,T-I,annual_pl,154,153,0,1,0,0,0,99.351,True,True,True,TTM,TTM
+20261102T062632Z_baseline,ZEEL,consolidated,T-I,balance_sheet,120,120,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ZEEL,consolidated,T-I,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,ZEEL,consolidated,T-I,ratios,62,62,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,JSL,consolidated,T-S,quarterly,154,141,0,0,1,1,11,91.558,True,True,False,Sep 2026,Sep 2026
+20261102T062632Z_baseline,JSL,consolidated,T-S,annual_pl,154,144,0,1,9,0,0,93.506,True,True,True,TTM,TTM
+20261102T062632Z_baseline,JSL,consolidated,T-S,balance_sheet,130,120,0,0,0,10,0,92.308,True,True,False,Mar 2026,Sep 2026
+20261102T062632Z_baseline,JSL,consolidated,T-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,JSL,consolidated,T-S,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,JSL,consolidated,I-S,quarterly,143,143,0,0,0,0,0,100.0,True,True,True,Sep 2026,Sep 2026
+20261102T062632Z_baseline,JSL,consolidated,I-S,annual_pl,154,154,0,0,0,0,0,100.0,True,True,True,TTM,TTM
+20261102T062632Z_baseline,JSL,consolidated,I-S,balance_sheet,130,130,0,0,0,0,0,100.0,True,True,True,Sep 2026,Sep 2026
+20261102T062632Z_baseline,JSL,consolidated,I-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,JSL,consolidated,I-S,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,JSL,consolidated,T-I,quarterly,154,141,0,0,1,1,11,91.558,True,True,False,Sep 2026,Sep 2026
+20261102T062632Z_baseline,JSL,consolidated,T-I,annual_pl,154,144,0,1,9,0,0,93.506,True,True,True,TTM,TTM
+20261102T062632Z_baseline,JSL,consolidated,T-I,balance_sheet,130,120,0,0,0,10,0,92.308,True,True,False,Mar 2026,Sep 2026
+20261102T062632Z_baseline,JSL,consolidated,T-I,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,JSL,consolidated,T-I,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,QUICKHEAL,consolidated,T-S,quarterly,154,142,0,0,0,1,11,92.208,True,True,False,Sep 2026,Sep 2026
+20261102T062632Z_baseline,QUICKHEAL,consolidated,T-S,annual_pl,154,144,0,0,10,0,0,93.506,True,True,True,TTM,TTM
+20261102T062632Z_baseline,QUICKHEAL,consolidated,T-S,balance_sheet,130,120,0,0,0,10,0,92.308,True,True,False,Mar 2026,Sep 2026
+20261102T062632Z_baseline,QUICKHEAL,consolidated,T-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,QUICKHEAL,consolidated,T-S,ratios,52,52,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,QUICKHEAL,consolidated,I-S,quarterly,154,132,0,0,0,11,11,85.714,True,True,False,Jun 2026,Sep 2026
+20261102T062632Z_baseline,QUICKHEAL,consolidated,I-S,annual_pl,154,144,0,0,10,0,0,93.506,True,True,True,TTM,TTM
+20261102T062632Z_baseline,QUICKHEAL,consolidated,I-S,balance_sheet,130,120,0,0,0,10,0,92.308,True,True,False,Mar 2026,Sep 2026
+20261102T062632Z_baseline,QUICKHEAL,consolidated,I-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,QUICKHEAL,consolidated,I-S,ratios,52,52,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,QUICKHEAL,consolidated,T-I,quarterly,153,143,0,0,0,0,10,93.464,True,True,False,Sep 2026,Jun 2026
+20261102T062632Z_baseline,QUICKHEAL,consolidated,T-I,annual_pl,154,154,0,0,0,0,0,100.0,True,True,True,TTM,TTM
+20261102T062632Z_baseline,QUICKHEAL,consolidated,T-I,balance_sheet,120,120,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,QUICKHEAL,consolidated,T-I,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,QUICKHEAL,consolidated,T-I,ratios,52,52,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,MOTHERSON,consolidated,T-S,quarterly,143,143,0,0,0,0,0,100.0,True,True,True,Jun 2026,Jun 2026
+20261102T062632Z_baseline,MOTHERSON,consolidated,T-S,annual_pl,154,154,0,0,0,0,0,100.0,True,True,True,TTM,TTM
+20261102T062632Z_baseline,MOTHERSON,consolidated,T-S,balance_sheet,120,120,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,MOTHERSON,consolidated,T-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,MOTHERSON,consolidated,T-S,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,MOTHERSON,consolidated,I-S,quarterly,143,143,0,0,0,0,0,100.0,True,True,True,Jun 2026,Jun 2026
+20261102T062632Z_baseline,MOTHERSON,consolidated,I-S,annual_pl,154,154,0,0,0,0,0,100.0,True,True,True,TTM,TTM
+20261102T062632Z_baseline,MOTHERSON,consolidated,I-S,balance_sheet,120,120,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,MOTHERSON,consolidated,I-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,MOTHERSON,consolidated,I-S,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,MOTHERSON,consolidated,T-I,quarterly,143,143,0,0,0,0,0,100.0,True,True,True,Jun 2026,Jun 2026
+20261102T062632Z_baseline,MOTHERSON,consolidated,T-I,annual_pl,154,154,0,0,0,0,0,100.0,True,True,True,TTM,TTM
+20261102T062632Z_baseline,MOTHERSON,consolidated,T-I,balance_sheet,120,120,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,MOTHERSON,consolidated,T-I,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,MOTHERSON,consolidated,T-I,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,TRENT,consolidated,T-S,quarterly,143,141,0,2,0,0,0,98.601,True,True,True,Sep 2026,Sep 2026
+20261102T062632Z_baseline,TRENT,consolidated,T-S,annual_pl,154,153,0,0,0,1,0,99.351,True,True,True,TTM,TTM
+20261102T062632Z_baseline,TRENT,consolidated,T-S,balance_sheet,130,130,0,0,0,0,0,100.0,True,True,True,Sep 2026,Sep 2026
+20261102T062632Z_baseline,TRENT,consolidated,T-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,TRENT,consolidated,T-S,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,TRENT,consolidated,I-S,quarterly,154,132,0,0,0,11,11,85.714,True,True,False,Jun 2026,Sep 2026
+20261102T062632Z_baseline,TRENT,consolidated,I-S,annual_pl,154,145,0,1,8,0,0,94.156,True,True,True,TTM,TTM
+20261102T062632Z_baseline,TRENT,consolidated,I-S,balance_sheet,130,120,0,0,0,10,0,92.308,True,True,False,Mar 2026,Sep 2026
+20261102T062632Z_baseline,TRENT,consolidated,I-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,TRENT,consolidated,I-S,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,TRENT,consolidated,T-I,quarterly,154,130,0,2,0,11,11,84.416,True,True,False,Sep 2026,Jun 2026
+20261102T062632Z_baseline,TRENT,consolidated,T-I,annual_pl,154,144,0,1,8,1,0,93.506,True,True,True,TTM,TTM
+20261102T062632Z_baseline,TRENT,consolidated,T-I,balance_sheet,130,120,0,0,0,0,10,92.308,True,True,False,Sep 2026,Mar 2026
+20261102T062632Z_baseline,TRENT,consolidated,T-I,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,TRENT,consolidated,T-I,ratios,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,CYIENT,consolidated,T-S,quarterly,143,142,0,1,0,0,0,99.301,True,True,True,Sep 2026,Sep 2026
+20261102T062632Z_baseline,CYIENT,consolidated,T-S,annual_pl,154,154,0,0,0,0,0,100.0,True,True,True,TTM,TTM
+20261102T062632Z_baseline,CYIENT,consolidated,T-S,balance_sheet,130,130,0,0,0,0,0,100.0,True,True,True,Sep 2026,Sep 2026
+20261102T062632Z_baseline,CYIENT,consolidated,T-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,CYIENT,consolidated,T-S,ratios,70,70,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,CYIENT,consolidated,I-S,quarterly,143,143,0,0,0,0,0,100.0,True,True,True,Sep 2026,Sep 2026
+20261102T062632Z_baseline,CYIENT,consolidated,I-S,annual_pl,154,154,0,0,0,0,0,100.0,True,True,True,TTM,TTM
+20261102T062632Z_baseline,CYIENT,consolidated,I-S,balance_sheet,130,130,0,0,0,0,0,100.0,True,True,True,Sep 2026,Sep 2026
+20261102T062632Z_baseline,CYIENT,consolidated,I-S,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,CYIENT,consolidated,I-S,ratios,70,70,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,CYIENT,consolidated,T-I,quarterly,143,142,0,1,0,0,0,99.301,True,True,True,Sep 2026,Sep 2026
+20261102T062632Z_baseline,CYIENT,consolidated,T-I,annual_pl,154,154,0,0,0,0,0,100.0,True,True,True,TTM,TTM
+20261102T062632Z_baseline,CYIENT,consolidated,T-I,balance_sheet,130,130,0,0,0,0,0,100.0,True,True,True,Sep 2026,Sep 2026
+20261102T062632Z_baseline,CYIENT,consolidated,T-I,cash_flow,72,72,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026
+20261102T062632Z_baseline,CYIENT,consolidated,T-I,ratios,70,70,0,0,0,0,0,100.0,True,True,True,Mar 2026,Mar 2026

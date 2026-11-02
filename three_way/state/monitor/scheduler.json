@@ -1,0 +1,26 @@
+{
+ "_note": "Scheduler audit evidence, from get_trigger at 2026-11-02T06:50Z and local inspection.",
+ "type": "claude.ai cloud scheduled task (server-side cron that wakes this persistent Claude session); not OS cron, launchd, GitHub Actions or a daemon",
+ "trigger_id": "trig_0159bajz89RVbmpSSciinzwJ",
+ "cron_expression": "CRON_TZ=Asia/Kolkata 13 8-23 2-7 11 *",
+ "meaning": "hourly at :13, 08:13-23:13 IST, 2-7 Nov 2026",
+ "next_run_at_utc": "2026-11-02T07:43:00Z",
+ "enabled": true,
+ "persistent_session_id": "session_014cBR3DER5ExACk3MkfFMkV",
+ "created_at_utc": "2026-11-02T06:44:08Z",
+ "local_os_schedulers": "none (no crontab binary; no cron.d entry for this; no launchd; no GitHub workflow)",
+ "survives_terminal_closure": "yes: fires server-side whether or not the user's terminal or app is open",
+ "survives_container_restart": "scheduler yes; local files no. Mitigation: state, code and snapshots pushed to ishaandixit22/arthscan-fingerprinting once that repo exists, and restored from it on a fresh container",
+ "logs": [
+  "three_way/monitor/ticks.jsonl (one line per tick)",
+  "three_way/monitor/events.json (T0 and checkpoint state)",
+  "three_way/monitor/snapshot_index.jsonl (snapshot id + manifest SHA-256)",
+  "this session's transcript (each scheduled turn)"
+ ],
+ "duplicate_prevention": [
+  "exclusive non-blocking file lock (monitor/.lock): overlapping ticks exit with BUSY (tested)",
+  "per-checkpoint taken_utc in events.json, written atomically (os.replace)",
+  "collector refuses to reuse a snapshot directory (makedirs exist_ok=False) and opens files with mode 'x'"
+ ],
+ "rate_limits": "NSE feeds polled at most every 5 min (feed TTL 5); 4.0-6.5 s between requests per host for snapshots; any HTTP 429 stops all collection permanently (_stopped_429)"
+}
