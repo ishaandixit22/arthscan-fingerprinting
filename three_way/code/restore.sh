@@ -2,7 +2,7 @@
 # Rebuild /home/user/three_way (and its dependencies) from the persistence repo on a fresh container.
 set -euo pipefail
 D="${PERSIST_REPO_DIR:-/home/user/arthscan-fingerprinting}"; U="${RESTORE_ROOT:-/home/user}"
-git -C "$D" fetch -q origin monitor-state 2>/dev/null && git -C "$D" checkout -q -B monitor-state origin/monitor-state || true
+git -C "$D" fetch -q --depth 1 origin +refs/heads/monitor-state:refs/remotes/origin/monitor-state 2>/dev/null && git -C "$D" checkout -q -B monitor-state origin/monitor-state || true
 [ -d "$D/three_way/code" ] || { echo "RESTORE: nothing to restore"; exit 2; }
 mkdir -p "$U/three_way/monitor" "$U/three_way/evidence" "$U/three_way/snapshots" "$U/fingerprint" "$U/reports"
 cp -n "$D/three_way/code/"* "$U/three_way/"

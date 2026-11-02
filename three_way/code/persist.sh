@@ -14,7 +14,7 @@ cp -a "$U/reports/." "$D/reports/"
 cd "$D"
 BR=monitor-state
 if [ "$(git rev-parse --abbrev-ref HEAD)" != "$BR" ]; then
-  git fetch -q origin "$BR" 2>/dev/null && git checkout -q -B "$BR" "origin/$BR" || git checkout -q -B "$BR"
+  git fetch -q --depth 1 origin "+refs/heads/$BR:refs/remotes/origin/$BR" 2>/dev/null && git checkout -q -B "$BR" "origin/$BR" || git checkout -q -B "$BR"
 fi
 git add -A
 git diff --cached --quiet || git commit -q -m "${1:-monitor checkpoint} ($(date -u +%FT%TZ))" \
