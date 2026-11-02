@@ -1,54 +1,58 @@
 {
- "started_utc": "2026-11-02T08:55:09.600094+00:00",
+ "started_utc": "2026-11-02T14:04:19.219950+00:00",
  "steps": [
   {
    "step": "fresh shallow clone from GitHub",
    "pass": true,
-   "seconds": 0.9,
-   "branch": "main"
+   "seconds": 1.0
   },
   {
    "step": "negative control: plain fetch leaves origin/monitor-state missing",
-   "pass": true,
-   "rev_parse_exit": 1
+   "pass": true
   },
   {
    "step": "explicit refspec fetch creates origin/monitor-state",
    "pass": true,
-   "commit": "88fb5ac"
+   "commit": "3f8211d"
   },
   {
    "step": "restore.sh rebuilds an empty root",
    "pass": true,
-   "seconds": 0.9,
+   "seconds": 0.8,
+   "exit": 0,
    "output": [
-    "RESTORE: ok (1 snapshots, events: none)"
+    "cp: warning: behavior of -n is non-portable and may change in future; use --update=none instead"
    ]
   },
   {
-   "step": "restored snapshots byte-identical (SHA-256)",
+   "step": "restored snapshots byte-identical to live (SHA-256)",
    "pass": true,
    "files": 81
   },
   {
-   "step": "restored code identical to live (includes audit fixes)",
+   "step": "restored code identical to live",
    "pass": true
   },
   {
-   "step": "restored monitor state present (ticks.jsonl, scheduler.json)",
-   "pass": true,
-   "restored_tick_lines": 5
+   "step": "restored audit/ folder present",
+   "pass": true
   },
   {
-   "step": "restored analysis dependencies (Phase 1 engine + mismatch file)",
+   "step": "restored audit log matches live line count",
+   "pass": true,
+   "live": 10,
+   "restored": 10
+  },
+  {
+   "step": "restored analysis dependencies present",
    "pass": true
   },
   {
    "step": "restored monitor executes a real tick",
    "pass": true,
-   "seconds": 5.6,
+   "seconds": 6.1,
    "output": [
-    "TICK 2026-11-02T08:55:12.927825+00:00 feeds=[200, 200] waiting_for_T0=['MOTHERSON', 'PIIND'] pending=[]"
+    "TICK 2026-11-02T14:04:24.333540+00:00 feeds=[200, 200] waiting_for_T0=['MOTHERSON', 'PIIND'] pending=[]"
    ]
   },
   {
@@ -61,7 +65,7 @@
    "pass": true
   }
  ],
- "finished_utc": "2026-11-02T08:55:18.911624+00:00",
- "passed": 11,
- "total": 11
+ "finished_utc": "2026-11-02T14:04:30.343414+00:00",
+ "passed": 12,
+ "total": 12
 }
