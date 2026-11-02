@@ -1,0 +1,103 @@
+{
+ "snapshot_id": "20261102T155224Z_baseline_SBIN",
+ "label": "baseline_SBIN",
+ "started_at_utc": "2026-11-02T15:52:24.881211+00:00",
+ "symbols": [
+  "SBIN"
+ ],
+ "requests": [
+  {
+   "source": "tapetide",
+   "symbol": "SBIN",
+   "url": "https://tapetide.com/stocks/SBIN.md",
+   "file": "tapetide_SBIN.md",
+   "fetched_at_utc": "2026-11-02T15:52:24.881972+00:00",
+   "http_status": 200,
+   "bytes": 35185,
+   "sha256": "38013d55dfa62e1a33665c287773f07953cb5152eb933940a5824cd315e71502",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T15:25:37.901Z",
+    "prices_as_of": "2 Nov 2026, 15:59 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "SBIN",
+   "url": "https://www.screener.in/company/SBIN/consolidated/",
+   "file": "screener_SBIN_consolidated.html",
+   "fetched_at_utc": "2026-11-02T15:52:25.466981+00:00",
+   "http_status": 200,
+   "bytes": 229835,
+   "sha256": "ad799017bead40a4b656c79dbca279c727a1f02717082440abf84e067cdbb5af",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "SBIN",
+   "url": "https://arthscan.me/stock/SBIN/statements?stats=quarter_results",
+   "file": "indianapi_SBIN_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T15:52:26.472415+00:00",
+   "http_status": 200,
+   "bytes": 3372,
+   "sha256": "34db82ad8549e8d655d0b674e972f03bea10dbe32808704b51d85fcfef5d6130",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "SBIN",
+   "url": "https://arthscan.me/stock/SBIN/statements?stats=yoy_results",
+   "file": "indianapi_SBIN_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T15:52:32.471730+00:00",
+   "http_status": 200,
+   "bytes": 3425,
+   "sha256": "fab40d7354022aa6fac75f37307fd95b136641e65be475f63e08bfc390aa6ef1",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "SBIN",
+   "url": "https://www.screener.in/company/SBIN/",
+   "file": "screener_SBIN_standalone.html",
+   "fetched_at_utc": "2026-11-02T15:52:32.858927+00:00",
+   "http_status": 200,
+   "bytes": 229601,
+   "sha256": "d3299fc88a8b7fe540b7fbf9f955179234eea58c4a37d111d369ab49a38e1dd2",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "SBIN",
+   "url": "https://arthscan.me/stock/SBIN/statements?stats=balancesheet",
+   "file": "indianapi_SBIN_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T15:52:37.447818+00:00",
+   "http_status": 200,
+   "bytes": 3191,
+   "sha256": "d567f09f28de5946ab5b82d8d1532fd81a1db2713d6ff88a87235022353b8141",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "SBIN",
+   "url": "https://arthscan.me/stock/SBIN/statements?stats=cashflow",
+   "file": "indianapi_SBIN_cashflow.json",
+   "fetched_at_utc": "2026-11-02T15:52:44.117297+00:00",
+   "http_status": 200,
+   "bytes": 1559,
+   "sha256": "7c25758a79113f47fcbf073578ba2685124862ada36fc2c34edbcad735fd79f5",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "SBIN",
+   "url": "https://arthscan.me/stock/SBIN/statements?stats=ratios",
+   "file": "indianapi_SBIN_ratios.json",
+   "fetched_at_utc": "2026-11-02T15:52:48.922448+00:00",
+   "http_status": 200,
+   "bytes": 411,
+   "sha256": "30cdffe172ca85b493a6163f0dc820ef2d4e50aaf12bbd8d13a92e658770a41f",
+   "source_reported_ts": null
+  }
+ ],
+ "finished_at_utc": "2026-11-02T15:52:49.374473+00:00",
+ "hosts_blocked_429": []
+}

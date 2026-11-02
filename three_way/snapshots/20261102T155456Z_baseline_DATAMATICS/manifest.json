@@ -1,0 +1,103 @@
+{
+ "snapshot_id": "20261102T155456Z_baseline_DATAMATICS",
+ "label": "baseline_DATAMATICS",
+ "started_at_utc": "2026-11-02T15:54:56.356500+00:00",
+ "symbols": [
+  "DATAMATICS"
+ ],
+ "requests": [
+  {
+   "source": "tapetide",
+   "symbol": "DATAMATICS",
+   "url": "https://tapetide.com/stocks/DATAMATICS.md",
+   "file": "tapetide_DATAMATICS.md",
+   "fetched_at_utc": "2026-11-02T15:54:56.357199+00:00",
+   "http_status": 200,
+   "bytes": 32240,
+   "sha256": "686cad027585b8f7e00ac57aa9e4114c0402a96bb064a04b13e2aff7475badc7",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T15:27:06.050Z",
+    "prices_as_of": "2 Nov 2026, 15:56 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "DATAMATICS",
+   "url": "https://www.screener.in/company/DATAMATICS/consolidated/",
+   "file": "screener_DATAMATICS_consolidated.html",
+   "fetched_at_utc": "2026-11-02T15:54:56.623537+00:00",
+   "http_status": 200,
+   "bytes": 215307,
+   "sha256": "ea8ff45b4449b5edf1d6c3b9a2483ee983dab4f587ece2df847e3afa60070861",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "DATAMATICS",
+   "url": "https://arthscan.me/stock/DATAMATICS/statements?stats=quarter_results",
+   "file": "indianapi_DATAMATICS_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T15:54:57.616004+00:00",
+   "http_status": 200,
+   "bytes": 2875,
+   "sha256": "b5fd44b0df690a49edc02ba7aa77bfbc1527f7eae4e255f69735e6b56ca22041",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "DATAMATICS",
+   "url": "https://arthscan.me/stock/DATAMATICS/statements?stats=yoy_results",
+   "file": "indianapi_DATAMATICS_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T15:55:03.483083+00:00",
+   "http_status": 200,
+   "bytes": 3093,
+   "sha256": "a0ec7be6d67bb1053ba61b88597fa0dfcc730bb7b62cd1801e2633deab1f4151",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "DATAMATICS",
+   "url": "https://www.screener.in/company/DATAMATICS/",
+   "file": "screener_DATAMATICS_standalone.html",
+   "fetched_at_utc": "2026-11-02T15:55:03.927728+00:00",
+   "http_status": 200,
+   "bytes": 215724,
+   "sha256": "ba4c3851c31bf2efd1a3150e104ad361b752201a95c7e574f76ea5bb11c93376",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "DATAMATICS",
+   "url": "https://arthscan.me/stock/DATAMATICS/statements?stats=balancesheet",
+   "file": "indianapi_DATAMATICS_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T15:55:09.724808+00:00",
+   "http_status": 200,
+   "bytes": 2559,
+   "sha256": "047ace3cc0ad14a559952adeb44387f656a199319a81cac7946400d93f998dbd",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "DATAMATICS",
+   "url": "https://arthscan.me/stock/DATAMATICS/statements?stats=cashflow",
+   "file": "indianapi_DATAMATICS_cashflow.json",
+   "fetched_at_utc": "2026-11-02T15:55:14.934981+00:00",
+   "http_status": 200,
+   "bytes": 1740,
+   "sha256": "0083610d6e7d8635e5b3577d418c04450afa12ece571ec8bef7e1cb6332f9401",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "DATAMATICS",
+   "url": "https://arthscan.me/stock/DATAMATICS/statements?stats=ratios",
+   "file": "indianapi_DATAMATICS_ratios.json",
+   "fetched_at_utc": "2026-11-02T15:55:21.531688+00:00",
+   "http_status": 200,
+   "bytes": 1123,
+   "sha256": "a3e7145492d60a79520472520547d5f877e1493f226bb186de32e39643adedc1",
+   "source_reported_ts": null
+  }
+ ],
+ "finished_at_utc": "2026-11-02T15:55:22.025160+00:00",
+ "hosts_blocked_429": []
+}

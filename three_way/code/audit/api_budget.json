@@ -1,0 +1,9 @@
+{"recorded_at_utc": "2026-11-02T15:52Z", "ist_day": "2026-11-02",
+ "quota_sources": {"tapetide": "tapetide.com/llms.txt: free plan allows 50 successful requests per IST day (API and MCP share one token)", "arthscan": "arthscan.me/developers: Free plan: 50 calls a day (REST and MCP share one quota)"},
+ "used_today_before_baselines": {"tapetide_mcp": 13, "arth_mcp": 12},
+ "baseline_plan": {"tapetide_mcp": 7, "arth_mcp": 7, "tapetide_public_md": 7, "arthscan_public_statements": 35, "screener_public_pages": 14, "nse": 0},
+ "forecast_per_ist_day_after_switch": {"2026-11-03": {"tapetide_mcp": 21, "arth_mcp": 21, "note": "7 companies x (T0, T+30m, T+2h)"},
+   "2026-11-04": {"tapetide_mcp": 10, "arth_mcp": 10, "note": "7 x T+24h + PIIND x 3"}, "2026-11-05": {"tapetide_mcp": 11, "arth_mcp": 11, "note": "7 x T+48h + PIIND T+24h + MOTHERSON x 3"},
+   "2026-11-06": {"tapetide_mcp": 2, "arth_mcp": 2}, "2026-11-07": {"tapetide_mcp": 1, "arth_mcp": 1},
+   "revision_capture": "+1 call per service per revision filing"},
+ "public_requests_per_snapshot": {"tapetide_md": 1, "screener": 2, "arthscan_statements": 5}}

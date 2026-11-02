@@ -1,0 +1,128 @@
+{
+ "20261102T155224Z_baseline_SBIN": {
+  "symbol": "SBIN",
+  "started_utc": "2026-11-02T15:52:24.881211+00:00",
+  "requests": 8,
+  "status": {
+   "tapetide:200": 1,
+   "screener:200": 2,
+   "indianapi:200": 5
+  },
+  "files": 8,
+  "file_hash_mismatches": [],
+  "manifest_sha256": "91474b8d91ea8fb0d2e2b45b0d5f6990cd80c730cd6fb8545c66a7636e5a0777",
+  "hosts_blocked_429": [],
+  "perms": [
+   "0o444",
+   "0o555"
+  ]
+ },
+ "20261102T155249Z_baseline_SOLARINDS": {
+  "symbol": "SOLARINDS",
+  "started_utc": "2026-11-02T15:52:49.835757+00:00",
+  "requests": 8,
+  "status": {
+   "tapetide:200": 1,
+   "screener:200": 2,
+   "indianapi:200": 5
+  },
+  "files": 8,
+  "file_hash_mismatches": [],
+  "manifest_sha256": "fcf210fe9418bc1c3497430fe333f32e2157c438fa0ab8eb6782e8c56cc7d387",
+  "hosts_blocked_429": [],
+  "perms": [
+   "0o444",
+   "0o555"
+  ]
+ },
+ "20261102T155315Z_baseline_LUPIN": {
+  "symbol": "LUPIN",
+  "started_utc": "2026-11-02T15:53:15.933096+00:00",
+  "requests": 8,
+  "status": {
+   "tapetide:200": 1,
+   "screener:200": 2,
+   "indianapi:200": 5
+  },
+  "files": 8,
+  "file_hash_mismatches": [],
+  "manifest_sha256": "34483d9bd0af2615d1956020639823b3a22f1b5325b8d378b45aba56dc43fdea",
+  "hosts_blocked_429": [],
+  "perms": [
+   "0o444",
+   "0o555"
+  ]
+ },
+ "20261102T155339Z_baseline_ENDURANCE": {
+  "symbol": "ENDURANCE",
+  "started_utc": "2026-11-02T15:53:39.090900+00:00",
+  "requests": 8,
+  "status": {
+   "tapetide:200": 1,
+   "screener:200": 2,
+   "indianapi:200": 5
+  },
+  "files": 8,
+  "file_hash_mismatches": [],
+  "manifest_sha256": "2917947f384d6ba776a9ecbe2c5adbf28ee22adde1ea0cbe7a09980538d42523",
+  "hosts_blocked_429": [],
+  "perms": [
+   "0o444",
+   "0o555"
+  ]
+ },
+ "20261102T155402Z_baseline_BATAINDIA": {
+  "symbol": "BATAINDIA",
+  "started_utc": "2026-11-02T15:54:02.937800+00:00",
+  "requests": 8,
+  "status": {
+   "tapetide:200": 1,
+   "screener:200": 2,
+   "indianapi:200": 5
+  },
+  "files": 8,
+  "file_hash_mismatches": [],
+  "manifest_sha256": "8411d0e3e8230669605f888120c145e7b2035877733d756975930e2aae87600e",
+  "hosts_blocked_429": [],
+  "perms": [
+   "0o444",
+   "0o555"
+  ]
+ },
+ "20261102T155430Z_baseline_MGL": {
+  "symbol": "MGL",
+  "started_utc": "2026-11-02T15:54:30.330824+00:00",
+  "requests": 8,
+  "status": {
+   "tapetide:200": 1,
+   "screener:200": 2,
+   "indianapi:200": 5
+  },
+  "files": 8,
+  "file_hash_mismatches": [],
+  "manifest_sha256": "f73668b9ad22e101746a1394400b055f1fdf1cfa73a858739ab816c17bdc0681",
+  "hosts_blocked_429": [],
+  "perms": [
+   "0o444",
+   "0o555"
+  ]
+ },
+ "20261102T155456Z_baseline_DATAMATICS": {
+  "symbol": "DATAMATICS",
+  "started_utc": "2026-11-02T15:54:56.356500+00:00",
+  "requests": 8,
+  "status": {
+   "tapetide:200": 1,
+   "screener:200": 2,
+   "indianapi:200": 5
+  },
+  "files": 8,
+  "file_hash_mismatches": [],
+  "manifest_sha256": "e546b707eb48573c4bbb5c4aef74e3dbb71c22927ac95ff24448ca54ca41f1d1",
+  "hosts_blocked_429": [],
+  "perms": [
+   "0o444",
+   "0o555"
+  ]
+ }
+}

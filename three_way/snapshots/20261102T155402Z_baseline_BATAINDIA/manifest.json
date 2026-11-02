@@ -1,0 +1,103 @@
+{
+ "snapshot_id": "20261102T155402Z_baseline_BATAINDIA",
+ "label": "baseline_BATAINDIA",
+ "started_at_utc": "2026-11-02T15:54:02.937800+00:00",
+ "symbols": [
+  "BATAINDIA"
+ ],
+ "requests": [
+  {
+   "source": "tapetide",
+   "symbol": "BATAINDIA",
+   "url": "https://tapetide.com/stocks/BATAINDIA.md",
+   "file": "tapetide_BATAINDIA.md",
+   "fetched_at_utc": "2026-11-02T15:54:02.938079+00:00",
+   "http_status": 200,
+   "bytes": 34884,
+   "sha256": "b6e1b7bf331c92766d24822ffa1184eb361aadd76a860fe8521af4bf21001cec",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T15:26:37.900Z",
+    "prices_as_of": "2 Nov 2026, 15:56 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "BATAINDIA",
+   "url": "https://www.screener.in/company/BATAINDIA/consolidated/",
+   "file": "screener_BATAINDIA_consolidated.html",
+   "fetched_at_utc": "2026-11-02T15:54:03.474662+00:00",
+   "http_status": 200,
+   "bytes": 204835,
+   "sha256": "8605b635609f1f785f98c3d2527912e7d487eb9a6da25e261de9f637aba091c2",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "BATAINDIA",
+   "url": "https://arthscan.me/stock/BATAINDIA/statements?stats=quarter_results",
+   "file": "indianapi_BATAINDIA_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T15:54:04.515222+00:00",
+   "http_status": 200,
+   "bytes": 2920,
+   "sha256": "0c6698f23aceaad0109bdf4fc92373ea70a3df32943885d5315e7c42c647adfb",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "BATAINDIA",
+   "url": "https://arthscan.me/stock/BATAINDIA/statements?stats=yoy_results",
+   "file": "indianapi_BATAINDIA_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T15:54:11.315348+00:00",
+   "http_status": 200,
+   "bytes": 3232,
+   "sha256": "34e43d16a3bb7539f3a8b1a0e5794dc60ee0a77b4f6bef52453b4470c770e24a",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "BATAINDIA",
+   "url": "https://www.screener.in/company/BATAINDIA/",
+   "file": "screener_BATAINDIA_standalone.html",
+   "fetched_at_utc": "2026-11-02T15:54:11.749035+00:00",
+   "http_status": 200,
+   "bytes": 205354,
+   "sha256": "048241dde4431eb1b6cf53556cbd0bd30a3895a442affd939b21f9383785071c",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "BATAINDIA",
+   "url": "https://arthscan.me/stock/BATAINDIA/statements?stats=balancesheet",
+   "file": "indianapi_BATAINDIA_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T15:54:17.356983+00:00",
+   "http_status": 200,
+   "bytes": 2591,
+   "sha256": "2cbcbcce6b3bd8b92f41ffb711ee01b8ffd887da77e3bc6fde982548c69d6c05",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "BATAINDIA",
+   "url": "https://arthscan.me/stock/BATAINDIA/statements?stats=cashflow",
+   "file": "indianapi_BATAINDIA_cashflow.json",
+   "fetched_at_utc": "2026-11-02T15:54:23.244219+00:00",
+   "http_status": 200,
+   "bytes": 1760,
+   "sha256": "ec257b0e5654ad2f3e8c35e50be45db2e486fd531e5739fa7db6e91007332649",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "BATAINDIA",
+   "url": "https://arthscan.me/stock/BATAINDIA/statements?stats=ratios",
+   "file": "indianapi_BATAINDIA_ratios.json",
+   "fetched_at_utc": "2026-11-02T15:54:28.898496+00:00",
+   "http_status": 200,
+   "bytes": 1608,
+   "sha256": "99431ded5be66b633e57e1b43e802c9fd723aac10ff60849401031c5def465a3",
+   "source_reported_ts": null
+  }
+ ],
+ "finished_at_utc": "2026-11-02T15:54:29.707997+00:00",
+ "hosts_blocked_429": []
+}

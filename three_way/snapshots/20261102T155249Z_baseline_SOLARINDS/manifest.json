@@ -1,0 +1,103 @@
+{
+ "snapshot_id": "20261102T155249Z_baseline_SOLARINDS",
+ "label": "baseline_SOLARINDS",
+ "started_at_utc": "2026-11-02T15:52:49.835757+00:00",
+ "symbols": [
+  "SOLARINDS"
+ ],
+ "requests": [
+  {
+   "source": "tapetide",
+   "symbol": "SOLARINDS",
+   "url": "https://tapetide.com/stocks/SOLARINDS.md",
+   "file": "tapetide_SOLARINDS.md",
+   "fetched_at_utc": "2026-11-02T15:52:49.836186+00:00",
+   "http_status": 200,
+   "bytes": 35239,
+   "sha256": "5cfba5ed890e5fbf1538b94b82825c5dbd79a5cb6460a91911f194afc0367ca9",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T15:25:53.169Z",
+    "prices_as_of": "2 Nov 2026, 15:59 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "SOLARINDS",
+   "url": "https://www.screener.in/company/SOLARINDS/consolidated/",
+   "file": "screener_SOLARINDS_consolidated.html",
+   "fetched_at_utc": "2026-11-02T15:52:50.098272+00:00",
+   "http_status": 200,
+   "bytes": 227855,
+   "sha256": "85235e14ca6b3bd468bdd5fc0fca185d9d01017fa3165e82dc814056a804647c",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "SOLARINDS",
+   "url": "https://arthscan.me/stock/SOLARINDS/statements?stats=quarter_results",
+   "file": "indianapi_SOLARINDS_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T15:52:50.661608+00:00",
+   "http_status": 200,
+   "bytes": 2971,
+   "sha256": "353143ce83e1d7eb523cf52eb13c6023066d32d9aee71459d4d0486c38325b1d",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "SOLARINDS",
+   "url": "https://arthscan.me/stock/SOLARINDS/statements?stats=yoy_results",
+   "file": "indianapi_SOLARINDS_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T15:52:56.827772+00:00",
+   "http_status": 200,
+   "bytes": 3165,
+   "sha256": "4be29c989bbdcb6dddf5abf8956092dcad3514e870c1c5ce2b6b4739b7243d2a",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "SOLARINDS",
+   "url": "https://www.screener.in/company/SOLARINDS/",
+   "file": "screener_SOLARINDS_standalone.html",
+   "fetched_at_utc": "2026-11-02T15:52:57.331545+00:00",
+   "http_status": 200,
+   "bytes": 228095,
+   "sha256": "1153419a526aee7b2f3d7510230fda45fc6106757126dc0c2e371da62a450fe5",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "SOLARINDS",
+   "url": "https://arthscan.me/stock/SOLARINDS/statements?stats=balancesheet",
+   "file": "indianapi_SOLARINDS_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T15:53:02.406937+00:00",
+   "http_status": 200,
+   "bytes": 2623,
+   "sha256": "44ae0a5b3f28903cbf35427761bdf6172425531c0ff11f34f515d465df492083",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "SOLARINDS",
+   "url": "https://arthscan.me/stock/SOLARINDS/statements?stats=cashflow",
+   "file": "indianapi_SOLARINDS_cashflow.json",
+   "fetched_at_utc": "2026-11-02T15:53:08.907304+00:00",
+   "http_status": 200,
+   "bytes": 1765,
+   "sha256": "87d2b8e66772b9a8e548ba0b8c0c6e3417e2e817a9c8981ed3d02ef2374008d5",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "SOLARINDS",
+   "url": "https://arthscan.me/stock/SOLARINDS/statements?stats=ratios",
+   "file": "indianapi_SOLARINDS_ratios.json",
+   "fetched_at_utc": "2026-11-02T15:53:14.995132+00:00",
+   "http_status": 200,
+   "bytes": 1596,
+   "sha256": "cdd9ca40d6dc6fde2dc672349506e76c9df3ddc5744844ac24086736acda3a25",
+   "source_reported_ts": null
+  }
+ ],
+ "finished_at_utc": "2026-11-02T15:53:15.416893+00:00",
+ "hosts_blocked_429": []
+}
