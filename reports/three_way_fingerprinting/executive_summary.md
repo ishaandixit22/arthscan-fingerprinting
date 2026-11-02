@@ -1,6 +1,6 @@
 # Three-way data provider fingerprinting: Tapetide, Screener.in, Indian Stock API
 
-Updated 2026-11-02T06:55:17Z. Baseline snapshot `20261102T062632Z_baseline`; 1 snapshot(s) in total. 10 stocks.
+Updated 2026-11-02T08:46:02Z. Baseline snapshot `20261102T062632Z_baseline`; 1 snapshot(s) in total. 10 stocks.
 
 > **Labelling:** every Indian Stock API observation in this report is **ARTHSCAN-cached data** (ARTHSCAN's stored copy of the provider's response, with its own `fetched_at`), not a direct observation of indianapi.in.
 
@@ -64,8 +64,8 @@ This matters for answers A and D: a provisional quarter matching Screener does n
 **Status: not complete.** No T+48h checkpoint has been captured yet, so no release-timing conclusion is drawn.
 
 - Scheduler: claude.ai cloud scheduled task (server-side cron that wakes this persistent Claude session); not OS cron, launchd, GitHub Actions or a daemon; `CRON_TZ=Asia/Kolkata 13 8-23 2-7 11 *` (hourly at :13, 08:13-23:13 IST, 2-7 Nov 2026); trigger `trig_0159bajz89RVbmpSSciinzwJ`.
-- Ticks logged so far: 2 (last 2026-11-02T06:51:50.021132+00:00); T0 events recorded: 0.
-- Restart safety: scheduler yes; local files no. Mitigation: state, code and snapshots pushed to ishaandixit22/arthscan-fingerprinting once that repo exists, and restored from it on a fresh container.
+- Ticks logged so far: 5 (last 2026-11-02T08:44:07.021837+00:00); T0 events recorded: 0.
+- Restart safety: yes: state, evidence, code and immutable snapshots are pushed to ishaandixit22/arthscan-fingerprinting (branch monitor-state) after every checkpoint; restore from a fresh GitHub clone was tested on 2026-11-02 with all 81 snapshot hashes identical.
 
 Pending. MOTHERSON and PIIND have earnings calls on 5 Nov 2026 and had not filed results at the baseline. An hourly scheduled check polls NSE's official announcements RSS feed and records T0 from the exchange's own timestamp, then takes three-source snapshots at T+30m, +2h, +24h and +48h. This summary and update_latency.csv are rebuilt after each checkpoint.
 

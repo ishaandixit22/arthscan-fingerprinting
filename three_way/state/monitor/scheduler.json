@@ -10,7 +10,7 @@
  "created_at_utc": "2026-11-02T06:44:08Z",
  "local_os_schedulers": "none (no crontab binary; no cron.d entry for this; no launchd; no GitHub workflow)",
  "survives_terminal_closure": "yes: fires server-side whether or not the user's terminal or app is open",
- "survives_container_restart": "scheduler yes; local files no. Mitigation: state, code and snapshots pushed to ishaandixit22/arthscan-fingerprinting once that repo exists, and restored from it on a fresh container",
+ "survives_container_restart": "yes: state, evidence, code and immutable snapshots are pushed to ishaandixit22/arthscan-fingerprinting (branch monitor-state) after every checkpoint; restore from a fresh GitHub clone was tested on 2026-11-02 with all 81 snapshot hashes identical",
  "logs": [
   "three_way/monitor/ticks.jsonl (one line per tick)",
   "three_way/monitor/events.json (T0 and checkpoint state)",
@@ -22,5 +22,11 @@
   "per-checkpoint taken_utc in events.json, written atomically (os.replace)",
   "collector refuses to reuse a snapshot directory (makedirs exist_ok=False) and opens files with mode 'x'"
  ],
- "rate_limits": "NSE feeds polled at most every 5 min (feed TTL 5); 4.0-6.5 s between requests per host for snapshots; any HTTP 429 stops all collection permanently (_stopped_429)"
+ "rate_limits": "NSE feeds polled at most every 5 min (feed TTL 5); 4.0-6.5 s between requests per host for snapshots; any HTTP 429 stops all collection permanently (_stopped_429)",
+ "persistence_repo": {
+  "repo": "ishaandixit22/arthscan-fingerprinting",
+  "branch": "monitor-state",
+  "default_branch_untouched": "main",
+  "first_push_utc": "2026-11-02T08:45Z"
+ }
 }
