@@ -1,0 +1,103 @@
+{
+ "snapshot_id": "20261104T144441Z_T+30m_PIIND",
+ "label": "T+30m_PIIND",
+ "started_at_utc": "2026-11-04T14:44:41.450334+00:00",
+ "symbols": [
+  "PIIND"
+ ],
+ "requests": [
+  {
+   "source": "tapetide",
+   "symbol": "PIIND",
+   "url": "https://tapetide.com/stocks/PIIND.md",
+   "file": "tapetide_PIIND.md",
+   "fetched_at_utc": "2026-11-04T14:44:41.450608+00:00",
+   "http_status": 200,
+   "bytes": 35579,
+   "sha256": "f36637899f69f7f2c6a955bae3f80a44ea9a6dc1177f46a1fb0fc445e23d51a5",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-04T14:44:16.638Z",
+    "prices_as_of": "4 Nov 2026, 15:55 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "PIIND",
+   "url": "https://www.screener.in/company/PIIND/consolidated/",
+   "file": "screener_PIIND_consolidated.html",
+   "fetched_at_utc": "2026-11-04T14:44:41.727171+00:00",
+   "http_status": 200,
+   "bytes": 253801,
+   "sha256": "b1dbd45058c6dbc54b203b7ec6cfc88a433b9fe05d0b73b01a4486e9189602fb",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=quarter_results",
+   "file": "indianapi_PIIND_quarter_results.json",
+   "fetched_at_utc": "2026-11-04T14:44:42.310661+00:00",
+   "http_status": 200,
+   "bytes": 2963,
+   "sha256": "d83ed4214626a4666d8ce92ecf515d9df7b791af3f1a0268759ae8b162113f18",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=yoy_results",
+   "file": "indianapi_PIIND_yoy_results.json",
+   "fetched_at_utc": "2026-11-04T14:44:47.273259+00:00",
+   "http_status": 200,
+   "bytes": 3167,
+   "sha256": "1986704d3bc1b8f718eeca8322b132c01e2c3d8a5dd4adf611a1e3e305c43647",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "PIIND",
+   "url": "https://www.screener.in/company/PIIND/",
+   "file": "screener_PIIND_standalone.html",
+   "fetched_at_utc": "2026-11-04T14:44:47.609194+00:00",
+   "http_status": 200,
+   "bytes": 252881,
+   "sha256": "9af0811ad7f93526e3f3aed89cbe52ab83564e1850d2601fed2ad632b68836e8",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=balancesheet",
+   "file": "indianapi_PIIND_balancesheet.json",
+   "fetched_at_utc": "2026-11-04T14:44:53.149315+00:00",
+   "http_status": 200,
+   "bytes": 2642,
+   "sha256": "acaa9f202f8d5666060dc45853ee8d946d6a14e77f52bbb571e1c9c4f727e3d5",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=cashflow",
+   "file": "indianapi_PIIND_cashflow.json",
+   "fetched_at_utc": "2026-11-04T14:44:58.269357+00:00",
+   "http_status": 200,
+   "bytes": 1779,
+   "sha256": "a1211ff52795915c81c0357c19360bdd5af81cf9b491f1637c3049a179577d59",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=ratios",
+   "file": "indianapi_PIIND_ratios.json",
+   "fetched_at_utc": "2026-11-04T14:45:03.955610+00:00",
+   "http_status": 200,
+   "bytes": 1613,
+   "sha256": "ba20607798bc28b1a2596a3a49d120180aa77ad7bfc440e09ddb86b02933330f",
+   "source_reported_ts": null
+  }
+ ],
+ "finished_at_utc": "2026-11-04T14:45:04.178720+00:00",
+ "hosts_blocked_429": []
+}

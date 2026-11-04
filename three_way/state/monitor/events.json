@@ -1,0 +1,61 @@
+{
+ "PIIND": {
+  "t0_exchange_raw": "04-Nov-2026 19:40:36",
+  "t0_exchange_utc": "2026-11-04T14:10:36+00:00",
+  "t0_assumed_tz": "IST (+05:30), per NSE feed convention",
+  "detected_at_utc": "2026-11-04T14:44:10.632813+00:00",
+  "detection_lag_min": 33.6,
+  "item": {
+   "feed": "Online_announcements.xml",
+   "title": "PI Industries Limited",
+   "description": "PI Industries Limited has submitted to the Exchange, the Outcome of Board Meeting held on November 04, 2026 for approval of Unaudited Standalone and Consolidated Financial Results for the quarter and half year September 30, 2026. |SUBJECT: Outcome of Board Meeting",
+   "link": "https://nsearchives.nseindia.com/corporate/PIIND_04112026193824_Resultssd.pdf",
+   "pubDate": "04-Nov-2026 19:40:36"
+  },
+  "new_quarter": "Sep 2026",
+  "checkpoints": {
+   "T0": {
+    "due_utc": "2026-11-04T14:10:36+00:00",
+    "taken_utc": "2026-11-04T14:44:41.116482+00:00",
+    "snapshot_id": "20261104T144416Z_T0_PIIND",
+    "attempts": [
+     {
+      "at_utc": "2026-11-04T14:44:41.116487+00:00",
+      "snapshot_id": "20261104T144416Z_T0_PIIND",
+      "complete": true,
+      "adopted": false
+     }
+    ]
+   },
+   "T+30m": {
+    "due_utc": "2026-11-04T14:40:36+00:00",
+    "taken_utc": "2026-11-04T14:45:04.236166+00:00",
+    "snapshot_id": "20261104T144441Z_T+30m_PIIND",
+    "attempts": [
+     {
+      "at_utc": "2026-11-04T14:45:04.236160+00:00",
+      "snapshot_id": "20261104T144441Z_T+30m_PIIND",
+      "complete": true,
+      "adopted": false
+     }
+    ],
+    "late_by_min": 4.5
+   },
+   "T+2h": {
+    "due_utc": "2026-11-04T16:10:36+00:00",
+    "taken_utc": null,
+    "snapshot_id": null
+   },
+   "T+24h": {
+    "due_utc": "2026-11-05T14:10:36+00:00",
+    "taken_utc": null,
+    "snapshot_id": null
+   },
+   "T+48h": {
+    "due_utc": "2026-11-06T14:10:36+00:00",
+    "taken_utc": null,
+    "snapshot_id": null
+   }
+  }
+ }
+}
