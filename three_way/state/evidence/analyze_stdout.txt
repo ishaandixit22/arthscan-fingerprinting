@@ -74,8 +74,8 @@
   }
  },
  "triad": {
-  "T=S, I differs": 18,
   "all_three_agree": 5354,
+  "T=S, I differs": 18,
   "I=S, T differs": 31,
   "T=I, S differs": 45
  },

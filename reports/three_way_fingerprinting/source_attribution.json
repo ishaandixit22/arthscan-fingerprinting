@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T08:46:02Z",
+ "generated_at": "2026-11-04T14:45:48Z",
  "question": "Does Tapetide obtain financial statements directly from Screener.in or from a shared upstream provider such as Indian Stock API?",
  "sources": {
   "T": "Tapetide public .md pages + Tapetide MCP",
@@ -8,7 +8,16 @@
  },
  "important_caveat": "Indian Stock API was observed through ARTHSCAN's cached copy (arth MCP fetched_at between 29 Oct and 1 Nov). Its latency here is the latency of that copy, which is an upper bound on Indian Stock API's own latency.",
  "snapshots": [
-  "20261102T062632Z_baseline"
+  "20261102T062632Z_baseline",
+  "20261102T155224Z_baseline_SBIN",
+  "20261102T155249Z_baseline_SOLARINDS",
+  "20261102T155315Z_baseline_LUPIN",
+  "20261102T155339Z_baseline_ENDURANCE",
+  "20261102T155402Z_baseline_BATAINDIA",
+  "20261102T155430Z_baseline_MGL",
+  "20261102T155456Z_baseline_DATAMATICS",
+  "20261104T144416Z_T0_PIIND",
+  "20261104T144441Z_T+30m_PIIND"
  ],
  "answers": {
   "A_tapetide_matches_screener_first": {
@@ -57,7 +66,13 @@
      ]
     ],
     "quickheal": "Indian Stock API lacked Sep 2026 at 2026-11-01T18:30Z (5 days after filing); Tapetide had it with values equal to Screener",
-    "release_monitoring_first_seen_minutes_after_t0": {}
+    "release_monitoring_first_seen_minutes_after_t0": {
+     "PIIND": {
+      "tapetide": null,
+      "screener": null,
+      "indianapi_arthscan_cache": null
+     }
+    }
    }
   },
   "B_tapetide_matches_indianapi_first": {
@@ -174,8 +189,44 @@
      "RELIANCE",
      "TRENT"
     ],
-    "release_monitoring": {},
-    "first_seen": {}
+    "release_monitoring": {
+     "PIIND": {
+      "T0": {
+       "due_utc": "2026-11-04T14:10:36+00:00",
+       "taken_utc": "2026-11-04T14:44:41.116482+00:00",
+       "snapshot_id": "20261104T144416Z_T0_PIIND",
+       "attempts": [
+        {
+         "at_utc": "2026-11-04T14:44:41.116487+00:00",
+         "snapshot_id": "20261104T144416Z_T0_PIIND",
+         "complete": true,
+         "adopted": false
+        }
+       ]
+      },
+      "T+30m": {
+       "due_utc": "2026-11-04T14:40:36+00:00",
+       "taken_utc": "2026-11-04T14:45:04.236166+00:00",
+       "snapshot_id": "20261104T144441Z_T+30m_PIIND",
+       "attempts": [
+        {
+         "at_utc": "2026-11-04T14:45:04.236160+00:00",
+         "snapshot_id": "20261104T144441Z_T+30m_PIIND",
+         "complete": true,
+         "adopted": false
+        }
+       ],
+       "late_by_min": 4.5
+      }
+     }
+    },
+    "first_seen": {
+     "PIIND": {
+      "tapetide": null,
+      "screener": null,
+      "indianapi_arthscan_cache": null
+     }
+    }
    }
   },
   "E_unexplained_historical_values_identical": {
@@ -790,8 +841,8 @@
    "answer": "Indian Stock API and Tapetide both carry Screener-format data, but Tapetide shows no Indian Stock API-specific dependence and is ahead of it on new quarters. A common origin for Screener-format data is consistent with the evidence but unidentified.",
    "evidence": {
     "triad_cells": {
-     "T=S, I differs": 18,
      "all_three_agree": 5354,
+     "T=S, I differs": 18,
      "I=S, T differs": 31,
      "T=I, S differs": 45
     },
@@ -904,9 +955,102 @@
   }
  },
  "monitoring": {
-  "events": {},
+  "events": {
+   "PIIND": {
+    "t0_exchange_raw": "04-Nov-2026 19:40:36",
+    "t0_exchange_utc": "2026-11-04T14:10:36+00:00",
+    "t0_assumed_tz": "IST (+05:30), per NSE feed convention",
+    "detected_at_utc": "2026-11-04T14:44:10.632813+00:00",
+    "detection_lag_min": 33.6,
+    "item": {
+     "feed": "Online_announcements.xml",
+     "title": "PI Industries Limited",
+     "description": "PI Industries Limited has submitted to the Exchange, the Outcome of Board Meeting held on November 04, 2026 for approval of Unaudited Standalone and Consolidated Financial Results for the quarter and half year September 30, 2026. |SUBJECT: Outcome of Board Meeting",
+     "link": "https://nsearchives.nseindia.com/corporate/PIIND_04112026193824_Resultssd.pdf",
+     "pubDate": "04-Nov-2026 19:40:36"
+    },
+    "new_quarter": "Sep 2026",
+    "checkpoints": {
+     "T0": {
+      "due_utc": "2026-11-04T14:10:36+00:00",
+      "taken_utc": "2026-11-04T14:44:41.116482+00:00",
+      "snapshot_id": "20261104T144416Z_T0_PIIND",
+      "attempts": [
+       {
+        "at_utc": "2026-11-04T14:44:41.116487+00:00",
+        "snapshot_id": "20261104T144416Z_T0_PIIND",
+        "complete": true,
+        "adopted": false
+       }
+      ]
+     },
+     "T+30m": {
+      "due_utc": "2026-11-04T14:40:36+00:00",
+      "taken_utc": "2026-11-04T14:45:04.236166+00:00",
+      "snapshot_id": "20261104T144441Z_T+30m_PIIND",
+      "attempts": [
+       {
+        "at_utc": "2026-11-04T14:45:04.236160+00:00",
+        "snapshot_id": "20261104T144441Z_T+30m_PIIND",
+        "complete": true,
+        "adopted": false
+       }
+      ],
+      "late_by_min": 4.5
+     },
+     "T+2h": {
+      "due_utc": "2026-11-04T16:10:36+00:00",
+      "taken_utc": null,
+      "snapshot_id": null
+     },
+     "T+24h": {
+      "due_utc": "2026-11-05T14:10:36+00:00",
+      "taken_utc": null,
+      "snapshot_id": null
+     },
+     "T+48h": {
+      "due_utc": "2026-11-06T14:10:36+00:00",
+      "taken_utc": null,
+      "snapshot_id": null
+     }
+    }
+   }
+  },
   "complete": false,
-  "checkpoint_mcp_captures": []
+  "checkpoint_mcp_captures": [
+   {
+    "symbol": "PIIND",
+    "checkpoint": "T0/T+30m",
+    "called_at_utc": "2026-11-04T14:45:47.557333+00:00",
+    "tool": "TAPETIDE.get_financials(section=quarterly,periods=1)",
+    "updated_at": "2026-10-21T06:29:42.208Z",
+    "latest_period": "Jun 2026",
+    "provisional_periods": null,
+    "next_period": "Sep 2026",
+    "due_by": "2026-11-14",
+    "stale": false,
+    "cell_source": {
+     "Other Income": {
+      "Jun 2026": "filing"
+     },
+     "Profit before tax": {
+      "Jun 2026": "filing"
+     }
+    },
+    "sep_2026_values": null
+   },
+   {
+    "symbol": "PIIND",
+    "checkpoint": "T0/T+30m",
+    "called_at_utc": "2026-11-04T14:45:47.557333+00:00",
+    "tool": "arth.get_statements(stats=quarter_results,listed_only=true)",
+    "fetched_at": null,
+    "latest_period": null,
+    "sep_2026_values": null,
+    "label": "ARTHSCAN-cached",
+    "status": "not_called: arth MCP connector failed to connect (HTTP 404) in this session; ARTHSCAN statements were captured directly in the T0 and T+30m snapshots"
+   }
+  ]
  },
  "limits": [
   "Ten stocks, one baseline snapshot plus release checkpoints.",
