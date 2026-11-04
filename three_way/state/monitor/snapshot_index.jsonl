@@ -1,2 +1,3 @@
 {"snapshot_id": "20261104T144416Z_T0_PIIND", "label": "T0_PIIND", "indexed_at_utc": "2026-11-04T14:44:41.116152+00:00", "manifest_sha256": "b8841234a9304fb95c7a425c375aaa23583923d25a5ad6e3985ef172b9996bc4"}
 {"snapshot_id": "20261104T144441Z_T+30m_PIIND", "label": "T+30m_PIIND", "indexed_at_utc": "2026-11-04T14:45:04.236061+00:00", "manifest_sha256": "9504fcdd420c131889ed39642bdeceb6c3b0993fdaa297d04501828bce2c90c8"}
+{"snapshot_id": "20261104T161432Z_T+2h_PIIND", "label": "T+2h_PIIND", "indexed_at_utc": "2026-11-04T16:14:58.708782+00:00", "manifest_sha256": "c43c84b1ad4564be260ebf65d0089a59f173e23a7ccbe1cd6cc5fd4352fbda3c"}

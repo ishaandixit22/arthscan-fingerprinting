@@ -43,8 +43,17 @@
    },
    "T+2h": {
     "due_utc": "2026-11-04T16:10:36+00:00",
-    "taken_utc": null,
-    "snapshot_id": null
+    "taken_utc": "2026-11-04T16:14:58.709156+00:00",
+    "snapshot_id": "20261104T161432Z_T+2h_PIIND",
+    "attempts": [
+     {
+      "at_utc": "2026-11-04T16:14:58.709147+00:00",
+      "snapshot_id": "20261104T161432Z_T+2h_PIIND",
+      "complete": true,
+      "adopted": false
+     }
+    ],
+    "late_by_min": 4.4
    },
    "T+24h": {
     "due_utc": "2026-11-05T14:10:36+00:00",
