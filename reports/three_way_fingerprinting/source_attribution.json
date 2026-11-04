@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T14:45:48Z",
+ "generated_at": "2026-11-04T17:39:15Z",
  "question": "Does Tapetide obtain financial statements directly from Screener.in or from a shared upstream provider such as Indian Stock API?",
  "sources": {
   "T": "Tapetide public .md pages + Tapetide MCP",
@@ -17,7 +17,8 @@
   "20261102T155430Z_baseline_MGL",
   "20261102T155456Z_baseline_DATAMATICS",
   "20261104T144416Z_T0_PIIND",
-  "20261104T144441Z_T+30m_PIIND"
+  "20261104T144441Z_T+30m_PIIND",
+  "20261104T161432Z_T+2h_PIIND"
  ],
  "answers": {
   "A_tapetide_matches_screener_first": {
@@ -217,6 +218,20 @@
         }
        ],
        "late_by_min": 4.5
+      },
+      "T+2h": {
+       "due_utc": "2026-11-04T16:10:36+00:00",
+       "taken_utc": "2026-11-04T16:14:58.709156+00:00",
+       "snapshot_id": "20261104T161432Z_T+2h_PIIND",
+       "attempts": [
+        {
+         "at_utc": "2026-11-04T16:14:58.709147+00:00",
+         "snapshot_id": "20261104T161432Z_T+2h_PIIND",
+         "complete": true,
+         "adopted": false
+        }
+       ],
+       "late_by_min": 4.4
       }
      }
     },
@@ -1000,8 +1015,17 @@
      },
      "T+2h": {
       "due_utc": "2026-11-04T16:10:36+00:00",
-      "taken_utc": null,
-      "snapshot_id": null
+      "taken_utc": "2026-11-04T16:14:58.709156+00:00",
+      "snapshot_id": "20261104T161432Z_T+2h_PIIND",
+      "attempts": [
+       {
+        "at_utc": "2026-11-04T16:14:58.709147+00:00",
+        "snapshot_id": "20261104T161432Z_T+2h_PIIND",
+        "complete": true,
+        "adopted": false
+       }
+      ],
+      "late_by_min": 4.4
      },
      "T+24h": {
       "due_utc": "2026-11-05T14:10:36+00:00",
@@ -1049,6 +1073,38 @@
     "sep_2026_values": null,
     "label": "ARTHSCAN-cached",
     "status": "not_called: arth MCP connector failed to connect (HTTP 404) in this session; ARTHSCAN statements were captured directly in the T0 and T+30m snapshots"
+   },
+   {
+    "symbol": "PIIND",
+    "checkpoint": "T+2h",
+    "called_at_utc": "2026-11-04T17:39:14.358353+00:00",
+    "tool": "TAPETIDE.get_financials(section=quarterly,periods=1)",
+    "updated_at": "2026-10-21T06:29:42.208Z",
+    "latest_period": "Jun 2026",
+    "provisional_periods": null,
+    "next_period": "Sep 2026",
+    "due_by": "2026-11-14",
+    "stale": false,
+    "cell_source": {
+     "Other Income": {
+      "Jun 2026": "filing"
+     },
+     "Profit before tax": {
+      "Jun 2026": "filing"
+     }
+    },
+    "sep_2026_values": null
+   },
+   {
+    "symbol": "PIIND",
+    "checkpoint": "T+2h",
+    "called_at_utc": "2026-11-04T17:39:14.358353+00:00",
+    "tool": "arth.get_statements(stats=quarter_results,listed_only=true)",
+    "fetched_at": null,
+    "latest_period": null,
+    "sep_2026_values": null,
+    "label": "ARTHSCAN-cached",
+    "status": "not_called: arth MCP connector failed to connect (HTTP 404); ARTHSCAN statements captured directly in the T+2h snapshot"
    }
   ]
  },
