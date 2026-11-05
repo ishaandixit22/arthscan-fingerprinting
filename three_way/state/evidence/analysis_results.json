@@ -75,7 +75,22 @@
   "20261104T144441Z_T+30m_PIIND",
   "20261104T161432Z_T+2h_PIIND",
   "20261105T094358Z_T0_MOTHERSON",
-  "20261105T094436Z_T0_MOTHERSON"
+  "20261105T094436Z_T0_MOTHERSON",
+  "20261105T104433Z_T0_MOTHERSON",
+  "20261105T104509Z_T+30m_MOTHERSON",
+  "20261105T114458Z_T0_MOTHERSON",
+  "20261105T114531Z_T+30m_MOTHERSON",
+  "20261105T114602Z_T+2h_MOTHERSON",
+  "20261105T124458Z_T0_MOTHERSON",
+  "20261105T124536Z_T+30m_MOTHERSON",
+  "20261105T124610Z_T+2h_MOTHERSON",
+  "20261105T134548Z_T0_MOTHERSON",
+  "20261105T134626Z_T+30m_MOTHERSON",
+  "20261105T134701Z_T+2h_MOTHERSON",
+  "20261105T144520Z_T+24h_PIIND",
+  "20261105T144557Z_T0_MOTHERSON",
+  "20261105T144633Z_T+30m_MOTHERSON",
+  "20261105T144709Z_T+2h_MOTHERSON"
  ],
  "i_basis": {
   "RELIANCE": "consolidated",
@@ -256,31 +271,13 @@
   }
  },
  "triad": {
-  "all_three_agree": 5354,
   "T=S, I differs": 18,
+  "all_three_agree": 5354,
   "I=S, T differs": 31,
   "T=I, S differs": 45
  },
  "triad_examples": {
   "T=S, I differs": [
-   {
-    "symbol": "RELIANCE",
-    "statement": "annual_pl",
-    "row": "Interest",
-    "period": "TTM",
-    "T": "30,016",
-    "S": "30,016",
-    "I": "28362"
-   },
-   {
-    "symbol": "RELIANCE",
-    "statement": "annual_pl",
-    "row": "Operating Profit",
-    "period": "TTM",
-    "T": "1,94,292",
-    "S": "194,292",
-    "I": "183561"
-   },
    {
     "symbol": "RELIANCE",
     "statement": "annual_pl",
@@ -293,29 +290,20 @@
    {
     "symbol": "RELIANCE",
     "statement": "annual_pl",
-    "row": "Depreciation",
+    "row": "Net Profit",
     "period": "TTM",
-    "T": "59,845",
-    "S": "59,845",
-    "I": "58946"
+    "T": "95,625",
+    "S": "95,625",
+    "I": "88167"
    },
    {
     "symbol": "RELIANCE",
     "statement": "annual_pl",
-    "row": "Profit before tax",
+    "row": "Interest",
     "period": "TTM",
-    "T": "1,26,135",
-    "S": "126,135",
-    "I": "116646"
-   },
-   {
-    "symbol": "RELIANCE",
-    "statement": "annual_pl",
-    "row": "EPS in Rs",
-    "period": "TTM",
-    "T": "60.68",
-    "S": "60.68",
-    "I": "55.22"
+    "T": "30,016",
+    "S": "30,016",
+    "I": "28362"
    },
    {
     "symbol": "RELIANCE",
@@ -329,6 +317,33 @@
    {
     "symbol": "RELIANCE",
     "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "TTM",
+    "T": "1,26,135",
+    "S": "126,135",
+    "I": "116646"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "1,94,292",
+    "S": "194,292",
+    "I": "183561"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "Depreciation",
+    "period": "TTM",
+    "T": "59,845",
+    "S": "59,845",
+    "I": "58946"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
     "row": "Other Income",
     "period": "TTM",
     "T": "21,704",
@@ -338,29 +353,11 @@
    {
     "symbol": "RELIANCE",
     "statement": "annual_pl",
-    "row": "Net Profit",
+    "row": "EPS in Rs",
     "period": "TTM",
-    "T": "95,625",
-    "S": "95,625",
-    "I": "88167"
-   },
-   {
-    "symbol": "TRENT",
-    "statement": "annual_pl",
-    "row": "Interest",
-    "period": "TTM",
-    "T": "178",
-    "S": "178",
-    "I": "175"
-   },
-   {
-    "symbol": "TRENT",
-    "statement": "annual_pl",
-    "row": "Operating Profit",
-    "period": "TTM",
-    "T": "4,169",
-    "S": "4,169",
-    "I": "3928"
+    "T": "60.68",
+    "S": "60.68",
+    "I": "55.22"
    },
    {
     "symbol": "TRENT",
@@ -374,29 +371,20 @@
    {
     "symbol": "TRENT",
     "statement": "annual_pl",
-    "row": "Depreciation",
+    "row": "Net Profit",
     "period": "TTM",
-    "T": "1,573",
-    "S": "1,573",
-    "I": "1478"
+    "T": "1,909",
+    "S": "1,909",
+    "I": "1815"
    },
    {
     "symbol": "TRENT",
     "statement": "annual_pl",
-    "row": "Profit before tax",
+    "row": "Interest",
     "period": "TTM",
-    "T": "2,506",
-    "S": "2,506",
-    "I": "2364"
-   },
-   {
-    "symbol": "TRENT",
-    "statement": "annual_pl",
-    "row": "EPS in Rs",
-    "period": "TTM",
-    "T": "35.56",
-    "S": "35.56",
-    "I": "33.93"
+    "T": "178",
+    "S": "178",
+    "I": "175"
    },
    {
     "symbol": "TRENT",
@@ -410,6 +398,33 @@
    {
     "symbol": "TRENT",
     "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "TTM",
+    "T": "2,506",
+    "S": "2,506",
+    "I": "2364"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "4,169",
+    "S": "4,169",
+    "I": "3928"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "Depreciation",
+    "period": "TTM",
+    "T": "1,573",
+    "S": "1,573",
+    "I": "1478"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
     "row": "Other Income",
     "period": "TTM",
     "T": "88",
@@ -419,14 +434,23 @@
    {
     "symbol": "TRENT",
     "statement": "annual_pl",
-    "row": "Net Profit",
+    "row": "EPS in Rs",
     "period": "TTM",
-    "T": "1,909",
-    "S": "1,909",
-    "I": "1815"
+    "T": "35.56",
+    "S": "35.56",
+    "I": "33.93"
    }
   ],
   "I=S, T differs": [
+   {
+    "symbol": "PIIND",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Sep 2025",
+    "T": "523",
+    "S": "525",
+    "I": "525"
+   },
    {
     "symbol": "PIIND",
     "statement": "quarterly",
@@ -440,28 +464,19 @@
     "symbol": "PIIND",
     "statement": "quarterly",
     "row": "Other Income",
-    "period": "Mar 2025",
-    "T": "73.4",
-    "S": "75",
-    "I": "75"
-   },
-   {
-    "symbol": "PIIND",
-    "statement": "quarterly",
-    "row": "Profit before tax",
-    "period": "Jun 2026",
-    "T": "320",
-    "S": "322",
-    "I": "322"
+    "period": "Sep 2025",
+    "T": "82.5",
+    "S": "85",
+    "I": "85"
    },
    {
     "symbol": "PIIND",
     "statement": "quarterly",
     "row": "Other Income",
-    "period": "Jun 2026",
-    "T": "64.1",
-    "S": "66",
-    "I": "66"
+    "period": "Mar 2025",
+    "T": "73.4",
+    "S": "75",
+    "I": "75"
    },
    {
     "symbol": "PIIND",
@@ -476,10 +491,10 @@
     "symbol": "PIIND",
     "statement": "quarterly",
     "row": "Profit before tax",
-    "period": "Sep 2025",
-    "T": "523",
-    "S": "525",
-    "I": "525"
+    "period": "Jun 2026",
+    "T": "320",
+    "S": "322",
+    "I": "322"
    },
    {
     "symbol": "PIIND",
@@ -494,19 +509,10 @@
     "symbol": "PIIND",
     "statement": "quarterly",
     "row": "Other Income",
-    "period": "Sep 2025",
-    "T": "82.5",
-    "S": "85",
-    "I": "85"
-   },
-   {
-    "symbol": "ABCAPITAL",
-    "statement": "quarterly",
-    "row": "Depreciation",
-    "period": "Jun 2024",
-    "T": "55.44",
-    "S": "54",
-    "I": "54"
+    "period": "Jun 2026",
+    "T": "64.1",
+    "S": "66",
+    "I": "66"
    },
    {
     "symbol": "ABCAPITAL",
@@ -518,13 +524,13 @@
     "I": "52"
    },
    {
-    "symbol": "WELSPUNLIV",
+    "symbol": "ABCAPITAL",
     "statement": "quarterly",
-    "row": "Other Income",
-    "period": "Mar 2024",
-    "T": "41.48",
-    "S": "42",
-    "I": "42"
+    "row": "Depreciation",
+    "period": "Jun 2024",
+    "T": "55.44",
+    "S": "54",
+    "I": "54"
    },
    {
     "symbol": "WELSPUNLIV",
@@ -539,10 +545,28 @@
     "symbol": "WELSPUNLIV",
     "statement": "quarterly",
     "row": "Other Income",
+    "period": "Mar 2024",
+    "T": "41.48",
+    "S": "42",
+    "I": "42"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "quarterly",
+    "row": "Other Income",
     "period": "Jun 2026",
     "T": "32.71",
     "S": "34",
     "I": "34"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "quarterly",
+    "row": "Sales",
+    "period": "Jun 2024",
+    "T": "2,131",
+    "S": "2,130",
+    "I": "2130"
    },
    {
     "symbol": "ZEEL",
@@ -572,13 +596,22 @@
     "I": "58"
    },
    {
-    "symbol": "ZEEL",
-    "statement": "quarterly",
-    "row": "Sales",
-    "period": "Jun 2024",
-    "T": "2,131",
-    "S": "2,130",
-    "I": "2130"
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "Expenses",
+    "period": "TTM",
+    "T": "38,460",
+    "S": "40,400",
+    "I": "40400"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "Net Profit",
+    "period": "TTM",
+    "T": "3,239",
+    "S": "3,328",
+    "I": "3328"
    },
    {
     "symbol": "JSL",
@@ -592,47 +625,11 @@
    {
     "symbol": "JSL",
     "statement": "annual_pl",
-    "row": "OPM %",
+    "row": "Sales",
     "period": "TTM",
-    "T": "13%",
-    "S": "12%",
-    "I": "12"
-   },
-   {
-    "symbol": "JSL",
-    "statement": "annual_pl",
-    "row": "Operating Profit",
-    "period": "TTM",
-    "T": "5,566",
-    "S": "5,607",
-    "I": "5607"
-   },
-   {
-    "symbol": "JSL",
-    "statement": "annual_pl",
-    "row": "Expenses",
-    "period": "TTM",
-    "T": "38,460",
-    "S": "40,400",
-    "I": "40400"
-   },
-   {
-    "symbol": "JSL",
-    "statement": "quarterly",
-    "row": "Other Income",
-    "period": "Mar 2024",
-    "T": "54.98",
-    "S": "53",
-    "I": "53"
-   },
-   {
-    "symbol": "JSL",
-    "statement": "annual_pl",
-    "row": "Depreciation",
-    "period": "TTM",
-    "T": "1,111",
-    "S": "1,148",
-    "I": "1148"
+    "T": "44,026",
+    "S": "46,007",
+    "I": "46007"
    },
    {
     "symbol": "JSL",
@@ -646,20 +643,29 @@
    {
     "symbol": "JSL",
     "statement": "annual_pl",
-    "row": "EPS in Rs",
+    "row": "Operating Profit",
     "period": "TTM",
-    "T": "39.4",
-    "S": "40.46",
-    "I": "40.46"
+    "T": "5,566",
+    "S": "5,607",
+    "I": "5607"
    },
    {
     "symbol": "JSL",
     "statement": "annual_pl",
-    "row": "Sales",
+    "row": "Depreciation",
     "period": "TTM",
-    "T": "44,026",
-    "S": "46,007",
-    "I": "46007"
+    "T": "1,111",
+    "S": "1,148",
+    "I": "1148"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "OPM %",
+    "period": "TTM",
+    "T": "13%",
+    "S": "12%",
+    "I": "12"
    },
    {
     "symbol": "JSL",
@@ -673,20 +679,20 @@
    {
     "symbol": "JSL",
     "statement": "annual_pl",
-    "row": "Net Profit",
+    "row": "EPS in Rs",
     "period": "TTM",
-    "T": "3,239",
-    "S": "3,328",
-    "I": "3328"
+    "T": "39.4",
+    "S": "40.46",
+    "I": "40.46"
    },
    {
-    "symbol": "TRENT",
+    "symbol": "JSL",
     "statement": "quarterly",
-    "row": "Profit before tax",
-    "period": "Mar 2025",
-    "T": "417",
-    "S": "416",
-    "I": "416"
+    "row": "Other Income",
+    "period": "Mar 2024",
+    "T": "54.98",
+    "S": "53",
+    "I": "53"
    },
    {
     "symbol": "TRENT",
@@ -696,6 +702,15 @@
     "T": "478",
     "S": "477",
     "I": "477"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Mar 2025",
+    "T": "417",
+    "S": "416",
+    "I": "416"
    },
    {
     "symbol": "CYIENT",
@@ -710,24 +725,6 @@
   "T=I, S differs": [
    {
     "symbol": "ABCAPITAL",
-    "statement": "quarterly",
-    "row": "EPS in Rs",
-    "period": "Sep 2025",
-    "T": "3.27",
-    "S": "3.57",
-    "I": "3.27"
-   },
-   {
-    "symbol": "ABCAPITAL",
-    "statement": "annual_pl",
-    "row": "Interest",
-    "period": "TTM",
-    "T": "12,276",
-    "S": "13,024",
-    "I": "12276"
-   },
-   {
-    "symbol": "ABCAPITAL",
     "statement": "annual_pl",
     "row": "Expenses",
     "period": "TTM",
@@ -738,11 +735,11 @@
    {
     "symbol": "ABCAPITAL",
     "statement": "quarterly",
-    "row": "Net Profit",
+    "row": "EPS in Rs",
     "period": "Sep 2025",
-    "T": "882",
-    "S": "961",
-    "I": "882"
+    "T": "3.27",
+    "S": "3.57",
+    "I": "3.27"
    },
    {
     "symbol": "ABCAPITAL",
@@ -756,11 +753,29 @@
    {
     "symbol": "ABCAPITAL",
     "statement": "annual_pl",
-    "row": "Depreciation",
+    "row": "Net Profit",
     "period": "TTM",
-    "T": "317",
-    "S": "328",
-    "I": "317"
+    "T": "4,119",
+    "S": "4,590",
+    "I": "4119"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "12,276",
+    "S": "13,024",
+    "I": "12276"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Sep 2025",
+    "T": "1,212",
+    "S": "1,290",
+    "I": "1212"
    },
    {
     "symbol": "ABCAPITAL",
@@ -782,21 +797,21 @@
    },
    {
     "symbol": "ABCAPITAL",
-    "statement": "annual_pl",
-    "row": "EPS in Rs",
-    "period": "TTM",
-    "T": "15.04",
-    "S": "16.47",
-    "I": "15.04"
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Sep 2025",
+    "T": "92",
+    "S": "170",
+    "I": "92"
    },
    {
     "symbol": "ABCAPITAL",
-    "statement": "quarterly",
-    "row": "Tax %",
-    "period": "Sep 2025",
-    "T": "27%",
-    "S": "26%",
-    "I": "27"
+    "statement": "annual_pl",
+    "row": "Depreciation",
+    "period": "TTM",
+    "T": "317",
+    "S": "328",
+    "I": "317"
    },
    {
     "symbol": "ABCAPITAL",
@@ -819,56 +834,29 @@
    {
     "symbol": "ABCAPITAL",
     "statement": "quarterly",
-    "row": "Profit before tax",
+    "row": "Tax %",
     "period": "Sep 2025",
-    "T": "1,212",
-    "S": "1,290",
-    "I": "1212"
+    "T": "27%",
+    "S": "26%",
+    "I": "27"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "EPS in Rs",
+    "period": "TTM",
+    "T": "15.04",
+    "S": "16.47",
+    "I": "15.04"
    },
    {
     "symbol": "ABCAPITAL",
     "statement": "quarterly",
-    "row": "Other Income",
-    "period": "Sep 2025",
-    "T": "92",
-    "S": "170",
-    "I": "92"
-   },
-   {
-    "symbol": "ABCAPITAL",
-    "statement": "annual_pl",
     "row": "Net Profit",
-    "period": "TTM",
-    "T": "4,119",
-    "S": "4,590",
-    "I": "4119"
-   },
-   {
-    "symbol": "WELSPUNLIV",
-    "statement": "annual_pl",
-    "row": "Interest",
-    "period": "TTM",
-    "T": "153",
-    "S": "144",
-    "I": "153"
-   },
-   {
-    "symbol": "WELSPUNLIV",
-    "statement": "annual_pl",
-    "row": "OPM %",
-    "period": "TTM",
-    "T": "9%",
-    "S": "10%",
-    "I": "9"
-   },
-   {
-    "symbol": "WELSPUNLIV",
-    "statement": "annual_pl",
-    "row": "Operating Profit",
-    "period": "TTM",
-    "T": "884",
-    "S": "1,068",
-    "I": "884"
+    "period": "Sep 2025",
+    "T": "882",
+    "S": "961",
+    "I": "882"
    },
    {
     "symbol": "WELSPUNLIV",
@@ -882,29 +870,20 @@
    {
     "symbol": "WELSPUNLIV",
     "statement": "annual_pl",
-    "row": "Depreciation",
+    "row": "Net Profit",
     "period": "TTM",
-    "T": "407",
-    "S": "408",
-    "I": "407"
+    "T": "286",
+    "S": "441",
+    "I": "286"
    },
    {
     "symbol": "WELSPUNLIV",
     "statement": "annual_pl",
-    "row": "Profit before tax",
+    "row": "Interest",
     "period": "TTM",
-    "T": "384",
-    "S": "586",
-    "I": "384"
-   },
-   {
-    "symbol": "WELSPUNLIV",
-    "statement": "annual_pl",
-    "row": "EPS in Rs",
-    "period": "TTM",
-    "T": "2.92",
-    "S": "4.57",
-    "I": "2.92"
+    "T": "153",
+    "S": "144",
+    "I": "153"
    },
    {
     "symbol": "WELSPUNLIV",
@@ -918,6 +897,42 @@
    {
     "symbol": "WELSPUNLIV",
     "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "TTM",
+    "T": "384",
+    "S": "586",
+    "I": "384"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "884",
+    "S": "1,068",
+    "I": "884"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "Depreciation",
+    "period": "TTM",
+    "T": "407",
+    "S": "408",
+    "I": "407"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "OPM %",
+    "period": "TTM",
+    "T": "9%",
+    "S": "10%",
+    "I": "9"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
     "row": "Other Income",
     "period": "TTM",
     "T": "60",
@@ -927,38 +942,11 @@
    {
     "symbol": "WELSPUNLIV",
     "statement": "annual_pl",
-    "row": "Net Profit",
+    "row": "EPS in Rs",
     "period": "TTM",
-    "T": "286",
-    "S": "441",
-    "I": "286"
-   },
-   {
-    "symbol": "ZEEL",
-    "statement": "annual_pl",
-    "row": "Interest",
-    "period": "TTM",
-    "T": "50",
-    "S": "40",
-    "I": "50"
-   },
-   {
-    "symbol": "ZEEL",
-    "statement": "annual_pl",
-    "row": "OPM %",
-    "period": "TTM",
-    "T": "3.2%",
-    "S": "2.2%",
-    "I": "3.2"
-   },
-   {
-    "symbol": "ZEEL",
-    "statement": "annual_pl",
-    "row": "Operating Profit",
-    "period": "TTM",
-    "T": "259",
-    "S": "186",
-    "I": "259"
+    "T": "2.92",
+    "S": "4.57",
+    "I": "2.92"
    },
    {
     "symbol": "ZEEL",
@@ -972,29 +960,20 @@
    {
     "symbol": "ZEEL",
     "statement": "annual_pl",
-    "row": "Depreciation",
+    "row": "Net Profit",
     "period": "TTM",
     "T": "202",
-    "S": "187",
+    "S": "171",
     "I": "202"
    },
    {
     "symbol": "ZEEL",
     "statement": "annual_pl",
-    "row": "Profit before tax",
+    "row": "Interest",
     "period": "TTM",
-    "T": "150",
-    "S": "98",
-    "I": "150"
-   },
-   {
-    "symbol": "ZEEL",
-    "statement": "annual_pl",
-    "row": "EPS in Rs",
-    "period": "TTM",
-    "T": "2.11",
-    "S": "1.78",
-    "I": "2.11"
+    "T": "50",
+    "S": "40",
+    "I": "50"
    },
    {
     "symbol": "ZEEL",
@@ -1008,6 +987,42 @@
    {
     "symbol": "ZEEL",
     "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "TTM",
+    "T": "150",
+    "S": "98",
+    "I": "150"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "259",
+    "S": "186",
+    "I": "259"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Depreciation",
+    "period": "TTM",
+    "T": "202",
+    "S": "187",
+    "I": "202"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "OPM %",
+    "period": "TTM",
+    "T": "3.2%",
+    "S": "2.2%",
+    "I": "3.2"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
     "row": "Other Income",
     "period": "TTM",
     "T": "143",
@@ -1017,38 +1032,11 @@
    {
     "symbol": "ZEEL",
     "statement": "annual_pl",
-    "row": "Net Profit",
+    "row": "EPS in Rs",
     "period": "TTM",
-    "T": "202",
-    "S": "171",
-    "I": "202"
-   },
-   {
-    "symbol": "QUICKHEAL",
-    "statement": "annual_pl",
-    "row": "Interest",
-    "period": "TTM",
-    "T": "0",
-    "S": "1",
-    "I": "0"
-   },
-   {
-    "symbol": "QUICKHEAL",
-    "statement": "annual_pl",
-    "row": "OPM %",
-    "period": "TTM",
-    "T": "-15%",
-    "S": "-19%",
-    "I": "-15"
-   },
-   {
-    "symbol": "QUICKHEAL",
-    "statement": "annual_pl",
-    "row": "Operating Profit",
-    "period": "TTM",
-    "T": "-37",
-    "S": "-44",
-    "I": "-37"
+    "T": "2.11",
+    "S": "1.78",
+    "I": "2.11"
    },
    {
     "symbol": "QUICKHEAL",
@@ -1062,11 +1050,38 @@
    {
     "symbol": "QUICKHEAL",
     "statement": "annual_pl",
-    "row": "Depreciation",
+    "row": "Net Profit",
     "period": "TTM",
-    "T": "15",
-    "S": "17",
-    "I": "15"
+    "T": "-11",
+    "S": "-13",
+    "I": "-11"
+   },
+   {
+    "symbol": "QUICKHEAL",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "0",
+    "S": "1",
+    "I": "0"
+   },
+   {
+    "symbol": "QUICKHEAL",
+    "statement": "annual_pl",
+    "row": "Sales",
+    "period": "TTM",
+    "T": "249",
+    "S": "230",
+    "I": "249"
+   },
+   {
+    "symbol": "QUICKHEAL",
+    "statement": "annual_pl",
+    "row": "Profit before tax",
+    "period": "TTM",
+    "T": "-21",
+    "S": "-27",
+    "I": "-21"
    }
   ]
  },
@@ -1975,7 +1990,15 @@
     "T+24h": {
      "due_utc": "2026-11-05T14:10:36+00:00",
      "taken_utc": null,
-     "snapshot_id": null
+     "snapshot_id": null,
+     "attempts": [
+      {
+       "at_utc": "2026-11-05T14:45:57.021804+00:00",
+       "snapshot_id": "20261105T144520Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      }
+     ]
     },
     "T+48h": {
      "due_utc": "2026-11-06T14:10:36+00:00",
@@ -2015,18 +2038,106 @@
        "snapshot_id": "20261105T094436Z_T0_MOTHERSON",
        "complete": false,
        "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T10:45:08.762803+00:00",
+       "snapshot_id": "20261105T104433Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T11:45:31.419889+00:00",
+       "snapshot_id": "20261105T114458Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T12:45:36.046608+00:00",
+       "snapshot_id": "20261105T124458Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T13:46:26.379179+00:00",
+       "snapshot_id": "20261105T134548Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T14:46:33.627314+00:00",
+       "snapshot_id": "20261105T144557Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
       }
      ]
     },
     "T+30m": {
      "due_utc": "2026-11-05T09:58:36+00:00",
      "taken_utc": null,
-     "snapshot_id": null
+     "snapshot_id": null,
+     "attempts": [
+      {
+       "at_utc": "2026-11-05T10:45:44.148526+00:00",
+       "snapshot_id": "20261105T104509Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T11:46:02.235737+00:00",
+       "snapshot_id": "20261105T114531Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T12:46:10.094676+00:00",
+       "snapshot_id": "20261105T124536Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T13:47:01.123064+00:00",
+       "snapshot_id": "20261105T134626Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T14:47:08.743027+00:00",
+       "snapshot_id": "20261105T144633Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      }
+     ]
     },
     "T+2h": {
      "due_utc": "2026-11-05T11:28:36+00:00",
      "taken_utc": null,
-     "snapshot_id": null
+     "snapshot_id": null,
+     "attempts": [
+      {
+       "at_utc": "2026-11-05T11:46:33.462920+00:00",
+       "snapshot_id": "20261105T114602Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T12:46:42.840168+00:00",
+       "snapshot_id": "20261105T124610Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T13:47:36.273124+00:00",
+       "snapshot_id": "20261105T134701Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T14:47:42.001863+00:00",
+       "snapshot_id": "20261105T144709Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      }
+     ]
     },
     "T+24h": {
      "due_utc": "2026-11-06T09:28:36+00:00",
@@ -2043,13 +2154,13 @@
  },
  "first_seen_minutes_after_t0": {
   "PIIND": {
-   "tapetide": null,
-   "screener": null,
+   "tapetide": 1474.7,
+   "screener": 1474.8,
    "indianapi_arthscan_cache": null
   },
   "MOTHERSON": {
    "tapetide": null,
-   "screener": null,
+   "screener": 196.4,
    "indianapi_arthscan_cache": null
   }
  }

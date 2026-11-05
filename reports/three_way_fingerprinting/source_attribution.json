@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T09:46:01Z",
+ "generated_at": "2026-11-05T14:48:18Z",
  "question": "Does Tapetide obtain financial statements directly from Screener.in or from a shared upstream provider such as Indian Stock API?",
  "sources": {
   "T": "Tapetide public .md pages + Tapetide MCP",
@@ -20,7 +20,22 @@
   "20261104T144441Z_T+30m_PIIND",
   "20261104T161432Z_T+2h_PIIND",
   "20261105T094358Z_T0_MOTHERSON",
-  "20261105T094436Z_T0_MOTHERSON"
+  "20261105T094436Z_T0_MOTHERSON",
+  "20261105T104433Z_T0_MOTHERSON",
+  "20261105T104509Z_T+30m_MOTHERSON",
+  "20261105T114458Z_T0_MOTHERSON",
+  "20261105T114531Z_T+30m_MOTHERSON",
+  "20261105T114602Z_T+2h_MOTHERSON",
+  "20261105T124458Z_T0_MOTHERSON",
+  "20261105T124536Z_T+30m_MOTHERSON",
+  "20261105T124610Z_T+2h_MOTHERSON",
+  "20261105T134548Z_T0_MOTHERSON",
+  "20261105T134626Z_T+30m_MOTHERSON",
+  "20261105T134701Z_T+2h_MOTHERSON",
+  "20261105T144520Z_T+24h_PIIND",
+  "20261105T144557Z_T0_MOTHERSON",
+  "20261105T144633Z_T+30m_MOTHERSON",
+  "20261105T144709Z_T+2h_MOTHERSON"
  ],
  "answers": {
   "A_tapetide_matches_screener_first": {
@@ -71,13 +86,13 @@
     "quickheal": "Indian Stock API lacked Sep 2026 at 2026-11-01T18:30Z (5 days after filing); Tapetide had it with values equal to Screener",
     "release_monitoring_first_seen_minutes_after_t0": {
      "PIIND": {
-      "tapetide": null,
-      "screener": null,
+      "tapetide": 1474.7,
+      "screener": 1474.8,
       "indianapi_arthscan_cache": null
      },
      "MOTHERSON": {
       "tapetide": null,
-      "screener": null,
+      "screener": 196.4,
       "indianapi_arthscan_cache": null
      }
     }
@@ -245,13 +260,13 @@
     },
     "first_seen": {
      "PIIND": {
-      "tapetide": null,
-      "screener": null,
+      "tapetide": 1474.7,
+      "screener": 1474.8,
       "indianapi_arthscan_cache": null
      },
      "MOTHERSON": {
       "tapetide": null,
-      "screener": null,
+      "screener": 196.4,
       "indianapi_arthscan_cache": null
      }
     }
@@ -869,8 +884,8 @@
    "answer": "Indian Stock API and Tapetide both carry Screener-format data, but Tapetide shows no Indian Stock API-specific dependence and is ahead of it on new quarters. A common origin for Screener-format data is consistent with the evidence but unidentified.",
    "evidence": {
     "triad_cells": {
-     "all_three_agree": 5354,
      "T=S, I differs": 18,
+     "all_three_agree": 5354,
      "I=S, T differs": 31,
      "T=I, S differs": 45
     },
@@ -1043,7 +1058,15 @@
      "T+24h": {
       "due_utc": "2026-11-05T14:10:36+00:00",
       "taken_utc": null,
-      "snapshot_id": null
+      "snapshot_id": null,
+      "attempts": [
+       {
+        "at_utc": "2026-11-05T14:45:57.021804+00:00",
+        "snapshot_id": "20261105T144520Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       }
+      ]
      },
      "T+48h": {
       "due_utc": "2026-11-06T14:10:36+00:00",
@@ -1083,18 +1106,106 @@
         "snapshot_id": "20261105T094436Z_T0_MOTHERSON",
         "complete": false,
         "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T10:45:08.762803+00:00",
+        "snapshot_id": "20261105T104433Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T11:45:31.419889+00:00",
+        "snapshot_id": "20261105T114458Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T12:45:36.046608+00:00",
+        "snapshot_id": "20261105T124458Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T13:46:26.379179+00:00",
+        "snapshot_id": "20261105T134548Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T14:46:33.627314+00:00",
+        "snapshot_id": "20261105T144557Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
        }
       ]
      },
      "T+30m": {
       "due_utc": "2026-11-05T09:58:36+00:00",
       "taken_utc": null,
-      "snapshot_id": null
+      "snapshot_id": null,
+      "attempts": [
+       {
+        "at_utc": "2026-11-05T10:45:44.148526+00:00",
+        "snapshot_id": "20261105T104509Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T11:46:02.235737+00:00",
+        "snapshot_id": "20261105T114531Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T12:46:10.094676+00:00",
+        "snapshot_id": "20261105T124536Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T13:47:01.123064+00:00",
+        "snapshot_id": "20261105T134626Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T14:47:08.743027+00:00",
+        "snapshot_id": "20261105T144633Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       }
+      ]
      },
      "T+2h": {
       "due_utc": "2026-11-05T11:28:36+00:00",
       "taken_utc": null,
-      "snapshot_id": null
+      "snapshot_id": null,
+      "attempts": [
+       {
+        "at_utc": "2026-11-05T11:46:33.462920+00:00",
+        "snapshot_id": "20261105T114602Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T12:46:42.840168+00:00",
+        "snapshot_id": "20261105T124610Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T13:47:36.273124+00:00",
+        "snapshot_id": "20261105T134701Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T14:47:42.001863+00:00",
+        "snapshot_id": "20261105T144709Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       }
+      ]
      },
      "T+24h": {
       "due_utc": "2026-11-06T09:28:36+00:00",
@@ -1199,6 +1310,48 @@
     "sep_2026_values": null,
     "label": "ARTHSCAN-cached",
     "status": "not_called: arth MCP connector failing (HTTP 404); arthscan.me statements pages now redirect to /login (HTTP 303), not bypassed"
+   },
+   {
+    "symbol": "PIIND",
+    "checkpoint": "T+24h",
+    "called_at_utc": "2026-11-05T14:48:10.671678+00:00",
+    "tool": "TAPETIDE.get_financials(section=quarterly,periods=2)",
+    "updated_at": "2026-10-21T06:29:42.208Z",
+    "latest_period": "Sep 2026",
+    "provisional_periods": [
+     {
+      "period": "Sep 2026",
+      "filed_on": "2026-11-04"
+     }
+    ],
+    "availability_sep2026": {
+     "available_from": "2026-11-05",
+     "basis": "reported"
+    },
+    "cell_source": {
+     "Sep 2026": "none flagged"
+    },
+    "sep_2026_values": {
+     "Sales": 1702,
+     "Expenses": 1469,
+     "Operating Profit": 233,
+     "OPM %": 14,
+     "Other Income": 65,
+     "Interest": 8,
+     "Depreciation": 105,
+     "Profit before tax": 184,
+     "Tax %": 34,
+     "Net Profit": 122,
+     "EPS in Rs": null
+    }
+   },
+   {
+    "symbol": "PIIND",
+    "checkpoint": "T+24h",
+    "called_at_utc": "2026-11-05T14:48:10.671678+00:00",
+    "tool": "arth.get_statements",
+    "label": "ARTHSCAN-cached",
+    "status": "not_called: arth MCP 404; arthscan.me login-gated (303)"
    }
   ]
  },
