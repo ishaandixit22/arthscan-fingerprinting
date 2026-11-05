@@ -1,0 +1,93 @@
+{
+ "snapshot_id": "20261105T164410Z_T+24h_PIIND",
+ "label": "T+24h_PIIND",
+ "started_at_utc": "2026-11-05T16:44:10.239155+00:00",
+ "symbols": [
+  "PIIND"
+ ],
+ "requests": [
+  {
+   "source": "tapetide",
+   "symbol": "PIIND",
+   "url": "https://tapetide.com/stocks/PIIND.md",
+   "file": "tapetide_PIIND.md",
+   "fetched_at_utc": "2026-11-05T16:44:10.239439+00:00",
+   "http_status": 200,
+   "bytes": 36488,
+   "sha256": "653707b5b45c92d1a6a67956c074b39a9b5089d903073e0993d785932253ab93",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-05T16:44:10.515Z",
+    "prices_as_of": "5 Nov 2026, 15:59 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "PIIND",
+   "url": "https://www.screener.in/company/PIIND/consolidated/",
+   "file": "screener_PIIND_consolidated.html",
+   "fetched_at_utc": "2026-11-05T16:44:12.717806+00:00",
+   "http_status": 200,
+   "bytes": 256185,
+   "sha256": "ae65d9a2a08b179c93ad975ee7ab015e85f55872fd45e6061157f2aec37d5232",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=quarter_results",
+   "file": null,
+   "fetched_at_utc": "2026-11-05T16:44:13.737461+00:00",
+   "http_status": "error: Failed to perform, curl: (7) Redirect to internal IP 127.0.0.1 rejected (SSRF protection). See https://curl.se/libcurl/c",
+   "bytes": 0
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=yoy_results",
+   "file": null,
+   "fetched_at_utc": "2026-11-05T16:44:21.578354+00:00",
+   "http_status": "error: Failed to perform, curl: (7) Redirect to internal IP 127.0.0.1 rejected (SSRF protection). See https://curl.se/libcurl/c",
+   "bytes": 0
+  },
+  {
+   "source": "screener",
+   "symbol": "PIIND",
+   "url": "https://www.screener.in/company/PIIND/",
+   "file": "screener_PIIND_standalone.html",
+   "fetched_at_utc": "2026-11-05T16:44:24.101194+00:00",
+   "http_status": 200,
+   "bytes": 255533,
+   "sha256": "b74776d4214ebc01f8229baa7da505e84349d82d563959c42e6dd37149c2c654",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=balancesheet",
+   "file": null,
+   "fetched_at_utc": "2026-11-05T16:44:28.975660+00:00",
+   "http_status": "error: Failed to perform, curl: (7) Redirect to internal IP 127.0.0.1 rejected (SSRF protection). See https://curl.se/libcurl/c",
+   "bytes": 0
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=cashflow",
+   "file": null,
+   "fetched_at_utc": "2026-11-05T16:44:36.648802+00:00",
+   "http_status": "error: Failed to perform, curl: (7) Redirect to internal IP 127.0.0.1 rejected (SSRF protection). See https://curl.se/libcurl/c",
+   "bytes": 0
+  },
+  {
+   "source": "indianapi",
+   "symbol": "PIIND",
+   "url": "https://arthscan.me/stock/PIIND/statements?stats=ratios",
+   "file": null,
+   "fetched_at_utc": "2026-11-05T16:44:43.370326+00:00",
+   "http_status": "error: Failed to perform, curl: (7) Redirect to internal IP 127.0.0.1 rejected (SSRF protection). See https://curl.se/libcurl/c",
+   "bytes": 0
+  }
+ ],
+ "finished_at_utc": "2026-11-05T16:44:45.889806+00:00",
+ "hosts_blocked_429": []
+}
