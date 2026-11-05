@@ -3,3 +3,5 @@
 {"snapshot_id": "20261104T161432Z_T+2h_PIIND", "label": "T+2h_PIIND", "indexed_at_utc": "2026-11-04T16:14:58.708782+00:00", "manifest_sha256": "c43c84b1ad4564be260ebf65d0089a59f173e23a7ccbe1cd6cc5fd4352fbda3c"}
 {"snapshot_id": "20261105T094358Z_T0_MOTHERSON", "label": "T0_MOTHERSON", "indexed_at_utc": "2026-11-05T09:44:35.860011+00:00", "manifest_sha256": "5a1557a879ff005c53e6ab7018602a3bef191f6b6451f3df9ec3c900d972ddec"}
 {"snapshot_id": "20261105T094436Z_T0_MOTHERSON", "label": "T0_MOTHERSON", "indexed_at_utc": "2026-11-05T09:45:10.367043+00:00", "manifest_sha256": "666464b8196f7dcac7ce166254a5ee7665e102218407c21bc21a505f02fe5931"}
+{"snapshot_id": "20261105T104433Z_T0_MOTHERSON", "label": "T0_MOTHERSON", "indexed_at_utc": "2026-11-05T10:45:08.762298+00:00", "manifest_sha256": "4ce283169cbd91a4c73fab08187877c4ea64332fc29158be8c76e22dea3a5c73"}
+{"snapshot_id": "20261105T104509Z_T+30m_MOTHERSON", "label": "T+30m_MOTHERSON", "indexed_at_utc": "2026-11-05T10:45:44.148423+00:00", "manifest_sha256": "f57bcd759f5c7fd7920f99c6dc012865aba4ddeb1269175402182e82049043b2"}

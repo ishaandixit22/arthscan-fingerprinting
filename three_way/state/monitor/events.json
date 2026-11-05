@@ -98,13 +98,27 @@
       "snapshot_id": "20261105T094436Z_T0_MOTHERSON",
       "complete": false,
       "adopted": false
+     },
+     {
+      "at_utc": "2026-11-05T10:45:08.762803+00:00",
+      "snapshot_id": "20261105T104433Z_T0_MOTHERSON",
+      "complete": false,
+      "adopted": false
      }
     ]
    },
    "T+30m": {
     "due_utc": "2026-11-05T09:58:36+00:00",
     "taken_utc": null,
-    "snapshot_id": null
+    "snapshot_id": null,
+    "attempts": [
+     {
+      "at_utc": "2026-11-05T10:45:44.148526+00:00",
+      "snapshot_id": "20261105T104509Z_T+30m_MOTHERSON",
+      "complete": false,
+      "adopted": false
+     }
+    ]
    },
    "T+2h": {
     "due_utc": "2026-11-05T11:28:36+00:00",
