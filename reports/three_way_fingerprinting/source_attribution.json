@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T17:39:15Z",
+ "generated_at": "2026-11-05T09:46:01Z",
  "question": "Does Tapetide obtain financial statements directly from Screener.in or from a shared upstream provider such as Indian Stock API?",
  "sources": {
   "T": "Tapetide public .md pages + Tapetide MCP",
@@ -18,7 +18,9 @@
   "20261102T155456Z_baseline_DATAMATICS",
   "20261104T144416Z_T0_PIIND",
   "20261104T144441Z_T+30m_PIIND",
-  "20261104T161432Z_T+2h_PIIND"
+  "20261104T161432Z_T+2h_PIIND",
+  "20261105T094358Z_T0_MOTHERSON",
+  "20261105T094436Z_T0_MOTHERSON"
  ],
  "answers": {
   "A_tapetide_matches_screener_first": {
@@ -69,6 +71,11 @@
     "quickheal": "Indian Stock API lacked Sep 2026 at 2026-11-01T18:30Z (5 days after filing); Tapetide had it with values equal to Screener",
     "release_monitoring_first_seen_minutes_after_t0": {
      "PIIND": {
+      "tapetide": null,
+      "screener": null,
+      "indianapi_arthscan_cache": null
+     },
+     "MOTHERSON": {
       "tapetide": null,
       "screener": null,
       "indianapi_arthscan_cache": null
@@ -233,10 +240,16 @@
        ],
        "late_by_min": 4.4
       }
-     }
+     },
+     "MOTHERSON": {}
     },
     "first_seen": {
      "PIIND": {
+      "tapetide": null,
+      "screener": null,
+      "indianapi_arthscan_cache": null
+     },
+     "MOTHERSON": {
       "tapetide": null,
       "screener": null,
       "indianapi_arthscan_cache": null
@@ -1038,6 +1051,62 @@
       "snapshot_id": null
      }
     }
+   },
+   "MOTHERSON": {
+    "t0_exchange_raw": "05-Nov-2026 14:58:36",
+    "t0_exchange_utc": "2026-11-05T09:28:36+00:00",
+    "t0_assumed_tz": "IST (+05:30), per NSE feed convention",
+    "detected_at_utc": "2026-11-05T09:43:53.457246+00:00",
+    "detection_lag_min": 15.3,
+    "item": {
+     "feed": "Online_announcements.xml",
+     "title": "Samvardhana Motherson International Limited",
+     "description": "Samvardhana Motherson International Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. |SUBJECT: Outcome of Board Meeting",
+     "link": "https://nsearchives.nseindia.com/corporate/MOTHERSON_05112026145442_Financial_Results.pdf",
+     "pubDate": "05-Nov-2026 14:58:36"
+    },
+    "new_quarter": "Sep 2026",
+    "checkpoints": {
+     "T0": {
+      "due_utc": "2026-11-05T09:28:36+00:00",
+      "taken_utc": null,
+      "snapshot_id": null,
+      "attempts": [
+       {
+        "at_utc": "2026-11-05T09:44:35.860917+00:00",
+        "snapshot_id": "20261105T094358Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T09:45:10.367141+00:00",
+        "snapshot_id": "20261105T094436Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       }
+      ]
+     },
+     "T+30m": {
+      "due_utc": "2026-11-05T09:58:36+00:00",
+      "taken_utc": null,
+      "snapshot_id": null
+     },
+     "T+2h": {
+      "due_utc": "2026-11-05T11:28:36+00:00",
+      "taken_utc": null,
+      "snapshot_id": null
+     },
+     "T+24h": {
+      "due_utc": "2026-11-06T09:28:36+00:00",
+      "taken_utc": null,
+      "snapshot_id": null
+     },
+     "T+48h": {
+      "due_utc": "2026-11-07T09:28:36+00:00",
+      "taken_utc": null,
+      "snapshot_id": null
+     }
+    }
    }
   },
   "complete": false,
@@ -1105,6 +1174,31 @@
     "sep_2026_values": null,
     "label": "ARTHSCAN-cached",
     "status": "not_called: arth MCP connector failed to connect (HTTP 404); ARTHSCAN statements captured directly in the T+2h snapshot"
+   },
+   {
+    "symbol": "MOTHERSON",
+    "checkpoint": "T0",
+    "called_at_utc": "2026-11-05T09:45:59.945054+00:00",
+    "tool": "TAPETIDE.get_financials(section=quarterly,periods=1)",
+    "updated_at": "2026-10-06T01:39:33.372Z",
+    "latest_period": "Jun 2026",
+    "provisional_periods": null,
+    "next_period": "Sep 2026",
+    "due_by": "2026-11-14",
+    "stale": false,
+    "cell_source": null,
+    "sep_2026_values": null
+   },
+   {
+    "symbol": "MOTHERSON",
+    "checkpoint": "T0",
+    "called_at_utc": "2026-11-05T09:45:59.945054+00:00",
+    "tool": "arth.get_statements(stats=quarter_results,listed_only=true)",
+    "fetched_at": null,
+    "latest_period": null,
+    "sep_2026_values": null,
+    "label": "ARTHSCAN-cached",
+    "status": "not_called: arth MCP connector failing (HTTP 404); arthscan.me statements pages now redirect to /login (HTTP 303), not bypassed"
    }
   ]
  },
