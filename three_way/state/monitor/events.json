@@ -66,5 +66,61 @@
     "snapshot_id": null
    }
   }
+ },
+ "MOTHERSON": {
+  "t0_exchange_raw": "05-Nov-2026 14:58:36",
+  "t0_exchange_utc": "2026-11-05T09:28:36+00:00",
+  "t0_assumed_tz": "IST (+05:30), per NSE feed convention",
+  "detected_at_utc": "2026-11-05T09:43:53.457246+00:00",
+  "detection_lag_min": 15.3,
+  "item": {
+   "feed": "Online_announcements.xml",
+   "title": "Samvardhana Motherson International Limited",
+   "description": "Samvardhana Motherson International Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. |SUBJECT: Outcome of Board Meeting",
+   "link": "https://nsearchives.nseindia.com/corporate/MOTHERSON_05112026145442_Financial_Results.pdf",
+   "pubDate": "05-Nov-2026 14:58:36"
+  },
+  "new_quarter": "Sep 2026",
+  "checkpoints": {
+   "T0": {
+    "due_utc": "2026-11-05T09:28:36+00:00",
+    "taken_utc": null,
+    "snapshot_id": null,
+    "attempts": [
+     {
+      "at_utc": "2026-11-05T09:44:35.860917+00:00",
+      "snapshot_id": "20261105T094358Z_T0_MOTHERSON",
+      "complete": false,
+      "adopted": false
+     },
+     {
+      "at_utc": "2026-11-05T09:45:10.367141+00:00",
+      "snapshot_id": "20261105T094436Z_T0_MOTHERSON",
+      "complete": false,
+      "adopted": false
+     }
+    ]
+   },
+   "T+30m": {
+    "due_utc": "2026-11-05T09:58:36+00:00",
+    "taken_utc": null,
+    "snapshot_id": null
+   },
+   "T+2h": {
+    "due_utc": "2026-11-05T11:28:36+00:00",
+    "taken_utc": null,
+    "snapshot_id": null
+   },
+   "T+24h": {
+    "due_utc": "2026-11-06T09:28:36+00:00",
+    "taken_utc": null,
+    "snapshot_id": null
+   },
+   "T+48h": {
+    "due_utc": "2026-11-07T09:28:36+00:00",
+    "taken_utc": null,
+    "snapshot_id": null
+   }
+  }
  }
 }
