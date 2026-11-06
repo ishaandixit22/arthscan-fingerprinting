@@ -54,3 +54,7 @@
 {"snapshot_id": "20261106T074508Z_T0_MOTHERSON", "label": "T0_MOTHERSON", "indexed_at_utc": "2026-11-06T07:45:41.669827+00:00", "manifest_sha256": "905a19015eb05258f9d96a859f61905bc0bf1e246a0b00078f9452aafb9a70a4"}
 {"snapshot_id": "20261106T074541Z_T+30m_MOTHERSON", "label": "T+30m_MOTHERSON", "indexed_at_utc": "2026-11-06T07:46:16.659851+00:00", "manifest_sha256": "ee4b1cf207b5168161ec6521f0ec35937ef22bf24c42421bdd99a8e3846d0be1"}
 {"snapshot_id": "20261106T074616Z_T+2h_MOTHERSON", "label": "T+2h_MOTHERSON", "indexed_at_utc": "2026-11-06T07:46:48.760964+00:00", "manifest_sha256": "40b1922472f8a7cac9b644a4269b466aeb5a69965162facc802eae30f9a715d2"}
+{"snapshot_id": "20261106T084446Z_T+24h_PIIND", "label": "T+24h_PIIND", "indexed_at_utc": "2026-11-06T08:45:19.592805+00:00", "manifest_sha256": "d3ba7d7d3d7226afca9eb17e7ed62e9058dde426dd57c362e163ca7ac7d37cc7"}
+{"snapshot_id": "20261106T084519Z_T0_MOTHERSON", "label": "T0_MOTHERSON", "indexed_at_utc": "2026-11-06T08:45:53.656137+00:00", "manifest_sha256": "235a721aa6b95dcb6a1e9201fcf7e9102cc5484e01e4a0e96a39cd58e2cb7242"}
+{"snapshot_id": "20261106T084553Z_T+30m_MOTHERSON", "label": "T+30m_MOTHERSON", "indexed_at_utc": "2026-11-06T08:46:27.812302+00:00", "manifest_sha256": "86ddea5c4d8a4b358201db028098cab38f923154ef4439bbcbf37dbd053a4338"}
+{"snapshot_id": "20261106T084628Z_T+2h_MOTHERSON", "label": "T+2h_MOTHERSON", "indexed_at_utc": "2026-11-06T08:47:01.779908+00:00", "manifest_sha256": "ba40be4e63f8cab208af979e5639344e46c489f7f909633a8097209c40ea56ad"}
