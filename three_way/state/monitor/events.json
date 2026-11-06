@@ -107,6 +107,12 @@
       "snapshot_id": "20261106T054352Z_T+24h_PIIND",
       "complete": false,
       "adopted": false
+     },
+     {
+      "at_utc": "2026-11-06T06:44:37.428244+00:00",
+      "snapshot_id": "20261106T064403Z_T+24h_PIIND",
+      "complete": false,
+      "adopted": false
      }
     ]
    },
@@ -220,6 +226,12 @@
       "snapshot_id": "20261106T054427Z_T0_MOTHERSON",
       "complete": false,
       "adopted": false
+     },
+     {
+      "at_utc": "2026-11-06T06:45:15.146177+00:00",
+      "snapshot_id": "20261106T064437Z_T0_MOTHERSON",
+      "complete": false,
+      "adopted": false
      }
     ]
    },
@@ -299,6 +311,12 @@
       "snapshot_id": "20261106T054502Z_T+30m_MOTHERSON",
       "complete": false,
       "adopted": false
+     },
+     {
+      "at_utc": "2026-11-06T06:45:48.697686+00:00",
+      "snapshot_id": "20261106T064515Z_T+30m_MOTHERSON",
+      "complete": false,
+      "adopted": false
      }
     ]
    },
@@ -370,6 +388,12 @@
      {
       "at_utc": "2026-11-06T05:46:11.596061+00:00",
       "snapshot_id": "20261106T054533Z_T+2h_MOTHERSON",
+      "complete": false,
+      "adopted": false
+     },
+     {
+      "at_utc": "2026-11-06T06:46:23.652611+00:00",
+      "snapshot_id": "20261106T064548Z_T+2h_MOTHERSON",
       "complete": false,
       "adopted": false
      }
