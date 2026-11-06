@@ -1,0 +1,93 @@
+{
+ "snapshot_id": "20261106T164613Z_T+30m_MOTHERSON",
+ "label": "T+30m_MOTHERSON",
+ "started_at_utc": "2026-11-06T16:46:13.221514+00:00",
+ "symbols": [
+  "MOTHERSON"
+ ],
+ "requests": [
+  {
+   "source": "tapetide",
+   "symbol": "MOTHERSON",
+   "url": "https://tapetide.com/stocks/MOTHERSON.md",
+   "file": "tapetide_MOTHERSON.md",
+   "fetched_at_utc": "2026-11-06T16:46:13.221818+00:00",
+   "http_status": 200,
+   "bytes": 37743,
+   "sha256": "1f5b2fdba7f2ea5e68abc6286d1608756dc8399ff38101101a3e92d0266a145c",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-06T16:45:37.081Z",
+    "prices_as_of": "6 Nov 2026, 15:59 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "MOTHERSON",
+   "url": "https://www.screener.in/company/MOTHERSON/consolidated/",
+   "file": "screener_MOTHERSON_consolidated.html",
+   "fetched_at_utc": "2026-11-06T16:46:13.573535+00:00",
+   "http_status": 200,
+   "bytes": 271458,
+   "sha256": "53c5446cc41e4790c7ee4bacb179f7cdaecba2919f97f28b0e095890f59b5fa5",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MOTHERSON",
+   "url": "https://arthscan.me/stock/MOTHERSON/statements?stats=quarter_results",
+   "file": null,
+   "fetched_at_utc": "2026-11-06T16:46:14.171911+00:00",
+   "http_status": "error: Failed to perform, curl: (7) Redirect to internal IP 127.0.0.1 rejected (SSRF protection). See https://curl.se/libcurl/c",
+   "bytes": 0
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MOTHERSON",
+   "url": "https://arthscan.me/stock/MOTHERSON/statements?stats=yoy_results",
+   "file": null,
+   "fetched_at_utc": "2026-11-06T16:46:21.061357+00:00",
+   "http_status": "error: Failed to perform, curl: (7) Redirect to internal IP 127.0.0.1 rejected (SSRF protection). See https://curl.se/libcurl/c",
+   "bytes": 0
+  },
+  {
+   "source": "screener",
+   "symbol": "MOTHERSON",
+   "url": "https://www.screener.in/company/MOTHERSON/",
+   "file": "screener_MOTHERSON_standalone.html",
+   "fetched_at_utc": "2026-11-06T16:46:23.498705+00:00",
+   "http_status": 200,
+   "bytes": 271091,
+   "sha256": "e21087b3569162a741a960522f7b41cd14607e066668129d2abf7f5baceb2635",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MOTHERSON",
+   "url": "https://arthscan.me/stock/MOTHERSON/statements?stats=balancesheet",
+   "file": null,
+   "fetched_at_utc": "2026-11-06T16:46:27.533683+00:00",
+   "http_status": "error: Failed to perform, curl: (7) Redirect to internal IP 127.0.0.1 rejected (SSRF protection). See https://curl.se/libcurl/c",
+   "bytes": 0
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MOTHERSON",
+   "url": "https://arthscan.me/stock/MOTHERSON/statements?stats=cashflow",
+   "file": null,
+   "fetched_at_utc": "2026-11-06T16:46:35.561759+00:00",
+   "http_status": "error: Failed to perform, curl: (7) Redirect to internal IP 127.0.0.1 rejected (SSRF protection). See https://curl.se/libcurl/c",
+   "bytes": 0
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MOTHERSON",
+   "url": "https://arthscan.me/stock/MOTHERSON/statements?stats=ratios",
+   "file": null,
+   "fetched_at_utc": "2026-11-06T16:46:43.776033+00:00",
+   "http_status": "error: Failed to perform, curl: (7) Redirect to internal IP 127.0.0.1 rejected (SSRF protection). See https://curl.se/libcurl/c",
+   "bytes": 0
+  }
+ ],
+ "finished_at_utc": "2026-11-06T16:46:46.587874+00:00",
+ "hosts_blocked_429": []
+}
