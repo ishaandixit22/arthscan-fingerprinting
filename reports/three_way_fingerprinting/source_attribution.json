@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T14:48:18Z",
+ "generated_at": "2026-11-06T09:47:31Z",
  "question": "Does Tapetide obtain financial statements directly from Screener.in or from a shared upstream provider such as Indian Stock API?",
  "sources": {
   "T": "Tapetide public .md pages + Tapetide MCP",
@@ -35,7 +35,52 @@
   "20261105T144520Z_T+24h_PIIND",
   "20261105T144557Z_T0_MOTHERSON",
   "20261105T144633Z_T+30m_MOTHERSON",
-  "20261105T144709Z_T+2h_MOTHERSON"
+  "20261105T144709Z_T+2h_MOTHERSON",
+  "20261105T154501Z_T+24h_PIIND",
+  "20261105T154539Z_T0_MOTHERSON",
+  "20261105T154615Z_T+30m_MOTHERSON",
+  "20261105T154647Z_T+2h_MOTHERSON",
+  "20261105T164410Z_T+24h_PIIND",
+  "20261105T164446Z_T0_MOTHERSON",
+  "20261105T164525Z_T+30m_MOTHERSON",
+  "20261105T164600Z_T+2h_MOTHERSON",
+  "20261105T174418Z_T+24h_PIIND",
+  "20261105T174455Z_T0_MOTHERSON",
+  "20261105T174530Z_T+30m_MOTHERSON",
+  "20261105T174604Z_T+2h_MOTHERSON",
+  "20261106T024356Z_T+24h_PIIND",
+  "20261106T024431Z_T0_MOTHERSON",
+  "20261106T024505Z_T+30m_MOTHERSON",
+  "20261106T024541Z_T+2h_MOTHERSON",
+  "20261106T034359Z_T+24h_PIIND",
+  "20261106T034435Z_T0_MOTHERSON",
+  "20261106T034508Z_T+30m_MOTHERSON",
+  "20261106T034544Z_T+2h_MOTHERSON",
+  "20261106T044351Z_T+24h_PIIND",
+  "20261106T044426Z_T0_MOTHERSON",
+  "20261106T044500Z_T+30m_MOTHERSON",
+  "20261106T044535Z_T+2h_MOTHERSON",
+  "20261106T054352Z_T+24h_PIIND",
+  "20261106T054427Z_T0_MOTHERSON",
+  "20261106T054502Z_T+30m_MOTHERSON",
+  "20261106T054533Z_T+2h_MOTHERSON",
+  "20261106T064403Z_T+24h_PIIND",
+  "20261106T064437Z_T0_MOTHERSON",
+  "20261106T064515Z_T+30m_MOTHERSON",
+  "20261106T064548Z_T+2h_MOTHERSON",
+  "20261106T074433Z_T+24h_PIIND",
+  "20261106T074508Z_T0_MOTHERSON",
+  "20261106T074541Z_T+30m_MOTHERSON",
+  "20261106T074616Z_T+2h_MOTHERSON",
+  "20261106T084446Z_T+24h_PIIND",
+  "20261106T084519Z_T0_MOTHERSON",
+  "20261106T084553Z_T+30m_MOTHERSON",
+  "20261106T084628Z_T+2h_MOTHERSON",
+  "20261106T094410Z_T+24h_PIIND",
+  "20261106T094446Z_T0_MOTHERSON",
+  "20261106T094519Z_T+30m_MOTHERSON",
+  "20261106T094552Z_T+2h_MOTHERSON",
+  "20261106T094626Z_T+24h_MOTHERSON"
  ],
  "answers": {
   "A_tapetide_matches_screener_first": {
@@ -884,8 +929,8 @@
    "answer": "Indian Stock API and Tapetide both carry Screener-format data, but Tapetide shows no Indian Stock API-specific dependence and is ahead of it on new quarters. A common origin for Screener-format data is consistent with the evidence but unidentified.",
    "evidence": {
     "triad_cells": {
-     "T=S, I differs": 18,
      "all_three_agree": 5354,
+     "T=S, I differs": 18,
      "I=S, T differs": 31,
      "T=I, S differs": 45
     },
@@ -1065,6 +1110,72 @@
         "snapshot_id": "20261105T144520Z_T+24h_PIIND",
         "complete": false,
         "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T15:45:39.176677+00:00",
+        "snapshot_id": "20261105T154501Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T16:44:46.004989+00:00",
+        "snapshot_id": "20261105T164410Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T17:44:55.310353+00:00",
+        "snapshot_id": "20261105T174418Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T02:44:31.005320+00:00",
+        "snapshot_id": "20261106T024356Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T03:44:35.068474+00:00",
+        "snapshot_id": "20261106T034359Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T04:44:26.165556+00:00",
+        "snapshot_id": "20261106T044351Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T05:44:27.104786+00:00",
+        "snapshot_id": "20261106T054352Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T06:44:37.428244+00:00",
+        "snapshot_id": "20261106T064403Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T07:45:08.646912+00:00",
+        "snapshot_id": "20261106T074433Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T08:45:19.594839+00:00",
+        "snapshot_id": "20261106T084446Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T09:44:45.835457+00:00",
+        "snapshot_id": "20261106T094410Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
        }
       ]
      },
@@ -1136,6 +1247,72 @@
         "snapshot_id": "20261105T144557Z_T0_MOTHERSON",
         "complete": false,
         "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T15:46:14.736871+00:00",
+        "snapshot_id": "20261105T154539Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T16:45:25.447670+00:00",
+        "snapshot_id": "20261105T164446Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T17:45:30.101062+00:00",
+        "snapshot_id": "20261105T174455Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T02:45:05.716973+00:00",
+        "snapshot_id": "20261106T024431Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T03:45:08.813999+00:00",
+        "snapshot_id": "20261106T034435Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T04:45:00.508244+00:00",
+        "snapshot_id": "20261106T044426Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T05:45:01.881024+00:00",
+        "snapshot_id": "20261106T054427Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T06:45:15.146177+00:00",
+        "snapshot_id": "20261106T064437Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T07:45:41.669930+00:00",
+        "snapshot_id": "20261106T074508Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T08:45:53.656220+00:00",
+        "snapshot_id": "20261106T084519Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T09:45:19.490036+00:00",
+        "snapshot_id": "20261106T094446Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
        }
       ]
      },
@@ -1173,6 +1350,72 @@
         "snapshot_id": "20261105T144633Z_T+30m_MOTHERSON",
         "complete": false,
         "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T15:46:47.089440+00:00",
+        "snapshot_id": "20261105T154615Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T16:46:00.032851+00:00",
+        "snapshot_id": "20261105T164525Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T17:46:04.285229+00:00",
+        "snapshot_id": "20261105T174530Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T02:45:40.989909+00:00",
+        "snapshot_id": "20261106T024505Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T03:45:44.389692+00:00",
+        "snapshot_id": "20261106T034508Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T04:45:35.436221+00:00",
+        "snapshot_id": "20261106T044500Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T05:45:33.760050+00:00",
+        "snapshot_id": "20261106T054502Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T06:45:48.697686+00:00",
+        "snapshot_id": "20261106T064515Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T07:46:16.659947+00:00",
+        "snapshot_id": "20261106T074541Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T08:46:27.812385+00:00",
+        "snapshot_id": "20261106T084553Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T09:45:52.018522+00:00",
+        "snapshot_id": "20261106T094519Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
        }
       ]
      },
@@ -1204,13 +1447,87 @@
         "snapshot_id": "20261105T144709Z_T+2h_MOTHERSON",
         "complete": false,
         "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T15:47:21.821458+00:00",
+        "snapshot_id": "20261105T154647Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T16:46:37.903463+00:00",
+        "snapshot_id": "20261105T164600Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-05T17:46:39.069060+00:00",
+        "snapshot_id": "20261105T174604Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T02:46:13.856952+00:00",
+        "snapshot_id": "20261106T024541Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T03:46:18.257883+00:00",
+        "snapshot_id": "20261106T034544Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T04:46:10.525905+00:00",
+        "snapshot_id": "20261106T044535Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T05:46:11.596061+00:00",
+        "snapshot_id": "20261106T054533Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T06:46:23.652611+00:00",
+        "snapshot_id": "20261106T064548Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T07:46:48.761076+00:00",
+        "snapshot_id": "20261106T074616Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T08:47:01.779983+00:00",
+        "snapshot_id": "20261106T084628Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-06T09:46:26.354833+00:00",
+        "snapshot_id": "20261106T094552Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
        }
       ]
      },
      "T+24h": {
       "due_utc": "2026-11-06T09:28:36+00:00",
       "taken_utc": null,
-      "snapshot_id": null
+      "snapshot_id": null,
+      "attempts": [
+       {
+        "at_utc": "2026-11-06T09:47:02.363439+00:00",
+        "snapshot_id": "20261106T094626Z_T+24h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       }
+      ]
      },
      "T+48h": {
       "due_utc": "2026-11-07T09:28:36+00:00",
@@ -1349,6 +1666,27 @@
     "symbol": "PIIND",
     "checkpoint": "T+24h",
     "called_at_utc": "2026-11-05T14:48:10.671678+00:00",
+    "tool": "arth.get_statements",
+    "label": "ARTHSCAN-cached",
+    "status": "not_called: arth MCP 404; arthscan.me login-gated (303)"
+   },
+   {
+    "symbol": "MOTHERSON",
+    "checkpoint": "T+24h",
+    "called_at_utc": "2026-11-06T09:47:28.727461+00:00",
+    "tool": "TAPETIDE.get_financials(section=quarterly,periods=2)",
+    "updated_at": "2026-10-06T01:39:33.372Z",
+    "latest_period": "Jun 2026",
+    "provisional_periods": null,
+    "next_period": "Sep 2026",
+    "due_by": "2026-11-14",
+    "cell_source": null,
+    "sep_2026_values": null
+   },
+   {
+    "symbol": "MOTHERSON",
+    "checkpoint": "T+24h",
+    "called_at_utc": "2026-11-06T09:47:28.727461+00:00",
     "tool": "arth.get_statements",
     "label": "ARTHSCAN-cached",
     "status": "not_called: arth MCP 404; arthscan.me login-gated (303)"

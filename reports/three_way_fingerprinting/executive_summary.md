@@ -1,6 +1,6 @@
 # Three-way data provider fingerprinting: Tapetide, Screener.in, Indian Stock API
 
-Updated 2026-11-05T14:48:18Z. Baseline snapshot `20261102T062632Z_baseline`; 28 snapshot(s) in total. 10 stocks.
+Updated 2026-11-06T09:47:31Z. Baseline snapshot `20261102T062632Z_baseline`; 73 snapshot(s) in total. 10 stocks.
 
 > **Labelling:** every Indian Stock API observation in this report is **ARTHSCAN-cached data** (ARTHSCAN's stored copy of the provider's response, with its own `fetched_at`), not a direct observation of indianapi.in.
 
@@ -64,7 +64,7 @@ This matters for answers A and D: a provisional quarter matching Screener does n
 **Status: not complete.** No T+48h checkpoint has been captured yet, so no release-timing conclusion is drawn.
 
 - Scheduler: claude.ai cloud scheduled task (server-side cron that wakes this persistent Claude session); not OS cron, launchd, GitHub Actions or a daemon; `CRON_TZ=Asia/Kolkata 13 8-23 2-7 11 *` (hourly at :13, 08:13-23:13 IST, 2-7 Nov 2026); trigger `trig_0159bajz89RVbmpSSciinzwJ`.
-- Ticks logged so far: 85 (last 2026-11-05T14:45:14.528713+00:00); T0 events recorded: 2.
+- Ticks logged so far: 96 (last 2026-11-06T09:44:04.761456+00:00); T0 events recorded: 2.
 - Restart safety: yes: state, evidence, code and immutable snapshots are pushed to ishaandixit22/arthscan-fingerprinting (branch monitor-state) after every checkpoint; restore from a fresh GitHub clone was tested on 2026-11-02 with all 81 snapshot hashes identical.
 
 | Company | Checkpoint | Source | Called (UTC) | Source timestamp | Latest period | Tapetide provisional | cell_source flags |
@@ -77,6 +77,8 @@ This matters for answers A and D: a provisional quarter matching Screener does n
 | MOTHERSON | T0 | Indian Stock API (ARTHSCAN-cached) | 2026-11-05T09:45:59.945054+00:00 | None | None |  | 0 |
 | PIIND | T+24h | Tapetide MCP | 2026-11-05T14:48:10.671678+00:00 | 2026-10-21T06:29:42.208Z | Sep 2026 | [{'period': 'Sep 2026', 'filed_on': '2026-11-04'}] | 12 |
 | PIIND | T+24h | Indian Stock API (ARTHSCAN-cached) | 2026-11-05T14:48:10.671678+00:00 | None | None |  | 0 |
+| MOTHERSON | T+24h | Tapetide MCP | 2026-11-06T09:47:28.727461+00:00 | 2026-10-06T01:39:33.372Z | Jun 2026 | None | 0 |
+| MOTHERSON | T+24h | Indian Stock API (ARTHSCAN-cached) | 2026-11-06T09:47:28.727461+00:00 | None | None |  | 0 |
 
 | Company | T0 (exchange, UTC) | Detected after | Checkpoints taken |
 |---|---|---:|---|
