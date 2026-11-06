@@ -125,6 +125,12 @@
       "snapshot_id": "20261106T084446Z_T+24h_PIIND",
       "complete": false,
       "adopted": false
+     },
+     {
+      "at_utc": "2026-11-06T09:44:45.835457+00:00",
+      "snapshot_id": "20261106T094410Z_T+24h_PIIND",
+      "complete": false,
+      "adopted": false
      }
     ]
    },
@@ -256,6 +262,12 @@
       "snapshot_id": "20261106T084519Z_T0_MOTHERSON",
       "complete": false,
       "adopted": false
+     },
+     {
+      "at_utc": "2026-11-06T09:45:19.490036+00:00",
+      "snapshot_id": "20261106T094446Z_T0_MOTHERSON",
+      "complete": false,
+      "adopted": false
      }
     ]
    },
@@ -353,6 +365,12 @@
       "snapshot_id": "20261106T084553Z_T+30m_MOTHERSON",
       "complete": false,
       "adopted": false
+     },
+     {
+      "at_utc": "2026-11-06T09:45:52.018522+00:00",
+      "snapshot_id": "20261106T094519Z_T+30m_MOTHERSON",
+      "complete": false,
+      "adopted": false
      }
     ]
    },
@@ -444,13 +462,27 @@
       "snapshot_id": "20261106T084628Z_T+2h_MOTHERSON",
       "complete": false,
       "adopted": false
+     },
+     {
+      "at_utc": "2026-11-06T09:46:26.354833+00:00",
+      "snapshot_id": "20261106T094552Z_T+2h_MOTHERSON",
+      "complete": false,
+      "adopted": false
      }
     ]
    },
    "T+24h": {
     "due_utc": "2026-11-06T09:28:36+00:00",
     "taken_utc": null,
-    "snapshot_id": null
+    "snapshot_id": null,
+    "attempts": [
+     {
+      "at_utc": "2026-11-06T09:47:02.363439+00:00",
+      "snapshot_id": "20261106T094626Z_T+24h_MOTHERSON",
+      "complete": false,
+      "adopted": false
+     }
+    ]
    },
    "T+48h": {
     "due_utc": "2026-11-07T09:28:36+00:00",
