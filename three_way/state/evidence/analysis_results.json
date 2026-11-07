@@ -63,7 +63,172 @@
   }
  },
  "snapshots": [
-  "20261102T062632Z_baseline"
+  "20261102T062632Z_baseline",
+  "20261102T155224Z_baseline_SBIN",
+  "20261102T155249Z_baseline_SOLARINDS",
+  "20261102T155315Z_baseline_LUPIN",
+  "20261102T155339Z_baseline_ENDURANCE",
+  "20261102T155402Z_baseline_BATAINDIA",
+  "20261102T155430Z_baseline_MGL",
+  "20261102T155456Z_baseline_DATAMATICS",
+  "20261104T144416Z_T0_PIIND",
+  "20261104T144441Z_T+30m_PIIND",
+  "20261104T161432Z_T+2h_PIIND",
+  "20261105T094358Z_T0_MOTHERSON",
+  "20261105T094436Z_T0_MOTHERSON",
+  "20261105T104433Z_T0_MOTHERSON",
+  "20261105T104509Z_T+30m_MOTHERSON",
+  "20261105T114458Z_T0_MOTHERSON",
+  "20261105T114531Z_T+30m_MOTHERSON",
+  "20261105T114602Z_T+2h_MOTHERSON",
+  "20261105T124458Z_T0_MOTHERSON",
+  "20261105T124536Z_T+30m_MOTHERSON",
+  "20261105T124610Z_T+2h_MOTHERSON",
+  "20261105T134548Z_T0_MOTHERSON",
+  "20261105T134626Z_T+30m_MOTHERSON",
+  "20261105T134701Z_T+2h_MOTHERSON",
+  "20261105T144520Z_T+24h_PIIND",
+  "20261105T144557Z_T0_MOTHERSON",
+  "20261105T144633Z_T+30m_MOTHERSON",
+  "20261105T144709Z_T+2h_MOTHERSON",
+  "20261105T154501Z_T+24h_PIIND",
+  "20261105T154539Z_T0_MOTHERSON",
+  "20261105T154615Z_T+30m_MOTHERSON",
+  "20261105T154647Z_T+2h_MOTHERSON",
+  "20261105T164410Z_T+24h_PIIND",
+  "20261105T164446Z_T0_MOTHERSON",
+  "20261105T164525Z_T+30m_MOTHERSON",
+  "20261105T164600Z_T+2h_MOTHERSON",
+  "20261105T174418Z_T+24h_PIIND",
+  "20261105T174455Z_T0_MOTHERSON",
+  "20261105T174530Z_T+30m_MOTHERSON",
+  "20261105T174604Z_T+2h_MOTHERSON",
+  "20261106T024356Z_T+24h_PIIND",
+  "20261106T024431Z_T0_MOTHERSON",
+  "20261106T024505Z_T+30m_MOTHERSON",
+  "20261106T024541Z_T+2h_MOTHERSON",
+  "20261106T034359Z_T+24h_PIIND",
+  "20261106T034435Z_T0_MOTHERSON",
+  "20261106T034508Z_T+30m_MOTHERSON",
+  "20261106T034544Z_T+2h_MOTHERSON",
+  "20261106T044351Z_T+24h_PIIND",
+  "20261106T044426Z_T0_MOTHERSON",
+  "20261106T044500Z_T+30m_MOTHERSON",
+  "20261106T044535Z_T+2h_MOTHERSON",
+  "20261106T054352Z_T+24h_PIIND",
+  "20261106T054427Z_T0_MOTHERSON",
+  "20261106T054502Z_T+30m_MOTHERSON",
+  "20261106T054533Z_T+2h_MOTHERSON",
+  "20261106T064403Z_T+24h_PIIND",
+  "20261106T064437Z_T0_MOTHERSON",
+  "20261106T064515Z_T+30m_MOTHERSON",
+  "20261106T064548Z_T+2h_MOTHERSON",
+  "20261106T074433Z_T+24h_PIIND",
+  "20261106T074508Z_T0_MOTHERSON",
+  "20261106T074541Z_T+30m_MOTHERSON",
+  "20261106T074616Z_T+2h_MOTHERSON",
+  "20261106T084446Z_T+24h_PIIND",
+  "20261106T084519Z_T0_MOTHERSON",
+  "20261106T084553Z_T+30m_MOTHERSON",
+  "20261106T084628Z_T+2h_MOTHERSON",
+  "20261106T094410Z_T+24h_PIIND",
+  "20261106T094446Z_T0_MOTHERSON",
+  "20261106T094519Z_T+30m_MOTHERSON",
+  "20261106T094552Z_T+2h_MOTHERSON",
+  "20261106T094626Z_T+24h_MOTHERSON",
+  "20261106T104421Z_T+24h_PIIND",
+  "20261106T104454Z_T0_MOTHERSON",
+  "20261106T104528Z_T+30m_MOTHERSON",
+  "20261106T104601Z_T+2h_MOTHERSON",
+  "20261106T104635Z_T+24h_MOTHERSON",
+  "20261106T114428Z_T+24h_PIIND",
+  "20261106T114503Z_T0_MOTHERSON",
+  "20261106T114536Z_T+30m_MOTHERSON",
+  "20261106T114612Z_T+2h_MOTHERSON",
+  "20261106T114649Z_T+24h_MOTHERSON",
+  "20261106T124536Z_T+24h_PIIND",
+  "20261106T124614Z_T0_MOTHERSON",
+  "20261106T124649Z_T+30m_MOTHERSON",
+  "20261106T124722Z_T+2h_MOTHERSON",
+  "20261106T124758Z_T+24h_MOTHERSON",
+  "20261106T134353Z_T+24h_PIIND",
+  "20261106T134429Z_T0_MOTHERSON",
+  "20261106T134507Z_T+30m_MOTHERSON",
+  "20261106T134541Z_T+2h_MOTHERSON",
+  "20261106T134620Z_T+24h_MOTHERSON",
+  "20261106T144411Z_T+24h_PIIND",
+  "20261106T144446Z_T+48h_PIIND",
+  "20261106T144521Z_T0_MOTHERSON",
+  "20261106T144554Z_T+30m_MOTHERSON",
+  "20261106T144627Z_T+2h_MOTHERSON",
+  "20261106T144700Z_T+24h_MOTHERSON",
+  "20261106T154400Z_T+24h_PIIND",
+  "20261106T154437Z_T+48h_PIIND",
+  "20261106T154511Z_T0_MOTHERSON",
+  "20261106T154547Z_T+30m_MOTHERSON",
+  "20261106T154624Z_T+2h_MOTHERSON",
+  "20261106T154656Z_T+24h_MOTHERSON",
+  "20261106T164429Z_T+24h_PIIND",
+  "20261106T164503Z_T+48h_PIIND",
+  "20261106T164536Z_T0_MOTHERSON",
+  "20261106T164613Z_T+30m_MOTHERSON",
+  "20261106T164647Z_T+2h_MOTHERSON",
+  "20261106T164720Z_T+24h_MOTHERSON",
+  "20261106T174400Z_T+24h_PIIND",
+  "20261106T174436Z_T+48h_PIIND",
+  "20261106T174510Z_T0_MOTHERSON",
+  "20261106T174547Z_T+30m_MOTHERSON",
+  "20261106T174621Z_T+2h_MOTHERSON",
+  "20261106T174655Z_T+24h_MOTHERSON",
+  "20261107T024409Z_T+24h_PIIND",
+  "20261107T024447Z_T+48h_PIIND",
+  "20261107T024521Z_T0_MOTHERSON",
+  "20261107T024557Z_T+30m_MOTHERSON",
+  "20261107T024631Z_T+2h_MOTHERSON",
+  "20261107T024705Z_T+24h_MOTHERSON",
+  "20261107T034348Z_T+24h_PIIND",
+  "20261107T034425Z_T+48h_PIIND",
+  "20261107T034459Z_T0_MOTHERSON",
+  "20261107T034534Z_T+30m_MOTHERSON",
+  "20261107T034608Z_T+2h_MOTHERSON",
+  "20261107T034642Z_T+24h_MOTHERSON",
+  "20261107T044357Z_T+24h_PIIND",
+  "20261107T044432Z_T+48h_PIIND",
+  "20261107T044506Z_T0_MOTHERSON",
+  "20261107T044539Z_T+30m_MOTHERSON",
+  "20261107T044611Z_T+2h_MOTHERSON",
+  "20261107T044645Z_T+24h_MOTHERSON",
+  "20261107T054411Z_T+24h_PIIND",
+  "20261107T054447Z_T+48h_PIIND",
+  "20261107T054521Z_T0_MOTHERSON",
+  "20261107T054554Z_T+30m_MOTHERSON",
+  "20261107T054625Z_T+2h_MOTHERSON",
+  "20261107T054701Z_T+24h_MOTHERSON",
+  "20261107T064418Z_T+24h_PIIND",
+  "20261107T064457Z_T+48h_PIIND",
+  "20261107T064533Z_T0_MOTHERSON",
+  "20261107T064606Z_T+30m_MOTHERSON",
+  "20261107T064643Z_T+2h_MOTHERSON",
+  "20261107T064718Z_T+24h_MOTHERSON",
+  "20261107T074415Z_T+24h_PIIND",
+  "20261107T074450Z_T+48h_PIIND",
+  "20261107T074522Z_T0_MOTHERSON",
+  "20261107T074600Z_T+30m_MOTHERSON",
+  "20261107T074635Z_T+2h_MOTHERSON",
+  "20261107T074710Z_T+24h_MOTHERSON",
+  "20261107T084423Z_T+24h_PIIND",
+  "20261107T084456Z_T+48h_PIIND",
+  "20261107T084528Z_T0_MOTHERSON",
+  "20261107T084602Z_T+30m_MOTHERSON",
+  "20261107T084636Z_T+2h_MOTHERSON",
+  "20261107T084710Z_T+24h_MOTHERSON",
+  "20261107T094402Z_T+24h_PIIND",
+  "20261107T094437Z_T+48h_PIIND",
+  "20261107T094513Z_T0_MOTHERSON",
+  "20261107T094547Z_T+30m_MOTHERSON",
+  "20261107T094618Z_T+2h_MOTHERSON",
+  "20261107T094656Z_T+24h_MOTHERSON",
+  "20261107T094733Z_T+48h_MOTHERSON"
  ],
  "i_basis": {
   "RELIANCE": "consolidated",
@@ -244,8 +409,8 @@
   }
  },
  "triad": {
-  "T=S, I differs": 18,
   "all_three_agree": 5354,
+  "T=S, I differs": 18,
   "I=S, T differs": 31,
   "T=I, S differs": 45
  },
@@ -254,20 +419,20 @@
    {
     "symbol": "RELIANCE",
     "statement": "annual_pl",
-    "row": "Expenses",
+    "row": "EPS in Rs",
     "period": "TTM",
-    "T": "10,04,741",
-    "S": "1,004,741",
-    "I": "939494"
+    "T": "60.68",
+    "S": "60.68",
+    "I": "55.22"
    },
    {
     "symbol": "RELIANCE",
     "statement": "annual_pl",
-    "row": "Operating Profit",
+    "row": "Profit before tax",
     "period": "TTM",
-    "T": "1,94,292",
-    "S": "194,292",
-    "I": "183561"
+    "T": "1,26,135",
+    "S": "126,135",
+    "I": "116646"
    },
    {
     "symbol": "RELIANCE",
@@ -281,11 +446,38 @@
    {
     "symbol": "RELIANCE",
     "statement": "annual_pl",
-    "row": "Profit before tax",
+    "row": "Expenses",
     "period": "TTM",
-    "T": "1,26,135",
-    "S": "126,135",
-    "I": "116646"
+    "T": "10,04,741",
+    "S": "1,004,741",
+    "I": "939494"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "30,016",
+    "S": "30,016",
+    "I": "28362"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "1,94,292",
+    "S": "194,292",
+    "I": "183561"
+   },
+   {
+    "symbol": "RELIANCE",
+    "statement": "annual_pl",
+    "row": "Net Profit",
+    "period": "TTM",
+    "T": "95,625",
+    "S": "95,625",
+    "I": "88167"
    },
    {
     "symbol": "RELIANCE",
@@ -306,49 +498,22 @@
     "I": "1123055"
    },
    {
-    "symbol": "RELIANCE",
-    "statement": "annual_pl",
-    "row": "Net Profit",
-    "period": "TTM",
-    "T": "95,625",
-    "S": "95,625",
-    "I": "88167"
-   },
-   {
-    "symbol": "RELIANCE",
-    "statement": "annual_pl",
-    "row": "Interest",
-    "period": "TTM",
-    "T": "30,016",
-    "S": "30,016",
-    "I": "28362"
-   },
-   {
-    "symbol": "RELIANCE",
+    "symbol": "TRENT",
     "statement": "annual_pl",
     "row": "EPS in Rs",
     "period": "TTM",
-    "T": "60.68",
-    "S": "60.68",
-    "I": "55.22"
+    "T": "35.56",
+    "S": "35.56",
+    "I": "33.93"
    },
    {
     "symbol": "TRENT",
     "statement": "annual_pl",
-    "row": "Expenses",
+    "row": "Profit before tax",
     "period": "TTM",
-    "T": "17,832",
-    "S": "17,832",
-    "I": "17018"
-   },
-   {
-    "symbol": "TRENT",
-    "statement": "annual_pl",
-    "row": "Operating Profit",
-    "period": "TTM",
-    "T": "4,169",
-    "S": "4,169",
-    "I": "3928"
+    "T": "2,506",
+    "S": "2,506",
+    "I": "2364"
    },
    {
     "symbol": "TRENT",
@@ -362,11 +527,38 @@
    {
     "symbol": "TRENT",
     "statement": "annual_pl",
-    "row": "Profit before tax",
+    "row": "Expenses",
     "period": "TTM",
-    "T": "2,506",
-    "S": "2,506",
-    "I": "2364"
+    "T": "17,832",
+    "S": "17,832",
+    "I": "17018"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "178",
+    "S": "178",
+    "I": "175"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "4,169",
+    "S": "4,169",
+    "I": "3928"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "annual_pl",
+    "row": "Net Profit",
+    "period": "TTM",
+    "T": "1,909",
+    "S": "1,909",
+    "I": "1815"
    },
    {
     "symbol": "TRENT",
@@ -385,33 +577,6 @@
     "T": "22,001",
     "S": "22,001",
     "I": "20945"
-   },
-   {
-    "symbol": "TRENT",
-    "statement": "annual_pl",
-    "row": "Net Profit",
-    "period": "TTM",
-    "T": "1,909",
-    "S": "1,909",
-    "I": "1815"
-   },
-   {
-    "symbol": "TRENT",
-    "statement": "annual_pl",
-    "row": "Interest",
-    "period": "TTM",
-    "T": "178",
-    "S": "178",
-    "I": "175"
-   },
-   {
-    "symbol": "TRENT",
-    "statement": "annual_pl",
-    "row": "EPS in Rs",
-    "period": "TTM",
-    "T": "35.56",
-    "S": "35.56",
-    "I": "33.93"
    }
   ],
   "I=S, T differs": [
@@ -419,19 +584,10 @@
     "symbol": "PIIND",
     "statement": "quarterly",
     "row": "Profit before tax",
-    "period": "Mar 2025",
-    "T": "431",
-    "S": "432",
-    "I": "432"
-   },
-   {
-    "symbol": "PIIND",
-    "statement": "quarterly",
-    "row": "Other Income",
-    "period": "Mar 2026",
-    "T": "75.6",
-    "S": "74",
-    "I": "74"
+    "period": "Sep 2025",
+    "T": "523",
+    "S": "525",
+    "I": "525"
    },
    {
     "symbol": "PIIND",
@@ -441,15 +597,6 @@
     "T": "344",
     "S": "345",
     "I": "345"
-   },
-   {
-    "symbol": "PIIND",
-    "statement": "quarterly",
-    "row": "Other Income",
-    "period": "Jun 2026",
-    "T": "64.1",
-    "S": "66",
-    "I": "66"
    },
    {
     "symbol": "PIIND",
@@ -472,11 +619,29 @@
    {
     "symbol": "PIIND",
     "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Jun 2026",
+    "T": "64.1",
+    "S": "66",
+    "I": "66"
+   },
+   {
+    "symbol": "PIIND",
+    "statement": "quarterly",
     "row": "Profit before tax",
-    "period": "Sep 2025",
-    "T": "523",
-    "S": "525",
-    "I": "525"
+    "period": "Mar 2025",
+    "T": "431",
+    "S": "432",
+    "I": "432"
+   },
+   {
+    "symbol": "PIIND",
+    "statement": "quarterly",
+    "row": "Other Income",
+    "period": "Mar 2026",
+    "T": "75.6",
+    "S": "74",
+    "I": "74"
    },
    {
     "symbol": "PIIND",
@@ -517,6 +682,15 @@
    {
     "symbol": "WELSPUNLIV",
     "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Jun 2026",
+    "T": "219",
+    "S": "220",
+    "I": "220"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "quarterly",
     "row": "Other Income",
     "period": "Jun 2026",
     "T": "32.71",
@@ -524,13 +698,13 @@
     "I": "34"
    },
    {
-    "symbol": "WELSPUNLIV",
+    "symbol": "ZEEL",
     "statement": "quarterly",
-    "row": "Profit before tax",
-    "period": "Jun 2026",
-    "T": "219",
-    "S": "220",
-    "I": "220"
+    "row": "Sales",
+    "period": "Jun 2024",
+    "T": "2,131",
+    "S": "2,130",
+    "I": "2130"
    },
    {
     "symbol": "ZEEL",
@@ -544,24 +718,6 @@
    {
     "symbol": "ZEEL",
     "statement": "quarterly",
-    "row": "Net Profit",
-    "period": "Dec 2023",
-    "T": "58.54",
-    "S": "58",
-    "I": "58"
-   },
-   {
-    "symbol": "ZEEL",
-    "statement": "quarterly",
-    "row": "Sales",
-    "period": "Jun 2024",
-    "T": "2,131",
-    "S": "2,130",
-    "I": "2130"
-   },
-   {
-    "symbol": "ZEEL",
-    "statement": "quarterly",
     "row": "Profit before tax",
     "period": "Mar 2024",
     "T": "114",
@@ -569,31 +725,22 @@
     "I": "115"
    },
    {
-    "symbol": "JSL",
-    "statement": "annual_pl",
-    "row": "Expenses",
-    "period": "TTM",
-    "T": "38,460",
-    "S": "40,400",
-    "I": "40400"
+    "symbol": "ZEEL",
+    "statement": "quarterly",
+    "row": "Net Profit",
+    "period": "Dec 2023",
+    "T": "58.54",
+    "S": "58",
+    "I": "58"
    },
    {
     "symbol": "JSL",
     "statement": "annual_pl",
-    "row": "Operating Profit",
+    "row": "EPS in Rs",
     "period": "TTM",
-    "T": "5,566",
-    "S": "5,607",
-    "I": "5607"
-   },
-   {
-    "symbol": "JSL",
-    "statement": "annual_pl",
-    "row": "Other Income",
-    "period": "TTM",
-    "T": "421",
-    "S": "564",
-    "I": "564"
+    "T": "39.4",
+    "S": "40.46",
+    "I": "40.46"
    },
    {
     "symbol": "JSL",
@@ -607,20 +754,29 @@
    {
     "symbol": "JSL",
     "statement": "annual_pl",
-    "row": "Depreciation",
+    "row": "Other Income",
     "period": "TTM",
-    "T": "1,111",
-    "S": "1,148",
-    "I": "1148"
+    "T": "421",
+    "S": "564",
+    "I": "564"
    },
    {
     "symbol": "JSL",
     "statement": "annual_pl",
-    "row": "Sales",
+    "row": "Expenses",
     "period": "TTM",
-    "T": "44,026",
-    "S": "46,007",
-    "I": "46007"
+    "T": "38,460",
+    "S": "40,400",
+    "I": "40400"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "570",
+    "S": "594",
+    "I": "594"
    },
    {
     "symbol": "JSL",
@@ -643,6 +799,15 @@
    {
     "symbol": "JSL",
     "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "5,566",
+    "S": "5,607",
+    "I": "5607"
+   },
+   {
+    "symbol": "JSL",
+    "statement": "annual_pl",
     "row": "Net Profit",
     "period": "TTM",
     "T": "3,239",
@@ -652,29 +817,20 @@
    {
     "symbol": "JSL",
     "statement": "annual_pl",
-    "row": "Interest",
+    "row": "Depreciation",
     "period": "TTM",
-    "T": "570",
-    "S": "594",
-    "I": "594"
+    "T": "1,111",
+    "S": "1,148",
+    "I": "1148"
    },
    {
     "symbol": "JSL",
     "statement": "annual_pl",
-    "row": "EPS in Rs",
+    "row": "Sales",
     "period": "TTM",
-    "T": "39.4",
-    "S": "40.46",
-    "I": "40.46"
-   },
-   {
-    "symbol": "TRENT",
-    "statement": "quarterly",
-    "row": "Profit before tax",
-    "period": "Mar 2025",
-    "T": "417",
-    "S": "416",
-    "I": "416"
+    "T": "44,026",
+    "S": "46,007",
+    "I": "46007"
    },
    {
     "symbol": "TRENT",
@@ -684,6 +840,15 @@
     "T": "478",
     "S": "477",
     "I": "477"
+   },
+   {
+    "symbol": "TRENT",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Mar 2025",
+    "T": "417",
+    "S": "416",
+    "I": "416"
    },
    {
     "symbol": "CYIENT",
@@ -698,30 +863,21 @@
   "T=I, S differs": [
    {
     "symbol": "ABCAPITAL",
-    "statement": "annual_pl",
-    "row": "Expenses",
-    "period": "TTM",
-    "T": "30,383",
-    "S": "32,473",
-    "I": "30383"
-   },
-   {
-    "symbol": "ABCAPITAL",
-    "statement": "annual_pl",
-    "row": "Other Income",
-    "period": "TTM",
-    "T": "405",
-    "S": "470",
-    "I": "405"
-   },
-   {
-    "symbol": "ABCAPITAL",
     "statement": "quarterly",
     "row": "Net Profit",
     "period": "Sep 2025",
     "T": "882",
     "S": "961",
     "I": "882"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "EPS in Rs",
+    "period": "TTM",
+    "T": "15.04",
+    "S": "16.47",
+    "I": "15.04"
    },
    {
     "symbol": "ABCAPITAL",
@@ -735,11 +891,65 @@
    {
     "symbol": "ABCAPITAL",
     "statement": "annual_pl",
-    "row": "Depreciation",
+    "row": "Other Income",
     "period": "TTM",
-    "T": "317",
-    "S": "328",
-    "I": "317"
+    "T": "405",
+    "S": "470",
+    "I": "405"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Expenses",
+    "period": "TTM",
+    "T": "30,383",
+    "S": "32,473",
+    "I": "30383"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "quarterly",
+    "row": "Profit before tax",
+    "period": "Sep 2025",
+    "T": "1,212",
+    "S": "1,290",
+    "I": "1212"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "12,276",
+    "S": "13,024",
+    "I": "12276"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Revenue",
+    "period": "TTM",
+    "T": "48,186",
+    "S": "51,594",
+    "I": "48186"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Financing Profit",
+    "period": "TTM",
+    "T": "5,527",
+    "S": "6,097",
+    "I": "5527"
+   },
+   {
+    "symbol": "ABCAPITAL",
+    "statement": "annual_pl",
+    "row": "Financing Margin %",
+    "period": "TTM",
+    "T": "11%",
+    "S": "12%",
+    "I": "11"
    },
    {
     "symbol": "ABCAPITAL",
@@ -771,29 +981,11 @@
    {
     "symbol": "ABCAPITAL",
     "statement": "annual_pl",
-    "row": "Financing Profit",
+    "row": "Depreciation",
     "period": "TTM",
-    "T": "5,527",
-    "S": "6,097",
-    "I": "5527"
-   },
-   {
-    "symbol": "ABCAPITAL",
-    "statement": "annual_pl",
-    "row": "Financing Margin %",
-    "period": "TTM",
-    "T": "11%",
-    "S": "12%",
-    "I": "11"
-   },
-   {
-    "symbol": "ABCAPITAL",
-    "statement": "quarterly",
-    "row": "Profit before tax",
-    "period": "Sep 2025",
-    "T": "1,212",
-    "S": "1,290",
-    "I": "1212"
+    "T": "317",
+    "S": "328",
+    "I": "317"
    },
    {
     "symbol": "ABCAPITAL",
@@ -805,49 +997,22 @@
     "I": "27"
    },
    {
-    "symbol": "ABCAPITAL",
-    "statement": "annual_pl",
-    "row": "Interest",
-    "period": "TTM",
-    "T": "12,276",
-    "S": "13,024",
-    "I": "12276"
-   },
-   {
-    "symbol": "ABCAPITAL",
-    "statement": "annual_pl",
-    "row": "Revenue",
-    "period": "TTM",
-    "T": "48,186",
-    "S": "51,594",
-    "I": "48186"
-   },
-   {
-    "symbol": "ABCAPITAL",
+    "symbol": "WELSPUNLIV",
     "statement": "annual_pl",
     "row": "EPS in Rs",
     "period": "TTM",
-    "T": "15.04",
-    "S": "16.47",
-    "I": "15.04"
+    "T": "2.92",
+    "S": "4.57",
+    "I": "2.92"
    },
    {
     "symbol": "WELSPUNLIV",
     "statement": "annual_pl",
-    "row": "Expenses",
+    "row": "Profit before tax",
     "period": "TTM",
-    "T": "9,050",
-    "S": "9,263",
-    "I": "9050"
-   },
-   {
-    "symbol": "WELSPUNLIV",
-    "statement": "annual_pl",
-    "row": "Operating Profit",
-    "period": "TTM",
-    "T": "884",
-    "S": "1,068",
-    "I": "884"
+    "T": "384",
+    "S": "586",
+    "I": "384"
    },
    {
     "symbol": "WELSPUNLIV",
@@ -861,11 +1026,47 @@
    {
     "symbol": "WELSPUNLIV",
     "statement": "annual_pl",
-    "row": "Profit before tax",
+    "row": "Expenses",
     "period": "TTM",
-    "T": "384",
-    "S": "586",
-    "I": "384"
+    "T": "9,050",
+    "S": "9,263",
+    "I": "9050"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "153",
+    "S": "144",
+    "I": "153"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "OPM %",
+    "period": "TTM",
+    "T": "9%",
+    "S": "10%",
+    "I": "9"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "884",
+    "S": "1,068",
+    "I": "884"
+   },
+   {
+    "symbol": "WELSPUNLIV",
+    "statement": "annual_pl",
+    "row": "Net Profit",
+    "period": "TTM",
+    "T": "286",
+    "S": "441",
+    "I": "286"
    },
    {
     "symbol": "WELSPUNLIV",
@@ -886,58 +1087,22 @@
     "I": "9934"
    },
    {
-    "symbol": "WELSPUNLIV",
-    "statement": "annual_pl",
-    "row": "OPM %",
-    "period": "TTM",
-    "T": "9%",
-    "S": "10%",
-    "I": "9"
-   },
-   {
-    "symbol": "WELSPUNLIV",
-    "statement": "annual_pl",
-    "row": "Net Profit",
-    "period": "TTM",
-    "T": "286",
-    "S": "441",
-    "I": "286"
-   },
-   {
-    "symbol": "WELSPUNLIV",
-    "statement": "annual_pl",
-    "row": "Interest",
-    "period": "TTM",
-    "T": "153",
-    "S": "144",
-    "I": "153"
-   },
-   {
-    "symbol": "WELSPUNLIV",
+    "symbol": "ZEEL",
     "statement": "annual_pl",
     "row": "EPS in Rs",
     "period": "TTM",
-    "T": "2.92",
-    "S": "4.57",
-    "I": "2.92"
+    "T": "2.11",
+    "S": "1.78",
+    "I": "2.11"
    },
    {
     "symbol": "ZEEL",
     "statement": "annual_pl",
-    "row": "Expenses",
+    "row": "Profit before tax",
     "period": "TTM",
-    "T": "7,922",
-    "S": "8,251",
-    "I": "7922"
-   },
-   {
-    "symbol": "ZEEL",
-    "statement": "annual_pl",
-    "row": "Operating Profit",
-    "period": "TTM",
-    "T": "259",
-    "S": "186",
-    "I": "259"
+    "T": "150",
+    "S": "98",
+    "I": "150"
    },
    {
     "symbol": "ZEEL",
@@ -951,11 +1116,47 @@
    {
     "symbol": "ZEEL",
     "statement": "annual_pl",
-    "row": "Profit before tax",
+    "row": "Expenses",
     "period": "TTM",
-    "T": "150",
-    "S": "98",
-    "I": "150"
+    "T": "7,922",
+    "S": "8,251",
+    "I": "7922"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "50",
+    "S": "40",
+    "I": "50"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "OPM %",
+    "period": "TTM",
+    "T": "3.2%",
+    "S": "2.2%",
+    "I": "3.2"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Operating Profit",
+    "period": "TTM",
+    "T": "259",
+    "S": "186",
+    "I": "259"
+   },
+   {
+    "symbol": "ZEEL",
+    "statement": "annual_pl",
+    "row": "Net Profit",
+    "period": "TTM",
+    "T": "202",
+    "S": "171",
+    "I": "202"
    },
    {
     "symbol": "ZEEL",
@@ -976,67 +1177,13 @@
     "I": "8181"
    },
    {
-    "symbol": "ZEEL",
-    "statement": "annual_pl",
-    "row": "OPM %",
-    "period": "TTM",
-    "T": "3.2%",
-    "S": "2.2%",
-    "I": "3.2"
-   },
-   {
-    "symbol": "ZEEL",
-    "statement": "annual_pl",
-    "row": "Net Profit",
-    "period": "TTM",
-    "T": "202",
-    "S": "171",
-    "I": "202"
-   },
-   {
-    "symbol": "ZEEL",
-    "statement": "annual_pl",
-    "row": "Interest",
-    "period": "TTM",
-    "T": "50",
-    "S": "40",
-    "I": "50"
-   },
-   {
-    "symbol": "ZEEL",
+    "symbol": "QUICKHEAL",
     "statement": "annual_pl",
     "row": "EPS in Rs",
     "period": "TTM",
-    "T": "2.11",
-    "S": "1.78",
-    "I": "2.11"
-   },
-   {
-    "symbol": "QUICKHEAL",
-    "statement": "annual_pl",
-    "row": "Expenses",
-    "period": "TTM",
-    "T": "286",
-    "S": "274",
-    "I": "286"
-   },
-   {
-    "symbol": "QUICKHEAL",
-    "statement": "annual_pl",
-    "row": "Operating Profit",
-    "period": "TTM",
-    "T": "-37",
-    "S": "-44",
-    "I": "-37"
-   },
-   {
-    "symbol": "QUICKHEAL",
-    "statement": "annual_pl",
-    "row": "Other Income",
-    "period": "TTM",
-    "T": "31",
-    "S": "35",
-    "I": "31"
+    "T": "-1.97",
+    "S": "-2.36",
+    "I": "-1.97"
    },
    {
     "symbol": "QUICKHEAL",
@@ -1050,11 +1197,29 @@
    {
     "symbol": "QUICKHEAL",
     "statement": "annual_pl",
-    "row": "Depreciation",
+    "row": "Other Income",
     "period": "TTM",
-    "T": "15",
-    "S": "17",
-    "I": "15"
+    "T": "31",
+    "S": "35",
+    "I": "31"
+   },
+   {
+    "symbol": "QUICKHEAL",
+    "statement": "annual_pl",
+    "row": "Expenses",
+    "period": "TTM",
+    "T": "286",
+    "S": "274",
+    "I": "286"
+   },
+   {
+    "symbol": "QUICKHEAL",
+    "statement": "annual_pl",
+    "row": "Interest",
+    "period": "TTM",
+    "T": "0",
+    "S": "1",
+    "I": "0"
    }
   ]
  },
@@ -1903,6 +2068,1072 @@
    }
   }
  },
- "events": {},
- "first_seen_minutes_after_t0": {}
+ "events": {
+  "PIIND": {
+   "t0_exchange_raw": "04-Nov-2026 19:40:36",
+   "t0_exchange_utc": "2026-11-04T14:10:36+00:00",
+   "t0_assumed_tz": "IST (+05:30), per NSE feed convention",
+   "detected_at_utc": "2026-11-04T14:44:10.632813+00:00",
+   "detection_lag_min": 33.6,
+   "item": {
+    "feed": "Online_announcements.xml",
+    "title": "PI Industries Limited",
+    "description": "PI Industries Limited has submitted to the Exchange, the Outcome of Board Meeting held on November 04, 2026 for approval of Unaudited Standalone and Consolidated Financial Results for the quarter and half year September 30, 2026. |SUBJECT: Outcome of Board Meeting",
+    "link": "https://nsearchives.nseindia.com/corporate/PIIND_04112026193824_Resultssd.pdf",
+    "pubDate": "04-Nov-2026 19:40:36"
+   },
+   "new_quarter": "Sep 2026",
+   "checkpoints": {
+    "T0": {
+     "due_utc": "2026-11-04T14:10:36+00:00",
+     "taken_utc": "2026-11-04T14:44:41.116482+00:00",
+     "snapshot_id": "20261104T144416Z_T0_PIIND",
+     "attempts": [
+      {
+       "at_utc": "2026-11-04T14:44:41.116487+00:00",
+       "snapshot_id": "20261104T144416Z_T0_PIIND",
+       "complete": true,
+       "adopted": false
+      }
+     ]
+    },
+    "T+30m": {
+     "due_utc": "2026-11-04T14:40:36+00:00",
+     "taken_utc": "2026-11-04T14:45:04.236166+00:00",
+     "snapshot_id": "20261104T144441Z_T+30m_PIIND",
+     "attempts": [
+      {
+       "at_utc": "2026-11-04T14:45:04.236160+00:00",
+       "snapshot_id": "20261104T144441Z_T+30m_PIIND",
+       "complete": true,
+       "adopted": false
+      }
+     ],
+     "late_by_min": 4.5
+    },
+    "T+2h": {
+     "due_utc": "2026-11-04T16:10:36+00:00",
+     "taken_utc": "2026-11-04T16:14:58.709156+00:00",
+     "snapshot_id": "20261104T161432Z_T+2h_PIIND",
+     "attempts": [
+      {
+       "at_utc": "2026-11-04T16:14:58.709147+00:00",
+       "snapshot_id": "20261104T161432Z_T+2h_PIIND",
+       "complete": true,
+       "adopted": false
+      }
+     ],
+     "late_by_min": 4.4
+    },
+    "T+24h": {
+     "due_utc": "2026-11-05T14:10:36+00:00",
+     "taken_utc": null,
+     "snapshot_id": null,
+     "attempts": [
+      {
+       "at_utc": "2026-11-05T14:45:57.021804+00:00",
+       "snapshot_id": "20261105T144520Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T15:45:39.176677+00:00",
+       "snapshot_id": "20261105T154501Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T16:44:46.004989+00:00",
+       "snapshot_id": "20261105T164410Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T17:44:55.310353+00:00",
+       "snapshot_id": "20261105T174418Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T02:44:31.005320+00:00",
+       "snapshot_id": "20261106T024356Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T03:44:35.068474+00:00",
+       "snapshot_id": "20261106T034359Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T04:44:26.165556+00:00",
+       "snapshot_id": "20261106T044351Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T05:44:27.104786+00:00",
+       "snapshot_id": "20261106T054352Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T06:44:37.428244+00:00",
+       "snapshot_id": "20261106T064403Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T07:45:08.646912+00:00",
+       "snapshot_id": "20261106T074433Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T08:45:19.594839+00:00",
+       "snapshot_id": "20261106T084446Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T09:44:45.835457+00:00",
+       "snapshot_id": "20261106T094410Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T10:44:54.384421+00:00",
+       "snapshot_id": "20261106T104421Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T11:45:03.025000+00:00",
+       "snapshot_id": "20261106T114428Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T12:46:14.653988+00:00",
+       "snapshot_id": "20261106T124536Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T13:44:29.221646+00:00",
+       "snapshot_id": "20261106T134353Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T14:44:45.910226+00:00",
+       "snapshot_id": "20261106T144411Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T15:44:36.867870+00:00",
+       "snapshot_id": "20261106T154400Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T16:45:02.940883+00:00",
+       "snapshot_id": "20261106T164429Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T17:44:35.754824+00:00",
+       "snapshot_id": "20261106T174400Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T02:44:46.963947+00:00",
+       "snapshot_id": "20261107T024409Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T03:44:25.569632+00:00",
+       "snapshot_id": "20261107T034348Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T04:44:32.002594+00:00",
+       "snapshot_id": "20261107T044357Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T05:44:46.748618+00:00",
+       "snapshot_id": "20261107T054411Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T06:44:57.017015+00:00",
+       "snapshot_id": "20261107T064418Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T07:44:49.953627+00:00",
+       "snapshot_id": "20261107T074415Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T08:44:56.057558+00:00",
+       "snapshot_id": "20261107T084423Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T09:44:36.924795+00:00",
+       "snapshot_id": "20261107T094402Z_T+24h_PIIND",
+       "complete": false,
+       "adopted": false
+      }
+     ]
+    },
+    "T+48h": {
+     "due_utc": "2026-11-06T14:10:36+00:00",
+     "taken_utc": null,
+     "snapshot_id": null,
+     "attempts": [
+      {
+       "at_utc": "2026-11-06T14:45:21.255534+00:00",
+       "snapshot_id": "20261106T144446Z_T+48h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T15:45:11.663871+00:00",
+       "snapshot_id": "20261106T154437Z_T+48h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T16:45:36.520502+00:00",
+       "snapshot_id": "20261106T164503Z_T+48h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T17:45:10.558556+00:00",
+       "snapshot_id": "20261106T174436Z_T+48h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T02:45:20.869604+00:00",
+       "snapshot_id": "20261107T024447Z_T+48h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T03:44:59.693118+00:00",
+       "snapshot_id": "20261107T034425Z_T+48h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T04:45:06.155074+00:00",
+       "snapshot_id": "20261107T044432Z_T+48h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T05:45:20.748425+00:00",
+       "snapshot_id": "20261107T054447Z_T+48h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T06:45:32.934042+00:00",
+       "snapshot_id": "20261107T064457Z_T+48h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T07:45:22.359366+00:00",
+       "snapshot_id": "20261107T074450Z_T+48h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T08:45:28.551252+00:00",
+       "snapshot_id": "20261107T084456Z_T+48h_PIIND",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T09:45:13.097429+00:00",
+       "snapshot_id": "20261107T094437Z_T+48h_PIIND",
+       "complete": false,
+       "adopted": false
+      }
+     ]
+    }
+   }
+  },
+  "MOTHERSON": {
+   "t0_exchange_raw": "05-Nov-2026 14:58:36",
+   "t0_exchange_utc": "2026-11-05T09:28:36+00:00",
+   "t0_assumed_tz": "IST (+05:30), per NSE feed convention",
+   "detected_at_utc": "2026-11-05T09:43:53.457246+00:00",
+   "detection_lag_min": 15.3,
+   "item": {
+    "feed": "Online_announcements.xml",
+    "title": "Samvardhana Motherson International Limited",
+    "description": "Samvardhana Motherson International Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. |SUBJECT: Outcome of Board Meeting",
+    "link": "https://nsearchives.nseindia.com/corporate/MOTHERSON_05112026145442_Financial_Results.pdf",
+    "pubDate": "05-Nov-2026 14:58:36"
+   },
+   "new_quarter": "Sep 2026",
+   "checkpoints": {
+    "T0": {
+     "due_utc": "2026-11-05T09:28:36+00:00",
+     "taken_utc": null,
+     "snapshot_id": null,
+     "attempts": [
+      {
+       "at_utc": "2026-11-05T09:44:35.860917+00:00",
+       "snapshot_id": "20261105T094358Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T09:45:10.367141+00:00",
+       "snapshot_id": "20261105T094436Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T10:45:08.762803+00:00",
+       "snapshot_id": "20261105T104433Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T11:45:31.419889+00:00",
+       "snapshot_id": "20261105T114458Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T12:45:36.046608+00:00",
+       "snapshot_id": "20261105T124458Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T13:46:26.379179+00:00",
+       "snapshot_id": "20261105T134548Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T14:46:33.627314+00:00",
+       "snapshot_id": "20261105T144557Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T15:46:14.736871+00:00",
+       "snapshot_id": "20261105T154539Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T16:45:25.447670+00:00",
+       "snapshot_id": "20261105T164446Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T17:45:30.101062+00:00",
+       "snapshot_id": "20261105T174455Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T02:45:05.716973+00:00",
+       "snapshot_id": "20261106T024431Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T03:45:08.813999+00:00",
+       "snapshot_id": "20261106T034435Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T04:45:00.508244+00:00",
+       "snapshot_id": "20261106T044426Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T05:45:01.881024+00:00",
+       "snapshot_id": "20261106T054427Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T06:45:15.146177+00:00",
+       "snapshot_id": "20261106T064437Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T07:45:41.669930+00:00",
+       "snapshot_id": "20261106T074508Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T08:45:53.656220+00:00",
+       "snapshot_id": "20261106T084519Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T09:45:19.490036+00:00",
+       "snapshot_id": "20261106T094446Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T10:45:28.599781+00:00",
+       "snapshot_id": "20261106T104454Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T11:45:35.790659+00:00",
+       "snapshot_id": "20261106T114503Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T12:46:49.313315+00:00",
+       "snapshot_id": "20261106T124614Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T13:45:07.516038+00:00",
+       "snapshot_id": "20261106T134429Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T14:45:53.953844+00:00",
+       "snapshot_id": "20261106T144521Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T15:45:47.123462+00:00",
+       "snapshot_id": "20261106T154511Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T16:46:12.964749+00:00",
+       "snapshot_id": "20261106T164536Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T17:45:47.283566+00:00",
+       "snapshot_id": "20261106T174510Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T02:45:56.861917+00:00",
+       "snapshot_id": "20261107T024521Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T03:45:34.231238+00:00",
+       "snapshot_id": "20261107T034459Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T04:45:38.832382+00:00",
+       "snapshot_id": "20261107T044506Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T05:45:53.856351+00:00",
+       "snapshot_id": "20261107T054521Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T06:46:06.656295+00:00",
+       "snapshot_id": "20261107T064533Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T07:46:00.624485+00:00",
+       "snapshot_id": "20261107T074522Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T08:46:02.558150+00:00",
+       "snapshot_id": "20261107T084528Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T09:45:46.755718+00:00",
+       "snapshot_id": "20261107T094513Z_T0_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      }
+     ]
+    },
+    "T+30m": {
+     "due_utc": "2026-11-05T09:58:36+00:00",
+     "taken_utc": null,
+     "snapshot_id": null,
+     "attempts": [
+      {
+       "at_utc": "2026-11-05T10:45:44.148526+00:00",
+       "snapshot_id": "20261105T104509Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T11:46:02.235737+00:00",
+       "snapshot_id": "20261105T114531Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T12:46:10.094676+00:00",
+       "snapshot_id": "20261105T124536Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T13:47:01.123064+00:00",
+       "snapshot_id": "20261105T134626Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T14:47:08.743027+00:00",
+       "snapshot_id": "20261105T144633Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T15:46:47.089440+00:00",
+       "snapshot_id": "20261105T154615Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T16:46:00.032851+00:00",
+       "snapshot_id": "20261105T164525Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T17:46:04.285229+00:00",
+       "snapshot_id": "20261105T174530Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T02:45:40.989909+00:00",
+       "snapshot_id": "20261106T024505Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T03:45:44.389692+00:00",
+       "snapshot_id": "20261106T034508Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T04:45:35.436221+00:00",
+       "snapshot_id": "20261106T044500Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T05:45:33.760050+00:00",
+       "snapshot_id": "20261106T054502Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T06:45:48.697686+00:00",
+       "snapshot_id": "20261106T064515Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T07:46:16.659947+00:00",
+       "snapshot_id": "20261106T074541Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T08:46:27.812385+00:00",
+       "snapshot_id": "20261106T084553Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T09:45:52.018522+00:00",
+       "snapshot_id": "20261106T094519Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T10:46:00.848813+00:00",
+       "snapshot_id": "20261106T104528Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T11:46:12.506089+00:00",
+       "snapshot_id": "20261106T114536Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T12:47:22.185505+00:00",
+       "snapshot_id": "20261106T124649Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T13:45:41.674588+00:00",
+       "snapshot_id": "20261106T134507Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T14:46:27.503603+00:00",
+       "snapshot_id": "20261106T144554Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T15:46:24.720326+00:00",
+       "snapshot_id": "20261106T154547Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T16:46:46.666734+00:00",
+       "snapshot_id": "20261106T164613Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T17:46:20.794888+00:00",
+       "snapshot_id": "20261106T174547Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T02:46:31.245222+00:00",
+       "snapshot_id": "20261107T024557Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T03:46:07.853272+00:00",
+       "snapshot_id": "20261107T034534Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T04:46:11.014359+00:00",
+       "snapshot_id": "20261107T044539Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T05:46:25.453890+00:00",
+       "snapshot_id": "20261107T054554Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T06:46:42.973385+00:00",
+       "snapshot_id": "20261107T064606Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T07:46:34.957037+00:00",
+       "snapshot_id": "20261107T074600Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T08:46:35.792233+00:00",
+       "snapshot_id": "20261107T084602Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T09:46:18.381359+00:00",
+       "snapshot_id": "20261107T094547Z_T+30m_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      }
+     ]
+    },
+    "T+2h": {
+     "due_utc": "2026-11-05T11:28:36+00:00",
+     "taken_utc": null,
+     "snapshot_id": null,
+     "attempts": [
+      {
+       "at_utc": "2026-11-05T11:46:33.462920+00:00",
+       "snapshot_id": "20261105T114602Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T12:46:42.840168+00:00",
+       "snapshot_id": "20261105T124610Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T13:47:36.273124+00:00",
+       "snapshot_id": "20261105T134701Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T14:47:42.001863+00:00",
+       "snapshot_id": "20261105T144709Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T15:47:21.821458+00:00",
+       "snapshot_id": "20261105T154647Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T16:46:37.903463+00:00",
+       "snapshot_id": "20261105T164600Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-05T17:46:39.069060+00:00",
+       "snapshot_id": "20261105T174604Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T02:46:13.856952+00:00",
+       "snapshot_id": "20261106T024541Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T03:46:18.257883+00:00",
+       "snapshot_id": "20261106T034544Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T04:46:10.525905+00:00",
+       "snapshot_id": "20261106T044535Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T05:46:11.596061+00:00",
+       "snapshot_id": "20261106T054533Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T06:46:23.652611+00:00",
+       "snapshot_id": "20261106T064548Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T07:46:48.761076+00:00",
+       "snapshot_id": "20261106T074616Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T08:47:01.779983+00:00",
+       "snapshot_id": "20261106T084628Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T09:46:26.354833+00:00",
+       "snapshot_id": "20261106T094552Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T10:46:35.052331+00:00",
+       "snapshot_id": "20261106T104601Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T11:46:49.279142+00:00",
+       "snapshot_id": "20261106T114612Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T12:47:57.929642+00:00",
+       "snapshot_id": "20261106T124722Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T13:46:19.802185+00:00",
+       "snapshot_id": "20261106T134541Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T14:47:00.761236+00:00",
+       "snapshot_id": "20261106T144627Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T15:46:55.874005+00:00",
+       "snapshot_id": "20261106T154624Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T16:47:20.731727+00:00",
+       "snapshot_id": "20261106T164647Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T17:46:54.903605+00:00",
+       "snapshot_id": "20261106T174621Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T02:47:05.384895+00:00",
+       "snapshot_id": "20261107T024631Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T03:46:41.866366+00:00",
+       "snapshot_id": "20261107T034608Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T04:46:45.527518+00:00",
+       "snapshot_id": "20261107T044611Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T05:47:00.807616+00:00",
+       "snapshot_id": "20261107T054625Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T06:47:18.404235+00:00",
+       "snapshot_id": "20261107T064643Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T07:47:09.895150+00:00",
+       "snapshot_id": "20261107T074635Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T08:47:10.223624+00:00",
+       "snapshot_id": "20261107T084636Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T09:46:56.251436+00:00",
+       "snapshot_id": "20261107T094618Z_T+2h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      }
+     ]
+    },
+    "T+24h": {
+     "due_utc": "2026-11-06T09:28:36+00:00",
+     "taken_utc": null,
+     "snapshot_id": null,
+     "attempts": [
+      {
+       "at_utc": "2026-11-06T09:47:02.363439+00:00",
+       "snapshot_id": "20261106T094626Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T10:47:09.346221+00:00",
+       "snapshot_id": "20261106T104635Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T11:47:22.448299+00:00",
+       "snapshot_id": "20261106T114649Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T12:48:33.080846+00:00",
+       "snapshot_id": "20261106T124758Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T13:46:53.720637+00:00",
+       "snapshot_id": "20261106T134620Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T14:47:35.565955+00:00",
+       "snapshot_id": "20261106T144700Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T15:47:32.608032+00:00",
+       "snapshot_id": "20261106T154656Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T16:47:56.577851+00:00",
+       "snapshot_id": "20261106T164720Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-06T17:47:30.395982+00:00",
+       "snapshot_id": "20261106T174655Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T02:47:39.182474+00:00",
+       "snapshot_id": "20261107T024705Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T03:47:15.602084+00:00",
+       "snapshot_id": "20261107T034642Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T04:47:22.405112+00:00",
+       "snapshot_id": "20261107T044645Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T05:47:38.452827+00:00",
+       "snapshot_id": "20261107T054701Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T06:47:50.796742+00:00",
+       "snapshot_id": "20261107T064718Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T07:47:44.608387+00:00",
+       "snapshot_id": "20261107T074710Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T08:47:46.009801+00:00",
+       "snapshot_id": "20261107T084710Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      },
+      {
+       "at_utc": "2026-11-07T09:47:32.863992+00:00",
+       "snapshot_id": "20261107T094656Z_T+24h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      }
+     ]
+    },
+    "T+48h": {
+     "due_utc": "2026-11-07T09:28:36+00:00",
+     "taken_utc": null,
+     "snapshot_id": null,
+     "attempts": [
+      {
+       "at_utc": "2026-11-07T09:48:06.049272+00:00",
+       "snapshot_id": "20261107T094733Z_T+48h_MOTHERSON",
+       "complete": false,
+       "adopted": false
+      }
+     ]
+    }
+   }
+  }
+ },
+ "first_seen_minutes_after_t0": {
+  "PIIND": {
+   "tapetide": 1474.7,
+   "screener": 1474.8,
+   "indianapi_arthscan_cache": null
+  },
+  "MOTHERSON": {
+   "tapetide": 2476.8,
+   "screener": 196.4,
+   "indianapi_arthscan_cache": null
+  }
+ }
 }

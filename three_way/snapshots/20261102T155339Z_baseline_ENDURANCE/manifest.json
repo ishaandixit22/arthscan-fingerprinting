@@ -1,0 +1,103 @@
+{
+ "snapshot_id": "20261102T155339Z_baseline_ENDURANCE",
+ "label": "baseline_ENDURANCE",
+ "started_at_utc": "2026-11-02T15:53:39.090900+00:00",
+ "symbols": [
+  "ENDURANCE"
+ ],
+ "requests": [
+  {
+   "source": "tapetide",
+   "symbol": "ENDURANCE",
+   "url": "https://tapetide.com/stocks/ENDURANCE.md",
+   "file": "tapetide_ENDURANCE.md",
+   "fetched_at_utc": "2026-11-02T15:53:39.091213+00:00",
+   "http_status": 200,
+   "bytes": 35702,
+   "sha256": "3e99e3a05c107d32717caf841bf77c1fc065f6e516b3dd3cb25426865f364e8d",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T15:26:23.707Z",
+    "prices_as_of": "2 Nov 2026, 15:53 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "ENDURANCE",
+   "url": "https://www.screener.in/company/ENDURANCE/consolidated/",
+   "file": "screener_ENDURANCE_consolidated.html",
+   "fetched_at_utc": "2026-11-02T15:53:39.316751+00:00",
+   "http_status": 200,
+   "bytes": 220437,
+   "sha256": "8f1198b42d5cacfb2b3a31a481888b33631861ea2422ec42e9740bc958a35a23",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ENDURANCE",
+   "url": "https://arthscan.me/stock/ENDURANCE/statements?stats=quarter_results",
+   "file": "indianapi_ENDURANCE_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T15:53:39.911593+00:00",
+   "http_status": 200,
+   "bytes": 2986,
+   "sha256": "aaeba8f9d194a9a560c6593f2fa921bfc3ce26633961241cb3d80f07cf274fc1",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ENDURANCE",
+   "url": "https://arthscan.me/stock/ENDURANCE/statements?stats=yoy_results",
+   "file": "indianapi_ENDURANCE_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T15:53:45.887508+00:00",
+   "http_status": 200,
+   "bytes": 3168,
+   "sha256": "1d58f8435aaec21eec236b7bd1628956ba710a9103b5a1933d2f10f0c226887c",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "ENDURANCE",
+   "url": "https://www.screener.in/company/ENDURANCE/",
+   "file": "screener_ENDURANCE_standalone.html",
+   "fetched_at_utc": "2026-11-02T15:53:46.319715+00:00",
+   "http_status": 200,
+   "bytes": 220619,
+   "sha256": "f508fabe35a786341b33c4df6ef7c7f22eec822edb8008a73ed745f87e382e6b",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ENDURANCE",
+   "url": "https://arthscan.me/stock/ENDURANCE/statements?stats=balancesheet",
+   "file": "indianapi_ENDURANCE_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T15:53:52.556724+00:00",
+   "http_status": 200,
+   "bytes": 2654,
+   "sha256": "00dddd71d4cc7db719b151988cdfa61c5883b0d71b2d7eb92847871bf09274d6",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ENDURANCE",
+   "url": "https://arthscan.me/stock/ENDURANCE/statements?stats=cashflow",
+   "file": "indianapi_ENDURANCE_cashflow.json",
+   "fetched_at_utc": "2026-11-02T15:53:57.528199+00:00",
+   "http_status": 200,
+   "bytes": 1785,
+   "sha256": "fb98a6ab02ffa435cc55c174fb68cdb55e6590d7e395f2bb559b8eab900f4b0e",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "ENDURANCE",
+   "url": "https://arthscan.me/stock/ENDURANCE/statements?stats=ratios",
+   "file": "indianapi_ENDURANCE_ratios.json",
+   "fetched_at_utc": "2026-11-02T15:54:02.101190+00:00",
+   "http_status": 200,
+   "bytes": 1586,
+   "sha256": "6dfbfe01cb297285873fdb5fa4d5a5291dc89532aded996a661a62b38a64a5c2",
+   "source_reported_ts": null
+  }
+ ],
+ "finished_at_utc": "2026-11-02T15:54:02.526768+00:00",
+ "hosts_blocked_429": []
+}

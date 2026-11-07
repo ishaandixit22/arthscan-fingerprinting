@@ -1,0 +1,99 @@
+{
+ "5a_concurrent_runs": {
+  "runs": 6,
+  "busy_exits": 3,
+  "new_t0_prints": 1,
+  "t0_events": 1,
+  "t0_snapshots_created": 1,
+  "pass": true,
+  "after_3_more_sequential_runs_t0_snapshots": 1
+ },
+ "5b_crash_then_rerun": {
+  "first_run": "crashed",
+  "state_after_crash_has_T0": false,
+  "t0_snapshots_created": 1,
+  "rerun_adopted_existing": true,
+  "pass": true
+ },
+ "5c_checkpoints_idempotent": {
+  "runs": 4,
+  "snapshots_per_checkpoint": {
+   "T0_MOTHERSON": 1,
+   "T+30m_MOTHERSON": 1,
+   "T+2h_MOTHERSON": 1,
+   "T+24h_MOTHERSON": 1,
+   "T+48h_MOTHERSON": 1,
+   "T0_PIIND": 1,
+   "T+30m_PIIND": 1,
+   "T+2h_PIIND": 1,
+   "T+24h_PIIND": 1,
+   "T+48h_PIIND": 1
+  },
+  "all_done_printed": true,
+  "pass": true
+ },
+ "7a_failed_requests": {
+  "failed_attempt_output": [
+   "CHECKPOINT_INCOMPLETE MOTHERSON T+48h snapshot 20261102T085253676620_T+48h_MOTHERSON: will retry next tick"
+  ],
+  "checkpoint_marked_taken_after_failure": false,
+  "existing_snapshot_files_unchanged": true,
+  "retry_succeeded_next_run": true,
+  "attempts_recorded": 3,
+  "pass": true
+ },
+ "7b_real_collector_failures": {
+  "data_files_written": [],
+  "statuses": {
+   "tapetide:PIIND.md": "error: simulated DNS failure",
+   "screener:": "skipped: host returned 429 earlier",
+   "indianapi:statements?stats=quarter_results": 500,
+   "indianapi:statements?stats=yoy_results": 500,
+   "indianapi:statements?stats=balancesheet": 500,
+   "indianapi:statements?stats=cashflow": 500,
+   "indianapi:statements?stats=ratios": 500
+  },
+  "hosts_blocked_429": [
+   "www.screener.in"
+  ],
+  "pass": true
+ },
+ "4b_overwrite_protection_code_path": {
+  "snapshot_dir_reuse": "refused",
+  "existing_file_open_with_x": "refused",
+  "pass": true
+ },
+ "8a_feed_429": {
+  "first": "HTTP 429 from NSE feed: stopping monitor",
+  "second": "STOPPED: an earlier HTTP 429; not polling",
+  "t0_recorded_after_stop": false,
+  "snapshots_after_stop": 0,
+  "pass": true
+ },
+ "8b_snapshot_429": {
+  "output": "HTTP 429 during snapshot: stopping",
+  "stopped": true,
+  "checkpoint_marked_taken": false,
+  "pass": true
+ },
+ "8c_no_false_stop_on_429_in_snapshot_id": {
+  "snapshot_id": [
+   "20261104T142901Z_T0_PIIND"
+  ],
+  "stopped": false,
+  "pass": true
+ },
+ "9_audit_log_every_run": {
+  "runs": 5,
+  "log_lines": 5,
+  "outcomes": [
+   "ok",
+   "busy (lock held by another run)",
+   "error: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+   "http_429_feed",
+   "stopped (earlier HTTP 429)"
+  ],
+  "all_have_utc_timestamps": true,
+  "pass": true
+ }
+}

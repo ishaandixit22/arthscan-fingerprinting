@@ -1,0 +1,103 @@
+{
+ "snapshot_id": "20261102T155430Z_baseline_MGL",
+ "label": "baseline_MGL",
+ "started_at_utc": "2026-11-02T15:54:30.330824+00:00",
+ "symbols": [
+  "MGL"
+ ],
+ "requests": [
+  {
+   "source": "tapetide",
+   "symbol": "MGL",
+   "url": "https://tapetide.com/stocks/MGL.md",
+   "file": "tapetide_MGL.md",
+   "fetched_at_utc": "2026-11-02T15:54:30.331113+00:00",
+   "http_status": 200,
+   "bytes": 35445,
+   "sha256": "bec676f80e7b285ef08eef10c0071a24ef185bf4754d239b3a31961e475b5bac",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T15:26:51.999Z",
+    "prices_as_of": "2 Nov 2026, 15:57 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "MGL",
+   "url": "https://www.screener.in/company/MGL/consolidated/",
+   "file": "screener_MGL_consolidated.html",
+   "fetched_at_utc": "2026-11-02T15:54:30.542687+00:00",
+   "http_status": 200,
+   "bytes": 204329,
+   "sha256": "55885802e75b4de59165ebf0e237def921cd9b4461fcc6a406fb2286294f547f",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MGL",
+   "url": "https://arthscan.me/stock/MGL/statements?stats=quarter_results",
+   "file": "indianapi_MGL_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T15:54:31.132372+00:00",
+   "http_status": 200,
+   "bytes": 2964,
+   "sha256": "f81615465cf96295f6abb0c5df5c1c9d4ee9883a1adf28f5dabf78f9eaea2bc3",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MGL",
+   "url": "https://arthscan.me/stock/MGL/statements?stats=yoy_results",
+   "file": "indianapi_MGL_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T15:54:35.801545+00:00",
+   "http_status": 200,
+   "bytes": 3154,
+   "sha256": "cd548d4b4790ca3ed9771dc41ea508222daf72f8f696bb6b84595b2ac0b1192f",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "MGL",
+   "url": "https://www.screener.in/company/MGL/",
+   "file": "screener_MGL_standalone.html",
+   "fetched_at_utc": "2026-11-02T15:54:36.314879+00:00",
+   "http_status": 200,
+   "bytes": 240531,
+   "sha256": "22ea5f9c7063b949888860107750b62b5991de4b2befa87b6cf9035ab68c940a",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MGL",
+   "url": "https://arthscan.me/stock/MGL/statements?stats=balancesheet",
+   "file": "indianapi_MGL_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T15:54:42.253208+00:00",
+   "http_status": 200,
+   "bytes": 2636,
+   "sha256": "f2bca4e5d4a9713e9ec089fad186dbdecbd4971d62c94bdf02663c598c9588e5",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MGL",
+   "url": "https://arthscan.me/stock/MGL/statements?stats=cashflow",
+   "file": "indianapi_MGL_cashflow.json",
+   "fetched_at_utc": "2026-11-02T15:54:48.993463+00:00",
+   "http_status": 200,
+   "bytes": 1783,
+   "sha256": "54fbb1f9231e9180a3ddcfbc3eadaed0a0804becd00810965e2d60d6ab0bf983",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "MGL",
+   "url": "https://arthscan.me/stock/MGL/statements?stats=ratios",
+   "file": "indianapi_MGL_ratios.json",
+   "fetched_at_utc": "2026-11-02T15:54:55.440222+00:00",
+   "http_status": 200,
+   "bytes": 1597,
+   "sha256": "96b9ad3b53c4587a9b4caa07aedd825dd1cefb5434f95149a47e8166b6c8c0e6",
+   "source_reported_ts": null
+  }
+ ],
+ "finished_at_utc": "2026-11-02T15:54:55.828367+00:00",
+ "hosts_blocked_429": []
+}

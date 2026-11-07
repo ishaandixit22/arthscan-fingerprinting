@@ -1,6 +1,6 @@
 # Three-way data provider fingerprinting: Tapetide, Screener.in, Indian Stock API
 
-Updated 2026-11-02T08:46:02Z. Baseline snapshot `20261102T062632Z_baseline`; 1 snapshot(s) in total. 10 stocks.
+Updated 2026-11-07T09:48:47Z. Baseline snapshot `20261102T062632Z_baseline`; 166 snapshot(s) in total. 10 stocks.
 
 > **Labelling:** every Indian Stock API observation in this report is **ARTHSCAN-cached data** (ARTHSCAN's stored copy of the provider's response, with its own `fetched_at`), not a direct observation of indianapi.in.
 
@@ -64,10 +64,37 @@ This matters for answers A and D: a provisional quarter matching Screener does n
 **Status: not complete.** No T+48h checkpoint has been captured yet, so no release-timing conclusion is drawn.
 
 - Scheduler: claude.ai cloud scheduled task (server-side cron that wakes this persistent Claude session); not OS cron, launchd, GitHub Actions or a daemon; `CRON_TZ=Asia/Kolkata 13 8-23 2-7 11 *` (hourly at :13, 08:13-23:13 IST, 2-7 Nov 2026); trigger `trig_0159bajz89RVbmpSSciinzwJ`.
-- Ticks logged so far: 5 (last 2026-11-02T08:44:07.021837+00:00); T0 events recorded: 0.
+- Ticks logged so far: 112 (last 2026-11-07T09:43:56.801551+00:00); T0 events recorded: 2.
 - Restart safety: yes: state, evidence, code and immutable snapshots are pushed to ishaandixit22/arthscan-fingerprinting (branch monitor-state) after every checkpoint; restore from a fresh GitHub clone was tested on 2026-11-02 with all 81 snapshot hashes identical.
 
-Pending. MOTHERSON and PIIND have earnings calls on 5 Nov 2026 and had not filed results at the baseline. An hourly scheduled check polls NSE's official announcements RSS feed and records T0 from the exchange's own timestamp, then takes three-source snapshots at T+30m, +2h, +24h and +48h. This summary and update_latency.csv are rebuilt after each checkpoint.
+| Company | Checkpoint | Source | Called (UTC) | Source timestamp | Latest period | Tapetide provisional | cell_source flags |
+|---|---|---|---|---|---|---|---|
+| PIIND | T0/T+30m | Tapetide MCP | 2026-11-04T14:45:47.557333+00:00 | 2026-10-21T06:29:42.208Z | Jun 2026 | None | 2 |
+| PIIND | T0/T+30m | Indian Stock API (ARTHSCAN-cached) | 2026-11-04T14:45:47.557333+00:00 | None | None |  | 0 |
+| PIIND | T+2h | Tapetide MCP | 2026-11-04T17:39:14.358353+00:00 | 2026-10-21T06:29:42.208Z | Jun 2026 | None | 2 |
+| PIIND | T+2h | Indian Stock API (ARTHSCAN-cached) | 2026-11-04T17:39:14.358353+00:00 | None | None |  | 0 |
+| MOTHERSON | T0 | Tapetide MCP | 2026-11-05T09:45:59.945054+00:00 | 2026-10-06T01:39:33.372Z | Jun 2026 | None | 0 |
+| MOTHERSON | T0 | Indian Stock API (ARTHSCAN-cached) | 2026-11-05T09:45:59.945054+00:00 | None | None |  | 0 |
+| PIIND | T+24h | Tapetide MCP | 2026-11-05T14:48:10.671678+00:00 | 2026-10-21T06:29:42.208Z | Sep 2026 | [{'period': 'Sep 2026', 'filed_on': '2026-11-04'}] | 12 |
+| PIIND | T+24h | Indian Stock API (ARTHSCAN-cached) | 2026-11-05T14:48:10.671678+00:00 | None | None |  | 0 |
+| MOTHERSON | T+24h | Tapetide MCP | 2026-11-06T09:47:28.727461+00:00 | 2026-10-06T01:39:33.372Z | Jun 2026 | None | 0 |
+| MOTHERSON | T+24h | Indian Stock API (ARTHSCAN-cached) | 2026-11-06T09:47:28.727461+00:00 | None | None |  | 0 |
+| PIIND | T+48h | Tapetide MCP | 2026-11-06T14:48:05.743179+00:00 | 2026-10-21T06:29:42.208Z | Sep 2026 | [{'period': 'Sep 2026', 'filed_on': '2026-11-04'}] | 12 |
+| PIIND | T+48h | Indian Stock API (ARTHSCAN-cached) | 2026-11-06T14:48:05.743179+00:00 | None | None |  | 0 |
+| MOTHERSON | post-T+24h (07 Nov 02:44 tick) | Tapetide MCP | 2026-11-07T02:48:09.880978+00:00 | 2026-11-06T22:31:22.275Z | Sep 2026 | None | 24 |
+| MOTHERSON | T+48h | Tapetide MCP | 2026-11-07T09:48:43.185213+00:00 | 2026-11-06T22:31:22.275Z | Sep 2026 | None | 24 |
+| PIIND | post-T+48h | Tapetide MCP | 2026-11-07T09:48:43.185213+00:00 | 2026-10-21T06:29:42.208Z | Sep 2026 | [{'period': 'Sep 2026', 'filed_on': '2026-11-04'}] | 0 |
+| MOTHERSON | T+48h | Indian Stock API (ARTHSCAN-cached) | 2026-11-07T09:48:43.185213+00:00 | None | None |  | 0 |
+
+| Company | T0 (exchange, UTC) | Detected after | Checkpoints taken |
+|---|---|---:|---|
+| PIIND | 2026-11-04T14:10:36+00:00 | 33.6 min | T0, T+30m (4.5 min late), T+2h (4.4 min late) |
+| MOTHERSON | 2026-11-05T09:28:36+00:00 | 15.3 min |  |
+
+First snapshot (minutes after T0) in which each source showed the new quarter:
+
+- PIIND: tapetide 1474.7, screener 1474.8, indianapi_arthscan_cache not yet
+- MOTHERSON: tapetide 2476.8, screener 196.4, indianapi_arthscan_cache not yet
 
 ## What ARTHSCAN should integrate independently
 

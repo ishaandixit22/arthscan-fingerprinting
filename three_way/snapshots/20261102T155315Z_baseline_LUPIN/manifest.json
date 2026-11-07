@@ -1,0 +1,103 @@
+{
+ "snapshot_id": "20261102T155315Z_baseline_LUPIN",
+ "label": "baseline_LUPIN",
+ "started_at_utc": "2026-11-02T15:53:15.933096+00:00",
+ "symbols": [
+  "LUPIN"
+ ],
+ "requests": [
+  {
+   "source": "tapetide",
+   "symbol": "LUPIN",
+   "url": "https://tapetide.com/stocks/LUPIN.md",
+   "file": "tapetide_LUPIN.md",
+   "fetched_at_utc": "2026-11-02T15:53:15.933472+00:00",
+   "http_status": 200,
+   "bytes": 37363,
+   "sha256": "a059faaa8ea937921bd093159ba9215acedde3eb7c9f154865891ce9e7891e03",
+   "source_reported_ts": {
+    "page_generated_at": "2026-11-02T15:26:08.470Z",
+    "prices_as_of": "2 Nov 2026, 15:56 IST"
+   }
+  },
+  {
+   "source": "screener",
+   "symbol": "LUPIN",
+   "url": "https://www.screener.in/company/LUPIN/consolidated/",
+   "file": "screener_LUPIN_consolidated.html",
+   "fetched_at_utc": "2026-11-02T15:53:16.214919+00:00",
+   "http_status": 200,
+   "bytes": 241917,
+   "sha256": "737042f1e43a102fe141c8ba6e3badb7b6f765fcbfb1f909cda7035bd327e686",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "LUPIN",
+   "url": "https://arthscan.me/stock/LUPIN/statements?stats=quarter_results",
+   "file": "indianapi_LUPIN_quarter_results.json",
+   "fetched_at_utc": "2026-11-02T15:53:16.800226+00:00",
+   "http_status": 200,
+   "bytes": 3013,
+   "sha256": "14f76388fe27d92d27228ed46f3ac7f9254fca6809d0936173480068949f03e9",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "LUPIN",
+   "url": "https://arthscan.me/stock/LUPIN/statements?stats=yoy_results",
+   "file": "indianapi_LUPIN_yoy_results.json",
+   "fetched_at_utc": "2026-11-02T15:53:22.522658+00:00",
+   "http_status": 200,
+   "bytes": 3248,
+   "sha256": "d8a859f7ff99f2dc78e2b16a74772d20eb678ea76289415ce0c90c827b11b285",
+   "source_reported_ts": null
+  },
+  {
+   "source": "screener",
+   "symbol": "LUPIN",
+   "url": "https://www.screener.in/company/LUPIN/",
+   "file": "screener_LUPIN_standalone.html",
+   "fetched_at_utc": "2026-11-02T15:53:23.012261+00:00",
+   "http_status": 200,
+   "bytes": 240955,
+   "sha256": "045d415cfdba54c41b60192c0ebe7e81e10a804b97376079d8da13dff26a8b0d",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "LUPIN",
+   "url": "https://arthscan.me/stock/LUPIN/statements?stats=balancesheet",
+   "file": "indianapi_LUPIN_balancesheet.json",
+   "fetched_at_utc": "2026-11-02T15:53:27.158567+00:00",
+   "http_status": 200,
+   "bytes": 2727,
+   "sha256": "18ee1b9b101d06ff186bc6d74fe5fe19f579732b2735a343523e1355711dfc61",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "LUPIN",
+   "url": "https://arthscan.me/stock/LUPIN/statements?stats=cashflow",
+   "file": "indianapi_LUPIN_cashflow.json",
+   "fetched_at_utc": "2026-11-02T15:53:33.111248+00:00",
+   "http_status": 200,
+   "bytes": 1823,
+   "sha256": "5926812a4e687a279a3c0a3de5d19582c9a78875e9ae0967ce8655df9489545a",
+   "source_reported_ts": null
+  },
+  {
+   "source": "indianapi",
+   "symbol": "LUPIN",
+   "url": "https://arthscan.me/stock/LUPIN/statements?stats=ratios",
+   "file": "indianapi_LUPIN_ratios.json",
+   "fetched_at_utc": "2026-11-02T15:53:38.285808+00:00",
+   "http_status": 200,
+   "bytes": 1626,
+   "sha256": "90f624fd64540ee0b7d65ca3f09a224750c68409b8f0fad6b62ef053911665ef",
+   "source_reported_ts": null
+  }
+ ],
+ "finished_at_utc": "2026-11-02T15:53:38.684087+00:00",
+ "hosts_blocked_429": []
+}

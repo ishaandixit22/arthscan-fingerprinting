@@ -1,0 +1,46 @@
+{
+ "4a_live_sha256": {
+  "files_checked": 80,
+  "mismatches": [],
+  "permissions_seen": [
+   [
+    "dir",
+    "0o555"
+   ],
+   [
+    "file",
+    "0o444"
+   ],
+   [
+    "manifest",
+    "0o444"
+   ]
+  ],
+  "pass": true
+ },
+ "4c_github_copy_sha256": {
+  "files_compared": 81,
+  "mismatches": 0,
+  "pass": true
+ },
+ "4d_os_permission_vs_root": {
+  "running_as_uid": 0,
+  "root_can_append_to_0444_copy": true,
+  "note": "chmod 0444 is not a barrier for root; immutability rests on code paths (exist_ok=False, mode 'x', cp --update=none), the manifest SHA-256s and git history"
+ },
+ "6_secrets_scan": {
+  "commits_scanned": "4",
+  "history_bytes": 11217747,
+  "pattern_hits": {
+   "github_token": 0,
+   "aws_access_key": 0,
+   "bearer_header": 0,
+   "private_key": 0,
+   "generic_secret_assignment": 0
+  },
+  "env_secret_variables_checked": 11,
+  "env_secret_values_found_in_history": [],
+  "remote_url_has_embedded_credential": false,
+  "pass": true
+ }
+}

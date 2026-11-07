@@ -1,0 +1,195 @@
+{
+ "_note": "Pre-release MCP baselines, 2026-11-02 ~15:53-15:56 UTC. Tapetide: get_financials(quarterly, periods=1). Indian Stock API: arth get_statements(quarter_results), ARTHSCAN-cached data (fetched_at is ARTHSCAN's cache time).",
+ "recorded_at_utc": "2026-11-02T15:53:15.573044+00:00",
+ "tapetide_mcp": {
+  "SBIN": {
+   "latest_period": "Jun 2026",
+   "updated_at": "2026-10-21T07:33:02.050Z",
+   "provisional_periods": [],
+   "cell_source": {
+    "Net Profit": {
+     "Dec 2025": "filing",
+     "Jun 2026": "filing",
+     "Mar 2025": "filing",
+     "Mar 2026": "filing",
+     "Sep 2025": "filing"
+    },
+    "Revenue": {
+     "Jun 2026": "filing",
+     "Mar 2026": "filing",
+     "Sep 2025": "filing"
+    }
+   },
+   "jun_2026": {
+    "Revenue": 136240.49,
+    "Net Profit": 24579.04,
+    "EPS in Rs": 26.12
+   }
+  },
+  "SOLARINDS": {
+   "latest_period": "Jun 2026",
+   "updated_at": "2026-10-21T08:02:35.910Z",
+   "provisional_periods": [],
+   "cell_source": {
+    "Net Profit": {
+     "Sep 2025": "filing"
+    },
+    "Other Income": {
+     "Jun 2024": "filing",
+     "Mar 2026": "filing"
+    },
+    "Profit before tax": {
+     "Dec 2023": "filing",
+     "Dec 2024": "filing",
+     "Jun 2023": "filing",
+     "Jun 2024": "filing",
+     "Mar 2026": "filing"
+    }
+   },
+   "jun_2026": {
+    "Sales": 3668,
+    "Net Profit": 666,
+    "EPS in Rs": 72.11
+   }
+  },
+  "LUPIN": {
+   "latest_period": "Jun 2026",
+   "updated_at": "2026-10-12T18:37:40.501Z",
+   "provisional_periods": [],
+   "cell_source": {},
+   "jun_2026": {
+    "Sales": 8277,
+    "Net Profit": 1417,
+    "EPS in Rs": 30.95
+   }
+  },
+  "ENDURANCE": {
+   "latest_period": "Jun 2026",
+   "updated_at": "2026-10-09T07:03:14.532Z",
+   "provisional_periods": [],
+   "cell_source": {
+    "Interest": {
+     "Dec 2024": "filing"
+    }
+   },
+   "jun_2026": {
+    "Sales": 4315,
+    "Net Profit": 245,
+    "EPS in Rs": 17.38
+   }
+  },
+  "BATAINDIA": {
+   "latest_period": "Jun 2026",
+   "updated_at": "2026-10-06T00:45:48.107Z",
+   "provisional_periods": [],
+   "cell_source": {},
+   "jun_2026": {
+    "Sales": 979,
+    "Net Profit": 64,
+    "EPS in Rs": 4.98
+   }
+  },
+  "MGL": {
+   "latest_period": "Jun 2026",
+   "updated_at": "2026-10-06T01:37:43.321Z",
+   "provisional_periods": [],
+   "cell_source": {
+    "Profit before tax": {
+     "Mar 2025": "filing"
+    }
+   },
+   "jun_2026": {
+    "Sales": 2372,
+    "Net Profit": 194,
+    "EPS in Rs": 19.61
+   }
+  },
+  "DATAMATICS": {
+   "latest_period": "Jun 2026",
+   "updated_at": "2026-10-23T02:13:55.539Z",
+   "provisional_periods": [],
+   "cell_source": {},
+   "jun_2026": {
+    "Sales": 514,
+    "Net Profit": 72,
+    "EPS in Rs": 12.24
+   }
+  }
+ },
+ "indianapi_arthscan_cached": {
+  "SBIN": {
+   "source": "Indian Stock API (indianapi.in)",
+   "fetched_at": "2026-10-29T22:39:02Z",
+   "latest_period": "Jun 2026",
+   "jun_2026": {
+    "Revenue": 136240,
+    "Net Profit": 25121,
+    "EPS in Rs": 26.12
+   }
+  },
+  "SOLARINDS": {
+   "source": "Indian Stock API (indianapi.in)",
+   "fetched_at": "2026-10-29T23:40:23Z",
+   "latest_period": "Jun 2026",
+   "jun_2026": {
+    "Sales": 3668,
+    "Net Profit": 666,
+    "EPS in Rs": 72.11
+   }
+  },
+  "LUPIN": {
+   "source": "Indian Stock API (indianapi.in)",
+   "fetched_at": "2026-10-29T23:30:19Z",
+   "latest_period": "Jun 2026",
+   "jun_2026": {
+    "Sales": 8277,
+    "Net Profit": 1417,
+    "EPS in Rs": 30.95
+   }
+  },
+  "ENDURANCE": {
+   "source": "Indian Stock API (indianapi.in)",
+   "fetched_at": "2026-10-30T23:58:21Z",
+   "latest_period": "Jun 2026",
+   "jun_2026": {
+    "Sales": 4315,
+    "Net Profit": 245,
+    "EPS in Rs": 17.38
+   }
+  },
+  "BATAINDIA": {
+   "source": "Indian Stock API (indianapi.in)",
+   "fetched_at": "2026-10-30T23:42:26Z",
+   "latest_period": "Jun 2026",
+   "jun_2026": {
+    "Sales": 979,
+    "Net Profit": 64,
+    "EPS in Rs": 4.98
+   }
+  },
+  "MGL": {
+   "source": "Indian Stock API (indianapi.in)",
+   "fetched_at": "2026-11-01T18:40:12Z",
+   "latest_period": "Jun 2026",
+   "jun_2026": {
+    "Sales": 2372,
+    "Net Profit": 194,
+    "EPS in Rs": 19.61
+   }
+  },
+  "DATAMATICS": {
+   "source": "Indian Stock API (indianapi.in)",
+   "fetched_at": "2026-11-02T15:27:16Z",
+   "latest_period": "Jun 2026",
+   "jun_2026": {
+    "Sales": 514,
+    "Net Profit": 72,
+    "EPS in Rs": 12.24
+   }
+  }
+ },
+ "mcp_calls_used_for_baseline": {
+  "tapetide_mcp": 7,
+  "arth_mcp": 7
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "latest_commit_on_github": "7685c69",
+ "commit_restored": "7685c69",
+ "commit_matches_scheduled_push_7685c69": true,
+ "snapshot_hashes_vs_pre_test": {
+  "files": 81,
+  "identical": true
+ },
+ "scheduled_run_tick_in_restored_log": {
+  "tick_utc": "2026-11-02T14:56:17.314855+00:00",
+  "pid": 227,
+  "outcome": "ok",
+  "new_t0": [],
+  "checkpoints": [],
+  "feed_status": {
+   "https://nsearchives.nseindia.com/content/RSS/Financial_Results.xml": 200,
+   "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml": 200
+  },
+  "incomplete_snapshot_dirs": [],
+  "finished_utc": "2026-11-02T14:56:22.377198+00:00"
+ },
+ "ticks_before": 10,
+ "ticks_after_scheduled_run": 11,
+ "snapshot_dirs": [
+  "20261102T062632Z_baseline"
+ ],
+ "events_json_present": false,
+ "snapshot_index_lines": 0,
+ "main_head": "70c175c",
+ "no_duplicate_t0_or_checkpoints": true,
+ "main_untouched": true
+}

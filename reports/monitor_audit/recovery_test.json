@@ -1,0 +1,380 @@
+{
+ "generated_at_utc": "2026-11-02T15:17:14Z",
+ "test_categories": {
+  "Unit tests": {
+   "status": "None exist",
+   "note": "Every test drives the real scripts end to end."
+  },
+  "Sandbox integration tests": {
+   "status": "Passed: 10/10 monitor, 3/3 push",
+   "note": "Throwaway folders and local git remotes; NSE feed and collector replaced by test doubles."
+  },
+  "Actual GitHub tests": {
+   "status": "Passed: recovery 12/12, 81-file SHA-256 match, secrets scan, real pushes",
+   "note": "Fresh clones of ishaandixit22/arthscan-fingerprinting, branch monitor-state."
+  },
+  "Unattended scheduler execution": {
+   "status": "PASSED (attempt 2, 14:55 UTC)",
+   "note": "Attempt 1 (09:43 UTC) failed at the restore step; fixed and re-run."
+  }
+ },
+ "unattended_acceptance": {
+  "result": "PASSED",
+  "attempt": 2,
+  "trigger_id": "trig_0159bajz89RVbmpSSciinzwJ",
+  "fired_utc": "2026-11-02T14:55:13Z",
+  "scheduled_utc": "2026-11-02T14:43:00Z",
+  "user_input_window": {
+   "last_before_utc": "2026-11-02T14:03:39Z",
+   "next_after_utc": "2026-11-02T15:15:39Z"
+  },
+  "method": "live monitor folder and repo clone moved aside before the run so it had to re-clone and restore from GitHub; the container itself was not reclaimed",
+  "steps": [
+   {
+    "step": "Fired by the server, no user input",
+    "pass": true,
+    "evidence": "trigger fired 14:55:13 UTC (scheduled 14:43, 12 min late); user messages at 14:03:39 and 15:15:39 UTC only"
+   },
+   {
+    "step": "Re-cloned the repo from GitHub",
+    "pass": true,
+    "evidence": "clone: re-cloned @de06bf2, explicit refspec"
+   },
+   {
+    "step": "Restored monitor-state",
+    "pass": true,
+    "evidence": "RESTORE: ok (1 snapshots, events: none), exit 0"
+   },
+   {
+    "step": "Acquired the lock",
+    "pass": true,
+    "evidence": "tick ran (not BUSY), pid 227"
+   },
+   {
+    "step": "Executed the monitor",
+    "pass": true,
+    "evidence": "TICK 2026-11-02T14:56:17Z, both NSE feeds HTTP 200"
+   },
+   {
+    "step": "Wrote the audit log",
+    "pass": true,
+    "evidence": "line 11, UTC start 2026-11-02T14:56:17Z and finish 2026-11-02T14:56:22Z, outcome ok"
+   },
+   {
+    "step": "Preserved snapshot hashes",
+    "pass": true,
+    "evidence": "81/81 files identical to the pre-test record"
+   },
+   {
+    "step": "Pushed the resulting state",
+    "pass": true,
+    "evidence": "commit 7685c69 on monitor-state"
+   },
+   {
+    "step": "Fresh environment restore afterwards",
+    "pass": true,
+    "evidence": "12/12 recovery steps; restored commit 7685c69 = GitHub 7685c69"
+   },
+   {
+    "step": "No duplicate T0s or checkpoints",
+    "pass": true,
+    "evidence": "1 snapshot folder (baseline), no events.json, empty snapshot index"
+   },
+   {
+    "step": "main untouched",
+    "pass": true,
+    "evidence": "main still 70c175c"
+   }
+  ],
+  "post_run_verification": {
+   "latest_commit_on_github": "7685c69",
+   "commit_restored": "7685c69",
+   "commit_matches_scheduled_push_7685c69": true,
+   "snapshot_hashes_vs_pre_test": {
+    "files": 81,
+    "identical": true
+   },
+   "scheduled_run_tick_in_restored_log": {
+    "tick_utc": "2026-11-02T14:56:17.314855+00:00",
+    "pid": 227,
+    "outcome": "ok",
+    "new_t0": [],
+    "checkpoints": [],
+    "feed_status": {
+     "https://nsearchives.nseindia.com/content/RSS/Financial_Results.xml": 200,
+     "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml": 200
+    },
+    "incomplete_snapshot_dirs": [],
+    "finished_utc": "2026-11-02T14:56:22.377198+00:00"
+   },
+   "ticks_before": 10,
+   "ticks_after_scheduled_run": 11,
+   "snapshot_dirs": [
+    "20261102T062632Z_baseline"
+   ],
+   "events_json_present": false,
+   "snapshot_index_lines": 0,
+   "main_head": "70c175c",
+   "no_duplicate_t0_or_checkpoints": true,
+   "main_untouched": true
+  },
+  "pre_test_record_commit": "de06bf2"
+ },
+ "attempt_1": {
+  "result": "FAILED",
+  "scheduled_run_fired_utc": "2026-11-02T09:43:34Z",
+  "turn_started_utc": "2026-11-02T09:44:03Z",
+  "user_input_before_run": "none (synthetic scheduled turn)",
+  "steps": {
+   "A_clone": "re-cloned from GitHub @a76d35f, monitor-state checked out with explicit refspec: OK",
+   "B_restore": "FAILED: restore.sh line 8 `cp -n \"$D/three_way/code/\"* \"$U/three_way/\"` exits non-zero on the code/audit directory (added after the 11-step recovery test); set -e aborted before snapshots and monitor state were copied",
+   "recovery_action": "partial restore moved to /home/user/.acceptance_failed_restore/three_way_partial_0944Z; pre-test live state reinstated from /home/user/.acceptance_backup/three_way (not from GitHub)",
+   "C_lock_and_tick": "OK: tick 2026-11-02T09:44:55Z, outcome ok, pid 241 (lock acquired: run was not BUSY)",
+   "audit_log": "OK: line 6 written with UTC timestamps",
+   "persist": "OK: pushed fd5e3db to monitor-state"
+  },
+  "verdict": "unattended execution observed; restore-from-GitHub step FAILED; acceptance NOT passed",
+  "proposed_fix_awaiting_approval": "restore.sh line 8: copy the code directory recursively (cp -a --update=none \"$D/three_way/code/.\" \"$U/three_way/\")",
+  "fix": "restore.sh line 8 -> cp -a --update=none \"$D/three_way/code/.\" \"$U/three_way/\" (approved, commit 3f8211d)"
+ },
+ "recovery_test_latest": {
+  "started_utc": "2026-11-02T15:16:20.713157+00:00",
+  "steps": [
+   {
+    "step": "fresh shallow clone from GitHub",
+    "pass": true,
+    "seconds": 1.3
+   },
+   {
+    "step": "negative control: plain fetch leaves origin/monitor-state missing",
+    "pass": true
+   },
+   {
+    "step": "explicit refspec fetch creates origin/monitor-state",
+    "pass": true,
+    "commit": "7685c69"
+   },
+   {
+    "step": "restore.sh rebuilds an empty root",
+    "pass": true,
+    "seconds": 0.9,
+    "exit": 0,
+    "output": [
+     "cp: warning: behavior of -n is non-portable and may change in future; use --update=none instead"
+    ]
+   },
+   {
+    "step": "restored snapshots byte-identical to live (SHA-256)",
+    "pass": true,
+    "files": 81
+   },
+   {
+    "step": "restored code identical to live",
+    "pass": true
+   },
+   {
+    "step": "restored audit/ folder present",
+    "pass": true
+   },
+   {
+    "step": "restored audit log matches live line count",
+    "pass": true,
+    "live": 11,
+    "restored": 11
+   },
+   {
+    "step": "restored analysis dependencies present",
+    "pass": true
+   },
+   {
+    "step": "restored monitor executes a real tick",
+    "pass": true,
+    "seconds": 7.0,
+    "output": [
+     "TICK 2026-11-02T15:16:25.280617+00:00 feeds=[200, 200] waiting_for_T0=['MOTHERSON', 'PIIND'] pending=[]"
+    ]
+   },
+   {
+    "step": "restored tick wrote a UTC audit line",
+    "pass": true,
+    "outcome": "ok"
+   },
+   {
+    "step": "second restore is a no-op for snapshots",
+    "pass": true
+   }
+  ],
+  "finished_utc": "2026-11-02T15:16:33.179442+00:00",
+  "passed": 12,
+  "total": 12
+ },
+ "sandbox_tests": {
+  "monitor": {
+   "5a_concurrent_runs": {
+    "runs": 6,
+    "busy_exits": 3,
+    "new_t0_prints": 1,
+    "t0_events": 1,
+    "t0_snapshots_created": 1,
+    "pass": true,
+    "after_3_more_sequential_runs_t0_snapshots": 1
+   },
+   "5b_crash_then_rerun": {
+    "first_run": "crashed",
+    "state_after_crash_has_T0": false,
+    "t0_snapshots_created": 1,
+    "rerun_adopted_existing": true,
+    "pass": true
+   },
+   "5c_checkpoints_idempotent": {
+    "runs": 4,
+    "snapshots_per_checkpoint": {
+     "T0_MOTHERSON": 1,
+     "T+30m_MOTHERSON": 1,
+     "T+2h_MOTHERSON": 1,
+     "T+24h_MOTHERSON": 1,
+     "T+48h_MOTHERSON": 1,
+     "T0_PIIND": 1,
+     "T+30m_PIIND": 1,
+     "T+2h_PIIND": 1,
+     "T+24h_PIIND": 1,
+     "T+48h_PIIND": 1
+    },
+    "all_done_printed": true,
+    "pass": true
+   },
+   "7a_failed_requests": {
+    "failed_attempt_output": [
+     "CHECKPOINT_INCOMPLETE MOTHERSON T+48h snapshot 20261102T085253676620_T+48h_MOTHERSON: will retry next tick"
+    ],
+    "checkpoint_marked_taken_after_failure": false,
+    "existing_snapshot_files_unchanged": true,
+    "retry_succeeded_next_run": true,
+    "attempts_recorded": 3,
+    "pass": true
+   },
+   "7b_real_collector_failures": {
+    "data_files_written": [],
+    "statuses": {
+     "tapetide:PIIND.md": "error: simulated DNS failure",
+     "screener:": "skipped: host returned 429 earlier",
+     "indianapi:statements?stats=quarter_results": 500,
+     "indianapi:statements?stats=yoy_results": 500,
+     "indianapi:statements?stats=balancesheet": 500,
+     "indianapi:statements?stats=cashflow": 500,
+     "indianapi:statements?stats=ratios": 500
+    },
+    "hosts_blocked_429": [
+     "www.screener.in"
+    ],
+    "pass": true
+   },
+   "4b_overwrite_protection_code_path": {
+    "snapshot_dir_reuse": "refused",
+    "existing_file_open_with_x": "refused",
+    "pass": true
+   },
+   "8a_feed_429": {
+    "first": "HTTP 429 from NSE feed: stopping monitor",
+    "second": "STOPPED: an earlier HTTP 429; not polling",
+    "t0_recorded_after_stop": false,
+    "snapshots_after_stop": 0,
+    "pass": true
+   },
+   "8b_snapshot_429": {
+    "output": "HTTP 429 during snapshot: stopping",
+    "stopped": true,
+    "checkpoint_marked_taken": false,
+    "pass": true
+   },
+   "8c_no_false_stop_on_429_in_snapshot_id": {
+    "snapshot_id": [
+     "20261104T142901Z_T0_PIIND"
+    ],
+    "stopped": false,
+    "pass": true
+   },
+   "9_audit_log_every_run": {
+    "runs": 5,
+    "log_lines": 5,
+    "outcomes": [
+     "ok",
+     "busy (lock held by another run)",
+     "error: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+     "http_429_feed",
+     "stopped (earlier HTTP 429)"
+    ],
+    "all_have_utc_timestamps": true,
+    "pass": true
+   }
+  },
+  "push": {
+   "10a_push_failure_retry": {
+    "exit_code": 1,
+    "seconds": 30.2,
+    "expected_backoff_s": 30,
+    "local_commits": 1,
+    "pass": true
+   },
+   "10b_recovery_push": {
+    "exit_code": 0,
+    "remote_commits_on_monitor_state": 2,
+    "pass": true
+   },
+   "10c_concurrent_persist": {
+    "exit_codes": [
+     0,
+     0
+    ],
+    "index_lock_errors": 0,
+    "pass": true
+   }
+  }
+ },
+ "integrity_tests": {
+  "4a_live_sha256": {
+   "files_checked": 80,
+   "mismatches": [],
+   "permissions_seen": [
+    [
+     "dir",
+     "0o555"
+    ],
+    [
+     "file",
+     "0o444"
+    ],
+    [
+     "manifest",
+     "0o444"
+    ]
+   ],
+   "pass": true
+  },
+  "4c_github_copy_sha256": {
+   "files_compared": 81,
+   "mismatches": 0,
+   "pass": true
+  },
+  "4d_os_permission_vs_root": {
+   "running_as_uid": 0,
+   "root_can_append_to_0444_copy": true,
+   "note": "chmod 0444 is not a barrier for root; immutability rests on code paths (exist_ok=False, mode 'x', cp --update=none), the manifest SHA-256s and git history"
+  },
+  "6_secrets_scan": {
+   "commits_scanned": "4",
+   "history_bytes": 11217747,
+   "pattern_hits": {
+    "github_token": 0,
+    "aws_access_key": 0,
+    "bearer_header": 0,
+    "private_key": 0,
+    "generic_secret_assignment": 0
+   },
+   "env_secret_variables_checked": 11,
+   "env_secret_values_found_in_history": [],
+   "remote_url_has_embedded_credential": false,
+   "pass": true
+  }
+ }
+}

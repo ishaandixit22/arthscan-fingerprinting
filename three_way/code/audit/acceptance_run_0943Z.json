@@ -1,0 +1,15 @@
+{
+ "scheduled_run_fired_utc": "2026-11-02T09:43:34Z",
+ "turn_started_utc": "2026-11-02T09:44:03Z",
+ "user_input_before_run": "none (synthetic scheduled turn)",
+ "steps": {
+  "A_clone": "re-cloned from GitHub @a76d35f, monitor-state checked out with explicit refspec: OK",
+  "B_restore": "FAILED: restore.sh line 8 `cp -n \"$D/three_way/code/\"* \"$U/three_way/\"` exits non-zero on the code/audit directory (added after the 11-step recovery test); set -e aborted before snapshots and monitor state were copied",
+  "recovery_action": "partial restore moved to /home/user/.acceptance_failed_restore/three_way_partial_0944Z; pre-test live state reinstated from /home/user/.acceptance_backup/three_way (not from GitHub)",
+  "C_lock_and_tick": "OK: tick 2026-11-02T09:44:55Z, outcome ok, pid 241 (lock acquired: run was not BUSY)",
+  "audit_log": "OK: line 6 written with UTC timestamps",
+  "persist": "OK: pushed fd5e3db to monitor-state"
+ },
+ "verdict": "unattended execution observed; restore-from-GitHub step FAILED; acceptance NOT passed",
+ "proposed_fix_awaiting_approval": "restore.sh line 8: copy the code directory recursively (cp -a --update=none \"$D/three_way/code/.\" \"$U/three_way/\")"
+}

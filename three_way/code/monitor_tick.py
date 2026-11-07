@@ -20,7 +20,7 @@ WATCH = {"MOTHERSON": {"name": r"samvardhana motherson", "new_quarter": "Sep 202
          "PIIND": {"name": r"\bpi industries", "new_quarter": "Sep 2026"}}
 FEEDS = ["https://nsearchives.nseindia.com/content/RSS/Financial_Results.xml",
          "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml"]
-SINCE = datetime(2026, 11, 2, tzinfo=IST).astimezone(timezone.utc)   # ignore older filings (feeds keep stale items)
+SINCE = (datetime.fromisoformat(os.environ["MONITOR_TEST_SINCE"]) if os.environ.get("MONITOR_TEST_SINCE") else datetime(2026, 11, 2, tzinfo=IST)).astimezone(timezone.utc)   # ignore older filings (feeds keep stale items)
 CHECKPOINTS = [("T+30m", timedelta(minutes=30)), ("T+2h", timedelta(hours=2)), ("T+24h", timedelta(hours=24)), ("T+48h", timedelta(hours=48))]
 RESULT_RX = re.compile(r"financial result|outcome of board meeting|unaudited|audited results|results? for the (quarter|period)", re.I)
 INTIMATION_RX = re.compile(r"board meeting to be held|to consider and approve|intimation|will be held", re.I)
@@ -59,6 +59,9 @@ def save(p, o):
     tmp = p + ".tmp"; json.dump(o, open(tmp, "w"), indent=1); os.replace(tmp, p)
 
 def poll():
+    tf = os.environ.get("MONITOR_TEST_FEED")          # test hook only: inert unless the variable is set
+    if tf:
+        j = json.load(open(tf)); return (None if j.get("status") == 429 else j["items"]), {"test_feed": j.get("status", 200)}
     items, statuses = [], {}
     for url in FEEDS:
         try:
@@ -82,19 +85,50 @@ def parse_pub(s):
         except ValueError: pass
     return None
 
+def manifest_status(sid):
+    """(complete, blocked): complete = every request in the snapshot returned HTTP 200; blocked = any host returned 429."""
+    mp = os.path.join(HERE, "snapshots", sid or "", "manifest.json")
+    if not (sid and os.path.exists(mp)): return False, False
+    m = json.load(open(mp))
+    return all(r.get("http_status") == 200 for r in m["requests"]), bool(m.get("hosts_blocked_429"))
+
+def existing_snapshot(label):
+    """Idempotency (D2): a complete snapshot with this label already on disk is adopted instead of retaken."""
+    for d in sorted(glob.glob(os.path.join(HERE, "snapshots", f"*_{label}")), reverse=True):
+        sid = os.path.basename(d)
+        if manifest_status(sid)[0]: return sid
+    return None
+
 def snapshot(label, sym):
+    """Returns (snapshot_id, complete, blocked, adopted)."""
+    sid = existing_snapshot(label)
+    if sid: return sid, True, False, True
     out = subprocess.run([sys.executable, os.path.join(HERE, "collector.py"), label, sym], capture_output=True, text=True, timeout=900)
-    m = re.search(r"SNAPSHOT (\S+)", out.stdout)
-    blocked = "429" in out.stdout
-    return (m.group(1) if m else None), blocked
+    m = re.search(r"^SNAPSHOT (\S+)$", out.stdout, re.M)
+    sid = m.group(1) if m else None
+    complete, blocked = manifest_status(sid)
+    return sid, complete, blocked, False
+
+def log_run(rec):
+    rec.setdefault("finished_utc", now().isoformat())
+    with open(LOG, "a") as f: f.write(json.dumps(rec) + "\n")
 
 def tick():
-    ev = load(EVENTS, {}); t = now(); rec = {"tick_utc": t.isoformat(), "new_t0": [], "checkpoints": []}
+    rec = {"tick_utc": now().isoformat(), "pid": os.getpid(), "outcome": None, "new_t0": [], "checkpoints": []}
+    try:
+        ev = _tick(rec); return ev
+    except Exception as e:
+        rec["outcome"] = f"error: {type(e).__name__}: {str(e)[:200]}"; print("ERROR", rec["outcome"]); return load(EVENTS, {})
+    finally:
+        log_run(rec)
+
+def _tick(rec):
+    ev = load(EVENTS, {}); t = now()
     if ev.get("_stopped_429"):
-        print("STOPPED: an earlier HTTP 429; not polling"); return ev
+        rec["outcome"] = "stopped (earlier HTTP 429)"; print("STOPPED: an earlier HTTP 429; not polling"); return ev
     items, st = poll(); rec["feed_status"] = st
     if items is None:
-        ev["_stopped_429"] = t.isoformat(); save(EVENTS, ev); print("HTTP 429 from NSE feed: stopping monitor"); return ev
+        ev["_stopped_429"] = t.isoformat(); save(EVENTS, ev); rec["outcome"] = "http_429_feed"; print("HTTP 429 from NSE feed: stopping monitor"); return ev
     for sym, w in WATCH.items():
         if sym in ev: continue
         hits = [i for i in items if re.search(w["name"], i["title"], re.I) and (parse_pub(i["pubDate"]) or t) >= SINCE and (i["feed"] == "Financial_Results.xml" or
@@ -105,23 +139,31 @@ def tick():
         ev[sym] = {"t0_exchange_raw": first["pubDate"], "t0_exchange_utc": t0.isoformat(), "t0_assumed_tz": "IST (+05:30), per NSE feed convention",
                    "detected_at_utc": t.isoformat(), "detection_lag_min": round((t - t0).total_seconds() / 60, 1), "item": first,
                    "new_quarter": w["new_quarter"], "checkpoints": {}}
-        sid, blocked = snapshot(f"T0_{sym}", sym); index_snapshot(sid, f"T0_{sym}")
-        ev[sym]["checkpoints"]["T0"] = {"due_utc": t0.isoformat(), "taken_utc": now().isoformat(), "snapshot_id": sid}
+        sid, complete, blocked, adopted = snapshot(f"T0_{sym}", sym)
+        if not adopted: index_snapshot(sid, f"T0_{sym}")
+        ev[sym]["checkpoints"]["T0"] = {"due_utc": t0.isoformat(), "taken_utc": now().isoformat() if complete else None, "snapshot_id": sid if complete else None,
+                                        "attempts": [{"at_utc": now().isoformat(), "snapshot_id": sid, "complete": complete, "adopted": adopted}]}
         for lab, dt in CHECKPOINTS: ev[sym]["checkpoints"][lab] = {"due_utc": (t0 + dt).isoformat(), "taken_utc": None, "snapshot_id": None}
         save(EVENTS, ev); rec["new_t0"].append(sym); print(f"NEW_T0 {sym} exchange {first['pubDate']} IST, snapshot {sid}")
-        if blocked: ev["_stopped_429"] = now().isoformat(); save(EVENTS, ev); print("HTTP 429 during snapshot: stopping"); return ev
+        if blocked: ev["_stopped_429"] = now().isoformat(); save(EVENTS, ev); rec["outcome"] = "http_429_snapshot"; print("HTTP 429 during snapshot: stopping"); return ev
     for sym, e in ev.items():
         if sym.startswith("_"): continue
         for lab, cp in e["checkpoints"].items():
             if cp["taken_utc"] or datetime.fromisoformat(cp["due_utc"]) > now(): continue
-            sid, blocked = snapshot(f"{lab}_{sym}", sym); index_snapshot(sid, f"{lab}_{sym}")
-            cp.update(taken_utc=now().isoformat(), snapshot_id=sid,
-                      late_by_min=round((now() - datetime.fromisoformat(cp["due_utc"])).total_seconds() / 60, 1))
-            save(EVENTS, ev); rec["checkpoints"].append(f"{sym}:{lab}"); print(f"CHECKPOINT {sym} {lab} snapshot {sid} late_by {cp['late_by_min']} min")
-            if blocked: ev["_stopped_429"] = now().isoformat(); save(EVENTS, ev); print("HTTP 429 during snapshot: stopping"); return ev
+            sid, complete, blocked, adopted = snapshot(f"{lab}_{sym}", sym)
+            if not adopted: index_snapshot(sid, f"{lab}_{sym}")
+            cp.setdefault("attempts", []).append({"at_utc": now().isoformat(), "snapshot_id": sid, "complete": complete, "adopted": adopted})
+            if complete:
+                cp.update(taken_utc=now().isoformat(), snapshot_id=sid,
+                          late_by_min=round((now() - datetime.fromisoformat(cp["due_utc"])).total_seconds() / 60, 1))
+                rec["checkpoints"].append(f"{sym}:{lab}"); print(f"CHECKPOINT {sym} {lab} snapshot {sid} late_by {cp['late_by_min']} min" + (" (adopted existing)" if adopted else ""))
+            else:
+                rec.setdefault("incomplete_attempts", []).append(f"{sym}:{lab}:{sid}"); print(f"CHECKPOINT_INCOMPLETE {sym} {lab} snapshot {sid}: will retry next tick")
+            save(EVENTS, ev)
+            if blocked: ev["_stopped_429"] = now().isoformat(); save(EVENTS, ev); rec["outcome"] = "http_429_snapshot"; print("HTTP 429 during snapshot: stopping"); return ev
     rec["incomplete_snapshot_dirs"] = incomplete_snapshots()
     if rec["new_t0"] or rec["checkpoints"]: rec["persist"] = persist(f"monitor: {rec['new_t0'] + rec['checkpoints']}")
-    with open(LOG, "a") as f: f.write(json.dumps(rec) + "\n")
+    rec["outcome"] = "ok"
     pend = [(s, l, c["due_utc"]) for s, e in ev.items() if not s.startswith("_") for l, c in e["checkpoints"].items() if not c["taken_utc"]]
     waiting = [s for s in WATCH if s not in ev]
     print(f"TICK {t.isoformat()} feeds={list(st.values())} waiting_for_T0={waiting} pending={pend}")
@@ -130,7 +172,9 @@ def tick():
 
 if __name__ == "__main__":
     lock = acquire_lock()
-    if lock is None: print("BUSY: another tick holds the lock; exiting without work"); sys.exit(0)
+    if lock is None:
+        log_run({"tick_utc": now().isoformat(), "pid": os.getpid(), "outcome": "busy (lock held by another run)"})
+        print("BUSY: another tick holds the lock; exiting without work"); sys.exit(0)
     if len(sys.argv) == 3 and sys.argv[1] == "--loop":
         end = time.time() + min(float(sys.argv[2]), 115) * 60
         while time.time() < end:
