@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T02:48:15Z",
+ "generated_at": "2026-11-07T09:48:47Z",
  "question": "Does Tapetide obtain financial statements directly from Screener.in or from a shared upstream provider such as Indian Stock API?",
  "sources": {
   "T": "Tapetide public .md pages + Tapetide MCP",
@@ -130,7 +130,50 @@
   "20261107T024521Z_T0_MOTHERSON",
   "20261107T024557Z_T+30m_MOTHERSON",
   "20261107T024631Z_T+2h_MOTHERSON",
-  "20261107T024705Z_T+24h_MOTHERSON"
+  "20261107T024705Z_T+24h_MOTHERSON",
+  "20261107T034348Z_T+24h_PIIND",
+  "20261107T034425Z_T+48h_PIIND",
+  "20261107T034459Z_T0_MOTHERSON",
+  "20261107T034534Z_T+30m_MOTHERSON",
+  "20261107T034608Z_T+2h_MOTHERSON",
+  "20261107T034642Z_T+24h_MOTHERSON",
+  "20261107T044357Z_T+24h_PIIND",
+  "20261107T044432Z_T+48h_PIIND",
+  "20261107T044506Z_T0_MOTHERSON",
+  "20261107T044539Z_T+30m_MOTHERSON",
+  "20261107T044611Z_T+2h_MOTHERSON",
+  "20261107T044645Z_T+24h_MOTHERSON",
+  "20261107T054411Z_T+24h_PIIND",
+  "20261107T054447Z_T+48h_PIIND",
+  "20261107T054521Z_T0_MOTHERSON",
+  "20261107T054554Z_T+30m_MOTHERSON",
+  "20261107T054625Z_T+2h_MOTHERSON",
+  "20261107T054701Z_T+24h_MOTHERSON",
+  "20261107T064418Z_T+24h_PIIND",
+  "20261107T064457Z_T+48h_PIIND",
+  "20261107T064533Z_T0_MOTHERSON",
+  "20261107T064606Z_T+30m_MOTHERSON",
+  "20261107T064643Z_T+2h_MOTHERSON",
+  "20261107T064718Z_T+24h_MOTHERSON",
+  "20261107T074415Z_T+24h_PIIND",
+  "20261107T074450Z_T+48h_PIIND",
+  "20261107T074522Z_T0_MOTHERSON",
+  "20261107T074600Z_T+30m_MOTHERSON",
+  "20261107T074635Z_T+2h_MOTHERSON",
+  "20261107T074710Z_T+24h_MOTHERSON",
+  "20261107T084423Z_T+24h_PIIND",
+  "20261107T084456Z_T+48h_PIIND",
+  "20261107T084528Z_T0_MOTHERSON",
+  "20261107T084602Z_T+30m_MOTHERSON",
+  "20261107T084636Z_T+2h_MOTHERSON",
+  "20261107T084710Z_T+24h_MOTHERSON",
+  "20261107T094402Z_T+24h_PIIND",
+  "20261107T094437Z_T+48h_PIIND",
+  "20261107T094513Z_T0_MOTHERSON",
+  "20261107T094547Z_T+30m_MOTHERSON",
+  "20261107T094618Z_T+2h_MOTHERSON",
+  "20261107T094656Z_T+24h_MOTHERSON",
+  "20261107T094733Z_T+48h_MOTHERSON"
  ],
  "answers": {
   "A_tapetide_matches_screener_first": {
@@ -1280,6 +1323,48 @@
         "snapshot_id": "20261107T024409Z_T+24h_PIIND",
         "complete": false,
         "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T03:44:25.569632+00:00",
+        "snapshot_id": "20261107T034348Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T04:44:32.002594+00:00",
+        "snapshot_id": "20261107T044357Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T05:44:46.748618+00:00",
+        "snapshot_id": "20261107T054411Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T06:44:57.017015+00:00",
+        "snapshot_id": "20261107T064418Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T07:44:49.953627+00:00",
+        "snapshot_id": "20261107T074415Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T08:44:56.057558+00:00",
+        "snapshot_id": "20261107T084423Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T09:44:36.924795+00:00",
+        "snapshot_id": "20261107T094402Z_T+24h_PIIND",
+        "complete": false,
+        "adopted": false
        }
       ]
      },
@@ -1315,6 +1400,48 @@
        {
         "at_utc": "2026-11-07T02:45:20.869604+00:00",
         "snapshot_id": "20261107T024447Z_T+48h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T03:44:59.693118+00:00",
+        "snapshot_id": "20261107T034425Z_T+48h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T04:45:06.155074+00:00",
+        "snapshot_id": "20261107T044432Z_T+48h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T05:45:20.748425+00:00",
+        "snapshot_id": "20261107T054447Z_T+48h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T06:45:32.934042+00:00",
+        "snapshot_id": "20261107T064457Z_T+48h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T07:45:22.359366+00:00",
+        "snapshot_id": "20261107T074450Z_T+48h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T08:45:28.551252+00:00",
+        "snapshot_id": "20261107T084456Z_T+48h_PIIND",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T09:45:13.097429+00:00",
+        "snapshot_id": "20261107T094437Z_T+48h_PIIND",
         "complete": false,
         "adopted": false
        }
@@ -1503,6 +1630,48 @@
         "snapshot_id": "20261107T024521Z_T0_MOTHERSON",
         "complete": false,
         "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T03:45:34.231238+00:00",
+        "snapshot_id": "20261107T034459Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T04:45:38.832382+00:00",
+        "snapshot_id": "20261107T044506Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T05:45:53.856351+00:00",
+        "snapshot_id": "20261107T054521Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T06:46:06.656295+00:00",
+        "snapshot_id": "20261107T064533Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T07:46:00.624485+00:00",
+        "snapshot_id": "20261107T074522Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T08:46:02.558150+00:00",
+        "snapshot_id": "20261107T084528Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T09:45:46.755718+00:00",
+        "snapshot_id": "20261107T094513Z_T0_MOTHERSON",
+        "complete": false,
+        "adopted": false
        }
       ]
      },
@@ -1660,6 +1829,48 @@
         "snapshot_id": "20261107T024557Z_T+30m_MOTHERSON",
         "complete": false,
         "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T03:46:07.853272+00:00",
+        "snapshot_id": "20261107T034534Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T04:46:11.014359+00:00",
+        "snapshot_id": "20261107T044539Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T05:46:25.453890+00:00",
+        "snapshot_id": "20261107T054554Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T06:46:42.973385+00:00",
+        "snapshot_id": "20261107T064606Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T07:46:34.957037+00:00",
+        "snapshot_id": "20261107T074600Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T08:46:35.792233+00:00",
+        "snapshot_id": "20261107T084602Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T09:46:18.381359+00:00",
+        "snapshot_id": "20261107T094547Z_T+30m_MOTHERSON",
+        "complete": false,
+        "adopted": false
        }
       ]
      },
@@ -1811,6 +2022,48 @@
         "snapshot_id": "20261107T024631Z_T+2h_MOTHERSON",
         "complete": false,
         "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T03:46:41.866366+00:00",
+        "snapshot_id": "20261107T034608Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T04:46:45.527518+00:00",
+        "snapshot_id": "20261107T044611Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T05:47:00.807616+00:00",
+        "snapshot_id": "20261107T054625Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T06:47:18.404235+00:00",
+        "snapshot_id": "20261107T064643Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T07:47:09.895150+00:00",
+        "snapshot_id": "20261107T074635Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T08:47:10.223624+00:00",
+        "snapshot_id": "20261107T084636Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T09:46:56.251436+00:00",
+        "snapshot_id": "20261107T094618Z_T+2h_MOTHERSON",
+        "complete": false,
+        "adopted": false
        }
       ]
      },
@@ -1878,13 +2131,63 @@
         "snapshot_id": "20261107T024705Z_T+24h_MOTHERSON",
         "complete": false,
         "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T03:47:15.602084+00:00",
+        "snapshot_id": "20261107T034642Z_T+24h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T04:47:22.405112+00:00",
+        "snapshot_id": "20261107T044645Z_T+24h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T05:47:38.452827+00:00",
+        "snapshot_id": "20261107T054701Z_T+24h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T06:47:50.796742+00:00",
+        "snapshot_id": "20261107T064718Z_T+24h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T07:47:44.608387+00:00",
+        "snapshot_id": "20261107T074710Z_T+24h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T08:47:46.009801+00:00",
+        "snapshot_id": "20261107T084710Z_T+24h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       },
+       {
+        "at_utc": "2026-11-07T09:47:32.863992+00:00",
+        "snapshot_id": "20261107T094656Z_T+24h_MOTHERSON",
+        "complete": false,
+        "adopted": false
        }
       ]
      },
      "T+48h": {
       "due_utc": "2026-11-07T09:28:36+00:00",
       "taken_utc": null,
-      "snapshot_id": null
+      "snapshot_id": null,
+      "attempts": [
+       {
+        "at_utc": "2026-11-07T09:48:06.049272+00:00",
+        "snapshot_id": "20261107T094733Z_T+48h_MOTHERSON",
+        "complete": false,
+        "adopted": false
+       }
+      ]
      }
     }
    }
@@ -2109,6 +2412,55 @@
      "EPS in Rs": 1.11
     },
     "note": "compiled (dataset refreshed 06 Nov 22:31 UTC), no provisional stage observed; filing overrides applied to Sep 2026 cells"
+   },
+   {
+    "symbol": "MOTHERSON",
+    "checkpoint": "T+48h",
+    "called_at_utc": "2026-11-07T09:48:43.185213+00:00",
+    "tool": "TAPETIDE.get_financials(section=quarterly,periods=2)",
+    "updated_at": "2026-11-06T22:31:22.275Z",
+    "latest_period": "Sep 2026",
+    "provisional_periods": null,
+    "cell_source": {
+     "Sales": "filing",
+     "Interest": "filing",
+     "Depreciation": "filing",
+     "Net Profit": "filing"
+    },
+    "sep_2026_values": {
+     "Sales": 38279.85,
+     "Operating Profit": 3357,
+     "Other Income": 272,
+     "Interest": 524.75,
+     "Depreciation": 1399.14,
+     "Profit before tax": 1705,
+     "Net Profit": 1217.57,
+     "EPS in Rs": 1.11
+    },
+    "note": "unchanged since 07 Nov 02:47; Jun 2026 values unchanged by refresh"
+   },
+   {
+    "symbol": "PIIND",
+    "checkpoint": "post-T+48h",
+    "called_at_utc": "2026-11-07T09:48:43.185213+00:00",
+    "tool": "TAPETIDE.get_financials(section=quarterly,periods=1)",
+    "updated_at": "2026-10-21T06:29:42.208Z",
+    "latest_period": "Sep 2026",
+    "provisional_periods": [
+     {
+      "period": "Sep 2026",
+      "filed_on": "2026-11-04"
+     }
+    ],
+    "note": "still provisional ~62h after filing"
+   },
+   {
+    "symbol": "MOTHERSON",
+    "checkpoint": "T+48h",
+    "called_at_utc": "2026-11-07T09:48:43.185213+00:00",
+    "tool": "arth.get_statements",
+    "label": "ARTHSCAN-cached",
+    "status": "not_called: arth MCP 404; arthscan.me login-gated (303)"
    }
   ]
  },
