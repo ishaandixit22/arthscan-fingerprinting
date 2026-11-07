@@ -263,6 +263,12 @@
       "snapshot_id": "20261107T154437Z_T+24h_PIIND",
       "complete": false,
       "adopted": false
+     },
+     {
+      "at_utc": "2026-11-07T16:44:28.151764+00:00",
+      "snapshot_id": "20261107T164353Z_T+24h_PIIND",
+      "complete": false,
+      "adopted": false
      }
     ]
    },
@@ -376,6 +382,12 @@
      {
       "at_utc": "2026-11-07T15:45:45.704672+00:00",
       "snapshot_id": "20261107T154514Z_T+48h_PIIND",
+      "complete": false,
+      "adopted": false
+     },
+     {
+      "at_utc": "2026-11-07T16:45:02.127775+00:00",
+      "snapshot_id": "20261107T164428Z_T+48h_PIIND",
       "complete": false,
       "adopted": false
      }
@@ -642,6 +654,12 @@
       "snapshot_id": "20261107T154546Z_T0_MOTHERSON",
       "complete": false,
       "adopted": false
+     },
+     {
+      "at_utc": "2026-11-07T16:45:38.826154+00:00",
+      "snapshot_id": "20261107T164502Z_T0_MOTHERSON",
+      "complete": false,
+      "adopted": false
      }
     ]
    },
@@ -877,6 +895,12 @@
       "snapshot_id": "20261107T154624Z_T+30m_MOTHERSON",
       "complete": false,
       "adopted": false
+     },
+     {
+      "at_utc": "2026-11-07T16:46:13.330071+00:00",
+      "snapshot_id": "20261107T164539Z_T+30m_MOTHERSON",
+      "complete": false,
+      "adopted": false
      }
     ]
    },
@@ -1106,6 +1130,12 @@
       "snapshot_id": "20261107T154657Z_T+2h_MOTHERSON",
       "complete": false,
       "adopted": false
+     },
+     {
+      "at_utc": "2026-11-07T16:46:47.926591+00:00",
+      "snapshot_id": "20261107T164614Z_T+2h_MOTHERSON",
+      "complete": false,
+      "adopted": false
      }
     ]
    },
@@ -1251,6 +1281,12 @@
       "snapshot_id": "20261107T154732Z_T+24h_MOTHERSON",
       "complete": false,
       "adopted": false
+     },
+     {
+      "at_utc": "2026-11-07T16:47:23.480946+00:00",
+      "snapshot_id": "20261107T164648Z_T+24h_MOTHERSON",
+      "complete": false,
+      "adopted": false
      }
     ]
    },
@@ -1298,6 +1334,12 @@
      {
       "at_utc": "2026-11-07T15:48:43.201737+00:00",
       "snapshot_id": "20261107T154806Z_T+48h_MOTHERSON",
+      "complete": false,
+      "adopted": false
+     },
+     {
+      "at_utc": "2026-11-07T16:47:57.585905+00:00",
+      "snapshot_id": "20261107T164723Z_T+48h_MOTHERSON",
       "complete": false,
       "adopted": false
      }
